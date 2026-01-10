@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <style>
+	      :root {
+	        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	        --color-text: #111;
+	        --color-muted: #555;
+	        --color-accent: #333;
+	        --color-border: #ddd;
+	        --color-bg: #fafafa;
+	      }
+
+	      * {
+	        box-sizing: border-box;
+	      }
+
+	      html, body {
+	        margin: 0;
+	        padding: 0;
+	      }
+
+	      body {
+	        font-family: var(--font-body);
+	        color: var(--color-text);
+	        background: white;
+	        line-height: 1.5;
+	        font-size: 14px;
+	      }
+
+	      blockquote {
+	        margin: 0 0 16px;
+	        padding: 0 1em;
+	        color: #57606a;
+	        border-left: 0.25em solid #d0d7de;
+	      }
+
+	      .page {
+	        max-width: 900px;
+	        margin: 0 auto;
+	        padding: 32px 24px 64px;
+	        background: white;
+	      }
+
+	      header {
+	        border-bottom: 1px solid var(--color-border);
+	        margin-bottom: 24px;
+	        padding-bottom: 16px;
+	      }
+
+	      header h1 {
+	        font-size: 1.9rem;
+	        margin: 0 0 8px;
+	        letter-spacing: 0.02em;
+	      }
+
+	      header .subtitle {
+	        font-size: 0.95rem;
+	        color: var(--color-muted);
+	        margin-bottom: 8px;
+	      }
+
+	      header .meta {
+	        font-size: 0.8rem;
+	        color: var(--color-muted);
+	      }
+
+	      h2 {
+	        margin-top: 15px;
+	        margin-bottom: 4px;
+	        font-size: 1.15rem;
+	        border-bottom: 1px solid var(--color-border);
+	        padding-bottom: 4px;
+	      }
+
+	      h3 {
+	        margin-top: 18px;
+	        margin-bottom: 4px;
+	        font-size: 1rem;
+	        color: var(--color-accent);
+	      }
+
+	      p {
+	        margin: 4px 0 8px;
+	      }
+
+	      ul {
+	        margin: 4px 0 10px 1.2rem;
+	        padding: 0;
+	        line-height: 1.1em;
+	      }
+
+	      li {
+	        margin-bottom: 3px;
+	      }
+
+	      .code-inline {
+	        font-family: var(--font-mono);
+	        font-size: 0.9em;
+	        background: #f5f5f5;
+	        padding: 1px 4px;
+	        border-radius: 3px;
+	      }
+
+	      .box {
+	        border: 1px solid var(--color-border);
+	        border-radius: 4px;
+	        padding: 8px 10px;
+	        background: #fcfcfc;
+	        margin: 8px 0 12px;
+	        line-height: 1.05em;
+	      }
+
+	      .box-title {
+	        font-weight: 600;
+	        font-size: 0.9rem;
+	        margin-bottom: 4px;
+	      }
+
+	      .small {
+	        font-size: 0.85rem;
+	        color: var(--color-muted);
+	      }
+
+	      .two-column {
+	        display: flex;
+	        flex-wrap: wrap;
+	        gap: 16px;
+	      }
+
+	      .two-column > div {
+	        flex: 1 1 260px;
+	        min-width: 0;
+	      }
+
+	      .table {
+	        width: 100%;
+	        border-collapse: collapse;
+	        margin: 8px 0 12px;
+	        font-size: 0.77rem;
+	        line-height: 1.2em;
+	      }
+
+	      .table th,
+	      .table td {
+	        border: 1px solid var(--color-border);
+	        padding: 4px 6px;
+	        vertical-align: top;
+	      }
+
+	      .table th {
+	        background: #f5f5f5;
+	        font-weight: 600;
+	      }
+
+	      .tag {
+	        display: inline-block;
+	        border-radius: 999px;
+	        border: 1px solid var(--color-border);
+	        padding: 1px 8px;
+	        font-size: 0.75rem;
+	        margin-right: 4px;
+	        margin-bottom: 3px;
+	      }
+
+	      .placeholder {
+	        font-style: italic;
+	        color: var(--color-muted);
+	      }
+
+	      .pagebreak{
+	        page-break-before:always
+	      }
+
+	      @media print {
+	        body {
+	          background: white;
+	        }
+	        .page {
+	          box-shadow: none;
+	          padding: 24px 18px;
+	        }
+	        a[href]:after {
+	          content: "";
+	        }
+	      }
+	    </style>
+		<title>PMS-CONFLICT — Example 2: Silent Coordination Collapse under Non-Event Load</title>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS-CONFLICT</strong></h1>
+			<h2><em>Example 2: Silent Coordination Collapse under Non-Event Load</em></h2>
+		</header>
+		<section id="content">
+			<p><strong>Case label:</strong> <em>When Nothing Happens Becomes the Dominant Act</em>
+			<strong>Scope discipline:</strong> Structural mapping only. No diagnosis, no attribution, no prescriptions. PMS application validity remains conditional on <strong>Χ + reversibility + D</strong>.</p>
+			<hr>
+			<h3>A. Scene Packet (Minimal Unit)</h3>
+			<p><strong>Scene ID:</strong></p>
+			<ul>
+			<li><p><strong>Θ (temporality):</strong> Long-running process with deadlines that slide rather than break; consequences accumulate without punctuated decision points.</p>
+			</li>
+			<li><p><strong>□ (frame anchor):</strong> <strong>□coordination</strong> with implicit expectations of timely response and confirmation.</p>
+			</li>
+			<li><p><strong>Roles (not persons):</strong></p>
+			<ul>
+			<li>Role R₁: initiates coordination; depends on feedback to proceed responsibly.</li>
+			<li>Role R₂: controls response timing, access to channels, and acknowledgment thresholds.</li>
+			</ul>
+			</li>
+			</ul>
+			<p><strong>Trigger (Δ/∇):</strong></p>
+			<ul>
+			<li><strong>Δ:</strong> Expected responses do not arrive within the coordination window.</li>
+			<li><strong>∇:</strong> Pressure increases on R₁ to proceed without confirmation or to absorb delay-related fallout.</li>
+			</ul>
+			<p><strong>Λ candidates (expected but missing):</strong></p>
+			<ul>
+			<li>Explicit refusal.</li>
+			<li>Explicit reprioritization.</li>
+			<li>Explicit termination or deferral of the coordination episode.</li>
+			</ul>
+			<p><strong>Observed realizations (neutral):</strong></p>
+			<ul>
+			<li>Repeated follow-ups from R₁.</li>
+			<li>Increasing silence or delayed minimal replies from R₂.</li>
+			<li>No formal closure, escalation, or release.</li>
+			</ul>
+			<hr>
+			<h3>B. Drift Trace (Operator-Readable)</h3>
+			<p><code>Λ (persistent) → Ω (timing asymmetry) → Θ amplification → Α_silence → Σ impossible → Ψ stranded</code></p>
+			<p><strong>Key transitions:</strong></p>
+			<ul>
+			<li><strong>Λ</strong> accumulates as meaningful absence rather than neutral non-action.</li>
+			<li><strong>Ω</strong> emerges via asymmetric control of response timing and acknowledgment.</li>
+			<li><strong>Θ</strong> converts delay into irreversible planning loss and downstream exposure.</li>
+			<li><strong>Α</strong> stabilizes silence as the default handling script.</li>
+			<li><strong>Σ</strong> cannot consolidate because no event is available to integrate.</li>
+			<li><strong>Ψ</strong> binds R₁ to continuity without reciprocal binding from R₂.</li>
+			</ul>
+			<hr>
+			<h3>C. Cost Distribution (Structural, Not Moral)</h3>
+			<p><strong>Irreversible vs. relational costs:</strong></p>
+			<ul>
+			<li><strong>R₂-adjacent costs:</strong> minimal; silence preserves optionality and avoids commitment.</li>
+			<li><strong>R₁-adjacent costs:</strong> escalating coordination debt, deadline exposure, reputational risk, and compensatory work.</li>
+			</ul>
+			<p><strong>Cost asymmetry pattern:</strong></p>
+			<ul>
+			<li>Timing control functions as leverage without appearing as action.</li>
+			<li>Costs migrate toward the role that must maintain continuity under uncertainty.</li>
+			</ul>
+			<p><strong>System effect:</strong></p>
+			<ul>
+			<li>Silence redistributes costs while remaining formally deniable as action.</li>
+			</ul>
+			<hr>
+			<h3>D. Rational Response Envelope (Structural Reasonableness)</h3>
+			<p>Under this topology, the following responses are <strong>structurally rational</strong> (not normatively preferred):</p>
+			<ul>
+			<li>Continued querying where exit would compound downstream losses.</li>
+			<li>Quiet withdrawal where continuation becomes irreversibly expensive.</li>
+			<li>Formalization attempts (procedural escalation) where informal channels no longer carry <strong>Σ</strong>.</li>
+			</ul>
+			<p>These responses follow cost logic under <strong>Λ across Θ with Ω in timing</strong>, not intent or character.</p>
+			<hr>
+			<h3>E. Dignity-in-Practice Stress Test (D under Λ)</h3>
+			<p><strong>Risk point:</strong></p>
+			<ul>
+			<li>Silence is framed as neutrality or politeness while functioning as control.</li>
+			</ul>
+			<p><strong>Failure mode:</strong></p>
+			<ul>
+			<li><strong>Χ</strong> reframed as impatience, pressure, or overreaction.</li>
+			<li><strong>Ψ→Other</strong> implicit: continuity is demanded without reciprocal commitment (“you will keep waiting”).</li>
+			</ul>
+			<p><strong>Structural indicator:</strong></p>
+			<ul>
+			<li>Distance is delegitimized while non-response remains unaccountable.</li>
+			</ul>
+			<hr>
+			<h3>F. Reader-Guard (Misinterpretation Prevention)</h3>
+			<p>This example does <strong>not</strong> claim laziness, malice, avoidance, or intent.
+			It describes <strong>Λ as a structural actuator</strong> under <strong>Ω</strong> and <strong>Θ</strong>, independent of motivation.</p>
+			<hr>
+			<h3>G. PMS Validity Check (Application Gate)</h3>
+			<p>Any attempt to <em>use</em> this analysis is PMS-valid <strong>only if</strong>:</p>
+			<ul>
+			<li><strong>Χ (distance)</strong> remains practically activatable without sanction,</li>
+			<li>persistent <strong>Λ</strong> is nameable as load rather than neutrality,</li>
+			<li>binding remains <strong>Ψ→Self</strong> and is not externally enforced,</li>
+			<li><strong>D (dignity-in-practice)</strong> constrains language and exposure.</li>
+			</ul>
+			<p>Absent these conditions, application is structurally invalid.</p>
+			<hr>
+			<h3>H. Structural Closure (Non-Normative)</h3>
+			<p>Once persistent <strong>Λ</strong> stabilizes as <strong>Α</strong> under <strong>Ω</strong> and <strong>Θ</strong>, coordination ceases without ever being terminated.
+			The system does not fail loudly; it <strong>fails by quiet cost migration</strong>.</p>
+			<p>Where explicit refusal would be costly, non-response becomes the cheapest stabilizer.
+			Where <strong>Σ</strong> requires an event, silence guarantees that integration cannot occur.
+			Under <strong>Θ</strong>, delay hardens into loss; under <strong>Ω</strong>, timing control converts absence into leverage.</p>
+			<hr>
+			<h3>I. Reduced PMS-CONFLICT Signature (Threshold Marker)</h3>
+			<p><strong>Reduced signature:</strong>
+			<code>Λ ↑  +  Ω ↑  +  Θ ↑  +  Σ = 0  +  Ψ asymmetric  +  Χ priced</code></p>
+			<p><strong>Reading discipline:</strong>
+			This signature marks the transition to a <strong>terminal conflict regime</strong> where:</p>
+			<ul>
+			<li>non-events (<strong>Λ</strong>) carry the system,</li>
+			<li>asymmetry (<strong>Ω</strong>) operates via timing rather than authority,</li>
+			<li>time (<strong>Θ</strong>) converts delay into irreversible cost,</li>
+			<li>integration (<strong>Σ</strong>) is structurally unavailable,</li>
+			<li>binding (<strong>Ψ</strong>) persists asymmetrically,</li>
+			<li>distance (<strong>Χ</strong>) remains nominal but becomes costly to activate.</li>
+			</ul>
+			<hr>
+			<h3>J. Conflict Domain Classification (PMS-CONFLICT)</h3>
+			<p><strong>Domain status:</strong>
+			<strong>CONFLICT (terminal descriptive regime)</strong></p>
+			<p><strong>Justification:</strong></p>
+			<ul>
+			<li>There is no remaining internal reintegration grammar.</li>
+			<li>Further attempts to elicit response increase cost without enabling <strong>Σ</strong>.</li>
+			<li>Continuation persists only through unilateral maintenance.</li>
+			</ul>
+			<p>This is conflict without argument: incompatibility stabilized through silence.</p>
+			<hr>
+			<h3>K. Asymmetry Lock-In Analysis (Ω × Θ)</h3>
+			<p><strong>Asymmetry form:</strong></p>
+			<ul>
+			<li>Differential control over timing and acknowledgment.</li>
+			</ul>
+			<p><strong>Lock-in mechanism:</strong></p>
+			<ul>
+			<li>Under <strong>Θ</strong>, waiting becomes more expensive than proceeding blind.</li>
+			<li>Under <strong>Ω</strong>, silence is cheaper than response for R₂, and costlier than exit for R₁.</li>
+			<li>The system selects silence as the least expensive stabilizer.</li>
+			</ul>
+			<p>This is a structural attractor, not a strategy.</p>
+			<hr>
+			<h3>L. χ-Availability Test (Distance Under Load)</h3>
+			<p><strong>Formal status:</strong> Χ exists
+			<strong>Effective status:</strong> Χ is <strong>priced</strong></p>
+			<p>Indicators:</p>
+			<ul>
+			<li>Pausing or escalating is available in principle but punished in consequence.</li>
+			<li>Attempts to activate Χ increase exposure or reputational risk.</li>
+			<li>Silence remains protected while interruption is penalized.</li>
+			</ul>
+			<p>Distance no longer stabilizes; it amplifies cost.</p>
+			<hr>
+			<h3>M. Tragedy Clause (Non-Correctability)</h3>
+			<p>This configuration is tragic in the PMS sense:</p>
+			<ul>
+			<li>No additional clarification, patience, or reframing restores <strong>Σ</strong> at acceptable cost.</li>
+			<li>Resolution requires a <strong>mode shift</strong>: formal governance, institutional escalation, or exit.</li>
+			<li>Continued coordination attempts deepen the loss.</li>
+			</ul>
+			<hr>
+			<h3>N. Terminal Structural Closure (PMS-CONFLICT)</h3>
+			<p>When <strong>Λ</strong> becomes the cheapest carrier under <strong>Ω across Θ</strong>, coordination ends without decision.
+			Conflict stabilizes not as disagreement, but as <strong>endless waiting with asymmetric exposure</strong>.</p>
+			<p>What appears as politeness functions as control.
+			What appears as patience functions as cost absorption.
+			What appears as neutrality functions as leverage.</p>
+			<p>This outcome is neither a failure of communication nor of goodwill.
+			It is the predictable result of a system where <strong>non-events are cheaper than events</strong>, and where <strong>integration requires a response that the structure no longer affords</strong>.</p>
+		</section>
+	</body>
+</html>

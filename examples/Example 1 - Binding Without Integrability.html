@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <style>
+	      :root {
+	        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	        --color-text: #111;
+	        --color-muted: #555;
+	        --color-accent: #333;
+	        --color-border: #ddd;
+	        --color-bg: #fafafa;
+	      }
+
+	      * {
+	        box-sizing: border-box;
+	      }
+
+	      html, body {
+	        margin: 0;
+	        padding: 0;
+	      }
+
+	      body {
+	        font-family: var(--font-body);
+	        color: var(--color-text);
+	        background: white;
+	        line-height: 1.5;
+	        font-size: 14px;
+	      }
+
+	      blockquote {
+	        margin: 0 0 16px;
+	        padding: 0 1em;
+	        color: #57606a;
+	        border-left: 0.25em solid #d0d7de;
+	      }
+
+	      .page {
+	        max-width: 900px;
+	        margin: 0 auto;
+	        padding: 32px 24px 64px;
+	        background: white;
+	      }
+
+	      header {
+	        border-bottom: 1px solid var(--color-border);
+	        margin-bottom: 24px;
+	        padding-bottom: 16px;
+	      }
+
+	      header h1 {
+	        font-size: 1.9rem;
+	        margin: 0 0 8px;
+	        letter-spacing: 0.02em;
+	      }
+
+	      header .subtitle {
+	        font-size: 0.95rem;
+	        color: var(--color-muted);
+	        margin-bottom: 8px;
+	      }
+
+	      header .meta {
+	        font-size: 0.8rem;
+	        color: var(--color-muted);
+	      }
+
+	      h2 {
+	        margin-top: 15px;
+	        margin-bottom: 4px;
+	        font-size: 1.15rem;
+	        border-bottom: 1px solid var(--color-border);
+	        padding-bottom: 4px;
+	      }
+
+	      h3 {
+	        margin-top: 18px;
+	        margin-bottom: 4px;
+	        font-size: 1rem;
+	        color: var(--color-accent);
+	      }
+
+	      p {
+	        margin: 4px 0 8px;
+	      }
+
+	      ul {
+	        margin: 4px 0 10px 1.2rem;
+	        padding: 0;
+	        line-height: 1.1em;
+	      }
+
+	      li {
+	        margin-bottom: 3px;
+	      }
+
+	      .code-inline {
+	        font-family: var(--font-mono);
+	        font-size: 0.9em;
+	        background: #f5f5f5;
+	        padding: 1px 4px;
+	        border-radius: 3px;
+	      }
+
+	      .box {
+	        border: 1px solid var(--color-border);
+	        border-radius: 4px;
+	        padding: 8px 10px;
+	        background: #fcfcfc;
+	        margin: 8px 0 12px;
+	        line-height: 1.05em;
+	      }
+
+	      .box-title {
+	        font-weight: 600;
+	        font-size: 0.9rem;
+	        margin-bottom: 4px;
+	      }
+
+	      .small {
+	        font-size: 0.85rem;
+	        color: var(--color-muted);
+	      }
+
+	      .two-column {
+	        display: flex;
+	        flex-wrap: wrap;
+	        gap: 16px;
+	      }
+
+	      .two-column > div {
+	        flex: 1 1 260px;
+	        min-width: 0;
+	      }
+
+	      .table {
+	        width: 100%;
+	        border-collapse: collapse;
+	        margin: 8px 0 12px;
+	        font-size: 0.77rem;
+	        line-height: 1.2em;
+	      }
+
+	      .table th,
+	      .table td {
+	        border: 1px solid var(--color-border);
+	        padding: 4px 6px;
+	        vertical-align: top;
+	      }
+
+	      .table th {
+	        background: #f5f5f5;
+	        font-weight: 600;
+	      }
+
+	      .tag {
+	        display: inline-block;
+	        border-radius: 999px;
+	        border: 1px solid var(--color-border);
+	        padding: 1px 8px;
+	        font-size: 0.75rem;
+	        margin-right: 4px;
+	        margin-bottom: 3px;
+	      }
+
+	      .placeholder {
+	        font-style: italic;
+	        color: var(--color-muted);
+	      }
+
+	      .pagebreak{
+	        page-break-before:always
+	      }
+
+	      @media print {
+	        body {
+	          background: white;
+	        }
+	        .page {
+	          box-shadow: none;
+	          padding: 24px 18px;
+	        }
+	        a[href]:after {
+	          content: "";
+	        }
+	      }
+	    </style>
+		<title>PMS-CONFLICT — Example 1: Binding Without Integrability</title>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS-CONFLICT</strong></h1>
+			<h2><em>Example 1: Binding Without Integrability</em></h2>
+		</header>
+		<section id="content">
+			<p><strong>Reduced signature:</strong>
+			<code>Σ ↓  +  Ψ ↑  +  Ω ↑  +  Θ ↑  +  Χ priced</code></p>
+			<p><strong>Reading discipline:</strong>
+			This signature is <strong>not a proof chain</strong>. It marks the <strong>terminal conflict threshold</strong> where:</p>
+			<ul>
+			<li><strong>Σ (integration)</strong> no longer consolidates shared continuation,</li>
+			<li><strong>Ψ (binding)</strong> persists and intensifies despite Σ failure,</li>
+			<li><strong>Ω (asymmetry)</strong> differentiates cost exposure across roles,</li>
+			<li><strong>Θ (temporality)</strong> hardens prior commitments into sunk costs,</li>
+			<li><strong>Χ (distance)</strong> remains formally available but becomes <em>priced</em> or delegitimized.</li>
+			</ul>
+			<p>This configuration satisfies the <strong>PMS-CONFLICT terminal core condition</strong>:</p>
+			<blockquote>
+			<p>incompatibility stabilized under binding, time, cost, and constrained distance.</p>
+			</blockquote>
+			<hr>
+			<h3>J. Conflict Domain Classification (PMS-CONFLICT)</h3>
+			<p><strong>Domain status:</strong>
+			<strong>CONFLICT (terminal descriptive regime)</strong></p>
+			<p><strong>Justification:</strong></p>
+			<ul>
+			<li>The system no longer possesses an <strong>internal reintegration grammar</strong>.</li>
+			<li>Further Σ attempts <strong>increase cost</strong> without restoring viability.</li>
+			<li>Continuation persists <strong>only via obligation maintenance</strong>, not coordination.</li>
+			<li>Exit, pause, or reframing (<strong>Χ</strong>) is structurally discouraged through cost attribution.</li>
+			</ul>
+			<p>This marks the transition from <strong>CRITIQUE failure</strong> to <strong>CONFLICT stabilization</strong>.</p>
+			<hr>
+			<h3>K. Asymmetry Lock-In Analysis (Ω × Θ)</h3>
+			<p><strong>Asymmetry form:</strong></p>
+			<ul>
+			<li>Not dominance or coercion,</li>
+			<li>but <strong>differential exposure to maintenance costs over time</strong>.</li>
+			</ul>
+			<p><strong>Lock-in mechanism:</strong></p>
+			<ul>
+			<li>Under <strong>Θ</strong>, revising or releasing Ψ becomes more expensive than carrying incoherence.</li>
+			<li>Under <strong>Ω</strong>, continuity roles pay repeatedly; declaration roles pay once.</li>
+			<li>The system therefore selects the <strong>cheapest stable configuration</strong>:
+			binding without integration.</li>
+			</ul>
+			<p>This is a <strong>structural attractor</strong>, not a strategic choice.</p>
+			<hr>
+			<h3>L. χ-Availability Test (Distance Under Load)</h3>
+			<p><strong>Formal status:</strong> Χ exists
+			<strong>Effective status:</strong> Χ is <strong>priced</strong></p>
+			<p>Indicators:</p>
+			<ul>
+			<li>Distance is rhetorically available (“we can talk anytime”),</li>
+			<li>but practically punished (loss of trust, reliability framing, escalation risk).</li>
+			<li>Attempts to activate Χ increase exposure rather than reducing load.</li>
+			</ul>
+			<p>This satisfies the PMS-CONFLICT condition:</p>
+			<blockquote>
+			<p>distance remains nominal but no longer functions as a stabilizer.</p>
+			</blockquote>
+			<hr>
+			<h3>M. Tragedy Clause (Non-Correctability)</h3>
+			<p>This configuration is <strong>tragic in the PMS sense</strong>, meaning:</p>
+			<ul>
+			<li>No further internal operator rearrangement can restore integrability.</li>
+			<li>There is <strong>no missing insight</strong>, <strong>no better framing</strong>, <strong>no moral correction</strong> that reopens Σ at acceptable cost.</li>
+			<li>Any continuation requires a <strong>mode shift</strong>:
+			governance, institutionalization, adjudication, or exit.</li>
+			</ul>
+			<p>This is <strong>not pessimism</strong> — it is a <strong>boundary condition</strong> of the descriptive grammar.</p>
+			<hr>
+			<h3>N. Terminal Structural Closure (PMS-CONFLICT)</h3>
+			<p>Once <strong>Ψ outlives Σ</strong> under <strong>Ω across Θ</strong>, conflict no longer announces itself through disagreement.
+			It stabilizes as <strong>continuity without meaning</strong>.</p>
+			<p>What looks like reliability is structurally obligation inertia.
+			What looks like commitment is cost avoidance under irreversibility.
+			What looks like cooperation is the absence of an affordable stop.</p>
+			<p>At this point:</p>
+			<ul>
+			<li>Further integration talk is <strong>Φ-substitution</strong>,</li>
+			<li>further binding is <strong>Ψ amplification without coordination</strong>,</li>
+			<li>and further patience accelerates <strong>Θ-hardening</strong>.</li>
+			</ul>
+			<p>Conflict here is not a failure to try harder.
+			It is the <strong>point at which trying has become the cheapest way to avoid admitting non-integrability</strong>.</p>
+		</section>
+	</body>
+</html>
+
