@@ -284,7 +284,6 @@ and why persistence can be structurally rational.
 | Custom GPTs     | https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant                                                                                                                                                  | Interactive PMS.yaml exploration & validation                                                   |
 |                 | https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology                                                                                                                 | Applied praxeological anthropology assistant                                                    |
 
-
 ---
 
 ## 🤝 Contributing
@@ -316,5 +315,6 @@ Out of scope:
 
 Maintained by **tz-dev**.
 Please use GitHub issues for questions or structural discussion.
+
 
 
