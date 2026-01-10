@@ -1,6 +1,6 @@
 # PMS–CONFLICT
 
-## Conflict as Cost Geometry - Continuity Load, Endpoint Pressure, and Differential Liability Across Roles
+## Conflict as Cost Geometry: Continuity Load, Endpoint Pressure, and Differential Liability Across Roles
 
 **PMS–CONFLICT is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, distance, and self-binding.
 
@@ -315,6 +315,7 @@ Out of scope:
 
 Maintained by **tz-dev**.
 Please use GitHub issues for questions or structural discussion.
+
 
 
 
