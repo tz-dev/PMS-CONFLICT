@@ -23,6 +23,8 @@ Instead, it shows:
 * why **distance (Χ)** becomes contested, priced, or delegitimized,
 * and why CONFLICT is a **terminal PMS-domain layer**, beyond which only downstream governance or institutional handling remains.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18208295.svg)](https://doi.org/10.5281/zenodo.18208295)
+
 ---
 
 ## What PMS–CONFLICT Is
@@ -314,4 +316,5 @@ Out of scope:
 
 Maintained by **tz-dev**.
 Please use GitHub issues for questions or structural discussion.
+
 
