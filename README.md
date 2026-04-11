@@ -25,7 +25,7 @@ Instead, it shows:
 * how **publicness** and **misuse gradient** amplify drift without changing the PMS grammar,
 * and why CONFLICT is a **terminal PMS-domain layer**, beyond which only downstream governance, institutionalization, decision, or evaluation remains.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18208295.svg)](https://doi.org/10.5281/zenodo.18208295)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19511670.svg)](https://doi.org/10.5281/zenodo.19511670)
 
 ---
 
