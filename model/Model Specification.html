@@ -200,11 +200,11 @@
           (Χ + reversibility + D). No person-typing, diagnosis, or prescriptive authority.
         </div>
         <div class="meta">
-          Version: PMS-CONFLICT_1.0 &middot;
+          Version: PMS-CONFLICT_1.1 &middot;
           Spec basis: <span class="code-inline">PMS-CONFLICT.yaml</span><br />
-          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.2 Thinking)<br />
-          Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "production"</span>)<br />
-          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.1"</span>)<br />
+          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.4 Thinking)<br />
+          Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "production_overlay"</span>)<br />
+          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.3"</span>)<br />
           Repo: <span class="code-inline">https://github.com/tz-dev/PMS-CONFLICT</span>
         </div>
       </header>
@@ -215,24 +215,30 @@
 
         <p>
           This document specifies the <em>PMS-CONFLICT</em> overlay in a concise, technical form. It is based on the YAML file
-          <span class="code-inline">PMS-CONFLICT.yaml</span> (with <span class="code-inline">schema_version = "PMS-CONFLICT_1.0"</span>)
+          <span class="code-inline">PMS-CONFLICT.yaml</span> (with <span class="code-inline">schema_version = "PMS-CONFLICT_1.1"</span>)
           and makes its structure, concepts, and guardrails transparent for human readers and software systems.
         </p>
 
         <p>
-          PMS-CONFLICT is an <strong>application profile</strong> (overlay) of the Praxeological Meta-Structure (PMS; Δ–Ψ).
+          PMS-CONFLICT is a <strong>paper-specific application overlay</strong> of the Praxeological Meta-Structure (PMS; Δ–Ψ).
           It does <strong>not</strong> redefine operators, dependencies, or derived structures of PMS. Instead, it formalizes a
           <strong>conflict grammar</strong>: minimal conditions and structural signatures for when incompatibility becomes
-          stabilized under binding (Ψ), asymmetry (Ω), temporality (Θ), recontextualization pressure (Φ), and priced/asymmetric
+          stabilized under binding (Ψ), asymmetry (Ω), temporality (Θ), recontextualization pressure (Φ), and priced or asymmetric
           distance (Χ), with predictable drift under load (Λ/Α and exposure scaling). The overlay enforces a non-moral,
           non-clinical application firewall:
           <span class="code-inline">Χ (Distance) + reversibility + D (dignity-in-practice)</span>.
         </p>
 
+        <p>
+          The overlay remains <strong>strictly subordinate</strong> to the current PMS repository reference specification
+          (<span class="code-inline">PMS_1.3</span>). It is bounded to this grammar and must not be read as claiming
+          monopoly over conflict intelligibility as such.
+        </p>
+
         <p>The specification covers, in particular:</p>
         <ul>
           <li>
-            the <strong>schema_meta</strong> block (model identity, status, authorship, dependency on PMS_1.1, repository and paper references);
+            the <strong>schema_meta</strong> block (model identity, repository role, status, authorship, dependency on PMS_1.3, repository and paper references);
           </li>
           <li>
             the <strong>PMS reference block</strong> (<span class="code-inline">operator_reference</span>) as a strict non-redefining dependency
@@ -246,6 +252,10 @@
             as non-operators that amplify Ω/Θ/Φ/Α without adding primitives;
           </li>
           <li>
+            <strong>paper_lens</strong> as the paper-to-schema bridge for scope guardrails, methodological boundedness,
+            scope limit of tragic legibility, terminal positioning, and downstream docking;
+          </li>
+          <li>
             <strong>non-operator constructs</strong> (conflict attractor, binding collision, asymmetry lock-in, exposure capture, dignity collapse)
             as descriptive labels only;
           </li>
@@ -256,13 +266,15 @@
             a <strong>drift catalogue</strong> (scene-bound failure modes) with structural signatures and typical markers;
           </li>
           <li>
-            <strong>scale matrices</strong> (second firewall, Θ-history / “young Α-field”, institutionalized Χ scaling, application boundary scaling,
-            terminal positioning projection);
+            <strong>scale matrices</strong> (second firewall, Θ-history / “young Α-field”, institutionalized Χ scaling,
+            application boundary scaling, terminal positioning projection, and derived axes projection);
           </li>
           <li>
-            an optional <strong>derived axes projection</strong> (structural-only; explicitly no scoring or person evaluation).
+            reusable safety interfaces for public, institutional, or application-bound contexts.
           </li>
         </ul>
+
+        <div class="pagebreak">
 
         <div class="box">
           <div class="box-title">Core idea</div>
@@ -270,7 +282,8 @@
             PMS-CONFLICT turns “conflict” into an operator-readable regime: incompatibility that remains
             legible but non-integrable once Σ no longer carries jointly under Θ/Ω with priced or asymmetric Χ,
             while Φ and Α stabilize substitutes and Λ becomes load-bearing. The overlay does not moralize,
-            does not diagnose persons, and does not authorize governance or enforcement.
+            does not diagnose persons, does not authorize governance or enforcement, and does not claim to exhaust
+            conflict intelligibility under all possible rival grammars.
           </p>
         </div>
       </section>
@@ -294,15 +307,15 @@
             <tr>
               <td><span class="code-inline">schema_version</span></td>
               <td>
-                Version string identifying the release of the conflict-layer overlay
-                (<span class="code-inline">"PMS-CONFLICT_1.0"</span>).
+                Version string identifying the current release of the conflict-layer overlay
+                (<span class="code-inline">"PMS-CONFLICT_1.1"</span>).
               </td>
               <td>Versioning / compatibility / citation</td>
             </tr>
             <tr>
               <td><span class="code-inline">schema_meta</span></td>
               <td>
-                Model identity, status, last update, authorship, dependency on PMS_1.1, repository and paper source references.
+                Model identity, repository role, status, last update, authorship, dependency on PMS_1.3, repository and paper source references.
               </td>
               <td>Meta-information / dependency statement</td>
             </tr>
@@ -330,7 +343,8 @@
             <tr>
               <td><span class="code-inline">paper_lens</span></td>
               <td>
-                Scope guardrails, terminal positioning, core definition, and downstream docking notes.
+                Scope guardrails, methodological boundedness, scope limit of tragic legibility,
+                terminal positioning, core definition, and downstream docking notes.
               </td>
               <td>Paper-to-schema semantics bridge</td>
             </tr>
@@ -358,17 +372,10 @@
             <tr>
               <td><span class="code-inline">scale_matrices</span></td>
               <td>
-                Scaling blocks: second firewall, Θ-history / young Α-field, institutionalized Χ scaling,
-                application boundary scaling, terminal regime projection.
+                Scaling and projection blocks: second firewall, Θ-history / young Α-field, institutionalized Χ scaling,
+                application boundary scaling, terminal regime projection, and derived axes projection.
               </td>
-              <td>Anti-essentialization + application boundary system</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">derived_axes_projection</span></td>
-              <td>
-                Optional structural projection onto derived axes (A, C, R, E, D), explicitly non-scoring and non-personal.
-              </td>
-              <td>Readability layer (optional)</td>
+              <td>Anti-essentialization + application boundary + terminal positioning system</td>
             </tr>
           </tbody>
         </table>
@@ -391,14 +398,14 @@
           <div class="box">
             <div class="box-title"><span class="code-inline">PMS-CONFLICT (overlay)</span></div>
             <p class="small">
-              PMS-CONFLICT defines conflict as a <strong>terminal descriptive regime</strong> and adds
+              PMS-CONFLICT defines conflict as a <strong>terminal descriptive regime within this grammar</strong> and adds
               <em>reduced signatures</em>, <em>drift classes</em>, <em>scale matrices</em>, and
               <em>application boundaries</em>—without adding operators or importing procedures.
             </p>
             <ul class="small">
               <li>Terminal core marker: <span class="code-inline">Σ + Ψ + Ω + Θ + Χ</span> (reduced signature)</li>
               <li>Drift classes: Σ-incompatibility clash, binding collision, asymmetry lock-in, exposure capture, dignity collapse</li>
-              <li>Scale matrices: Θ-history / institutionalized Χ / application boundaries</li>
+              <li>Scale matrices: Θ-history / institutionalized Χ / application boundaries / terminal projection / derived axes projection</li>
               <li>Downstream docking note: governance layers are mode-shifts, not operator extensions</li>
             </ul>
           </div>
@@ -407,7 +414,7 @@
         <div class="box">
           <div class="box-title">Non-redefinition rule</div>
           <p class="small">
-            PMS-CONFLICT may provide application-facing glosses (e.g., “Χ as priced/asymmetric distance under Ω/Θ”),
+            PMS-CONFLICT may provide application-facing glosses (e.g., “Χ as priced or asymmetric distance under Ω/Θ”),
             but it must not modify PMS operator definitions, prerequisites, order, or derived structures.
             Canonical meaning remains in <span class="code-inline">PMS.yaml</span>.
           </p>
@@ -422,12 +429,12 @@
 
         <h3>3.1 Validity gate (application firewall)</h3>
         <p>
-          PMS-CONFLICT enforces a strict application gate. This gate constrains <em>use of the model</em>, not critique or rejection
-          of the model:
+          PMS-CONFLICT enforces a strict application gate. This gate constrains <em>use of the model</em>, not critique,
+          refusal, rejection, or revision of the model:
         </p>
         <ul>
           <li><strong>Χ (Distance):</strong> meta-position and stop-capability must remain practically activatable under load.</li>
-          <li><strong>Reversibility:</strong> readings remain revisable, scene-bound, configuration-specific; no irreversible interpretive capture.</li>
+          <li><strong>Reversibility:</strong> readings remain revisable, scene-bound, and non-final; no irreversible interpretive capture.</li>
           <li><strong>D (Dignity-in-practice):</strong> no shaming, ranking, humiliation, or person labeling; critique targets regimes and cost topologies only.</li>
         </ul>
 
@@ -439,6 +446,21 @@
           <li>coercive binding (Ψ→Other), threats, exposure-as-sanction, or “operator language as leverage”;</li>
           <li>using drift labels to justify enforcement, selection, sorting, or public pillory.</li>
         </ul>
+
+        <h3>3.3 Methodological boundedness</h3>
+        <p>
+          PMS-CONFLICT develops a structural grammar of stabilized incompatibility under binding, asymmetry, and temporality.
+          It does not claim to exhaust everything conflict is or could become under other analytical grammars.
+          Terminality here names the end of reintegration resources within <em>this</em> grammar, not the impossibility
+          of every conceivable alternative framing.
+        </p>
+
+        <h3>3.4 Scope limit of tragic legibility</h3>
+        <p>
+          The tragedy clause should not be read as an inflationary claim that mature conflict is always or finally tragic.
+          Its narrower claim is that tragedy remains structurally possible even under maintained distance, reflexivity,
+          and responsibility constraints, and that some conflicts become more legible without becoming more integrable.
+        </p>
 
         <div class="box">
           <div class="box-title">Misuse hint</div>
@@ -459,13 +481,13 @@
         <p>
           PMS-CONFLICT defines conflict via <strong>operator-readable regime markers</strong> and drift signatures rather than
           intent, rhetoric, or moral claims. “Conflict” in this overlay denotes stabilized incompatibility once joint integration
-          becomes structurally non-viable at acceptable cost.
+          becomes structurally non-viable at acceptable cost <em>within this descriptive architecture</em>.
         </p>
 
         <h3>4.1 Minimal regime claim (domain-level)</h3>
         <div class="box small">
           <span class="code-inline">
-            CONFLICT (domain claim) = incompatibility stabilized under Ψ across Θ with Ω gradients and priced/asymmetric Χ, while Σ fails jointly
+            CONFLICT (domain claim) = incompatibility stabilized under Ψ across Θ with Ω gradients and priced or asymmetric Χ, while Σ fails jointly
           </span>
         </div>
 
@@ -491,7 +513,7 @@
               <td><strong>Stabilized pattern</strong><br /><span class="code-inline">CONFLICT_stabilized_pattern</span></td>
               <td><span class="code-inline">["Α","Ω","Θ","Ψ","Χ"]</span></td>
               <td>
-                Incompatibility stabilizes as a repeatable attractor. Distance remains present but priced/asymmetric; scripts handle pressure without restoring Σ.
+                Incompatibility stabilizes as a repeatable attractor. Distance remains present but priced or asymmetric; scripts handle pressure without restoring Σ.
               </td>
             </tr>
           </tbody>
@@ -507,7 +529,7 @@
         <div class="box">
           <div class="box-title">Terminal claim (paper-aligned; quote-ready)</div>
           <p class="small">
-            Within the PMS-domain stack used here, CONFLICT is the terminal domain layer:
+            Within the PMS-domain stack developed here, CONFLICT functions as the terminal domain layer:
             beyond maximal Δ–Ψ load under Θ/Ω/Χ, the model yields no further internal reintegration grammar—only downstream governance,
             institutionalization, decision, or evaluation.
           </p>
@@ -573,7 +595,7 @@
           <tbody>
             <tr>
               <td><strong>Conflict attractor</strong><br /><span class="code-inline">Α_conflict</span></td>
-              <td>Stabilized repeat pattern that locks incompatibility into a predictable regime under Ω/Θ with priced/asymmetric Χ.</td>
+              <td>Stabilized repeat pattern that locks incompatibility into a predictable regime under Ω/Θ with priced or asymmetric Χ.</td>
               <td><span class="code-inline">[Α, Ω, Θ, Ψ, Χ]</span></td>
             </tr>
             <tr>
@@ -583,7 +605,7 @@
             </tr>
             <tr>
               <td><strong>Asymmetry lock-in</strong></td>
-              <td>Exit/reflection costs become structurally asymmetric; Χ becomes a power gradient rather than a stabilizing resource.</td>
+              <td>Exit or reflection costs become structurally asymmetric; Χ becomes a power gradient rather than a stabilizing resource.</td>
               <td><span class="code-inline">[Ω, Θ, Χ]</span></td>
             </tr>
             <tr>
@@ -617,7 +639,7 @@
             <tr>
               <td><span class="code-inline">CONFLICT_terminal_core</span></td>
               <td><span class="code-inline">Σ, Ψ, Ω, Θ, Χ</span></td>
-              <td>Marks terminal descriptive regime (Σ no longer carries jointly under priced/asymmetric Χ).</td>
+              <td>Marks terminal descriptive regime within PMS-CONFLICT (Σ no longer carries jointly under priced or asymmetric Χ).</td>
             </tr>
             <tr>
               <td><span class="code-inline">CONFLICT_stabilized_pattern</span></td>
@@ -651,7 +673,7 @@
           <div class="box-title">Dependency hygiene reminder</div>
           <p class="small">
             Reduced signatures are shorthand. They do not negate PMS dependency relations (e.g., Χ prerequisites in PMS).
-            Any use of Χ as “priced/asymmetric” remains an overlay reading of access/cost conditions, not a new operator form.
+            Any use of Χ as “priced or asymmetric” remains an overlay reading of access/cost conditions, not a new operator form.
           </p>
         </div>
       </section>
@@ -728,7 +750,8 @@
 
         <p>
           Scale matrices are overlay projections that prevent predictable category errors:
-          essence-attribution, hidden procedure import, and conversion of description into enforcement.
+          essence-attribution, hidden procedure import, conversion of description into enforcement,
+          and unbounded downstream handoff.
         </p>
 
         <h3>8.1 Second firewall: “What CONFLICT is not”</h3>
@@ -742,14 +765,17 @@
 
         <h3>8.2 Θ-history / “young Α-field” scaling (anti-essentialization)</h3>
         <p class="small">
-          Θ-history is treated as a validity constraint: without explicit production conditions, stabilized conflict patterns are
-          predictably misread as essence claims. The scaling provides bands for Θ-pressure and Φ-frequency to keep readings structural.
+          Within the argument of this paper, Θ-history functions as a validity constraint against essentialization:
+          without explicit production conditions, stabilized conflict patterns are especially prone to being misread
+          as essence claims. The scaling provides bands for Θ-pressure and Φ-frequency to keep readings structural.
+          It is diagnostic rather than totalizing and does not offer an exhaustive sociology of modern conflict.
         </p>
 
         <h3>8.3 Institutionalized Χ scaling (role-external distance regime)</h3>
         <p class="small">
           This scaling describes how distance becomes role-external under Ω/Θ load. It distinguishes stabilization by explicit distance
-          regimes from invalid coercive “enforced distance” (FORMALLY INVALID under D).
+          regimes from invalid coercive “enforced distance” (FORMALLY INVALID under D). Trust is treated here as a derivative effect,
+          not as a premise.
         </p>
 
         <h3>8.4 Application boundary scaling (mode / publicness / misuse gradient)</h3>
@@ -766,6 +792,19 @@
             <strong>Misuse gradient:</strong> MG_LOW / MG_MIXED / MG_HIGH
           </p>
         </div>
+
+        <h3>8.5 Terminal positioning projection</h3>
+        <p class="small">
+          This projection fixes the terminal position of PMS-CONFLICT within the PMS-domain stack and adds the
+          “terminality without finality” clause: the limit concerns this descriptive architecture, not conflict
+          analysis as such.
+        </p>
+
+        <h3>8.6 Derived axes projection</h3>
+        <p class="small">
+          The derived axes projection is an optional readability layer inside the projection system. It remains structural-only,
+          non-scoring, and non-personal.
+        </p>
       </section>
 
       <div class="pagebreak"></div>
@@ -783,6 +822,7 @@
         <ul>
           <li><strong>Optional lens:</strong> not required for CONFLICT validity; no new operators.</li>
           <li><strong>Interface role:</strong> controls transmission into evaluation contexts under exposure hardening.</li>
+          <li><strong>Non-necessity clause:</strong> downstream handling is conditional, not constitutive; PMS-CONFLICT remains complete as a domain-layer paper without downstream application.</li>
           <li><strong>Non-mixing rule:</strong> descriptive outputs remain descriptive; evaluation artifacts are explicitly marked as overlays.</li>
         </ul>
 
@@ -809,16 +849,26 @@
         <div class="box">
           <div class="box-title">Terminal claim</div>
           <p class="small">
-            Within the PMS-domain stack used here, CONFLICT is the terminal domain layer:
+            Within the PMS-domain stack developed here, CONFLICT functions as the terminal domain layer:
             beyond maximal Δ–Ψ load under Θ/Ω/Χ, the model yields no further internal reintegration grammar—only downstream governance,
             institutionalization, decision, or evaluation.
           </p>
         </div>
 
         <div class="box">
+          <div class="box-title">Terminality without finality</div>
+          <p class="small">
+            The terminal claim concerns the descriptive architecture of PMS-CONFLICT, not the finality of conflict analysis as such.
+            What reaches a limit is this grammar’s capacity to generate a further internal reintegration layer once incompatibility
+            has stabilized under Θ, Ω, Ψ, and costly or asymmetric Χ.
+          </p>
+        </div>
+
+        <div class="box">
           <div class="box-title">Canonical full stop sentence</div>
           <p class="small">
-            This paper does not continue into solutions. It ends where praxis becomes tragically legible but no longer integrable.
+            This paper does not continue into solutions. It ends where praxis becomes tragically legible but no longer integrable
+            within this descriptive pathway.
           </p>
         </div>
       </section>
@@ -832,6 +882,12 @@
         <p>
           PMS-CONFLICT may optionally project structural configurations onto PMS derived axes (A, C, R, E, D) for readability.
           This is not a maturity score and not a person-level evaluation. Numeric scoring, ranking, or typology outputs are disallowed.
+        </p>
+
+        <p>
+          The projection is intended to capture axis-tendencies under CONFLICT-regimes, especially under Σ-failure,
+          Θ-hardening, Ω-gradients, and priced or asymmetric Χ. It remains a readability layer, not a second ontology
+          or a scoring framework.
         </p>
 
         <div class="box">
@@ -866,6 +922,7 @@
           <li>record cost topology and transmission risk via overlays (P, MG) without introducing prescriptions;</li>
           <li>apply scale matrices to prevent essentialization and category errors in public/institutional contexts;</li>
           <li>enforce application boundaries (mode/publicness/misuse declaration) when excerpts travel;</li>
+          <li>distinguish descriptive conflict mapping from downstream governance or evaluation overlays;</li>
           <li>output scene-bound mappings that remain depersonalized and dignity-constrained.</li>
         </ul>
 
@@ -874,18 +931,19 @@
         <ul>
           <li>activate the validity gate (Χ + reversibility + D) as interaction constraints;</li>
           <li>require scene-bounded inputs and refuse person-typing outputs;</li>
-          <li>output (when requested) reduced signature, drift class, overlays (P/MG), and relevant scale matrix banding.</li>
+          <li>output (when requested) reduced signature, drift class, overlays (P/MG), and relevant scale matrix banding;</li>
+          <li>require explicit mode/publicness/misuse declaration whenever downstream application overlays are invoked.</li>
         </ul>
 
         <h3>12.2 Technical reference and license</h3>
         <p class="small">
           <strong>Technical reference:</strong><br />
-          <em>PMS-CONFLICT.yaml – Conflict Overlay Specification (PMS-CONFLICT_1.0)</em>
+          <em>PMS-CONFLICT.yaml – Conflict Overlay Specification (PMS-CONFLICT_1.1)</em>
         </p>
 
         <p class="small">
           <strong>Base dependency:</strong><br />
-          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.1)</em><br />
+          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.3)</em><br />
           (canonical operator definitions and dependencies)
         </p>
 

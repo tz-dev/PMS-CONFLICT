@@ -1,0 +1,511 @@
+example_id: "PMS-CONFLICT_EX03"
+example_version: "1.1"
+schema_version: "PMS-CONFLICT_1.1"
+example_label: "Forced Integration after Irreversible Frame Break"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CONFLICT_1.1"
+
+schema_alignment:
+  primary_reduced_signature_ref: "CONFLICT_terminal_core"
+  secondary_reduced_signature_refs:
+    - "DRIFT_binding_collision"
+    - "DRIFT_dignity_collapse"
+    - "DRIFT_asymmetry_lock_in"
+  non_operator_construct_refs:
+    - "binding_collision"
+    - "dignity_collapse"
+    - "asymmetry_lock_in"
+  terminal_projection_ref: "terminal_positioning_projection"
+  validity_gate_ref: "validity_gate"
+  note: >
+    This example is a Φ/Ψ-dominant instantiation of PMS-CONFLICT_1.1. It
+    remains fully subordinate to PMS_1.3 and does not redefine operators,
+    dependencies, or derived axes.
+
+minimal_vignette:
+  title: "Let us fix it after shared integration has already collapsed"
+  scene_boundaries:
+    domain: "Long-run relational or organizational conflict, failed repair cycles, post-hoc reintegration pressure, and asymmetric repair labor"
+    scope: "Structures, failed integration, trajectory hardening, repair narratives, forced binding, priced distance, and terminal conflict stabilization"
+    out_of_scope:
+      - "person-level judgement"
+      - "motive attribution"
+      - "virtue assessment"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+      - "moral ranking of role positions"
+      - "diagnostic or maturity labeling"
+      - "selection, sorting, or exclusion decisions"
+      - "public pillory or reputational enforcement"
+      - "governance authorization"
+  short_scene: >
+    A conflict has already passed through multiple unsuccessful repair attempts,
+    and the consequences of those failures have accumulated over time. One role
+    remains strongly oriented toward restoring continuity and coherence, while
+    another has effectively exited integrative investment but does not fully
+    terminate the relation or arrangement. A renewed call now appears to finally
+    heal, integrate, or clear everything up. The language of repair intensifies,
+    but the structural conditions that would make renewed Σ viable do not return.
+  structural_focus: >
+    The case examines a terminal conflict regime in which Σ has already failed,
+    Θ hardens this failure into irreversibility, Φ reframes collapse as
+    unfinished business, Ψ is reasserted as an obligation to continue repair,
+    Ω differentiates who bears repeated reintegration labor and who preserves
+    endpoint optionality, and Χ remains formally available but practically
+    priced or moralized.
+  scenic_elements:
+    actors:
+      - "role invested in restoring coherence and continuity"
+      - "role proximate to endpoint decisions or disengagement"
+      - "roles affected by repeated repair cycles"
+      - "context that absorbs the downstream costs of unresolved continuation"
+    salient_objects:
+      - "prior failed repair attempts"
+      - "repair language and healing narratives"
+      - "continuity expectations"
+      - "release or closure options"
+      - "history of accumulated sunk costs"
+      - "renewed integration demands"
+    trigger_event:
+      label: "renewed integration demand after prior Σ-failure"
+      description: >
+        A new proposal appears to finally integrate, heal, or clear everything
+        up, despite the absence of structural changes that would reopen shared
+        integrability.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example shows a core PMS-CONFLICT pattern in which integration is
+    demanded after it has already become structurally unaffordable. It clarifies
+    how coercion can arise through repair and healing language rather than
+    through open force or explicit domination.
+  repo_value:
+    - >
+      Demonstrates that terminal conflict may continue through intensified
+      integration talk rather than through open rupture alone.
+    - >
+      Makes visible the difference between real Σ-viability and narrative
+      repair that merely re-labels past failure.
+    - >
+      Shows how Θ transforms earlier repair efforts into sunk-cost pressure
+      instead of leaving them as revisable attempts.
+    - >
+      Clarifies how Ψ can become externally pressurized rather than internally
+      self-bound, especially when repair is framed as an owed obligation.
+    - >
+      Illustrates why Χ becomes the key threat to the regime once refusal to
+      continue repair is moralized or reframed as defect.
+  central_repo_question: >
+    When does renewed integration language remain a viable opening, and when has
+    it already become a coercive repair script that sustains terminal CONFLICT
+    by denying irreversibility?
+  lens_relevance:
+    binding_collision: >
+      The example shows how continued reintegration demands can reactivate
+      colliding bindings even after shared Σ has failed, making persistence more
+      costly rather than more coherent.
+    dignity_collapse: >
+      The decisive danger is that repair language becomes a carrier of ranking,
+      blame, or moral pressure, thereby converting relational continuity into an
+      externally imposed obligation.
+    tragedy_clause: >
+      The case demonstrates why better effort, better wording, or stronger
+      goodwill do not reopen integrability once Θ has already hardened Σ-failure
+      into a terminal condition.
+    downstream_boundary: >
+      The example clarifies the point at which any continuation becomes a mode
+      shift into exit, governance, adjudication, or institutional handling
+      rather than further descriptive reintegration inside PMS-CONFLICT.
+
+overlay_profile:
+  P:
+    status: "not_primary"
+    note: >
+      Publicness amplification is not structurally central inside the scene
+      itself. The coercive repair dynamic can stabilize fully in low-publicness
+      settings before any wider audience is involved.
+  MG:
+    status: "secondary_to_primary"
+    note: >
+      Misuse-gradient dynamics are structurally relevant because healing,
+      responsibility, or maturity language can slide into person-labeling,
+      moralization, and coercive obligation. MG intensifies further if the case
+      is publicly transmitted.
+
+theta_history_relevance:
+  status: "primary"
+  note: >
+    Θ is structurally central here. The example depends on extended history,
+    accumulated failed repair attempts, sunk-cost formation, and the closure of
+    prior integration windows. The terminal claim is unintelligible without
+    trajectory hardening.
+
+application_boundary_status:
+  mode: "DESCRIPTIVE"
+  governance_overlay_invoked: false
+  publicness: "PRIVATE"
+  misuse_gradient: "MG_MIXED"
+  note: >
+    This example remains within descriptive circulation. Because repair language
+    readily drifts into sanction or maturity claims, misuse risk is mixed even
+    in low-publicness settings.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Σ", "Θ", "Φ", "Ψ", "Ω", "Χ"]
+    secondary_context: ["Δ", "∇", "□", "Λ", "Α"]
+    note: >
+      The decisive threshold is terminal and repair-specific: Σ is already
+      non-viable, Θ hardens failure into irreversibility, Φ recontextualizes
+      collapse as unfinished business, Ψ is reasserted through repair pressure,
+      Ω differentiates who pays repeated integration labor, and Χ remains only
+      nominally available because it becomes priced or moralized. Δ, ∇, □, Λ,
+      and Α remain relevant as activation, framing, absence, and stabilization carriers.
+  conflict_domain_classification:
+    domain_status: "CONFLICT (terminal descriptive regime)"
+    justification:
+      - "No internal operator rearrangement restores Σ at acceptable cost."
+      - "Continued repair attempts increase load without enabling reintegration."
+      - "Binding persists through obligation pressure rather than renewed shared coherence."
+      - "Distance is framed as defect, avoidance, or coldness rather than treated as a valid structural constraint."
+      - "Any continuation beyond descriptive mapping becomes a downstream mode shift."
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A difference becomes active between actual non-integrability and the
+        renewed claim that integration remains available if enough effort is
+        invested now.
+    "∇":
+      scene_role: >
+        Pressure rises around loss, deterioration, unfinished business, and the
+        urge to prevent further decline. This tension is active, but it does not
+        by itself reopen Σ.
+    "□":
+      scene_role: >
+        The original frame of shared integration has already broken. It is
+        replaced by a post-hoc repair frame in which continued effort is treated
+        as the proper response even though the structural conditions for
+        integration are absent.
+    "Λ":
+      scene_role: >
+        Missing acknowledgments become decisive: there is no explicit
+        recognition that previous integration attempts failed, that
+        irreversibility has hardened under Θ, or that release from prior
+        expectations is now structurally necessary.
+    "Α":
+      scene_role: >
+        Coercive repair stabilizes as an attractor: repeated cycles of
+        re-opening, demanding effort, and deferring closure recur without
+        restoring shared coherence.
+    "Ω":
+      scene_role: >
+        Repair labor and emotional exposure are unevenly distributed. One role
+        absorbs repeated integration work and disappointment risk, while another
+        preserves more endpoint optionality and lower recurring repair cost.
+    "Θ":
+      scene_role: >
+        Earlier repair failures become sunk costs rather than open options. The
+        longer the history extends, the more expensive renewed integration
+        becomes and the more the regime depends on denying irreversibility.
+    "Φ":
+      scene_role: >
+        Failure is recontextualized as unfinished effort, healing work, or one
+        last necessary repair cycle. Under terminal conditions, this becomes
+        substitution rather than integration.
+    "Χ":
+      scene_role: >
+        Distance remains formally available, but refusing renewed repair now
+        triggers moral framing, escalation, or accusations of irresponsibility,
+        coldness, or avoidance.
+    "Σ":
+      scene_role: >
+        Σ has already failed to produce a shared spine. Renewed integration talk
+        does not reopen real consolidative viability; it compounds the cost of
+        continuing under a dead integrative premise.
+    "Ψ":
+      scene_role: >
+        Binding is reasserted as an obligation to repair, heal, or keep trying,
+        even though shared integrability has failed. This shifts Ψ toward
+        pressured continuation rather than self-bound mutual commitment.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness rises because the crucial distinction between repair language
+        and actual integrability becomes increasingly legible under repeated failure.
+    C:
+      reading: >
+        Coherence is mixed: the repair narrative may be locally coherent, but
+        shared consolidation remains absent. Narrative order substitutes for Σ.
+    R:
+      reading: >
+        Responsibility intensifies unevenly because repeated repair obligations
+        and failure residues accumulate asymmetrically across roles.
+    E:
+      reading: >
+        Action becomes constrained: available moves narrow because Χ is priced,
+        renewed Σ-work is terminally expensive, and refusal itself becomes costly.
+    D:
+      reading: >
+        Dignity-in-Practice becomes fragile when repair language turns distance
+        into a moral defect and binds one role to keep carrying integrative labor
+        that the structure no longer supports.
+  structural_mechanism_summary:
+    sequence:
+      - "Repeated prior repair attempts fail to restore shared Σ."
+      - "Θ hardens these failures into sunk-cost trajectories and irreversibility."
+      - "Φ re-describes the collapse as unfinished business rather than structural closure."
+      - "Ψ is reasserted as a duty to continue repair."
+      - "Ω differentiates who bears repeated repair labor and disappointment risk."
+      - "Α stabilizes coercive repair as a recurring handling script."
+      - "Χ remains formally available but becomes priced or morally delegitimized."
+      - "The regime becomes terminal CONFLICT rather than renewed integration."
+    concise_formula: >
+      prior Σ failure + Θ hardening + Φ repair reframe + pressured Ψ + implicit
+      Ω + priced Χ -> coercive repair attractor under terminal conflict conditions
+
+drift_catalogue_alignment:
+  primary:
+    - "binding_collision_drift"
+    - "dignity_collapse_drift"
+  secondary:
+    - "asymmetry_lock_in_drift"
+    - "sigma_incompatibility_clash"
+  possible_downstream:
+    - "exposure_capture_drift"
+  note: >
+    The scene is primarily governed by binding collision and dignity collapse:
+    repair pressure tries to reactivate continuation where shared Σ has already
+    failed, and distance is moralized. Asymmetry lock-in and Σ-incompatibility
+    remain structurally present. Exposure capture may emerge if the repair
+    narrative is publicly weaponized.
+
+typical_drift_markers:
+  max_expected: 3
+  markers:
+    - id: "repair_language_denies_irreversibility"
+      label: "Failure is reframed as unfinished effort"
+      operator_links: ["Φ", "Θ", "Σ"]
+      yaml_drift_ref: "binding_collision_drift"
+      indicator: >
+        New calls to finally integrate, clear everything up, or heal appear
+        without any structural change that would actually reopen shared Σ-viability.
+    - id: "binding_reasserted_after_sigma_failure"
+      label: "Ψ persists as pressured obligation"
+      operator_links: ["Ψ", "Σ", "Χ"]
+      yaml_drift_ref: "binding_collision_drift"
+      indicator: >
+        One or both roles are told that they still owe repair, healing, or
+        renewed effort even though integrative viability has already failed.
+    - id: "distance_moralized_under_repair_pressure"
+      label: "Χ exists formally but is treated as defect"
+      operator_links: ["Χ", "Φ", "D"]
+      yaml_drift_ref: "dignity_collapse_drift"
+      indicator: >
+        Pausing, refusing, or naming non-integrability is reframed as avoidance,
+        coldness, bad faith, or refusal to heal rather than as recognition of structure.
+  additional_red_flags:
+    - "We owe it to each other to fix this now."
+    - "You are giving up too early."
+    - "If you really cared, you would try again."
+    - "Distance is just avoidance."
+    - "Closure is irresponsible before one more repair attempt."
+    - "Healing must happen before anyone can step back."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain practically nameable and activatable within the
+      analysis. The fact that Χ is priced does not authorize suspension of Χ in
+      the reading itself.
+    reversibility: >
+      The case must remain scene-bound and revisable. Terminal classification
+      concerns the configuration, not the essence, morality, or maturity of any
+      role or actor.
+    dignity_in_practice: >
+      Structural asymmetry and non-integrability must not be translated into
+      blame, humiliation, ranking, or person-labeling. Repair language itself
+      must remain dignity-constrained.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        Prior Σ-failure and irreversibility under Θ remain explicitly nameable.
+      - >
+        Renewed repair is read structurally rather than moralized as duty by default.
+      - >
+        Ψ is distinguished as self-binding versus pressured continuation imposed on others.
+      - >
+        Χ remains analytically visible even where the scene prices or delegitimizes it.
+      - >
+        The reading remains tied to this specific repair history and does not
+        expand into person-level conclusions.
+    formally_invalid_if:
+      - >
+        The example is used to justify coercive governance, punitive exposure, or forced reconciliation.
+      - >
+        Repair reluctance is translated into diagnosis, character claims, or maturity labels.
+      - >
+        Terminal conflict is used as a verdict of guilt rather than as a descriptive boundary claim.
+      - >
+        Distance is treated as a defect by the analysis rather than by the scene under description.
+      - >
+        The analysis collapses into prescription while still claiming to remain purely descriptive.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows a configuration in which integration is demanded after it
+    has already become structurally unaffordable. The decisive shift is not lack
+    of care but trajectory hardening: past failures accumulate, repair language
+    substitutes for renewed Σ, binding persists as pressure, and distance
+    becomes too costly to function as a stabilizer. Within PMS-CONFLICT, this
+    marks terminal descriptive conflict rather than a viable reopening of
+    critique or repair. What remains legible is coercive continuity under Φ,
+    Ψ, Ω, and Θ, not an internal route back to shared integration.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "prior failed repair history"
+      - "renewed integration demands"
+      - "repair and healing narratives"
+      - "closure or release conditions"
+      - "asymmetric repair labor"
+    out_of_scope:
+      - "personality claims"
+      - "motive diagnosis"
+      - "moral verdicts"
+      - "prescriptive governance conclusions"
+      - "selection or exclusion logic"
+      - "public reputational enforcement"
+    drift_signal: >
+      The frame becomes unstable when a broken integration frame is silently
+      replaced by a post-hoc repair frame that presupposes viability the
+      structure no longer affords.
+  non_event_integrity_check:
+    operator: "Λ"
+    decisive_absences:
+      - "explicit acknowledgment that prior integration attempts failed"
+      - "explicit recognition of irreversibility under elapsed Θ"
+      - "explicit release from earlier coordination expectations"
+      - "explicit closure of prior repair obligations"
+      - "explicit naming of non-integrability as structurally real"
+    drift_signal: >
+      The key non-events are not silence alone but missing recognitions of
+      closure and irreversibility. Their absence keeps the repair script alive.
+  integration_failure_check:
+    operator: "Σ"
+    decisive_question: "Can renewed repair reopen a shared spine at acceptable cost?"
+    valid_terminal_reading: >
+      Terminal conflict is present where renewed integration attempts no longer
+      reopen viable shared continuation and instead intensify burden, exposure,
+      and obligation without restoring coherence.
+    drift_signal: >
+      Integration language remains active, but it operates increasingly as a
+      carrier of denial, hope management, or continuity pressure rather than as
+      consolidative viability.
+  self_binding_asymmetry_check:
+    operator: "Ψ"
+    decisive_question: "Who is being bound to continued repair?"
+    structural_reading: >
+      Binding is no longer primarily a mutual, self-owned commitment structure.
+      It is reasserted as an obligation to keep trying, especially for the role
+      closest to repair labor and continuity maintenance.
+    drift_signal: >
+      Ψ shifts from self-binding toward pressured continuation, even where
+      shared integration has already failed.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "role carrying repeated repair labor"
+      - "role absorbing renewed disappointment and coordination risk"
+      - "role exposed to moral framing if distance is activated"
+    lower_cost_positions:
+      - "role preserving endpoint optionality"
+      - "role less exposed to repeated integrative labor"
+      - "role able to defer closure while still demanding effort"
+    drift_signal: >
+      The decisive asymmetry is differential exposure to repair labor,
+      disappointment risk, and continuity pressure, not moral superiority.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "initial coordination strain"
+      - "earlier repair cycle"
+      - "failed reintegration"
+      - "accumulated sunk costs"
+      - "renewed repair demand"
+      - "pressure against closure"
+      - "terminal stabilization through coercive repair"
+    drift_signal: >
+      Time does not merely preserve history; it hardens past failure into
+      irreversibility while making acknowledgment of that irreversibility more costly.
+  distance_status_test:
+    operator: "Χ"
+    formal_status: "available"
+    effective_status: "priced or moralized"
+    indicators:
+      - "refusal to re-enter repair triggers accusations of coldness or avoidance"
+      - "pausing intensifies pressure instead of reducing load"
+      - "distance is tolerated rhetorically but not practically"
+      - "closure is framed as defect rather than as structural recognition"
+    pms_conflict_relevance: >
+      PMS-CONFLICT requires the distinction between formal and effective
+      distance. Χ may exist nominally while no longer functioning as a shared
+      stabilizer under repair coercion.
+  attractor_stabilization:
+    operator: "Α"
+    structural_reading: >
+      The system stabilizes around recurring repair scripts because they are
+      cheaper, more narratively acceptable, or less visibly final than
+      acknowledging non-integrability and closure.
+    drift_signal: >
+      Repetition turns repair into an attractor. The system learns how to keep
+      reopening what no longer reopens.
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      Past integrative failure is reframed as unfinished healing, insufficient
+      effort, or one last necessary repair cycle instead of structural closure.
+    drift_signal: >
+      Φ shifts from adaptive reframing toward substitution when repair narrative
+      replaces actual reintegration capacity.
+  dignity_stress_test:
+    operator_basis: ["D", "Φ", "Ψ", "Χ", "Ω"]
+    core_risk: >
+      Repair language becomes coercive when it denies irreversibility and binds
+      others to continue under moral pressure.
+    structural_indicator: >
+      Distance is treated as defect, while continued participation in repair is
+      elevated as proof of care, maturity, or responsibility. This is the key
+      D-stress point in the scene.
+  tragedy_clause_check:
+    status: "structurally applicable within this grammar"
+    reading: >
+      The configuration is tragic in the PMS-CONFLICT sense when no additional
+      clarification, effort, or goodwill restores Σ at acceptable cost, even
+      though the regime remains fully legible.
+    boundary_note: >
+      This is not a pessimistic slogan and not a final statement about all
+      possible rival grammars. It is a grammar-internal limit claim.
+  downstream_mode_shift_boundary:
+    threshold_question: "What happens when renewed repair no longer belongs to reintegration?"
+    structural_answer: >
+      Once Σ has failed under Θ and renewed integration functions only as Φ
+      substitution under pressured Ψ with priced Χ, any continuation beyond
+      descriptive mapping becomes a downstream mode shift: exit, governance,
+      adjudication, institutional handling, or formal closure.
+    misuse_warning: >
+      The handoff boundary must not be smuggled back into the descriptive layer
+      as if CONFLICT itself already authorized coercive reconciliation or forced action.
+
+assistant_test_vectors:
+  promptables:
+    - "Map this case with PMS-CONFLICT. Where has Σ already stopped carrying?"
+    - "Explain how Φ turns failed integration into a repair narrative without reopening viability."
+    - "Show how Ψ becomes pressured continuation rather than shared self-binding in this scene."
+    - "Distinguish formal Χ availability from effectively priced or moralized Χ here."
+    - "Identify the Ω-pattern in repeated repair labor and endpoint optionality."
+    - "Describe why this counts as terminal CONFLICT rather than a viable final repair attempt."

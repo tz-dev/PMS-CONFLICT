@@ -1,0 +1,480 @@
+example_id: "PMS-CONFLICT_EX01"
+example_version: "1.1"
+schema_version: "PMS-CONFLICT_1.1"
+example_label: "Binding Without Integrability in Shared Critical Infrastructure"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CONFLICT_1.1"
+
+schema_alignment:
+  primary_reduced_signature_ref: "CONFLICT_terminal_core"
+  secondary_reduced_signature_refs:
+    - "CONFLICT_stabilized_pattern"
+    - "DRIFT_binding_collision"
+    - "DRIFT_asymmetry_lock_in"
+  non_operator_construct_refs:
+    - "conflict_attractor_A_conflict"
+    - "binding_collision"
+    - "asymmetry_lock_in"
+  terminal_projection_ref: "terminal_positioning_projection"
+  validity_gate_ref: "validity_gate"
+  note: >
+    This example is written as a scene-bound instantiation of the terminal core
+    of PMS-CONFLICT_1.1. It remains fully subordinate to PMS_1.3 and does not
+    redefine operators, dependencies, or derived axes.
+
+minimal_vignette:
+  title: "Two interdependent units remain bound after shared integration has failed"
+  scene_boundaries:
+    domain: "Inter-organizational coordination, shared infrastructure, continuity obligations, and asymmetric maintenance burdens"
+    scope: "Structures, bindings, trajectories, cost exposure, priced distance, and terminal conflict stabilization"
+    out_of_scope:
+      - "person-level judgement"
+      - "motive attribution"
+      - "virtue assessment"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+      - "moral ranking of role positions"
+      - "selection, sorting, or exclusion decisions"
+      - "public pillory or reputational enforcement"
+      - "governance authorization"
+      - "diagnostic or maturity labeling"
+  short_scene: >
+    Two organizational units share a critical infrastructure layer such as data
+    systems, compliance architecture, customer continuity, or operational
+    support. Their strategic aims and working logics have drifted apart, and
+    repeated repair or reintegration efforts no longer produce a shared spine.
+    Even so, the arrangement persists because disengagement, pause, or
+    restructuring would impose unequal costs. The system continues, but no
+    longer as coordination in an integrative sense.
+  structural_focus: >
+    The case examines a terminal conflict regime in which Σ no longer carries,
+    Ψ persists, Ω differentiates who pays for continuity, Θ hardens prior
+    commitments into sunk-cost trajectories, and Χ remains formally available
+    but practically priced or delegitimized.
+  scenic_elements:
+    actors:
+      - "unit responsible for continuity and maintenance"
+      - "unit responsible for declaration, decision, or strategic direction"
+      - "compliance or infrastructure custodians"
+      - "downstream dependents affected by continuity failure"
+    salient_objects:
+      - "shared infrastructure"
+      - "continuity obligations"
+      - "service-level expectations"
+      - "repair attempts"
+      - "exit or pause options"
+      - "cost allocation over time"
+    trigger_event:
+      label: "failed reintegration cycle"
+      description: >
+        A further attempt at clarification, redesign, or repair does not reopen
+        shared integration. Instead, it increases costs while leaving the basic
+        incompatibility intact.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example shows the core PMS-CONFLICT threshold in a scene where binding
+    persists after integration has failed. It clarifies terminal conflict as a
+    structural regime rather than as escalation, dislike, or moral failure.
+  repo_value:
+    - >
+      Demonstrates the canonical terminal core of PMS-CONFLICT in a scene where
+      continuity persists without restored meaning.
+    - >
+      Makes visible the distinction between integration failure and binding
+      persistence: Σ can fail while Ψ remains fully active.
+    - >
+      Shows how Ω and Θ transform maintenance into an unevenly distributed
+      continuity burden rather than a shared cooperative project.
+    - >
+      Tests the status of Χ under load by distinguishing formal availability
+      from effective, affordable distance.
+    - >
+      Illustrates the tragedy clause as a grammar boundary: more interpretation
+      does not necessarily reopen integrability.
+  central_repo_question: >
+    How does a system become structurally locked into continuity without
+    integration, and when does that lock constitute terminal CONFLICT rather
+    than difficult but still reparable coordination?
+  lens_relevance:
+    terminal_core: >
+      The example directly instantiates the reduced terminal signature
+      Σ ↓ + Ψ ↑ + Ω ↑ + Θ ↑ + Χ priced.
+    asymmetry_lock_in: >
+      The example shows that the decisive asymmetry is not domination in a
+      moral sense, but differential exposure to maintenance and discontinuity
+      costs over time.
+    tragedy_clause: >
+      The case demonstrates why terminal conflict is not solved by more effort,
+      better wording, or improved intentions once internal reintegration has
+      become structurally non-viable.
+    downstream_boundary: >
+      The example clarifies the point at which any continuation becomes a mode
+      shift into governance, institutionalization, decision, or exit rather
+      than further descriptive reintegration inside PMS-CONFLICT.
+
+overlay_profile:
+  P:
+    status: "not_primary"
+    note: >
+      Publicness amplification is not structurally central inside this scene.
+      The configuration can be fully read without audience coupling or public
+      exposure dynamics.
+  MG:
+    status: "not_primary"
+    note: >
+      Misuse-gradient dynamics are not primary within the scene itself, though
+      any excerpted transmission of the case remains guarded by PMS-CONFLICT
+      application-boundary rules.
+
+theta_history_relevance:
+  status: "secondary"
+  note: >
+    Θ-history matters insofar as sunk costs, path dependence, and accumulated
+    continuity burdens harden the configuration. This is not primarily a young
+    Α-field or modern-churn example; the central mechanism is terminal lock-in
+    rather than accelerated historical volatility.
+
+application_boundary_status:
+  mode: "DESCRIPTIVE"
+  governance_overlay_invoked: false
+  publicness: "PRIVATE"
+  misuse_gradient: "MG_LOW"
+  note: >
+    This example remains within descriptive circulation. It does not authorize
+    intervention, selection, diagnosis, public exposure, or governance verdicts.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Σ", "Ψ", "Ω", "Θ", "Χ"]
+    secondary_context: ["Δ", "□", "Λ", "Α", "Φ"]
+    note: >
+      The decisive threshold is terminal and conflict-specific: integration
+      fails, binding persists, asymmetry differentiates costs, temporality
+      hardens the configuration, and distance remains only nominally available
+      because it is priced or delegitimized. Δ, □, Λ, Α, and Φ remain relevant
+      as context-setting and stabilization carriers, but the terminal core is
+      given by Σ/Ψ/Ω/Θ/Χ.
+  conflict_domain_classification:
+    domain_status: "CONFLICT (terminal descriptive regime)"
+    justification:
+      - "The system no longer possesses an internal reintegration grammar."
+      - "Further Σ attempts increase cost without restoring viability."
+      - "Continuation persists through obligation maintenance rather than shared coordination."
+      - "Exit, pause, or reframing (Χ) is structurally discouraged through cost attribution."
+      - "Stabilization occurs through continuity pressure and attractor repetition rather than reopened integration."
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A distinction is active between continuity and discontinuity, joint
+        maintenance and withdrawal, viable coordination and non-viable repair.
+    "∇":
+      scene_role: >
+        Pressure remains present as urgency to maintain operations, avoid
+        collapse, prevent downstream disruption, and reduce visible failure.
+        This tension is active but not decisive for terminal classification.
+    "□":
+      scene_role: >
+        The frame is a shared continuity regime organized around infrastructure,
+        obligations, timelines, and cost exposure. Conflict stabilizes when
+        this frame no longer supports a shared integrative continuation.
+    "Λ":
+      scene_role: >
+        Missing repair, delayed acknowledgment, and absent reintegration become
+        load-bearing non-events. What does not happen carries structural weight.
+    "Α":
+      scene_role: >
+        Repetition stabilizes the configuration into an attractor: the same
+        maintenance loops, repair scripts, and deferrals recur without
+        reopening Σ.
+    "Ω":
+      scene_role: >
+        Cost exposure is unevenly distributed. Some roles absorb continuity and
+        maintenance burdens over time, while others incur lower discontinuity or
+        declaration costs.
+    "Θ":
+      scene_role: >
+        Prior commitments accumulate into sunk costs and path dependence.
+        Revising the arrangement becomes more expensive the longer it persists.
+    "Φ":
+      scene_role: >
+        Repair language, professionalism narratives, or reliability frames can
+        recontextualize continued incompatibility as if it were still shared
+        coordination. Under terminal conditions, this often becomes substitution
+        rather than integration.
+    "Χ":
+      scene_role: >
+        Distance remains formally available but practically priced. Pause, exit,
+        or reframing can be named, but activating them triggers continuity
+        penalties, trust-loss claims, escalation, or exposure.
+    "Σ":
+      scene_role: >
+        Σ no longer produces a shared spine. Integration attempts increase load
+        because the underlying incompatibility is not reopened at acceptable cost.
+    "Ψ":
+      scene_role: >
+        Binding persists through obligations, dependencies, and continuity
+        commitments even after integrative viability has failed.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness rises because the constraint regime becomes unmistakably
+        legible. The decisive insight is that persistence does not imply
+        integration.
+    C:
+      reading: >
+        Coherence is mixed: local scripts may remain coherent, but shared
+        consolidation fails. The system continues narratively without restored Σ.
+    R:
+      reading: >
+        Responsibility intensifies as attribution pressure because continuity
+        costs and failure residues become unevenly distributed under Ω and Θ.
+    E:
+      reading: >
+        Action becomes constrained: available moves narrow because Χ is priced
+        and Σ-work no longer yields shared continuation.
+    D:
+      reading: >
+        Dignity-in-Practice becomes fragile when continued pressure to carry the
+        arrangement is converted into ranking, blame, or coercive exposure.
+  structural_mechanism_summary:
+    sequence:
+      - "Shared continuation becomes increasingly non-integrable."
+      - "Repair attempts fail to restore Σ and begin to raise costs."
+      - "Ψ persists because obligations and dependencies remain active."
+      - "Ω differentiates who carries continuity burdens over time."
+      - "Θ hardens the arrangement into sunk-cost trajectories."
+      - "Χ remains nominally available but becomes priced or delegitimized."
+      - "Α stabilizes repetition; Φ increasingly substitutes for integration."
+      - "The regime becomes terminal CONFLICT rather than reparable coordination."
+    concise_formula: >
+      Σ failure + Ψ persistence + Ω cost gradient + Θ hardening + Χ priced ->
+      Α_conflict stabilization with Φ-substitution under terminal conflict conditions
+
+drift_catalogue_alignment:
+  primary:
+    - "binding_collision_drift"
+    - "asymmetry_lock_in_drift"
+  secondary:
+    - "sigma_incompatibility_clash"
+  not_primary:
+    - "exposure_capture_drift"
+    - "dignity_collapse_drift"
+  note: >
+    The scene is primarily governed by binding collision and asymmetry lock-in.
+    Σ-incompatibility is structurally present as background. Exposure capture
+    and dignity collapse are possible downstream drifts, but they are not the
+    primary scene mechanism here.
+
+typical_drift_markers:
+  max_expected: 3
+  markers:
+    - id: "integration_attempts_raise_cost"
+      label: "Repair increases burden without reopening Σ"
+      operator_links: ["Σ", "Θ", "Φ"]
+      yaml_drift_ref: "sigma_incompatibility_clash"
+      indicator: >
+        Each new clarification, meeting, redesign, or repair attempt produces
+        additional load, delay, and exposure while leaving the basic
+        incompatibility unchanged.
+    - id: "binding_outlives_integration"
+      label: "Ψ persists after Σ failure"
+      operator_links: ["Ψ", "Σ", "Θ"]
+      yaml_drift_ref: "binding_collision_drift"
+      indicator: >
+        The system continues because obligations, dependencies, and continuity
+        commitments remain active even though shared meaning or coordination no
+        longer consolidates.
+    - id: "distance_nominal_but_priced"
+      label: "Χ exists formally but not effectively"
+      operator_links: ["Χ", "Ω", "Θ"]
+      yaml_drift_ref: "asymmetry_lock_in_drift"
+      indicator: >
+        Exit, pause, or reframing can be spoken of, but activating them triggers
+        disproportionate continuity costs, reliability accusations, or escalation.
+  additional_red_flags:
+    - "We can always revisit this, but not now."
+    - "Stopping would be irresponsible."
+    - "We have already invested too much to change course."
+    - "Continuity must be preserved first; meaning can be solved later."
+    - "There is no good moment to pause."
+    - "Repair is mandatory even though it no longer changes viability."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain analytically visible as a constraint condition. The
+      fact that Χ is priced does not authorize the suspension of distance in the
+      analysis itself.
+    reversibility: >
+      The reading must remain scene-bound and revisable. Terminal classification
+      concerns the configuration, not global traits of any actor or institution.
+    dignity_in_practice: >
+      Structural asymmetry and terminality must not be translated into blame,
+      humiliation, ranking, or person-labeling. The analysis remains regime-,
+      role-, and cost-topology-bound.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        The reading stays tied to a specific shared continuity regime rather than
+        expanding into person-level conclusions.
+      - >
+        Σ failure is described structurally rather than moralized as refusal,
+        defect, or bad will.
+      - >
+        Ω is read as differential exposure and maintenance burden, not as moral
+        superiority.
+      - >
+        Χ priced is distinguished from Χ absent: the analysis preserves the
+        difference between formal and effective distance.
+      - >
+        The example remains descriptive and does not slide into governance or
+        enforcement language without an explicit mode shift.
+    formally_invalid_if:
+      - >
+        Terminal conflict is used to justify coercive governance, punitive
+        exposure, or person-ranking.
+      - >
+        The drift labels are turned into character claims, maturity labels, or
+        diagnosis.
+      - >
+        The tragedy clause is used as a verdict rather than as a descriptive
+        boundary condition.
+      - >
+        The analysis collapses into prescription while still claiming to remain
+        purely descriptive.
+      - >
+        The scene is reused without preserving reversibility and dignity-in-practice.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows a configuration in which continuity persists after shared
+    integration has failed. The decisive shift is not emotional intensity but
+    structural lock-in: binding remains active, asymmetry differentiates who
+    pays, time hardens the arrangement, and distance becomes too expensive to
+    function as a stabilizer. Within PMS-CONFLICT, this marks terminal
+    descriptive conflict rather than difficult but still reparable critique.
+    What remains legible is the cost topology of persistence, not an internal
+    route back to shared Σ.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "shared continuity regime"
+      - "maintenance obligations"
+      - "repair cycles"
+      - "exit and pause conditions"
+      - "cost allocation across roles"
+    out_of_scope:
+      - "personality claims"
+      - "motive diagnosis"
+      - "moral verdicts"
+      - "prescriptive governance conclusions"
+      - "selection or exclusion logic"
+      - "public reputational enforcement"
+    drift_signal: >
+      The frame becomes unstable when continuity is still assumed as shared
+      coordination even though integrative viability has structurally failed.
+  integration_failure_check:
+    operator: "Σ"
+    decisive_question: "Does further integration work restore a shared spine?"
+    valid_terminal_reading: >
+      Terminal conflict is present where further Σ attempts no longer reopen
+      viable shared continuation and instead compound the costs of maintaining
+      the arrangement.
+    drift_signal: >
+      Integration language remains active, but functions increasingly as a
+      carrier of hope, duty, or presentation rather than consolidation.
+  binding_persistence_check:
+    operator: "Ψ"
+    decisive_question: "What remains binding after integrability has failed?"
+    structural_reading: >
+      Obligations, dependencies, continuity promises, or inherited commitments
+      remain active and keep the configuration in motion after Σ failure.
+    drift_signal: >
+      The system cannot simply stop because the bindings outlive the
+      integrative basis that originally legitimized or stabilized them.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "roles responsible for continuity and maintenance"
+      - "roles carrying downstream dependency costs"
+      - "roles exposed to cumulative failure residue"
+    lower_cost_positions:
+      - "roles able to defer, declare, or reframe at lower price"
+      - "roles less exposed to ongoing maintenance consequences"
+    drift_signal: >
+      The decisive asymmetry is differential cost exposure over time, not moral
+      superiority or domination as such.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "initial coordination strain"
+      - "repair attempt"
+      - "partial continuation"
+      - "another failed reintegration cycle"
+      - "sunk-cost accumulation"
+      - "priced exit"
+      - "terminal stabilization"
+    drift_signal: >
+      The longer the configuration persists, the more reversal becomes
+      expensive and the more continuity itself becomes the carrier of conflict.
+  distance_status_test:
+    operator: "Χ"
+    formal_status: "available"
+    effective_status: "priced or delegitimized"
+    indicators:
+      - "pause is interpreted as disloyalty or irresponsibility"
+      - "withdrawal triggers unequal downstream costs"
+      - "reframing increases exposure instead of reducing load"
+      - "stop-capability exists nominally but not at shared price"
+    pms_conflict_relevance: >
+      PMS-CONFLICT requires this distinction: Χ can remain formally present
+      while ceasing to function as a stabilizer.
+  attractor_stabilization:
+    operator: "Α"
+    structural_reading: >
+      Conflict stabilizes as repetition: the system learns how to continue
+      incompatibly. Persistence itself becomes predictable.
+    drift_signal: >
+      Recurrence no longer signals temporary difficulty; it becomes the
+      attractor structure of the regime.
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      Continued incompatibility is re-described as professionalism,
+      reliability, resilience, or commitment, even though shared integration is absent.
+    drift_signal: >
+      Φ shifts from adaptive reframing toward substitution when narrative
+      continuation replaces actual consolidative viability.
+  tragedy_clause_check:
+    status: "structurally applicable within this grammar"
+    reading: >
+      The configuration is tragic in the PMS-CONFLICT sense when no additional
+      internal rearrangement reopens Σ at acceptable cost, even though the
+      regime remains fully legible.
+    boundary_note: >
+      This is not a pessimistic slogan and not a final statement about all
+      possible rival grammars. It is a grammar-internal limit claim.
+  downstream_mode_shift_boundary:
+    threshold_question: "What happens when continuation can no longer be read as reintegration?"
+    structural_answer: >
+      Once Ψ outlives Σ under Ω across Θ with priced or asymmetric Χ, any
+      continuation beyond descriptive mapping becomes a downstream mode shift:
+      governance, institutionalization, decision, adjudication, or exit.
+    misuse_warning: >
+      The handoff boundary must not be smuggled back into the descriptive layer
+      as if CONFLICT itself already authorized action.
+
+assistant_test_vectors:
+  promptables:
+    - "Map this case with PMS-CONFLICT. Where exactly does Σ stop carrying?"
+    - "Explain how Ψ can persist after integration has failed without reducing the case to morality."
+    - "Identify the Ω-pattern in the continuity burden. Who pays repeatedly over time?"
+    - "Distinguish formal Χ availability from effectively priced Χ in this scene."
+    - "Show where Φ becomes substitution rather than reintegration."
+    - "Describe why this counts as terminal CONFLICT rather than difficult critique."

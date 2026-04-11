@@ -3,281 +3,1457 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <style>
-	      :root {
-	        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-	        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-	        --color-text: #111;
-	        --color-muted: #555;
-	        --color-accent: #333;
-	        --color-border: #ddd;
-	        --color-bg: #fafafa;
-	      }
+		<title>PMS-CONFLICT — Example 1: Binding Without Integrability in Shared Critical Infrastructure</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-	      * {
-	        box-sizing: border-box;
-	      }
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
 
-	      html, body {
-	        margin: 0;
-	        padding: 0;
-	      }
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
 
-	      body {
-	        font-family: var(--font-body);
-	        color: var(--color-text);
-	        background: white;
-	        line-height: 1.5;
-	        font-size: 14px;
-	      }
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
 
-	      blockquote {
-	        margin: 0 0 16px;
-	        padding: 0 1em;
-	        color: #57606a;
-	        border-left: 0.25em solid #d0d7de;
-	      }
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
 
-	      .page {
-	        max-width: 900px;
-	        margin: 0 auto;
-	        padding: 32px 24px 64px;
-	        background: white;
-	      }
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
 
-	      header {
-	        border-bottom: 1px solid var(--color-border);
-	        margin-bottom: 24px;
-	        padding-bottom: 16px;
-	      }
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
 
-	      header h1 {
-	        font-size: 1.9rem;
-	        margin: 0 0 8px;
-	        letter-spacing: 0.02em;
-	      }
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
 
-	      header .subtitle {
-	        font-size: 0.95rem;
-	        color: var(--color-muted);
-	        margin-bottom: 8px;
-	      }
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
 
-	      header .meta {
-	        font-size: 0.8rem;
-	        color: var(--color-muted);
-	      }
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
 
-	      h2 {
-	        margin-top: 15px;
-	        margin-bottom: 4px;
-	        font-size: 1.15rem;
-	        border-bottom: 1px solid var(--color-border);
-	        padding-bottom: 4px;
-	      }
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
 
-	      h3 {
-	        margin-top: 18px;
-	        margin-bottom: 4px;
-	        font-size: 1rem;
-	        color: var(--color-accent);
-	      }
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
 
-	      p {
-	        margin: 4px 0 8px;
-	      }
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
 
-	      ul {
-	        margin: 4px 0 10px 1.2rem;
-	        padding: 0;
-	        line-height: 1.1em;
-	      }
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
 
-	      li {
-	        margin-bottom: 3px;
-	      }
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
 
-	      .code-inline {
-	        font-family: var(--font-mono);
-	        font-size: 0.9em;
-	        background: #f5f5f5;
-	        padding: 1px 4px;
-	        border-radius: 3px;
-	      }
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
 
-	      .box {
-	        border: 1px solid var(--color-border);
-	        border-radius: 4px;
-	        padding: 8px 10px;
-	        background: #fcfcfc;
-	        margin: 8px 0 12px;
-	        line-height: 1.05em;
-	      }
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
 
-	      .box-title {
-	        font-weight: 600;
-	        font-size: 0.9rem;
-	        margin-bottom: 4px;
-	      }
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
 
-	      .small {
-	        font-size: 0.85rem;
-	        color: var(--color-muted);
-	      }
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
 
-	      .two-column {
-	        display: flex;
-	        flex-wrap: wrap;
-	        gap: 16px;
-	      }
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
 
-	      .two-column > div {
-	        flex: 1 1 260px;
-	        min-width: 0;
-	      }
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
 
-	      .table {
-	        width: 100%;
-	        border-collapse: collapse;
-	        margin: 8px 0 12px;
-	        font-size: 0.77rem;
-	        line-height: 1.2em;
-	      }
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
 
-	      .table th,
-	      .table td {
-	        border: 1px solid var(--color-border);
-	        padding: 4px 6px;
-	        vertical-align: top;
-	      }
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
 
-	      .table th {
-	        background: #f5f5f5;
-	        font-weight: 600;
-	      }
+			strong {
+			  color: #111827;
+			}
 
-	      .tag {
-	        display: inline-block;
-	        border-radius: 999px;
-	        border: 1px solid var(--color-border);
-	        padding: 1px 8px;
-	        font-size: 0.75rem;
-	        margin-right: 4px;
-	        margin-bottom: 3px;
-	      }
+			em {
+			  color: inherit;
+			}
 
-	      .placeholder {
-	        font-style: italic;
-	        color: var(--color-muted);
-	      }
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
 
-	      .pagebreak{
-	        page-break-before:always
-	      }
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
 
-	      @media print {
-	        body {
-	          background: white;
-	        }
-	        .page {
-	          box-shadow: none;
-	          padding: 24px 18px;
-	        }
-	        a[href]:after {
-	          content: "";
-	        }
-	      }
-	    </style>
-		<title>PMS-CONFLICT — Example 1: Binding Without Integrability</title>
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1><strong>PMS-CONFLICT</strong></h1>
-			<h2><em>Example 1: Binding Without Integrability</em></h2>
-		</header>
-		<section id="content">
-			<p><strong>Reduced signature:</strong>
-			<code>Σ ↓  +  Ψ ↑  +  Ω ↑  +  Θ ↑  +  Χ priced</code></p>
-			<p><strong>Reading discipline:</strong>
-			This signature is <strong>not a proof chain</strong>. It marks the <strong>terminal conflict threshold</strong> where:</p>
-			<ul>
-			<li><strong>Σ (integration)</strong> no longer consolidates shared continuation,</li>
-			<li><strong>Ψ (binding)</strong> persists and intensifies despite Σ failure,</li>
-			<li><strong>Ω (asymmetry)</strong> differentiates cost exposure across roles,</li>
-			<li><strong>Θ (temporality)</strong> hardens prior commitments into sunk costs,</li>
-			<li><strong>Χ (distance)</strong> remains formally available but becomes <em>priced</em> or delegitimized.</li>
-			</ul>
-			<p>This configuration satisfies the <strong>PMS-CONFLICT terminal core condition</strong>:</p>
-			<blockquote>
-			<p>incompatibility stabilized under binding, time, cost, and constrained distance.</p>
-			</blockquote>
-			<hr>
-			<h3>J. Conflict Domain Classification (PMS-CONFLICT)</h3>
-			<p><strong>Domain status:</strong>
-			<strong>CONFLICT (terminal descriptive regime)</strong></p>
-			<p><strong>Justification:</strong></p>
-			<ul>
-			<li>The system no longer possesses an <strong>internal reintegration grammar</strong>.</li>
-			<li>Further Σ attempts <strong>increase cost</strong> without restoring viability.</li>
-			<li>Continuation persists <strong>only via obligation maintenance</strong>, not coordination.</li>
-			<li>Exit, pause, or reframing (<strong>Χ</strong>) is structurally discouraged through cost attribution.</li>
-			</ul>
-			<p>This marks the transition from <strong>CRITIQUE failure</strong> to <strong>CONFLICT stabilization</strong>.</p>
-			<hr>
-			<h3>K. Asymmetry Lock-In Analysis (Ω × Θ)</h3>
-			<p><strong>Asymmetry form:</strong></p>
-			<ul>
-			<li>Not dominance or coercion,</li>
-			<li>but <strong>differential exposure to maintenance costs over time</strong>.</li>
-			</ul>
-			<p><strong>Lock-in mechanism:</strong></p>
-			<ul>
-			<li>Under <strong>Θ</strong>, revising or releasing Ψ becomes more expensive than carrying incoherence.</li>
-			<li>Under <strong>Ω</strong>, continuity roles pay repeatedly; declaration roles pay once.</li>
-			<li>The system therefore selects the <strong>cheapest stable configuration</strong>:
-			binding without integration.</li>
-			</ul>
-			<p>This is a <strong>structural attractor</strong>, not a strategic choice.</p>
-			<hr>
-			<h3>L. χ-Availability Test (Distance Under Load)</h3>
-			<p><strong>Formal status:</strong> Χ exists
-			<strong>Effective status:</strong> Χ is <strong>priced</strong></p>
-			<p>Indicators:</p>
-			<ul>
-			<li>Distance is rhetorically available (“we can talk anytime”),</li>
-			<li>but practically punished (loss of trust, reliability framing, escalation risk).</li>
-			<li>Attempts to activate Χ increase exposure rather than reducing load.</li>
-			</ul>
-			<p>This satisfies the PMS-CONFLICT condition:</p>
-			<blockquote>
-			<p>distance remains nominal but no longer functions as a stabilizer.</p>
-			</blockquote>
-			<hr>
-			<h3>M. Tragedy Clause (Non-Correctability)</h3>
-			<p>This configuration is <strong>tragic in the PMS sense</strong>, meaning:</p>
-			<ul>
-			<li>No further internal operator rearrangement can restore integrability.</li>
-			<li>There is <strong>no missing insight</strong>, <strong>no better framing</strong>, <strong>no moral correction</strong> that reopens Σ at acceptable cost.</li>
-			<li>Any continuation requires a <strong>mode shift</strong>:
-			governance, institutionalization, adjudication, or exit.</li>
-			</ul>
-			<p>This is <strong>not pessimism</strong> — it is a <strong>boundary condition</strong> of the descriptive grammar.</p>
-			<hr>
-			<h3>N. Terminal Structural Closure (PMS-CONFLICT)</h3>
-			<p>Once <strong>Ψ outlives Σ</strong> under <strong>Ω across Θ</strong>, conflict no longer announces itself through disagreement.
-			It stabilizes as <strong>continuity without meaning</strong>.</p>
-			<p>What looks like reliability is structurally obligation inertia.
-			What looks like commitment is cost avoidance under irreversibility.
-			What looks like cooperation is the absence of an affordable stop.</p>
-			<p>At this point:</p>
-			<ul>
-			<li>Further integration talk is <strong>Φ-substitution</strong>,</li>
-			<li>further binding is <strong>Ψ amplification without coordination</strong>,</li>
-			<li>and further patience accelerates <strong>Θ-hardening</strong>.</li>
-			</ul>
-			<p>Conflict here is not a failure to try harder.
-			It is the <strong>point at which trying has become the cheapest way to avoid admitting non-integrability</strong>.</p>
-		</section>
+		<div class="page">
+			<header>
+				<h1><strong>PMS-CONFLICT</strong></h1>
+				<h2><em>Example 1: Binding Without Integrability in Shared Critical Infrastructure</em></h2>
+				<div class="subtitle">
+					Scene-bound example for the terminal core of PMS-CONFLICT: continuity persists after shared integration has failed.
+					Structural mapping only. No diagnosis, no person-typing, no prescriptions, no governance authorization.
+				</div>
+				<div class="meta">
+					<strong>Example ID:</strong> <span class="code-inline">PMS-CONFLICT_EX01</span> &middot;
+					<strong>Example Version:</strong> <span class="code-inline">1.1</span> &middot;
+					<strong>Schema Version:</strong> <span class="code-inline">PMS-CONFLICT_1.1</span><br />
+					<strong>Status:</strong> draft &middot;
+					<strong>Language:</strong> EN &middot;
+					<strong>Depends on:</strong> <span class="code-inline">PMS_1.3</span>, <span class="code-inline">PMS-CONFLICT_1.1</span><br />
+					<strong>Classification:</strong> <span class="code-inline">CONFLICT (terminal descriptive regime)</span><br />
+					<strong>Validity discipline:</strong> PMS application remains conditional on
+					<span class="code-inline">Χ + reversibility + D</span>.
+				</div>
+			</header>
+
+			<section id="schema-alignment">
+				<h2>1. Schema alignment</h2>
+
+				<p>
+					This example is written as a scene-bound instantiation of the terminal core of
+					<strong>PMS-CONFLICT_1.1</strong>. It remains fully subordinate to <strong>PMS_1.3</strong>
+					and does not redefine operators, dependencies, or derived axes.
+				</p>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Primary schema references</div>
+						<ul class="small">
+							<li><strong>Reduced signature:</strong> <span class="code-inline">CONFLICT_terminal_core</span></li>
+							<li><strong>Terminal projection:</strong> <span class="code-inline">terminal_positioning_projection</span></li>
+							<li><strong>Validity gate:</strong> <span class="code-inline">validity_gate</span></li>
+						</ul>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Secondary schema references</div>
+						<ul class="small">
+							<li><span class="code-inline">CONFLICT_stabilized_pattern</span></li>
+							<li><span class="code-inline">DRIFT_binding_collision</span></li>
+							<li><span class="code-inline">DRIFT_asymmetry_lock_in</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Non-operator construct references</div>
+					<p class="small">
+						<span class="tag">conflict_attractor_A_conflict</span>
+						<span class="tag">binding_collision</span>
+						<span class="tag">asymmetry_lock_in</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="minimal-vignette">
+				<h2>2. Minimal vignette</h2>
+
+				<h3>2.1 Title</h3>
+				<p><strong>Two interdependent units remain bound after shared integration has failed</strong></p>
+
+				<h3>2.2 Scene boundaries</h3>
+				<div class="box">
+					<div class="box-title">Domain</div>
+					<p class="small">
+						Inter-organizational coordination, shared infrastructure, continuity obligations,
+						and asymmetric maintenance burdens.
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Scope</div>
+					<p class="small">
+						Structures, bindings, trajectories, cost exposure, priced distance,
+						and terminal conflict stabilization.
+					</p>
+				</div>
+
+				<h4>Out of scope</h4>
+				<ul>
+					<li>person-level judgement</li>
+					<li>motive attribution</li>
+					<li>virtue assessment</li>
+					<li>clinical or psychological interpretation</li>
+					<li>action prescription</li>
+					<li>moral ranking of role positions</li>
+					<li>selection, sorting, or exclusion decisions</li>
+					<li>public pillory or reputational enforcement</li>
+					<li>governance authorization</li>
+					<li>diagnostic or maturity labeling</li>
+				</ul>
+
+				<h3>2.3 Short scene</h3>
+				<p>
+					Two organizational units share a critical infrastructure layer such as data systems,
+					compliance architecture, customer continuity, or operational support. Their strategic
+					aims and working logics have drifted apart, and repeated repair or reintegration efforts
+					no longer produce a shared spine. Even so, the arrangement persists because
+					disengagement, pause, or restructuring would impose unequal costs. The system continues,
+					but no longer as coordination in an integrative sense.
+				</p>
+
+				<h3>2.4 Structural focus</h3>
+				<p>
+					The case examines a terminal conflict regime in which <strong>Σ</strong> no longer carries,
+					<strong>Ψ</strong> persists, <strong>Ω</strong> differentiates who pays for continuity,
+					<strong>Θ</strong> hardens prior commitments into sunk-cost trajectories,
+					and <strong>Χ</strong> remains formally available but practically priced or delegitimized.
+				</p>
+
+				<h3>2.5 Scenic elements</h3>
+				<div class="two-column">
+					<div>
+						<h4>Actors</h4>
+						<ul>
+							<li>unit responsible for continuity and maintenance</li>
+							<li>unit responsible for declaration, decision, or strategic direction</li>
+							<li>compliance or infrastructure custodians</li>
+							<li>downstream dependents affected by continuity failure</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Salient objects</h4>
+						<ul>
+							<li>shared infrastructure</li>
+							<li>continuity obligations</li>
+							<li>service-level expectations</li>
+							<li>repair attempts</li>
+							<li>exit or pause options</li>
+							<li>cost allocation over time</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Trigger event</div>
+					<p class="small">
+						<strong>Failed reintegration cycle:</strong> A further attempt at clarification,
+						redesign, or repair does not reopen shared integration. Instead, it increases costs
+						while leaving the basic incompatibility intact.
+					</p>
+				</div>
+			</section>
+
+			<section id="repo-usefulness">
+				<h2>3. Why this is repo-useful</h2>
+
+				<p>
+					This example shows the core PMS-CONFLICT threshold in a scene where binding persists
+					after integration has failed. It clarifies terminal conflict as a structural regime
+					rather than as escalation, dislike, or moral failure.
+				</p>
+
+				<h3>3.1 Repo value</h3>
+				<ul>
+					<li>
+						Demonstrates the canonical terminal core of PMS-CONFLICT in a scene where continuity
+						persists without restored meaning.
+					</li>
+					<li>
+						Makes visible the distinction between integration failure and binding persistence:
+						<strong>Σ</strong> can fail while <strong>Ψ</strong> remains fully active.
+					</li>
+					<li>
+						Shows how <strong>Ω</strong> and <strong>Θ</strong> transform maintenance into an
+						unevenly distributed continuity burden rather than a shared cooperative project.
+					</li>
+					<li>
+						Tests the status of <strong>Χ</strong> under load by distinguishing formal
+						availability from effective, affordable distance.
+					</li>
+					<li>
+						Illustrates the tragedy clause as a grammar boundary: more interpretation does not
+						necessarily reopen integrability.
+					</li>
+				</ul>
+
+				<h3>3.2 Central repo question</h3>
+				<p>
+					How does a system become structurally locked into continuity without integration, and
+					when does that lock constitute terminal <strong>CONFLICT</strong> rather than difficult
+					but still reparable coordination?
+				</p>
+
+				<h3>3.3 Lens relevance</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Lens</th>
+							<th>Relevance</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Terminal core</strong></td>
+							<td>
+								The example directly instantiates the reduced terminal signature
+								<span class="code-inline">Σ ↓ + Ψ ↑ + Ω ↑ + Θ ↑ + Χ priced</span>.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Asymmetry lock-in</strong></td>
+							<td>
+								The decisive asymmetry is not domination in a moral sense, but
+								differential exposure to maintenance and discontinuity costs over time.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Tragedy clause</strong></td>
+							<td>
+								Terminal conflict is not solved by more effort, better wording,
+								or improved intentions once internal reintegration has become
+								structurally non-viable.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Downstream boundary</strong></td>
+							<td>
+								The example clarifies the point at which any continuation becomes a mode shift
+								into governance, institutionalization, decision, or exit rather than further
+								descriptive reintegration inside PMS-CONFLICT.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="overlay-profile">
+				<h2>4. Overlay profile and boundary status</h2>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Publicness Overlay (P)</div>
+						<p class="small">
+							<strong>Status:</strong> <span class="code-inline">not_primary</span><br />
+							Publicness amplification is not structurally central inside this scene.
+							The configuration can be fully read without audience coupling or public
+							exposure dynamics.
+						</p>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Misuse Gradient (MG)</div>
+						<p class="small">
+							<strong>Status:</strong> <span class="code-inline">not_primary</span><br />
+							Misuse-gradient dynamics are not primary within the scene itself, though any
+							excerpted transmission of the case remains guarded by PMS-CONFLICT
+							application-boundary rules.
+						</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Θ-history relevance</div>
+					<p class="small">
+						<strong>Status:</strong> <span class="code-inline">secondary</span><br />
+						Θ-history matters insofar as sunk costs, path dependence, and accumulated
+						continuity burdens harden the configuration. This is not primarily a young
+						Α-field or modern-churn example; the central mechanism is terminal lock-in
+						rather than accelerated historical volatility.
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Application boundary status</div>
+					<p class="small">
+						<strong>Mode:</strong> <span class="code-inline">DESCRIPTIVE</span> &middot;
+						<strong>Governance overlay invoked:</strong> <span class="code-inline">false</span> &middot;
+						<strong>Publicness:</strong> <span class="code-inline">PRIVATE</span> &middot;
+						<strong>Misuse gradient:</strong> <span class="code-inline">MG_LOW</span><br />
+						This example remains within descriptive circulation. It does not authorize
+						intervention, selection, diagnosis, public exposure, or governance verdicts.
+					</p>
+				</div>
+			</section>
+
+			<section id="operator-mapping">
+				<h2>5. Operator mapping</h2>
+
+				<h3>5.1 Reduced signature</h3>
+				<p>
+					<strong>Primary:</strong>
+					<span class="code-inline">["Σ", "Ψ", "Ω", "Θ", "Χ"]</span><br />
+					<strong>Secondary context:</strong>
+					<span class="code-inline">["Δ", "□", "Λ", "Α", "Φ"]</span>
+				</p>
+
+				<div class="box">
+					<div class="box-title">Reading discipline</div>
+					<p class="small">
+						The decisive threshold is terminal and conflict-specific: integration fails,
+						binding persists, asymmetry differentiates costs, temporality hardens the
+						configuration, and distance remains only nominally available because it is priced
+						or delegitimized. <strong>Δ</strong>, <strong>□</strong>, <strong>Λ</strong>,
+						<strong>Α</strong>, and <strong>Φ</strong> remain relevant as context-setting and
+						stabilization carriers, but the terminal core is given by
+						<strong>Σ/Ψ/Ω/Θ/Χ</strong>.
+					</p>
+				</div>
+
+				<h3>5.2 Conflict domain classification</h3>
+				<p><strong>Domain status:</strong> <strong>CONFLICT (terminal descriptive regime)</strong></p>
+				<ul>
+					<li>The system no longer possesses an internal reintegration grammar.</li>
+					<li>Further Σ attempts increase cost without restoring viability.</li>
+					<li>Continuation persists through obligation maintenance rather than shared coordination.</li>
+					<li>Exit, pause, or reframing (Χ) is structurally discouraged through cost attribution.</li>
+					<li>Stabilization occurs through continuity pressure and attractor repetition rather than reopened integration.</li>
+				</ul>
+
+				<h3>5.3 Operator roles in scene</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Operator</th>
+							<th>Scene role</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Δ</strong></td>
+							<td>
+								A distinction is active between continuity and discontinuity, joint
+								maintenance and withdrawal, viable coordination and non-viable repair.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>∇</strong></td>
+							<td>
+								Pressure remains present as urgency to maintain operations, avoid collapse,
+								prevent downstream disruption, and reduce visible failure. This tension is
+								active but not decisive for terminal classification.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>□</strong></td>
+							<td>
+								The frame is a shared continuity regime organized around infrastructure,
+								obligations, timelines, and cost exposure. Conflict stabilizes when this
+								frame no longer supports a shared integrative continuation.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Λ</strong></td>
+							<td>
+								Missing repair, delayed acknowledgment, and absent reintegration become
+								load-bearing non-events. What does not happen carries structural weight.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Α</strong></td>
+							<td>
+								Repetition stabilizes the configuration into an attractor: the same
+								maintenance loops, repair scripts, and deferrals recur without reopening Σ.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Ω</strong></td>
+							<td>
+								Cost exposure is unevenly distributed. Some roles absorb continuity and
+								maintenance burdens over time, while others incur lower discontinuity or
+								declaration costs.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Θ</strong></td>
+							<td>
+								Prior commitments accumulate into sunk costs and path dependence. Revising
+								the arrangement becomes more expensive the longer it persists.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Φ</strong></td>
+							<td>
+								Repair language, professionalism narratives, or reliability frames can
+								recontextualize continued incompatibility as if it were still shared
+								coordination. Under terminal conditions, this often becomes substitution
+								rather than integration.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Χ</strong></td>
+							<td>
+								Distance remains formally available but practically priced. Pause, exit, or
+								reframing can be named, but activating them triggers continuity penalties,
+								trust-loss claims, escalation, or exposure.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Σ</strong></td>
+							<td>
+								Σ no longer produces a shared spine. Integration attempts increase load
+								because the underlying incompatibility is not reopened at acceptable cost.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Ψ</strong></td>
+							<td>
+								Binding persists through obligations, dependencies, and continuity
+								commitments even after integrative viability has failed.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>5.4 Derived axes projection</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Axis</th>
+							<th>Reading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>A</strong></td>
+							<td>
+								Awareness rises because the constraint regime becomes unmistakably legible.
+								The decisive insight is that persistence does not imply integration.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>C</strong></td>
+							<td>
+								Coherence is mixed: local scripts may remain coherent, but shared
+								consolidation fails. The system continues narratively without restored Σ.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>R</strong></td>
+							<td>
+								Responsibility intensifies as attribution pressure because continuity costs
+								and failure residues become unevenly distributed under Ω and Θ.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>E</strong></td>
+							<td>
+								Action becomes constrained: available moves narrow because Χ is priced and
+								Σ-work no longer yields shared continuation.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>D</strong></td>
+							<td>
+								Dignity-in-Practice becomes fragile when continued pressure to carry the
+								arrangement is converted into ranking, blame, or coercive exposure.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>5.5 Structural mechanism summary</h3>
+				<ol>
+					<li>Shared continuation becomes increasingly non-integrable.</li>
+					<li>Repair attempts fail to restore Σ and begin to raise costs.</li>
+					<li>Ψ persists because obligations and dependencies remain active.</li>
+					<li>Ω differentiates who carries continuity burdens over time.</li>
+					<li>Θ hardens the arrangement into sunk-cost trajectories.</li>
+					<li>Χ remains nominally available but becomes priced or delegitimized.</li>
+					<li>Α stabilizes repetition; Φ increasingly substitutes for integration.</li>
+					<li>The regime becomes terminal CONFLICT rather than reparable coordination.</li>
+				</ol>
+
+				<div class="box">
+					<div class="box-title">Concise formula</div>
+					<p class="small">
+						<span class="code-inline">
+							Σ failure + Ψ persistence + Ω cost gradient + Θ hardening + Χ priced
+							-&gt; Α_conflict stabilization with Φ-substitution under terminal conflict conditions
+						</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="drift-alignment">
+				<h2>6. Drift catalogue alignment</h2>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Primary</div>
+						<p class="small">
+							<span class="tag">binding_collision_drift</span>
+							<span class="tag">asymmetry_lock_in_drift</span>
+						</p>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Secondary</div>
+						<p class="small">
+							<span class="tag">sigma_incompatibility_clash</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Not primary in this scene</div>
+					<p class="small">
+						<span class="tag">exposure_capture_drift</span>
+						<span class="tag">dignity_collapse_drift</span>
+					</p>
+				</div>
+
+				<p>
+					The scene is primarily governed by <strong>binding collision</strong> and
+					<strong>asymmetry lock-in</strong>. <strong>Σ-incompatibility</strong> is
+					structurally present as background. <strong>Exposure capture</strong> and
+					<strong>dignity collapse</strong> are possible downstream drifts, but they are
+					not the primary scene mechanism here.
+				</p>
+			</section>
+
+			<section id="drift-markers">
+				<h2>7. Typical drift markers</h2>
+
+				<p><strong>Maximum expected:</strong> <span class="code-inline">3</span></p>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Label</th>
+							<th>Operator links</th>
+							<th>YAML drift ref</th>
+							<th>Indicator</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="code-inline">integration_attempts_raise_cost</span></td>
+							<td>Repair increases burden without reopening Σ</td>
+							<td><span class="code-inline">["Σ","Θ","Φ"]</span></td>
+							<td><span class="code-inline">sigma_incompatibility_clash</span></td>
+							<td>
+								Each new clarification, meeting, redesign, or repair attempt produces
+								additional load, delay, and exposure while leaving the basic
+								incompatibility unchanged.
+							</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">binding_outlives_integration</span></td>
+							<td>Ψ persists after Σ failure</td>
+							<td><span class="code-inline">["Ψ","Σ","Θ"]</span></td>
+							<td><span class="code-inline">binding_collision_drift</span></td>
+							<td>
+								The system continues because obligations, dependencies, and continuity
+								commitments remain active even though shared meaning or coordination no
+								longer consolidates.
+							</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">distance_nominal_but_priced</span></td>
+							<td>Χ exists formally but not effectively</td>
+							<td><span class="code-inline">["Χ","Ω","Θ"]</span></td>
+							<td><span class="code-inline">asymmetry_lock_in_drift</span></td>
+							<td>
+								Exit, pause, or reframing can be spoken of, but activating them triggers
+								disproportionate continuity costs, reliability accusations, or escalation.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Additional red flags</h3>
+				<ul>
+					<li>“We can always revisit this, but not now.”</li>
+					<li>“Stopping would be irresponsible.”</li>
+					<li>“We have already invested too much to change course.”</li>
+					<li>“Continuity must be preserved first; meaning can be solved later.”</li>
+					<li>“There is no good moment to pause.”</li>
+					<li>“Repair is mandatory even though it no longer changes viability.”</li>
+				</ul>
+			</section>
+
+			<section id="validity-gate">
+				<h2>8. PMS validity gate reminder</h2>
+
+				<h3>8.1 PMS entry condition</h3>
+				<ul>
+					<li>
+						<strong>Χ (distance):</strong> Distance must remain analytically visible as a
+						constraint condition. The fact that Χ is priced does not authorize the
+						suspension of distance in the analysis itself.
+					</li>
+					<li>
+						<strong>Reversibility:</strong> The reading must remain scene-bound and revisable.
+						Terminal classification concerns the configuration, not global traits of any
+						actor or institution.
+					</li>
+					<li>
+						<strong>Dignity-in-Practice:</strong> Structural asymmetry and terminality must not
+						be translated into blame, humiliation, ranking, or person-labeling. The analysis
+						remains regime-, role-, and cost-topology-bound.
+					</li>
+				</ul>
+
+				<h3>8.2 Case-specific validity test</h3>
+				<div class="two-column">
+					<div class="box callout-success">
+						<div class="box-title">Valid if</div>
+						<ul class="small">
+							<li>
+								The reading stays tied to a specific shared continuity regime rather than
+								expanding into person-level conclusions.
+							</li>
+							<li>
+								Σ failure is described structurally rather than moralized as refusal,
+								defect, or bad will.
+							</li>
+							<li>
+								Ω is read as differential exposure and maintenance burden, not as moral superiority.
+							</li>
+							<li>
+								Χ priced is distinguished from Χ absent: the analysis preserves the
+								difference between formal and effective distance.
+							</li>
+							<li>
+								The example remains descriptive and does not slide into governance or
+								enforcement language without an explicit mode shift.
+							</li>
+						</ul>
+					</div>
+
+					<div class="box callout-danger">
+						<div class="box-title">Formally invalid if</div>
+						<ul class="small">
+							<li>
+								Terminal conflict is used to justify coercive governance, punitive
+								exposure, or person-ranking.
+							</li>
+							<li>
+								The drift labels are turned into character claims, maturity labels, or diagnosis.
+							</li>
+							<li>
+								The tragedy clause is used as a verdict rather than as a descriptive boundary condition.
+							</li>
+							<li>
+								The analysis collapses into prescription while still claiming to remain purely descriptive.
+							</li>
+							<li>
+								The scene is reused without preserving reversibility and dignity-in-practice.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="readable-closure">
+				<h2>9. Readable structural closure</h2>
+
+				<p>
+					This case shows a configuration in which continuity persists after shared integration
+					has failed. The decisive shift is not emotional intensity but structural lock-in:
+					binding remains active, asymmetry differentiates who pays, time hardens the
+					arrangement, and distance becomes too expensive to function as a stabilizer. Within
+					PMS-CONFLICT, this marks terminal descriptive conflict rather than difficult but
+					still reparable critique. What remains legible is the cost topology of persistence,
+					not an internal route back to shared Σ.
+				</p>
+
+				<div class="box">
+					<div class="box-title">Reduced terminal marker</div>
+					<p class="small">
+						<span class="code-inline">Σ ↓ + Ψ ↑ + Ω ↑ + Θ ↑ + Χ priced</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="extended-analysis">
+				<h2>10. Extended scene analysis</h2>
+
+				<h3>10.1 Frame validity check (□)</h3>
+				<p><strong>In scope:</strong></p>
+				<ul>
+					<li>shared continuity regime</li>
+					<li>maintenance obligations</li>
+					<li>repair cycles</li>
+					<li>exit and pause conditions</li>
+					<li>cost allocation across roles</li>
+				</ul>
+
+				<p><strong>Out of scope:</strong></p>
+				<ul>
+					<li>personality claims</li>
+					<li>motive diagnosis</li>
+					<li>moral verdicts</li>
+					<li>prescriptive governance conclusions</li>
+					<li>selection or exclusion logic</li>
+					<li>public reputational enforcement</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> The frame becomes unstable when continuity is still
+					assumed as shared coordination even though integrative viability has structurally failed.
+				</p>
+
+				<h3>10.2 Integration failure check (Σ)</h3>
+				<p><strong>Decisive question:</strong> Does further integration work restore a shared spine?</p>
+				<p>
+					<strong>Valid terminal reading:</strong> Terminal conflict is present where further Σ
+					attempts no longer reopen viable shared continuation and instead compound the costs of
+					maintaining the arrangement.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Integration language remains active, but functions
+					increasingly as a carrier of hope, duty, or presentation rather than consolidation.
+				</p>
+
+				<h3>10.3 Binding persistence check (Ψ)</h3>
+				<p><strong>Decisive question:</strong> What remains binding after integrability has failed?</p>
+				<p>
+					<strong>Structural reading:</strong> Obligations, dependencies, continuity promises,
+					or inherited commitments remain active and keep the configuration in motion after Σ failure.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> The system cannot simply stop because the bindings
+					outlive the integrative basis that originally legitimized or stabilized them.
+				</p>
+
+				<h3>10.4 Asymmetry audit (Ω)</h3>
+				<p><strong>Exposure bearers:</strong></p>
+				<ul>
+					<li>roles responsible for continuity and maintenance</li>
+					<li>roles carrying downstream dependency costs</li>
+					<li>roles exposed to cumulative failure residue</li>
+				</ul>
+
+				<p><strong>Lower-cost positions:</strong></p>
+				<ul>
+					<li>roles able to defer, declare, or reframe at lower price</li>
+					<li>roles less exposed to ongoing maintenance consequences</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> The decisive asymmetry is differential cost exposure
+					over time, not moral superiority or domination as such.
+				</p>
+
+				<h3>10.5 Temporality and trajectory (Θ)</h3>
+				<p><strong>Trajectory pattern:</strong></p>
+				<ol>
+					<li>initial coordination strain</li>
+					<li>repair attempt</li>
+					<li>partial continuation</li>
+					<li>another failed reintegration cycle</li>
+					<li>sunk-cost accumulation</li>
+					<li>priced exit</li>
+					<li>terminal stabilization</li>
+				</ol>
+
+				<p>
+					<strong>Drift signal:</strong> The longer the configuration persists, the more
+					reversal becomes expensive and the more continuity itself becomes the carrier of conflict.
+				</p>
+
+				<h3>10.6 Distance status test (Χ)</h3>
+				<p>
+					<strong>Formal status:</strong> available<br />
+					<strong>Effective status:</strong> priced or delegitimized
+				</p>
+
+				<p><strong>Indicators:</strong></p>
+				<ul>
+					<li>pause is interpreted as disloyalty or irresponsibility</li>
+					<li>withdrawal triggers unequal downstream costs</li>
+					<li>reframing increases exposure instead of reducing load</li>
+					<li>stop-capability exists nominally but not at shared price</li>
+				</ul>
+
+				<p>
+					<strong>PMS-CONFLICT relevance:</strong> PMS-CONFLICT requires this distinction:
+					Χ can remain formally present while ceasing to function as a stabilizer.
+				</p>
+
+				<h3>10.7 Attractor stabilization (Α)</h3>
+				<p>
+					<strong>Structural reading:</strong> Conflict stabilizes as repetition: the system
+					learns how to continue incompatibly. Persistence itself becomes predictable.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Recurrence no longer signals temporary difficulty;
+					it becomes the attractor structure of the regime.
+				</p>
+
+				<h3>10.8 Recontextualization dynamics (Φ)</h3>
+				<p>
+					<strong>Key shift:</strong> Continued incompatibility is re-described as
+					professionalism, reliability, resilience, or commitment, even though shared
+					integration is absent.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Φ shifts from adaptive reframing toward substitution
+					when narrative continuation replaces actual consolidative viability.
+				</p>
+
+				<h3>10.9 Tragedy clause check</h3>
+				<p><strong>Status:</strong> structurally applicable within this grammar</p>
+				<p>
+					<strong>Reading:</strong> The configuration is tragic in the PMS-CONFLICT sense
+					when no additional internal rearrangement reopens Σ at acceptable cost, even
+					though the regime remains fully legible.
+				</p>
+				<p>
+					<strong>Boundary note:</strong> This is not a pessimistic slogan and not a final
+					statement about all possible rival grammars. It is a grammar-internal limit claim.
+				</p>
+
+				<h3>10.10 Downstream mode-shift boundary</h3>
+				<p><strong>Threshold question:</strong> What happens when continuation can no longer be read as reintegration?</p>
+				<p>
+					<strong>Structural answer:</strong> Once Ψ outlives Σ under Ω across Θ with priced
+					or asymmetric Χ, any continuation beyond descriptive mapping becomes a downstream
+					mode shift: governance, institutionalization, decision, adjudication, or exit.
+				</p>
+				<p>
+					<strong>Misuse warning:</strong> The handoff boundary must not be smuggled back
+					into the descriptive layer as if CONFLICT itself already authorized action.
+				</p>
+			</section>
+
+			<section id="assistant-test-vectors">
+				<h2>11. Assistant test vectors</h2>
+
+				<ul>
+					<li>Map this case with PMS-CONFLICT. Where exactly does Σ stop carrying?</li>
+					<li>Explain how Ψ can persist after integration has failed without reducing the case to morality.</li>
+					<li>Identify the Ω-pattern in the continuity burden. Who pays repeatedly over time?</li>
+					<li>Distinguish formal Χ availability from effectively priced Χ in this scene.</li>
+					<li>Show where Φ becomes substitution rather than reintegration.</li>
+					<li>Describe why this counts as terminal CONFLICT rather than difficult critique.</li>
+				</ul>
+			</section>
+		</div>
 	</body>
 </html>
-

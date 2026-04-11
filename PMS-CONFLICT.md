@@ -36,11 +36,11 @@ PMS-ANTICIPATION.yaml (raw): https://raw.githubusercontent.com/tz-dev/PMS-ANTICI
 
 ### 0.0 Versioning, Repo Discipline, Deliverables
 
-PMS-CONFLICT is authored and maintained as a repository artifact within the PMS ecosystem. It is not a methodological guide, a set of practices, or a procedural framework, but a formally bounded paper whose status, scope, and deliverables are fixed in advance. This positioning is intentional. Conflict analysis is particularly prone to being misread as intervention, advice, or enforcement; therefore, the artifact status of the paper must be explicit before any substantive claims are introduced.
+PMS-CONFLICT is authored and maintained as a repository artifact within the PMS ecosystem. It is not a methodological guide, a set of practices, or a procedural framework, but a formally bounded analytical artifact whose scope and deliverables are fixed for this paper. This positioning is intentional. Conflict analysis is particularly prone to being misread as intervention, advice, or enforcement; therefore, the artifact status of the paper must be explicit before any substantive claims are introduced.
 
 The paper is delivered as a stable text (Markdown, HTML, and PDF) accompanied by an example suite. Examples are not illustrative anecdotes embedded in the prose. They are stored separately in a dedicated `/examples` directory and referenced from the text. This separation enforces scene-bounded interpretation, prevents personalization, and allows examples to remain reconstructible without drifting into narrative persuasion.
 
-PMS-CONFLICT depends exclusively on the Praxeological Meta-Structure (PMS) as its source of operators, dependencies, and guardrails. It does not modify, extend, or reinterpret PMS operators. Any future YAML artifact associated with PMS-CONFLICT, should one exist, functions only as an application profile and never as an operator modification. By fixing deliverables, dependency relations, and repository placement, PMS-CONFLICT establishes itself as a reproducible analytical artifact rather than a tool or a normative program.
+PMS-CONFLICT depends exclusively on the Praxeological Meta-Structure (PMS) as its source of operators and validity constraints. It does not modify, extend, or reinterpret PMS operators. Any future YAML artifact associated with PMS-CONFLICT, should one exist, functions only as an application profile and never as an operator modification. By fixing deliverables, dependency relations, and repository placement, PMS-CONFLICT establishes itself as a reproducible analytical artifact rather than a tool or a normative program.
 
 **Operators under load:** none (meta)
 **Docking:** PMS (Theory/Repo) as source of truth; examples live in `/examples` (repo convention)
@@ -51,16 +51,16 @@ Any application of PMS-CONFLICT presupposes acceptance of distance (Χ), reversi
 
 In addition to these baseline conditions, PMS-CONFLICT requires stack literacy. Stack literacy is not a reading order and does not require that other domain-layer papers be applied. It names the minimum interpretive competence necessary to read conflict structurally rather than morally. This includes the ability to recognize anticipatory cost and time structures before events crystallize (ANTICIPATION), to understand distance and interruptibility as structural resources rather than failures (CRITIQUE), to accept the persistence of post-moral residue where justification reaches its limits (LOGIC), and to read drift in binding, comparison, and asymmetry without attributing blame or essence (EDEN and SEX).
 
-Without this literacy, descriptions of conflict are predictably moralized, interpreted as accusations, or mistaken for latent toolkits. The validity gate therefore regulates application, not access. PMS-CONFLICT may be criticized, rejected, or ignored without meeting this gate; it may only be applied while remaining structurally bound by it.
+Without this literacy, conflict descriptions are structurally more likely to drift into moralization, accusation, or toolkit misreading. The validity gate therefore regulates application, not access. PMS-CONFLICT may be criticized, rejected, or ignored without meeting this gate; it may only be applied while remaining structurally bound by it.
 
 **Operators under load:** Χ, Ψ, D (validity constraints) + Θ/Ω/Φ (literacy scope)
 **Docking:** global application gate for domain layers; conditions CONFLICT readability without creating dependencies
 
 ### 0.2 Scope & Negative Space (“What This Is Not”)
 
-PMS-CONFLICT is not mediation, conflict resolution, communication training, diagnostics, person typing, enforcement, or governance. These exclusions are structural rather than rhetorical. Conflict, as modeled here, is not a problem to be solved but a state that becomes legible under conditions of asymmetry, temporality, and binding.
+PMS-CONFLICT is not mediation, conflict resolution, communication training, diagnostics, person typing, enforcement, or governance. These exclusions are structural rather than rhetorical. Conflict, as modeled here, is treated not primarily as a problem-solving object but as a state that becomes legible under conditions of asymmetry, temporality, and binding.
 
-The paper provides an axiomatic grammar of conflict as a tragic structural form of praxis. “Tragic” does not denote emotional intensity or moral failure. It denotes non-integrability under mature conditions, where competing trajectories remain incompatible even when all parties are reflective and constrained. References to other domain layers function solely as optional interpretive anchors. They increase legibility of specific drift patterns but do not operate as prescriptive modules and are not required in order to apply CONFLICT.
+The paper provides a structural grammar for modeling conflict as a tragic form of praxis under PMS conditions. “Tragic” does not denote emotional intensity or moral failure. It denotes non-integrability under mature conditions, where competing trajectories remain incompatible even when all parties are reflective and constrained. References to other domain layers function solely as optional interpretive anchors. They increase legibility of specific drift patterns but do not operate as prescriptive modules and are not required in order to apply CONFLICT.
 
 A central descriptive asymmetry follows from this scope. Conflict legibility tends to increase where exposure to irreversible cost is real and cannot be fully neutralized by protective framing. Configurations that maximize safety can buffer, defer, or externalize costs in ways that suppress decisive signals. In such settings, conflict is not absent but structurally illegible, displaced into moralization, narrative substitution, or diffuse tension.
 
@@ -69,54 +69,73 @@ This is not a call to seek conflict or to increase exposure. It describes a legi
 **Operators under load:** none (meta)
 **Docking:** scope firewall preventing drift into governance (MIP/IA), therapy, or enforcement; blocks “exposure-as-recommendation” misread
 
-### 0.3 Three Strata (Non-Mixing) — Canonical Stack Frame
+### 0.3 Methodological Boundedness
+
+PMS-CONFLICT develops a structural grammar of stabilized incompatibility under binding, asymmetry, and temporality. It does not claim to exhaust everything that conflict is or could become under other analytical grammars.
+
+Its strength lies in making conflict legible as a constraint regime rather than as an event, moral defect, or communication failure. This strength does not remove the need for boundedness.
+
+Three constraints therefore apply throughout this paper.
+
+First, conflict legibility here is internal to the PMS grammar and must not be mistaken for monopoly over conflict intelligibility as such.
+
+Second, terminality within this paper names the exhaustion of reintegration resources within this grammar, not the impossibility of every conceivable alternative analytical framing.
+
+Third, where the model preserves coherence by classification, attractor logic, or recontextualization, the possibility of genuine non-capture remains methodologically open.
+
+The paper is strongest when it preserves this boundedness explicitly rather than relying on the force of its own legibility.
+
+**Operators under load:** meta-boundedness (scope discipline)
+**Docking:** binds terminality, tragedy, and non-capture to PMS-internal legibility rather than final authority
+
+### 0.4 Three Strata (Non-Mixing) — Canonical Stack Frame
 
 PMS-CONFLICT operates within a strictly separated three-strata architecture. At the base, PMS provides the generative grammar of operators (Δ–Ψ), their dependencies, derived axes, and guardrails. Domain layers, including CONFLICT, apply this grammar as analytic lenses. They do not introduce procedures, recommendations, or governance mechanisms. Downstream from the domain layers, MIP/IA translates legible structures into evaluation, profiling, and institutional handling.
 
-These strata are non-mixing by design. Domain layers do not govern, enforce, or evaluate. Governance layers do not redefine operators or retroactively moralize structures. This separation is a stability condition rather than an organizational convenience. When strata collapse, conflict analysis mutates into justification, enforcement, or narrative weaponization.
+These strata are kept analytically non-mixing by design. Domain layers do not govern, enforce, or evaluate. Governance layers do not redefine operators or retroactively moralize structures. This separation is a stability condition rather than an organizational convenience. When strata collapse, conflict analysis becomes structurally prone to justification drift, enforcement drift, or narrative weaponization.
 
 By fixing CONFLICT firmly within the domain-layer stratum, the paper preserves its descriptive force while preventing both upward leakage into governance and downward contamination of the operator grammar.
 
 **Operators under load:** meta-separation (strata discipline)
 **Docking:** prevents spec drift (PMS) and tool-misuse drift (MIP/IA contamination)
 
-### 0.4 Macro Overview Snapshot (Orientation Frame)
+### 0.5 Macro Overview Snapshot (Orientation Frame)
 
 Within the PMS ecosystem, PMS-CONFLICT occupies the position of a major knot. It addresses stabilized incompatibility of practice trajectories rather than episodic disagreement or correctable error. Its central question concerns how conflict persists as a state under binding, time, and asymmetry, rather than how it can be resolved.
 
-Structurally, PMS-CONFLICT sits downstream of CRITIQUE, emerging where interruptibility and correction viability are no longer sufficient, and upstream of tragedy handling and downstream institutionalization. The operators most typically under load in this domain are integration (Σ), self-binding (Ψ), asymmetry (Ω), temporality (Θ), and distance (Χ). This placement clarifies that CONFLICT is neither an extension of critique nor a substitute for governance, but a distinct analytic regime.
+Within the PMS stack, PMS-CONFLICT sits downstream of CRITIQUE, emerging where interruptibility and correction viability are no longer sufficient, and upstream of tragedy handling and downstream institutionalization. The operators most typically under load in this domain are integration (Σ), self-binding (Ψ), asymmetry (Ω), temporality (Θ), and distance (Χ). This placement clarifies that CONFLICT is neither an extension of critique nor a substitute for governance, but a distinct analytic regime within this stack architecture.
 
-| Model / Repo              | Stack Position                              | Central Question                                                  | Structural Focus (compressed)                                                                 |
-| ------------------------- | ------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **PMS (Theory / Repo)**   | Root / source of truth                      | What is praxis—formally and implementably?                        | Canonical operator grammar **Δ–Ψ**, dependencies, derived axes, guardrails                      |
-| **PMS–ANTICIPATION**      | Upstream domain layer                       | How does praxis remain viable before event and binding?           | Non-event (Λ) under **Θ/Ω** with preserved **Χ/Ψ**; openness before interruption                |
-| **PMS–CRITIQUE**          | Transition / hinge                          | When does mismatch become interruptible—and when does it drift?  | χ-stabilized interruption; drift modes; correction thresholds (**Φ/Σ/Ψ**) under **Ω/Θ/P**     |
-| **PMS–CONFLICT**          | Major knot / terminal domain layer          | What happens when bindings become structurally incompatible?     | Stabilized incompatibility of trajectories; **Σ/Ψ** collisions under shared **Θ/Ω**, costly Χ |
-| **PMS–EDEN**              | Drift / cross-axis                          | How does praxis drift into comparison and pseudo-symmetry?       | Comparison replaces integration; **Λ/Α** stabilize pseudo-symmetry when **Σ/Ψ** fail           |
-| **PMS–SEX**               | Intimacy / high-asymmetry domain            | How do impulse and repetition bind under maximal asymmetry?      | Binding, exposure, scripts (**Α**) and exit realism under **Ω/Θ/Λ/Χ/Ψ**                         |
-| **PMS–LOGIC**             | Boundary / limit case                       | What remains when justification reaches its limit?               | Post-moral residue under **Ω/Θ/Λ/Ψ**; logic without closure or norm generation                  |
-| **MIP / IA (MIPractice)** | Downstream governance / evaluation layer    | How is structural analysis applied and hardened responsibly?     | Second-order evaluation, guardrails, misuse resistance; consumes PMS outputs                   |
+| Model / Repo              | Stack Position                           | Central Question                                                | Structural Focus (compressed)                                                                 |
+| ------------------------- | ---------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **PMS (Theory / Repo)**   | Root / source of truth                   | What is praxis—formally and implementably?                      | Canonical operator grammar **Δ–Ψ**, dependencies, derived axes, guardrails                    |
+| **PMS–ANTICIPATION**      | Upstream domain layer                    | How does praxis remain viable before event and binding?         | Non-event (Λ) under **Θ/Ω** with preserved **Χ/Ψ**; openness before interruption              |
+| **PMS–CRITIQUE**          | Transition / hinge                       | When does mismatch become interruptible—and when does it drift? | χ-stabilized interruption; drift modes; correction thresholds (**Φ/Σ/Ψ**) under **Ω/Θ/P**     |
+| **PMS–CONFLICT**          | Major knot / terminal domain layer       | What happens when bindings become structurally incompatible?    | Stabilized incompatibility of trajectories; **Σ/Ψ** collisions under shared **Θ/Ω**, costly Χ |
+| **PMS–EDEN**              | Drift / cross-axis                       | How does praxis drift into comparison and pseudo-symmetry?      | Comparison replaces integration; **Λ/Α** stabilize pseudo-symmetry when **Σ/Ψ** fail          |
+| **PMS–SEX**               | Intimacy / high-asymmetry domain         | How do impulse and repetition bind under maximal asymmetry?     | Binding, exposure, scripts (**Α**) and exit realism under **Ω/Θ/Λ/Χ/Ψ**                       |
+| **PMS–LOGIC**             | Boundary / limit case                    | What remains when justification reaches its limit?              | Post-moral residue under **Ω/Θ/Λ/Ψ**; logic without closure or norm generation                |
+| **MIP / IA (MIPractice)** | Downstream governance / evaluation layer | How is structural analysis applied and hardened responsibly?    | Second-order evaluation, guardrails, misuse resistance; consumes PMS outputs                  |
 
 **Operators under load:** Σ, Ψ, Ω, Θ, Χ (typical for CONFLICT)
 **Docking:** CRITIQUE → CONFLICT; CONFLICT → tragedy handling / downstream institutionalization
 
-### 0.5 Publicness Scale and Public Misuse Gradient
+### 0.6 Publicness Scale and Public Misuse Gradient
 
 Conflict analysis is highly sensitive to publicness. PMS-CONFLICT therefore distinguishes levels of public exposure and treats publicness as a structural modifier rather than a moral concern. As publicness increases, the probability that analysis will be personalized, weaponized, or politicized rises accordingly.
 
-#### 0.5.1 Publicness Scale (P-Scale)
+#### 0.6.1 Publicness Scale (P-Scale)
 
 | Level | Label                     | Typical Setting                            | Default Risk Vector (structural)                             |
-| :----: | ------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
-|    P0 | private                   | internal reflection; closed dyads          | low transmission pressure; low audience capture              |
-|    P1 | professional-confidential | supervision; confidential advisory spaces  | moderate interpretive power; bounded accountability          |
-|    P2 | institutional             | organizations; policy-facing internal work | role-visibility and liability effects; aggregation pressure  |
-|    P3 | public                    | open publication; broad audience           | personalization and group formation; quote-mining            |
-|    P4 | media-amplified           | high-reach platforms; news cycles          | compression into slogans; politicization; identity anchoring |
+| :---: | ------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
+|   P0  | private                   | internal reflection; closed dyads          | low transmission pressure; low audience capture              |
+|   P1  | professional-confidential | supervision; confidential advisory spaces  | moderate interpretive power; bounded accountability          |
+|   P2  | institutional             | organizations; policy-facing internal work | role-visibility and liability effects; aggregation pressure  |
+|   P3  | public                    | open publication; broad audience           | personalization and group formation; quote-mining            |
+|   P4  | media-amplified           | high-reach platforms; news cycles          | compression into slogans; politicization; identity anchoring |
 
 Publicness is a context descriptor. It does not increase or decrease truth. It changes exposure conditions and therefore hardening requirements.
 
-#### 0.5.2 Validity Rule A (Publicness Constraint)
+#### 0.6.2 Validity Rule A (Publicness Constraint)
 
 On P3 and P4, PMS-CONFLICT is valid for public use only under strict depersonalization:
 
@@ -126,7 +145,7 @@ On P3 and P4, PMS-CONFLICT is valid for public use only under strict depersonali
 
 This is an exposure constraint, not a restriction on analysis itself. The analysis may exist privately; public transmission has stricter admissibility.
 
-#### 0.5.3 Validity Rule B (Hardening Increases With Publicness)
+#### 0.6.3 Validity Rule B (Hardening Increases With Publicness)
 
 As publicness increases, the following constraints must tighten:
 
@@ -137,7 +156,7 @@ As publicness increases, the following constraints must tighten:
 
 Hardening is treated as a structural necessity under exposure, not as a rhetorical posture.
 
-#### 0.5.4 Public Misuse Gradient (Distinct From Publicness)
+#### 0.6.4 Public Misuse Gradient (Distinct From Publicness)
 
 Publicness describes where the analysis is shown. Misuse gradient describes how easily a statement can be converted into weaponizable narratives under exposure.
 
@@ -150,16 +169,16 @@ Publicness describes where the analysis is shown. Misuse gradient describes how 
 
 Publicness and misuse gradient interact: higher publicness amplifies the downstream effects of high misuse gradient. PMS-CONFLICT regulates exposure by tightening admissibility and hardening rules where the combination becomes structurally explosive.
 
-Explosivity is not a moral problem. It is a Φ/Α effect that arises when recontextualization and attractor dynamics interact with exposure. PMS-CONFLICT regulates exposure conditions, not truth claims.
+Explosivity is not treated here as a moral category, but as a structural effect of exposure-sensitive recontextualization and attractor dynamics. PMS-CONFLICT regulates exposure conditions, not truth claims.
 
 **Operators under load:** Φ, Α, Ω, □ (with Θ as amplifier)
 **Docking:** hardening interface for safe publication; supports A&H-style artifact responsibility without entering governance
 
-### 0.6 Attack Surfaces and Hardening Backlog
+### 0.7 Attack Surfaces and Hardening Backlog
 
 Given its subject matter, PMS-CONFLICT anticipates predictable misreads. These are treated as structural attack surfaces: places where language or framing is likely to be converted into non-model uses under pressure (publicness, identity anchoring, or narrative compression).
 
-#### 0.6.1 Attack Surfaces (Expected Misreads) and Counter-Anchors
+#### 0.7.1 Attack Surfaces (Expected Misreads) and Counter-Anchors
 
 | Attack Surface (misread)              | Structural Risk                                | Counter-Anchor (built into the paper)                             |
 | ------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------- |
@@ -171,23 +190,23 @@ Given its subject matter, PMS-CONFLICT anticipates predictable misreads. These a
 | moral theory in disguise misread      | structure becomes normativity by stealth       | 0.3 strata separation + 0.7 non-prescriptive rule                 |
 | psychologizing misread                | operators become inner-state claims            | 0.7 operator table and disclaimer block                           |
 
-Counter-anchors are not arguments for being right. They are containment mechanisms for predictable recontextualizations.
+Counter-anchors do not establish correctness; they function as containment devices for predictable misreadings.
 
-#### 0.6.2 Hardening Backlog (Operational Revision Triggers)
+#### 0.7.2 Hardening Backlog (Operational Revision Triggers)
 
 Hardening is explicit and iterative. Terms are narrowed where drift occurs. Reversibility anchors are strengthened when exposure rises. Examples are further depersonalized when misuse recurs. Precision is treated as a stability condition for the artifact under reuse.
 
 Revision triggers (structural, non-empirical):
 
-* If a recurring misread persists at P2 (institutional), tighten exposure constraints in 0.5 and strengthen the non-tooling clause in 0.2.
-* If misuse repeatedly appears at P3/P4 (public/media-amplified), downgrade example admissibility to aggregated-only and raise the required hardening level in 0.5 (misuse gradient handling).
-* If a term repeatedly drifts into moral language, narrow the definition and add an explicit negative definition (“what it is not”) in 0.2 and/or 0.7.
-* If readers treat formulas as prescriptions, strengthen 0.7 notation rules and add an explicit recognition-only reminder at the start of the first substantive chapter (Part II entry).
+* If a recurring misread persists at P2 (institutional), tighten exposure constraints in 0.6 and strengthen the non-tooling clause in 0.2.
+* If misuse repeatedly appears at P3/P4 (public/media-amplified), downgrade example admissibility to aggregated-only and raise the required hardening level in 0.6 (misuse gradient handling).
+* If a term repeatedly drifts into moral language, narrow the definition and add an explicit negative definition (“what it is not”) in 0.2 and/or 0.8.
+* If readers treat formulas as prescriptions, strengthen 0.8 notation rules and add an explicit recognition-only reminder at the start of the first substantive chapter (Part II entry).
 * If operator labels are used as person-level predicates in downstream discourse, strengthen non-labeling discipline, add a depersonalization rule for examples, and tighten the publicness constraints.
 
 These triggers describe when the artifact must be hardened to remain usable under exposure, not what any actor should do in a conflict.
 
-#### 0.6.3 A&H Compatibility (Second-Order Quality Overlay)
+#### 0.7.3 A&H Compatibility (Second-Order Quality Overlay)
 
 PMS-CONFLICT is a domain paper, not a governance system. However, its hardening logic is compatible with the A&H precision overlay used in MIPractice: attack points describe vulnerabilities of the analysis artifact, and hardening actions specify minimal next-iteration patches. This overlay targets analysis quality of the artifact itself, not the modeled actors, and it does not evaluate persons, intentions, or live conflicts.
 
@@ -205,7 +224,7 @@ This paper does not score itself. It uses the checklist as an internal consisten
 **Operators under load:** meta-hardening; Φ/□ as risk carriers (with Α under exposure)
 **Docking:** bridges scope firewall (0.2) to later application overlays without entering governance
 
-### 0.7 Notation and Conventions (Reading Protocol)
+### 0.8 Notation and Conventions (Reading Protocol)
 
 Throughout the paper, operator symbols such as □, Δ, Σ, Ψ, Ω, Θ, Χ, Φ, Λ, and Α are used strictly as structural operators and state constraints. They do not denote psychological states, motivations, or traits. When an operator is described as “under load,” this indicates an active constraint regime, not a dominant cause, not a fault attribution, and not a recommendation about what should be changed.
 
@@ -219,9 +238,9 @@ This paper also uses a small set of **paper-local markers** for legibility. Thes
 * **Φ-substitution:** shorthand for a regime in which recontextualization (Φ) increasingly functions as a *substitute for Σ-bridging* (integration across trajectories), rather than as a step toward consolidation.
 * **Α_conflict:** shorthand for an attractor configuration in which conflict persistence stabilizes as a recurrent pattern. It does not add structure beyond Α; it only labels the attractor as conflict-stabilizing in context.
 
-#### 0.7.1 Operator Table (Notation & Conventions — Reading Protocol)
+#### 0.8.1 Operator Table (Notation & Conventions — Reading Protocol)
 
-| Symbol | PMS Name            | Layer | Canonical Definition (PMS.yaml)                                                                       | Dependency Spine | In 0.7 This Operator Means                                                                 | Misread Risk                                           | 0.7 Guard Clause (Canonical)                             |
+| Symbol | PMS Name            | Layer | Canonical Definition (PMS.yaml)                                                                       | Dependency Spine | In 0.8 This Operator Means                                                                 | Misread Risk                                           | 0.8 Guard Clause (Canonical)                             |
 | -----: | ------------------- | ----- | ----------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------ | -------------------------------------------------------- |
 |      Δ | Difference          | L1    | Minimal structural distinction enabling any form of differentiation.                                  | []               | A structural boundary marker used to keep claims scene-bound and non-global.               | Treated as “value difference” or “moral disagreement.” | Δ is a **structural distinction**, not a value claim.    |
 |      ∇ | Impulse             | L1    | Directional tension or drive arising from difference.                                                 | [Δ]              | Directionality in trajectories; never “emotion,” “motivation,” or “inner drive.”           | Psychologizing (“they feel/they want”).                | ∇ names **directional tension**, not inner experience.   |
@@ -235,9 +254,9 @@ This paper also uses a small set of **paper-local markers** for legibility. Thes
 |      Σ | Integration         | L3    | Synthesis of disparate or conflicting elements into a coherent whole.                                 | [Χ, Φ]           | Coherence threshold; never “who is right.”                                                 | Treated as agreement or compromise.                    | Σ is **structural coherence**, not consensus.            |
 |      Ψ | Self-Binding        | L4    | Formation of identity through commitment to integrated structures over time.                          | [Σ, Θ, Χ]        | Commitment constraint; not “authentic self” or moral character.                            | Identity essentialization; virtue signaling.           | Ψ is **commitment stability**, not essence.              |
 
-#### 0.7.2 Derived Axes (Reference-Only, Non-Operative)
+#### 0.8.2 Derived Axes (Reference-Only, Non-Operative)
 
-| Axis                | Symbol | PMS Formula   | What It Is (PMS)                                                                        | In 0.7 This Axis Is Used For                                | Misread Risk                                         | 0.7 Guard Clause (Canonical)                             |
+| Axis                | Symbol | PMS Formula   | What It Is (PMS)                                                                        | In 0.8 This Axis Is Used For                                | Misread Risk                                         | 0.8 Guard Clause (Canonical)                             |
 | ------------------- | -----: | ------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
 | Awareness           |      A | Θ ∘ □ ∘ Δ     | Sustained, framed differentiation across time.                                          | Optional shorthand for “what is kept in view.”              | Read as intelligence, insight, or moral superiority. | A is **structural differentiation**, not a trait.        |
 | Coherence           |      C | Θ ∘ Λ ∘ □ ∘ ∇ | Temporally stabilized structuring of impulse and expectation within a frame.            | Optional shorthand for narrative stability of trajectories. | Read as “communication quality.”                     | C is **trajectory stability**, not skill grading.        |
@@ -245,25 +264,25 @@ This paper also uses a small set of **paper-local markers** for legibility. Thes
 | Action              |      E | Σ ∘ Θ ∘ ∇     | Integrated realization of directedness across time.                                     | Optional shorthand for enactment consolidation.             | Read as productivity or performance.                 | E is **integrated enactment**, not performance.          |
 | Dignity-in-Practice |      D | Ψ ∘ Χ ∘ Ω     | Self-bound reflective restraint and protection in asymmetrical relations.               | Validity gate reference (0.1) and misuse hardening.         | Read as moral worth or ranking.                      | D is **praxeological restraint**, not ontological worth. |
 
-#### 0.7.3 Interpretation Protocol (Table-Driven Rules)
+#### 0.8.3 Interpretation Protocol (Table-Driven Rules)
 
 | Protocol Rule                                                          | Formal Meaning                                                                                          | Enforced By                  | Failure Mode Prevented                     |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------ |
 | Operator symbols are structural, not psychological.                    | Symbols denote constraints/regimes, not inner states.                                                   | All operator rows above      | Psychologizing / person-typing             |
 | “Under load” means active constraint regime.                           | Listing an operator indicates the constraint is governing the state.                                    | Ω/Θ/Χ/Ψ emphasis             | Causal story-telling; prescription reading |
-| “Under load” does not imply fault, cause dominance, or a required fix. | Load is descriptive of regime constraints, not blame or remedy.                                         | 0.7 prose + disclaimer block | Blame compression; intervention drift      |
+| “Under load” does not imply fault, cause dominance, or a required fix. | Load is descriptive of regime constraints, not blame or remedy.                                         | 0.8 prose + disclaimer block | Blame compression; intervention drift      |
 | States and trajectories, not incidents.                                | The paper models persistence, path dependence, and regimes.                                             | Θ/Α/Λ                        | Event moralization; anecdote capture       |
 | Formulas are recognition grammar, not interventions.                   | Formal objects identify structures; they do not advise actions.                                         | Σ/Φ/Χ                        | Tool-misuse (“intervention reading”)       |
 | Scene-bounded examples only.                                           | Examples remain reconstructible without person-labels.                                                  | Δ/□ + validity gate          | Public pillory; personalization            |
 | Exposure-proximal legibility is structural, not normative.             | Exposure can increase signal legibility; protection can suppress signals via buffering/externalization. | Ω/Θ/Λ/Φ                      | “Risk endorsement” misread                 |
 
-#### 0.7.4 Canonical “Reading Disclaimer” (Drop-In Block)
+#### 0.8.4 Canonical “Reading Disclaimer” (Drop-In Block)
 
 > In this paper, operator symbols (Δ–Ψ) denote **structural operators and constraint regimes**. They do not denote mental states, motives, traits, or moral status.
 > “Under load” indicates an **active constraint regime**, not a causal claim, not a fault attribution, and not a prescription.
 > All formulas function as **recognition grammar** for states and trajectories. They are not interventions, recommendations, or toolsets.
 
-#### 0.7.5 Paper-Local Markers (Non-Operators)
+#### 0.8.5 Paper-Local Markers (Non-Operators)
 
 This paper occasionally uses **configuration markers** that are **not** PMS operators. They are shorthand labels for recurrent load patterns or transitions expressed in the canonical operators (Δ–Ψ). They must not be read as added axioms, psychological categories, or prescriptions.
 
@@ -275,17 +294,17 @@ This paper occasionally uses **configuration markers** that are **not** PMS oper
 
 ## Part I — Stack Position & Definition
 
-### Chapter 1 — Central Question & Core Claim (CONFLICT as Major Knot)
+### 1. Central Question & Core Claim (CONFLICT as Major Knot)
 
 Conflict, in PMS-CONFLICT, is defined as a **stabilized incompatibility of practice trajectories**. It is not an episode, not an escalation, and not a communicative failure. It is a state in which multiple trajectories remain structurally coherent on their own terms, yet cannot be integrated into a single, shared continuation without violating core constraints.
 
-This definition rejects event-based and affect-based models of conflict. Conflict does not begin when voices rise, positions harden, or norms are violated. It becomes legible when integration fails *despite* distance, reflexivity, and structural maturity. Conflict is therefore compatible with competence, responsibility, and dignity-in-practice. Its persistence is not evidence of immaturity, but of structural saturation.
+This definition departs from event-based and affect-based models of conflict by shifting the analytic focus to stabilized incompatibility under constraint. Conflict does not become structurally legible merely when voices rise, positions harden, or norms are violated. It becomes legible when integration fails *despite* distance, reflexivity, and structural maturity. Conflict is therefore compatible with competence, responsibility, and dignity-in-practice. Its persistence is not evidence of immaturity, but of structural saturation within the regime analyzed here.
 
-Within the PMS stack, CONFLICT occupies the position of a **major knot**. It emerges downstream of CRITIQUE, where distance (Χ) and interruptibility are already available, and where recontextualization (Φ) and integration (Σ) have been attempted. Conflict marks the point at which these operators no longer suffice to restore a unified trajectory. What stabilizes instead is incompatibility itself.
+Within the PMS stack, CONFLICT occupies the position of a **major knot**. It emerges downstream of CRITIQUE, where distance (Χ) and interruptibility are already available, and where recontextualization (Φ) and integration (Σ) have been attempted. Within the regime modeled here, conflict marks the point at which these operators no longer suffice to restore a unified trajectory. What stabilizes instead is incompatibility itself.
 
 Several operators are simultaneously under load in this state. Integration (Σ) is active but non-convergent: it continues to synthesize locally while failing globally. Self-binding (Ψ) maintains commitment to divergent trajectories rather than dissolving them. Temporality (Θ) extends incompatibility across time, transforming it from a transient blockage into a durable condition. Asymmetry (Ω) distributes exposure, cost, and decision capacity unevenly across role positions. Distance (Χ) remains operative, preventing collapse into coercion or fusion, but also preventing forced resolution.
 
-The tragedy clause of PMS applies directly at this level. Structural maturity does not guarantee integrability. Under certain constellations, continued reflection, restraint, and responsibility increase clarity without increasing compatibility. Conflict, in this sense, is not a failure mode of praxis but one of its terminally legible forms.
+The tragedy clause of PMS applies directly at this level. Structural maturity does not guarantee integrability. Under certain constellations, continued reflection, restraint, and responsibility increase clarity without increasing compatibility. Conflict, in this sense, is not a failure mode of praxis but one of its most demanding legible forms under terminal load conditions within this grammar.
 
 #### 1.1 Chapter Closure
 
@@ -307,7 +326,9 @@ Under this cost topology, continued integration attempts, formal separation, or 
 
 This description makes no claims about character, guilt, moral failure, or psychological deficit. It does not imply that conflict should be resolved, endured, or valorized. It describes a structural condition in which incompatibility persists under maintained distance, responsibility, and restraint.
 
-### Chapter 2 — Why CONFLICT Is Not CRITIQUE (Hinge Separation)
+---
+
+### 2. Why CONFLICT Is Not CRITIQUE (Hinge Separation)
 
 CRITIQUE and CONFLICT occupy adjacent but non-overlapping positions in the PMS stack. Confusing them collapses the hinge on which the grammar turns. PMS-CONFLICT therefore fixes this boundary explicitly.
 
@@ -321,7 +342,7 @@ At this point, **self-binding (Ψ)** is partially set. Commitments have crystall
 
 Asymmetry (Ω) and temporality (Θ) act as pressure multipliers in this hinge. Ω distributes decision authority, exposure, and liability unevenly, while Θ extends incompatibility across time, converting local divergence into path-dependent persistence. Under these conditions, CRITIQUE cannot be re-entered without additional loss. What stabilizes is not misunderstanding but incompatibility itself.
 
-CRITIQUE therefore fails *successfully* into CONFLICT. The failure is not epistemic or moral. It is the exhaustion of a regime in which interruptibility and correction were sufficient. CONFLICT names the next regime: one in which integration collisions are no longer resolvable without violating existing bindings or imposing non-reversible costs.
+CRITIQUE can therefore pass structurally into CONFLICT when correction viability is exhausted under binding and cost pressure. The transition is not epistemic or moral. It marks the exhaustion of a regime in which interruptibility and correction were sufficient. CONFLICT names the next regime: one in which integration collisions are no longer resolvable without violating existing bindings or imposing non-reversible costs.
 
 #### 2.1 Chapter Closure
 
@@ -343,7 +364,9 @@ Under this cost topology, attempts to re-enter CRITIQUE are structurally rationa
 
 This description makes no claims about fault, stubbornness, moral rigidity, or communicative failure. It does not imply that conflict should have been avoided or that critique was mishandled. It describes a structural hinge where a correction regime exhausts its viability under binding and cost pressure.
 
-### Chapter 3 — Definition Set (Terms and Minimal Formal Object)
+---
+
+### 3. Definition Set (Terms and Minimal Formal Object)
 
 This section fixes the minimal vocabulary required to speak about CONFLICT without drift into psychology, morality, or intervention logic. Definitions are structural, scene-bound, and operator-consistent. They do not describe motives, traits, or intentions. They specify positions, trajectories, and cost relations.
 
@@ -382,7 +405,7 @@ Binding becomes decisive in conflict when self-binding (Ψ) has partially set at
 A cost gradient describes the **uneven distribution of exposure, liability, and follow-on load** across role positions. Cost gradients are structural effects of Ω under Θ. They specify who is near irreversible endpoint costs and who is forced into continuous relational or maintenance costs. Cost gradients are not negotiated preferences and not moral rankings; they are constraint topologies.
 
 **Tragic Collision**
-A tragic collision occurs when **multiple mature, coherent trajectories remain incompatible** and cannot be integrated without violating existing bindings or imposing non-reversible costs. Tragedy denotes non-eliminability under maintained distance and responsibility constraints, not emotional intensity and not moral failure.
+A tragic collision occurs, within this grammar, when **multiple mature, coherent trajectories remain incompatible** and cannot be integrated without violating existing bindings or imposing non-reversible costs. Tragedy denotes non-eliminability under maintained distance and responsibility constraints, not emotional intensity and not moral failure.
 
 #### Minimal Conflict as Structural Object (Non-Psychological)
 
@@ -400,7 +423,7 @@ where:
 * **G** is the cost gradient topology (Ω-distributed exposure and liability under Θ),
 * **Χ_cost** indicates that distance (Χ) remains available as a validity constraint, but its use is costly and/or asymmetrically distributed.
 
-Minimal recognition conditions (necessary and jointly sufficient for minimal conflict legibility):
+Minimal recognition conditions (necessary and jointly sufficient for minimal conflict legibility within this paper):
 
 1. **Divergent integrations:** **Σ₁ ≠ Σ₂** while each trajectory remains locally coherent (Σ-active locally).
 2. **Binding is non-neutral:** **Ψ is partially set**, so reversal produces non-trivial downstream costs.
@@ -471,13 +494,13 @@ This description makes no claims about motives, trustworthiness, maturity, or mo
 
 ### 4. Frame Dynamics (□): Conflict as a Frame-Drift Regime
 
-Conflict is not itself a “frame.” In PMS-CONFLICT, conflict is a **frame-drift regime**: a condition in which the operative frame changes its constraint logic under pressure from asymmetry (Ω), temporality (Θ), integration attempts (Σ), and self-binding (Ψ). The decisive point is not that frames change, but that **frame transitions become unmarked**—and therefore misread as intention, moral stance, or character.
+Conflict is not itself a “frame.” In PMS-CONFLICT, conflict is a **frame-drift regime**: a condition in which the operative frame changes its constraint logic under pressure from asymmetry (Ω), temporality (Θ), integration attempts (Σ), and self-binding (Ψ). The decisive point is not that frames change, but that **frame transitions become structurally unmarked**—and therefore more readily misread as intention, moral stance, or character.
 
 Frames (□) in PMS are contextual constraint fields: they structure relevance, role-space, expectations, and what counts as a valid move. In conflict, □ does not collapse into one stable configuration. Instead, competing trajectories repeatedly re-embed the situation through Φ, producing drift sequences in which what “this is” changes while participants keep acting as if it remained the same.
 
 #### 4.1 Canonical Drift Patterns (Regime Shifts)
 
-The following drift patterns are canonical in the sense that they are recurrent structural transitions in conflict regimes. They are not prescriptions and not psychological claims.
+The following drift patterns are canonical **for this paper**, in the sense that they are recurrent structural transitions in the conflict regimes analyzed here. They are not prescriptions and not psychological claims.
 
 * **Cooperation → Competition drift**
   **□coop → Φ → □comp**
@@ -493,24 +516,24 @@ The following drift patterns are canonical in the sense that they are recurrent 
 
 * **Conflict → Tragic drift**
   **□conflict → Θ↑↑ → □tragic**
-  Temporal extension amplifies irreversibility and cost gradients. The frame shifts from “incompatibility we might still coordinate” to “incompatibility that cannot be integrated without terminal loss.”
+  Temporal extension amplifies irreversibility and cost gradients. The frame shifts from “incompatibility we might still coordinate” to “incompatibility that cannot be integrated without terminal loss within the present trajectory regime.”
 
 These patterns describe structural reclassification: the same content can move across frames, changing its effect without requiring a change in motives.
 
 #### 4.2 Non-Static Frame Axiom (Drift is Normal)
 
-No frame remains static. Drift is a normal consequence of the operator grammar once Θ and Ω become significant and once Ψ and Σ are active.
+Within the regimes analyzed here, no operative frame remains static for long once Θ and Ω become significant and once Ψ and Σ are active.
 
 * Θ extends sequences into trajectories, making earlier moves constraint-bearing for later interpretation.
 * Ω sharpens exposure gradients, making some moves more expensive for some role positions than for others.
 * Σ continues attempting coherence under pressure, often producing locally coherent but globally incompatible continuations.
 * Ψ stabilizes commitments, increasing the cost of changing what a move “counts as.”
 
-Conflict therefore tends to generate **multiple concurrent frame candidates**. Drift is not evidence of pathology. It is the expected behavior of praxis under binding and cost pressure.
+Conflict therefore tends to generate **multiple concurrent frame candidates**. Drift is not evidence of pathology. It is the expected behavior of praxis under binding and cost pressure as modeled here.
 
 #### 4.3 Rule of Failure: Frames Fail When Transitions Are Unmarked
 
-Frames do not “fail” because they change. They fail when **frame transitions occur without being marked**—i.e., without explicit recognition that the constraint regime has shifted.
+Frames do not “fail” because they change. They lose discriminative function when **frame transitions occur without being marked**—that is, without explicit recognition that the constraint regime has shifted.
 
 Unmarked drift produces predictable structural distortions:
 
@@ -523,7 +546,7 @@ Marking a drift is not an intervention rule; it is an analytic requirement for k
 
 #### 4.4 Docking: Where Frame-Drift Becomes Legible — Limits, Binding Domains, and Downstream Boundaries
 
-Frame-drift regimes do not float freely in the stack. They become most legible at specific **dock points**, and they become most misuse-prone when strata collapse. PMS-CONFLICT therefore treats docking not as “what to do next,” but as **where the same regime is structurally likely to be interpreted through a neighboring lens**.
+Frame-drift regimes do not float freely in the stack. They become most legible at specific **dock points**, and they become most misuse-prone when strata collapse. PMS-CONFLICT therefore treats docking not as “what to do next,” but as **where the same regime is structurally likely to be interpreted through a neighboring lens within this stack architecture**.
 
 ##### 4.4.1 Docking to LOGIC (Discursive Limits)
 
@@ -680,7 +703,7 @@ This description makes no claims about character, guilt, or normative preference
 
 ### 6. Conflict Attractor (Α_conflict): Why Conflict Stabilizes (Not “Escalates”)
 
-A common descriptive error is to treat conflict as a linear escalation curve: more tension, more heat, more breakdown. PMS-CONFLICT treats this as a category mistake. Conflict is not primarily a rising intensity; it is a **stabilization regime**. Once incompatibility becomes trajectory-stable under binding (Ψ), temporality (Θ), and asymmetry (Ω), the conflict state begins to function like an attractor: it reduces uncertainty, organizes attention, and produces predictable role behavior. In that sense, conflict can be “better” than ambiguity without being “good.”
+A common descriptive error is to treat conflict as a linear escalation curve: more tension, more heat, more breakdown. PMS-CONFLICT treats this as a category mistake. In the framework developed here, conflict is analyzed less as a rising intensity curve than as a **stabilization regime**. Once incompatibility becomes trajectory-stable under binding (Ψ), temporality (Θ), and asymmetry (Ω), the conflict state begins to function like an attractor: it reduces uncertainty, organizes attention, and produces predictable role behavior. In that sense, conflict can become structurally easier to inhabit than ambiguity, without thereby becoming desirable.
 
 Here, **Α_conflict** is used strictly as a **configuration label**: an attractor regime in which **Α** stabilizes conflict trajectories under load. It makes no claim about intention, strategy, or character.
 
@@ -704,7 +727,7 @@ The conflict attractor stabilizes through coupled mechanisms. These mechanisms a
    Once asymmetry gradients and binding commitments are active, roles become costly to exit. Positions harden because leaving them changes the cost topology rather than merely changing the conversation. Role fixation is therefore not stubbornness; it is an Ω/Ψ constraint effect.
 
 2. **“Everything is evidence” under Φ-substitution**
-   When Φ replaces Σ as the consolidator, new information is embedded into the conflict frame rather than integrated across frames. Events and non-events become confirmatory material. The attractor does not need proof; it needs placement. This produces a self-sealing structure without requiring bad faith: the frame can absorb novelty by re-encoding it.
+   When Φ replaces Σ as the consolidator, new information is embedded into the conflict frame rather than integrated across frames. Events and non-events become confirmatory material. The attractor remains stable not by requiring proof in each instance, but by being able to place novelty within its existing frame. This produces a self-sealing structure without requiring bad faith: the frame can absorb novelty by re-encoding it.
 
 3. **Attention lock-in under Θ and Λ**
    Θ keeps unresolved trajectories salient because past moves remain constraint-bearing. Λ adds structured absence: missing responses, delayed decisions, unacknowledged transitions, withheld clarifications. These absences are not empty; they become load-bearing points that keep attention tied to the conflict object and prevent clean re-entry into a correction regime.
@@ -764,13 +787,13 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### 7. Recontextualization Under Load (Φ): Φ Replaces Σ
+### 7. Recontextualization Under Load (Φ): Recontextualization Under Load (Φ): When Φ Replaces Σ as the Effective Carrier of Legibility
 
 In PMS, Φ is a transformation operator: an existing configuration is embedded into a new frame so that trajectories can continue under changed conditions. In CRITIQUE, Φ typically functions as a bridge to Σ. Recontextualization expands the shared field and can make integration possible: Φ produces additional structure that Σ can consolidate.
 
-In CONFLICT, this bridge function degrades. The system does not lack perspectives; it lacks a viable consolidation corridor. Under binding pressure (Ψ), asymmetry gradients (Ω), and temporal compression (Θ), recontextualization becomes a substitute for integration rather than a precursor. Φ continues to operate—often with high intensity—but its outputs no longer feed Σ. Instead, Φ becomes the main carrier of legibility inside the conflict attractor. The scene remains interpretable, but it is interpreted through embedding and repositioning rather than through synthesis.
+In CONFLICT, this bridge function degrades. The system does not lack perspectives; it lacks a viable consolidation corridor. Under binding pressure (Ψ), asymmetry gradients (Ω), and temporal compression (Θ), recontextualization becomes a substitute for integration rather than a precursor. Φ continues to operate—often with high intensity—but its outputs no longer feed Σ in the usual integrative sense. Instead, Φ becomes the main carrier of legibility inside the conflict attractor. The scene remains interpretable, but it is interpreted through embedding and repositioning rather than through synthesis.
 
-This is a structural substitution: **Φ replaces Σ as consolidator**. Where Σ would require cross-role cost redistribution or binding revision, Φ can maintain movement by re-encoding the scene in a way that preserves local viability for a given role position.
+This is a structural substitution: **under conflict conditions, Φ can replace Σ as the effective carrier of legibility**. Where Σ would require cross-role cost redistribution or binding revision, Φ can maintain movement by re-encoding the scene in a way that preserves local viability for a given role position.
 
 This is not a claim about dishonesty or “spin.” It is a regime description: embedding (Φ) remains available when synthesis (Σ) is structurally blocked or unaffordable.
 
@@ -803,7 +826,7 @@ Across these types, the shared effect is stable movement without integration: co
 
 #### 7.3 Damage-to-License Conversion (Ω → Φ): From Prior Cost to Present Narrative Authority
 
-A characteristic conflict move is the conversion of prior asymmetry exposure into present interpretive license. The structural pattern is:
+A recurrent structural pattern is what may be called **damage-to-license conversion**. The pattern is:
 
 * prior Ω produced real exposure or cost,
 * that prior cost is recontextualized into a present entitlement to interpret, demand, withdraw, or override,
@@ -838,11 +861,11 @@ Under asymmetric cost distribution, Φ-substitution is structurally rational whe
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
-This description makes no claims about character, guilt, manipulation, or normative preference. It does not assert that recontextualization is dishonest, that moral language is inherently illegitimate, or that any role position is morally superior. It describes structural response patterns under conflict conditions in which Φ can replace Σ as a consolidator, producing stability through embedding and positioning rather than through integration.
+This description makes no claims about character, guilt, manipulation, or normative preference. It does not assert that recontextualization is dishonest, that moral language is inherently illegitimate, or that any role position is morally superior. It describes structural response patterns under conflict conditions in which Φ can replace Σ as the effective carrier of legibility, producing stability through embedding and positioning rather than through integration.
 
 ---
 
-### Chapter 8 — Minimal Forms and the Non-Conflict Border
+### 8. Minimal Forms and the Non-Conflict Border
 
 This chapter draws a sharp border around the object named **conflict** in this paper. The goal is not to police language, but to prevent a predictable collapse: calling every collision, disagreement, or unpleasant exchange “conflict,” and thereby losing the structural signal.
 
@@ -851,12 +874,12 @@ This chapter draws a sharp border around the object named **conflict** in this p
 **Conflict ≠ competition.**
 Competition can remain integrable: it can be contained within a shared frame, with reversible losses, and with a stable possibility of coordination. Competition may be intense while still preserving a shared **Σ-space** (coherence possibility) and a viable **Χ-space** (interruptibility and reflective distance).
 
-Conflict begins where the underlying trajectories no longer share an integrable spine.
+Within this grammar, conflict begins where the underlying trajectories no longer share an integrable spine.
 
 **Conflict ≠ critique.**
 Critique is a regime in which interruption remains structurally possible and correction remains structurally viable. It can be harsh, but it remains oriented toward reintegration. In critique, Φ functions as a bridge back into Σ rather than a substitute for it.
 
-Conflict begins where interruption no longer restores a shared Σ-space, and where “repair attempts” become costs that compound.
+Within this grammar, conflict begins where interruption no longer restores a shared Σ-space, and where “repair attempts” become costs that compound.
 
 **Conflict persistence ≠ escalation.**
 Persistence can be stabilizing. A conflict can remain in a stable orbit without increasing intensity because it is held by an attractor: it provides orientation, role stabilization, and predictability. What increases is not necessarily heat; what increases is structural lock-in.
@@ -916,7 +939,7 @@ Impulse collision can be unpleasant and frequent. It becomes conflict only when 
 
 #### 8.6 Single-actor conflict (structural inclusion via exposure)
 
-Conflict can be sustained by a single role position when that role position can bind others into the conflict frame through exposure constraints.
+Unilateral stabilization of conflict is possible where one role position can bind others into the conflict regime through exposure constraints.
 
 Structural mechanism (non-psychological):
 
@@ -972,7 +995,7 @@ This chapter makes no claims about character, guilt, or normative preference. It
 
 This part introduces a repeatable typology for **conflict drift**: how a conflict-state changes its structural regime over time without requiring escalation, moralization, or psychologizing. The point is classification under operator constraints, not solution ethos.
 
-A “drift type” is a **dominant failure mode of Σ-availability under Θ/Ω/Ψ pressure**, typically stabilized by Α and maintained through Φ-substitution.
+A “drift type” is a **dominant mode of Σ-unavailability under Θ/Ω/Ψ pressure**, typically stabilized by Α and maintained through Φ-substitution.
 
 #### 9.1 Integration Clash (Σ₁≠Σ₂)
 
@@ -1015,7 +1038,7 @@ A “drift type” is a **dominant failure mode of Σ-availability under Θ/Ω/�
 * **Χ_exit is costly and/or one-sided**; distance is not equally available.
 * Formal “options” exist but are non-viable due to asymmetric follow-on costs.
 * Θ amplifies sunk costs and compounds exposure.
-* Α stabilizes routines that exploit or rely on the asymmetry (without requiring intent claims).
+* Α stabilizes routines that exploit or rely on the asymmetry, without requiring intent claims.
 
 **Common misread:** treated as “power struggle” in a moralized domination frame.
 **What is actually tracked:** cost gradients and exposure asymmetry as persistence drivers.
@@ -1042,16 +1065,16 @@ A “drift type” is a **dominant failure mode of Σ-availability under Θ/Ω/�
 
 **Definition:** Dignity-in-practice (D) is structurally undermined even when no party is “bad,” irrational, or morally defective. The collapse occurs when the cost topology makes restraint and protection structurally unaffordable or non-credible.
 
-D is a derived structural axis in PMS (not an additional operator): it names whether dignity-in-practice remains feasible under the current Ω/Θ/Χ regime.
+D is a derived structural axis in PMS, not an additional operator. It names whether dignity-in-practice remains feasible under the current Ω/Θ/Χ regime.
 
 **Structural signature (minimal):**
 
 * Ω increases exposure while Χ becomes expensive or unavailable.
 * Σ is absent as consolidator; Φ becomes positioning rather than bridging.
-* The interaction regime rewards boundary violation or cost displacement (not necessarily overt hostility).
+* The interaction regime rewards boundary violation or cost displacement, not necessarily overt hostility.
 * Θ converts repeated micro-violations into durable vulnerability structures.
 
-**Common misread:** treated as “someone is abusive” (which may be true in particular cases, but is not the analytic claim here).
+**Common misread:** treated as “someone is abusive,” which may be true in particular cases, but is not the analytic claim here.
 **What is actually tracked:** whether D can be **maintained as a practice constraint** under the current Ω/Θ/Χ regime.
 
 **Operators under load:** D (practice parameter), Ω, Χ, Θ, Φ (often), Σ (often absent).
@@ -1114,7 +1137,7 @@ This description makes no claims about character, guilt, intent, or normative pr
 
 ---
 
-### Chapter 10 — Tragic Residual Conflicts (Explicit Tragedy Clause)
+### 10. Tragic Residual Conflicts (Explicit Tragedy Clause)
 
 This chapter makes explicit what PMS treats as a core structural claim: **maturity does not eliminate tragedy**. Under certain constellations, reflective distance (Χ), integrative capacity (Σ), and responsible self-binding (Ψ) do not converge toward resolution. They converge toward **clarity of incompatibility**. Conflict can become more legible as maturity rises, without becoming more solvable.
 
@@ -1130,7 +1153,7 @@ In PMS, tragedy is not a mood category. It denotes **non-integrability under mat
 * asymmetry produces non-uniform exposure and liability (Ω>0),
 * temporality converts choices into path-dependent constraints (Θ>0).
 
-Here ‘maturity’ names operator-capacity in praxis (Χ/Σ/Ψ handling under Θ/Ω), not a stable property of persons.
+Here “maturity” names operator-capacity in praxis (Χ/Σ/Ψ handling under Θ/Ω), not a stable property of persons.
 
 Under these conditions, “more reflection” does not guarantee a joint synthesis. It can instead increase the precision with which incompatibility is seen.
 
@@ -1138,7 +1161,7 @@ Under these conditions, “more reflection” does not guarantee a joint synthes
 
 Tragic residual conflicts typically revolve around **collision goods**: goods that cannot be jointly realized within the same continuation, and cannot be traded off without altering the identity and obligation topology of at least one trajectory.
 
-Collision goods are not “preferences.” They are **binding-relevant** goods. Typical collision classes (structural, not psychological):
+Collision goods are not “preferences.” They are **binding-relevant** goods. Typical collision classes, structural rather than psychological, include:
 
 * **continuity goods** (maintaining a viable ongoing trajectory),
 * **integrity goods** (maintaining an integrated spine without internal contradiction),
@@ -1154,7 +1177,21 @@ Where collision goods are present, damage is often **non-substitutable**:
 
 This is why tragedy is compatible with goodwill. The collision is structural.
 
-#### 10.3 No Automatic “IA”: Tragedy Is Not Evaluation
+#### 10.3 Scope Limit of Tragic Legibility
+
+The tragic clause in PMS-CONFLICT should not be read as an inflationary claim that mature conflict is always or finally tragic.
+
+Its narrower claim is that tragedy remains structurally possible even under maintained distance, reflexivity, and responsibility constraints, and that some conflicts become more legible without becoming more integrable.
+
+This leaves two methodological openings.
+
+First, not every hard conflict is tragic in the strong sense developed here; some remain badly stabilized, prematurely fixed, or only provisionally non-integrable.
+
+Second, tragic legibility does not eliminate the possibility that rival conflict grammars may preserve distinctions this paper does not foreground.
+
+The strength of the tragedy clause lies in blocking naive resolutionism, not in claiming final interpretive authority over all persistent incompatibility.
+
+#### 10.4 No Automatic “IA”: Tragedy Is Not Evaluation
 
 A critical misuse risk is to treat tragedy as an implicit diagnosis or an “IA verdict.” PMS-CONFLICT blocks this.
 
@@ -1170,9 +1207,9 @@ Tragic residual conflict is not a score and not a label. It does not imply:
 
 The tragedy clause blocks an automatic inference from “painful outcome” to “IA”: irreducible collision goods can produce harm even when asymmetries remain legitimate or unavoidable.
 
-Tragedy is **a structural state description**: under Θ/Ω/Ψ constraints, Σ cannot produce a shared continuation without terminal damage. This may coexist with high discipline and dignity-in-practice; it may also coexist with severe misuse. The tragedy clause does not decide which—**it only fixes that non-integrability can persist even under maturity**.
+Tragedy is **a structural state description**: under Θ/Ω/Ψ constraints, Σ cannot produce a shared continuation without terminal damage. This may coexist with high discipline and dignity-in-practice; it may also coexist with severe misuse. The tragedy clause does not decide which. It only fixes that non-integrability can persist even under maturity.
 
-#### 10.4 Conflict Legibility Rather Than Conflict Resolution
+#### 10.5 Conflict Legibility Rather Than Conflict Resolution
 
 Because tragedy is structurally possible, PMS-CONFLICT is oriented toward **legibility** rather than “resolution.”
 
@@ -1186,11 +1223,11 @@ Legibility means:
 
 Legibility is not intervention logic. It does not answer “what to do.” It answers “what this is” without collapsing into moral verdicts or psychologizing.
 
-In tragic residual conflicts, legibility can be the only stable gain: clarity about what cannot be integrated prevents repeated compounding Σ-attempts that behave like cost-amplifiers under Θ/Ω.
+In tragic residual conflicts, legibility can be the primary stable gain: clarity about what cannot be integrated prevents repeated compounding Σ-attempts that behave like cost-amplifiers under Θ/Ω.
 
-#### 10.5 Epistemic Boundary: The Knowledge Threshold Link
+#### 10.6 Epistemic Boundary: The Knowledge Threshold Link
 
-Tragic residual conflict also has an epistemic implication: **certain kinds of domain knowledge cannot emerge where conflict is structurally impossible**.
+Tragic residual conflict also has an epistemic implication: **certain kinds of domain knowledge remain structurally thin where conflict is structurally impossible**.
 
 If a domain has no real exposure, no binding stakes, and no trajectory cost (low Ω, low Ψ, low Θ), then:
 
@@ -1198,16 +1235,16 @@ If a domain has no real exposure, no binding stakes, and no trajectory cost (low
 * incompatibility remains rhetorically solvable,
 * and the domain produces “knowledge” that is untested by cost topology.
 
-In such settings, conflict can be discussed, but **tragic structure cannot be known**—because the conditions that generate it do not occur. The knowledge threshold is therefore structural:
+In such settings, conflict can be discussed, but **tragic structure cannot be known** in the strong sense developed here, because the conditions that generate it do not occur. The relevant knowledge threshold is therefore structural rather than merely discursive:
 
 * where Ω/Θ/Ψ never become real, domain understanding of tragedy remains thin or moralized,
 * where Ω/Θ/Ψ are real, tragedy becomes legible as a constraint phenomenon rather than a failure narrative.
 
 This is not a recommendation to increase exposure. It is a boundary claim about what can become intelligible in a domain without real cost and binding conditions.
 
-#### 10.6 Docking: LOGIC and MIP/IA Boundaries
+#### 10.7 Docking: LOGIC and MIP/IA Boundaries
 
-##### 10.6.1 Docking to LOGIC (Post-Moral Residue)
+##### 10.7.1 Docking to LOGIC (Post-Moral Residue)
 
 Tragic residual conflict often produces **post-moral residue**: a remainder that persists when justification reaches its limit.
 
@@ -1219,19 +1256,19 @@ This is the LOGIC dock: tragedy becomes visible precisely where explanation rema
 
 LOGIC denotes the boundary where justification remains possible while shared continuation becomes structurally unavailable.
 
-##### 10.6.2 Docking to MIP/IA (Tragedy vs Evaluation)
+##### 10.7.2 Docking to MIP/IA (Tragedy vs Evaluation)
 
 The tragedy clause must not be converted into governance entitlement. **MIP/IA (MIPractice) treats IA = *Inadult Asymmetry* as a separate downstream check via the IA-box (T–J–TB–R), not as an automatic conclusion from conflict intensity or tragedy.**
 
 * PMS-CONFLICT: names tragedy as a structural possibility, preserving depersonalized legibility.
 * MIP/IA: decides whether any analysis is transmissible, evaluable, zone-appropriate, and misuse-resistant.
 
-The boundary is essential: tragedy is a **domain-layer state description**, not a permission slip for scoring, labeling, or enforcement. Where evaluation is necessary (institutional or public contexts), it must be explicitly handled downstream under MIP/IA constraints—without retroactively turning tragedy into blame.
+The boundary is essential: tragedy is a **domain-layer state description**, not a permission slip for scoring, labeling, or enforcement. Where evaluation is necessary (institutional or public contexts), it must be explicitly handled downstream under MIP/IA constraints, without retroactively turning tragedy into blame.
 
 **Operators under load:** Θ, Ω, Ψ, Σ
 **Docking:** to LOGIC (post-moral residue) and to MIP/IA (tragedy vs evaluation)
 
-#### 10.7 Chapter Closure
+#### 10.8 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
@@ -1291,7 +1328,7 @@ PMS-CONFLICT does not promise tools, techniques, or leverage. It does not imply 
 In this paper, references to “tools” are treated only as constraints on what is structurally available inside a regime. They are not treated as intervention advice, and they cannot be used as justification for coercion.
 
 **Operators under load:** guardrail layer (Χ / reversibility / D) with Ω and Φ as typical misuse carriers.
-**Docking:** this firewall prevents drift into governance and prepares later discussion of downstream handling (if any) without turning CONFLICT into an enforcement interface.
+**Docking:** this firewall prevents drift into governance and prepares later discussion of downstream handling, if any, without turning CONFLICT into an enforcement interface.
 
 #### 11.5 Chapter Closure
 
@@ -1334,11 +1371,11 @@ It does **not** imply that anyone “should” avoid conflict talk, that exposur
 
 ### 12. Why history is required (PMS logical necessity)
 
-Conflict mechanics are often misread as essence claims when their **temporal production conditions** are left implicit. PMS-CONFLICT therefore treats “history” not as background narrative, but as a **formal necessity**: without Θ-history, a reader will default to ontological interpretations (“this is how people are”) instead of structural interpretations (“this is how a regime stabilizes under these constraints”).
+Conflict mechanics are often misread as essence claims when their **temporal production conditions** are left implicit. PMS-CONFLICT therefore treats “history” not as background narrative, but as a **formal necessity within the argument of this paper**: without Θ-history, a reader will default to ontological interpretations (“this is how people are”) instead of structural interpretations (“this is how a regime stabilizes under these constraints”).
 
-In PMS terms, this is not optional. A stabilized pattern is an attractor (Α). An attractor is not a timeless property of a person or a group. It is a **recurrent stabilization** that emerges only under a sufficient configuration of frame constraints (□), non-events (Λ), asymmetry gradients (Ω), temporality (Θ), and recontextualization pathways (Φ). If the enabling configuration is recent or recently intensified, then the attractor field is correspondingly young: it has not had time to sediment into long-run stability, and it will often present as volatile, rapidly re-labeled, and highly sensitive to exposure.
+In PMS terms, this is not optional within this argument. A stabilized pattern is an attractor (Α). An attractor is not a timeless property of a person or a group. It is a **recurrent stabilization** that emerges only under a sufficient configuration of frame constraints (□), non-events (Λ), asymmetry gradients (Ω), temporality (Θ), and recontextualization pathways (Φ). If the enabling configuration is recent or recently intensified, then the attractor field is correspondingly young: it has not had time to sediment into long-run stability, and it will often present as volatile, rapidly re-labeled, and highly sensitive to exposure.
 
-A “young Α-field” is therefore a structural diagnosis of the regime itself:
+A “young Α-field” can therefore function as a structural diagnosis of the regime itself within this framework:
 
 * **Θ is compressed**: trajectories lock in faster, option spaces shrink sooner, and reversibility windows close earlier.
 * **Φ is accelerated**: structures are re-embedded into new frames at high frequency, so interpretations mutate faster than integration (Σ) can consolidate.
@@ -1347,7 +1384,7 @@ A “young Α-field” is therefore a structural diagnosis of the regime itself:
 
 The consequence is not “modernity causes conflict.” The consequence is narrower: under a regime with high Θ-pressure and high Φ-frequency, **stabilized incompatibilities become easier to produce and harder to unwind**, and the resulting patterns are prone to being mistaken for timeless properties because their historical enabling conditions are not visible at the surface.
 
-This chapter therefore uses history as a guardrail against essentialization. It does not claim that the underlying operators are new; it claims that the **composition and scaling** of operator conditions can be new, and that new compositions can generate new stabilizations. Without making Θ-history explicit, CONFLICT is predictably misread as an anthropology of fixed traits rather than as a grammar of regimes.
+This chapter therefore uses history as a guardrail against essentialization. It does not claim that the underlying operators are new; it claims that the **composition and scaling** of operator conditions can be new, and that new compositions can generate new stabilizations. Without making Θ-history explicit, CONFLICT is especially prone to being misread as an anthropology of fixed traits rather than as a grammar of regimes.
 
 **Operators under load:** Α, Θ, Ω, Φ.
 **Docking:** to enabling conditions (how the modern constraint field makes specific stabilizations more probable without turning them into essence claims).
@@ -1384,11 +1421,11 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 13 — Enabling Conditions (Neutral, Non-Moral)
+### 13. Enabling Conditions (Neutral, Non-Moral)
 
 This chapter states enabling conditions under which conflict regimes become more frequent, more stable, and more legible as **states** rather than episodic events. These conditions are not moral diagnoses and not character claims. They describe how modern constraint fields reconfigure binding, exposure, recontextualization, and attractor formation such that **stabilized incompatibility** becomes a more common equilibrium.
 
-Across all four conditions, the common structural signature is a shift from **Σ-carrying** toward **Φ-substitution** under **Θ-pressure** and **Ω-gradients**, with **Ψ** becoming both more frequent and more revisable. Conflict does not “increase” because agents become worse; it stabilizes because the environment makes certain stabilization paths cheaper than integration.
+Across all four conditions, **a common structural signature across the conditions discussed here** is a shift from **Σ-carrying** toward **Φ-substitution** under **Θ-pressure** and **Ω-gradients**, with **Ψ** becoming both more frequent and more revisable. Conflict does not “increase” because agents become worse; it stabilizes because the environment makes certain stabilization paths cheaper than integration.
 
 #### 13.1 Decoupling binding–survival (Θ/Ω) → Ψ partial/revisable; trust system-replaceable
 
@@ -1438,11 +1475,17 @@ A compact enabling-condition signature can be stated as:
 * **Ψ** becomes partial and revisable, increasing the number of co-existing incompatible bindings.
 * **Σ** is present as a normative ideal in discourse but absent as a consolidator in the actual constraint regime.
 
-#### 13.6 Chapter Closure
+#### 13.6 Methodological Boundary on Modern Conditions
+
+The conditions described in this chapter are not offered as an exhaustive sociology of modern conflict. They identify a structural cluster under which stabilized incompatibility becomes more likely, more durable, and more easily displaced into attractors, substitutes, and externalized load.
+
+This does not imply that earlier or non-modern regimes lacked conflict, nor that the present chapter provides a total historical explanation. Its narrower claim is that these conditions intensify specific operator interactions in ways that this grammar can track with unusual clarity.
+
+#### 13.7 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
-From the described constellation, it follows structurally that modern conflict regimes are enabled when **Φ becomes cheaper than Σ under Θ-pressure and Ω-gradients**, while **Ψ becomes partial and proliferative**. The frame shifts from “integration as default” to “stabilization as default”: incompatibilities can persist as live states because system continuity no longer requires consolidation into a shared Σ-space. Conflict becomes a stable ordering device rather than an exception.
+From the described constellation, it follows structurally that modern conflict regimes become especially enabled when **Φ becomes cheaper than Σ under Θ-pressure and Ω-gradients**, while **Ψ becomes partial and proliferative**. The frame shifts from “integration as default” to “stabilization as default”: incompatibilities can persist as live states because system continuity no longer requires consolidation into a shared Σ-space. Conflict becomes a stable ordering device rather than an exception.
 
 ##### (2) Cost Distribution (Cost Topology)
 
@@ -1472,13 +1515,13 @@ This description makes no claims about character, guilt, or normative preference
 
 ## Part V — Extension Block: Leadership, Trust, Group Binding
 
-### Chapter 14 — Sex-Relevant, Not Role-Free: Distributional Realism
+### 14. Sex-Relevant, Not Role-Free: Distributional Realism
 
 This chapter introduces a constrained claim: certain conflict mechanics are **sex-relevant** in the sense that historical and institutional role distributions often correlate with sex-coded placement, visibility, and expected carriage. This is not an essence claim, not a trait claim, and not an ontological statement about “men” or “women.” The paper remains strictly structural: it describes how **cost topology** becomes legible only when roles are treated as real carriers of exposure, liability, and continuity.
 
-A recurrent misread in conflict discourse is the attempt to model conflict as if it occurred between “pure persons,” i.e., agents abstracted from structural placement. In PMS terms, this misread suppresses **Ω** (exposure gradients), flattens **Θ** (trajectory burden), and treats **Ψ** (binding) as symmetric by default. The result is predictable: costs become invisible, responsibility gradients become unnameable, and conflict is moralized because the structural map has been removed.
+A recurrent misread in conflict discourse is the attempt to model conflict as if it occurred between “pure persons,” that is, agents abstracted from structural placement. In PMS terms, this misread suppresses **Ω** (exposure gradients), flattens **Θ** (trajectory burden), and treats **Ψ** (binding) as symmetric by default. The result is predictable: costs become invisible, responsibility gradients become unnameable, and conflict is moralized because the structural map has been removed.
 
-#### 14.1 Distributional realism: roles are the carrier medium of conflict
+#### 14.1 Distributional realism: roles function as a primary carrier medium of conflict legibility
 
 Conflict is not primarily a clash of opinions. It is a stabilized incompatibility of practice trajectories under binding, time, and cost. Those constraints are not evenly distributed. They are carried by **role positions** inside frames (□): caregiving positions, authority positions, institutional positions, reputationally exposed positions, positions close to continuity work, and positions close to endpoint-setting.
 
@@ -1500,11 +1543,17 @@ The key move is to separate:
 * **exposure** (what costs become unavoidable for those positions),
 * **legibility** (what can be publicly named without increasing exit cost).
 
-Sex relevance, in this restricted sense, is a visibility condition: it predicts which costs can be named as structural without triggering immediate moralization, because the audience often tries to re-personalize what is, in fact, a role topology.  
+Sex relevance, in this restricted sense, is a visibility condition: it predicts which costs can be named as structural without triggering immediate moralization, because the audience often tries to re-personalize what is, in fact, a role topology.
 
-**Misuse firewall:** Nothing in this chapter licenses selection, exclusion, ranking, or legitimacy claims about persons or groups. Sex relevance here is only a descriptive visibility condition for role-distributed cost topology.  
+**Misuse firewall:** Nothing in this chapter licenses selection, exclusion, ranking, or legitimacy claims about persons or groups. Sex relevance here is only a descriptive visibility condition for role-distributed cost topology.
 
-#### 14.3 Why “pure persons” makes the mechanics invisible
+#### 14.3 Anti-Essentialization Boundary
+
+Nothing in this chapter supports causal, ontological, or evaluative claims about sex as such. The argument concerns role-distributed exposure, continuity load, and binding asymmetry where these correlate with sex-coded placement in a given field.
+
+If such correlation is absent, unstable, or overridden by other structural distributions, the chapter’s explanatory force correspondingly weakens. Its claim is therefore conditional and field-sensitive, not anthropologically final.
+
+#### 14.4 Why role-free person models obscure the mechanics described here
 
 Treating agents as role-free produces three systematic distortions:
 
@@ -1521,7 +1570,7 @@ Distributional realism therefore functions as an anti-moralization constraint. I
 
 **Docking:** compatible with EDEN/SEX cross-anchor (sex relevance treated as role-distribution visibility under Ω/Θ/Ψ/□, not as essence or causation).
 
-#### 14.4 Minimal operator signature
+#### 14.5 Minimal operator signature
 
 A minimal signature for sex-relevant distributional realism is:
 
@@ -1532,7 +1581,7 @@ A minimal signature for sex-relevant distributional realism is:
 
 This signature does not predict outcomes. It predicts where legibility and misread risks concentrate when conflict states emerge.
 
-#### 14.5 Chapter Closure
+#### 14.6 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
@@ -1564,7 +1613,7 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 15 — Non-Symmetrizability: Conflicts with Infrastructure, Risk, and Time Load
+### 15. Non-Symmetrizability: Conflicts with Infrastructure, Risk, and Time Load
 
 This chapter fixes a structural limit: some conflicts cannot be symmetrized, not because participants “refuse fairness,” but because the configuration contains non-transferable loads. In these cases, symmetry is not a moral goal that could be achieved by better communication. It is a structural impossibility produced by exposure gradients, continuity constraints, and binding.
 
@@ -1626,7 +1675,11 @@ In non-symmetrizability regimes, the relevant structural fork is not “solve vs
 * **carriage viability:** whether the configuration can make continued load-bearing structurally viable without collapsing D (dignity-in-practice) under Θ/Ω pressure; or
 * **tragedy fixation:** whether the configuration can stabilize the non-integrable remainder without pretending Σ has been achieved.
 
+These are structural alternatives within this grammar, not normative recommendations.
+
 “Fixation” here means containment: a stable boundary around incompatibility that prevents unbounded cost displacement. It is not moral reconciliation and not a promise of integration.
+
+A small but important boundary follows from this: **non-symmetrizability is a structural claim about load topology, not a defense of hierarchy**.
 
 #### 15.6 Chapter Closure
 
@@ -1660,7 +1713,7 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 16 — Asymmetric Leadership as Conflict Fixpoint (Integration Substitute)
+### 16. Asymmetric Leadership as Conflict Fixpoint (Integration Substitute)
 
 When conflict is stabilized incompatibility, the structural question is not “who is right,” but what mechanism prevents the incompatibility from converting into unbounded cost displacement. Chapter 15 established that symmetry cannot be produced in infrastructure/risk/time-coupled regimes. This chapter specifies the complementary structural node: leadership as a fixpoint that substitutes for shared integration where shared Σ is impossible.
 
@@ -1693,11 +1746,11 @@ It performs three functions:
 
 This is not “solving the conflict.” It is preventing the conflict state from converting into a regime where every interaction becomes evidence, every non-event becomes load-bearing, and every frame shift becomes an escalation proxy. The fixpoint may be carried by a person, a role procedure, or an institutional mechanism; it is defined by function, not by bearer.
 
-**Validity constraint:** In PMS terms, the fixpoint remains a valid stabilization only if it preserves distance (Χ), maintains reversibility where structurally possible, and does not collapse dignity-in-practice (D) into coercion. A “fixpoint” that suspends these constraints is not leadership in this grammar; it is governance drift (structurally illegible as PMS application).
+**Validity constraint:** In PMS terms, the fixpoint remains a valid stabilization only if it preserves distance (Χ), maintains reversibility where structurally possible, and does not collapse dignity-in-practice (D) into coercion. A “fixpoint” that suspends these constraints is not leadership in this grammar; it is governance drift, structurally illegible as PMS application.
 
 #### 16.3 Why leadership is asymmetric by necessity
 
-If the system could produce symmetry, it would not require a fixpoint. The fixpoint exists because the configuration is already asymmetric in exposure, liability, or continuity load. Leadership therefore inherits asymmetry rather than creating it.
+Within the regimes modeled here, leadership is structurally asymmetric by necessity whenever a fixpoint function becomes required. If the system could produce symmetry, it would not require a fixpoint. The fixpoint exists because the configuration is already asymmetric in exposure, liability, or continuity load. Leadership therefore inherits asymmetry rather than creating it.
 
 A symmetric “leadership” concept is typically a pseudo-symmetry attempt: it assumes equal cost proximity while demanding equal consolidation responsibility. Under Ω/Θ pressure, this converts into one of two outcomes:
 
@@ -1706,7 +1759,7 @@ A symmetric “leadership” concept is typically a pseudo-symmetry attempt: it 
 
 #### 16.4 Distinguishing leadership from domination in this model
 
-Domination is an interpretive overlay that presupposes psychological intent or moral status. PMS-CONFLICT does not require that overlay.
+Domination is a distinct evaluative or downstream interpretive overlay that is not required for describing the structural mechanism here.
 
 In this model:
 
@@ -1717,7 +1770,13 @@ Leadership can be present in configurations where no agent seeks control, and it
 
 Domination may be a valid downstream evaluation in other frameworks; PMS-CONFLICT does not require it to model the mechanism.
 
-#### 16.5 Failure modes of the fixpoint
+#### 16.5 Descriptive Non-Preference Clause
+
+This chapter does not argue that asymmetric leadership is desirable, superior, or the mature solution to conflict. Its narrower claim is that, where shared integration is unavailable and continuity remains required, some configurations produce a fixpoint function that localizes stabilization work.
+
+Whether such a function remains legitimate, bounded, or transmissible is not decided here. That question belongs either to explicit validity constraints within PMS or to downstream governance layers.
+
+#### 16.6 Failure modes of the fixpoint
 
 When the fixpoint cannot be established or cannot be sustained, the conflict state typically drifts into one of the following:
 
@@ -1730,7 +1789,7 @@ These are not defects. They are structurally rational drift outcomes when a viab
 **Operators under load:** Σ, Ψ, Θ, Ω.
 **Docking:** to trust (how stabilization is accepted, contested, or externalized).
 
-#### 16.6 Chapter Closure
+#### 16.7 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
@@ -1744,7 +1803,7 @@ Costs distribute by proximity to consolidation responsibility and exit affordabi
 
 ##### (3) Rational Response Envelope (Structural Rationality)
 
-Under asymmetric cost distribution with Σ incompatibility and Θ pressure, structurally rational responses include establishing an explicit stabilization node (formalized or de facto) where continued oscillation becomes irreversibly expensive; contesting or relocating the fixpoint where its cost localization would generate higher downstream costs than drift; and allowing drift into Α/Φ regimes where stabilization cannot be afforded or cannot be legitimized within the constraint field. These are consequences of cost topology under Ω/Θ/Ψ, not evaluations of intent, competence, or virtue.
+Under asymmetric cost distribution with Σ incompatibility and Θ pressure, structurally rational responses include establishing an explicit stabilization node, formalized or de facto, where continued oscillation becomes irreversibly expensive; contesting or relocating the fixpoint where its cost localization would generate higher downstream costs than drift; and allowing drift into Α/Φ regimes where stabilization cannot be afforded or cannot be legitimized within the constraint field. These are consequences of cost topology under Ω/Θ/Ψ, not evaluations of intent, competence, or virtue.
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
@@ -1752,11 +1811,13 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 17 — Trust Is Derivative (Not Prerequisite)
+## Part V — Extension Block: Leadership, Trust, Group Binding
+
+### 17. Trust Is Derivative (Not Prerequisite)
 
 This chapter blocks a recurring interpretive error: treating trust as the precondition that must exist before conflict can be handled. In PMS-CONFLICT, trust is not a prerequisite operator. It is a derived structural effect that appears when stabilization, binding, and feedback constraints make continued coupling less expensive than withdrawal or drift.
 
-Trust becomes legible only after a configuration has already achieved a specific constraint regime: a bounded stabilization node (often the Chapter 16 fixpoint function), coupled to interruption capacity (Χ), temporality management (Θ), and asymmetry visibility (Ω) under binding (Ψ). Without that regime, “trust talk” tends to function as Φ: a narrative substitute for missing constraint architecture.
+Trust becomes legible only after a configuration has already achieved a specific constraint regime: a bounded stabilization node, often the Chapter 16 fixpoint function, coupled to interruption capacity (Χ), temporality management (Θ), and asymmetry visibility (Ω) under binding (Ψ). Without that regime, trust talk often functions as Φ: a narrative substitute for missing constraint architecture under the conditions modeled here.
 
 #### 17.1 Trust as a structural effect
 
@@ -1768,9 +1829,9 @@ In this model, trust is not a psychological state and not a moral reward. It is 
 
 Under these conditions, sustained coordination becomes structurally rational: uncertainty is priced, reversibility is maintained where possible, and binding can persist without requiring permanent Φ-substitution.
 
-#### 17.2 Why “trust first” fails structurally
+#### 17.2 Why trust-first framings fail structurally
 
-“Trust first” reads as a precondition claim, but structurally it often appears as a masking maneuver when the system lacks bounded stabilization.
+A trust-first framing reads as a precondition claim, but structurally it often appears as a masking maneuver when the system lacks bounded stabilization.
 
 If binding is weak or externally replaceable, the configuration tends to route through substitutes:
 
@@ -1778,11 +1839,11 @@ If binding is weak or externally replaceable, the configuration tends to route t
 * **Narrative coercion:** Φ expands to create legitimacy, alignment, or permission structures that replace consolidation with interpretation.
 * **Φ inflation:** every failure to integrate is converted into story-work, motive-work, or historization rather than constraint repair.
 
-These regimes can produce surface compliance and short-term coordination, but they do not produce trust in the structural sense defined here. They produce stability via substitution, not via bounded, feedback-coupled stabilization.  
+These regimes can produce surface compliance and short-term coordination, but they do not produce trust in the structural sense defined here. They produce stability via substitution, not via bounded, feedback-coupled stabilization.
 
-Any institutional evaluation of stabilization legitimacy belongs downstream (e.g., via IA-box criteria), not inside the descriptive trust grammar.  
+Any institutional evaluation of stabilization legitimacy belongs downstream, for example via IA-box criteria, not inside the descriptive trust grammar.
 
-**Firewall:** “Trust” must not be demanded as a legitimacy weapon; where bounded stabilization and feedback are absent, “trust demands” are structurally indistinguishable from Φ-driven coercion. 
+**Firewall:** “Trust” must not be demanded as a legitimacy weapon; where bounded stabilization and feedback are absent, trust demands are structurally indistinguishable from Φ-driven coercion.
 
 #### 17.3 Bounded Χ as the trust hinge
 
@@ -1803,8 +1864,8 @@ When the configuration cannot sustain bounded stabilization and feedback couplin
 
 These are not failures of will. They are structurally rational outcomes under cost topology when trust conditions are absent.
 
-**Operators under load:** Χ (bounded/limited), Θ, Ω, Ψ, Φ.
-**Docking:** to groups (how trust substitutes are produced and stabilized).
+**Operators under load:** Χ (bounded/limited), Θ, Ω, Ψ, Φ
+**Docking:** to groups (how trust substitutes are produced and stabilized)
 
 #### 17.5 Chapter Closure
 
@@ -1830,7 +1891,7 @@ Under asymmetric cost distribution, structurally rational responses include:
 * relocating binding into groups or institutions where individualized stabilization is structurally unaffordable;
 * expanding Φ as a substitute when Σ consolidation and bounded Χ cannot be sustained without becoming irreversibly expensive.
 
-These are cost consequences under Ω/Θ/Ψ/Χ constraints, not judgements about maturity or intent.
+These are cost consequences under Ω/Θ/Ψ/Χ constraints, not judgments about maturity or intent.
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
@@ -1838,11 +1899,11 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 18 — Groups as Stabilizers (No Enemy Model)
+### 18. Groups as Stabilizers (No Enemy Model)
 
 This chapter describes groups as a structural stabilizer under conflict conditions, not as an enemy class, pathology, or moral failure. “Group” here denotes a binding and coordination substrate that can absorb exposure, distribute load, and produce legibility when bilateral or role-local integration becomes structurally unaffordable.
 
-In PMS-CONFLICT, group formation is treated as a technology of stabilization: a way to make trajectories survivable under asymmetric exposure (Ω), binding load (Ψ), and interpretive pressure (Φ). The model does not assume malign intent. It models cost-relief mechanics.
+In PMS-CONFLICT, group formation is treated as a **structural technology of stabilization**: a way to make trajectories survivable under asymmetric exposure (Ω), binding load (Ψ), and interpretive pressure (Φ). The model does not assume malign intent. It models cost-relief mechanics.
 
 #### 18.1 Why groups stabilize
 
@@ -1868,9 +1929,9 @@ This does not require a conspiracy model. It is a structural availability effect
 
 #### 18.3 Replacement chain under pressure
 
-When trust cannot emerge as a derived effect (Chapter 17), group binding tends to replace the missing constraint regime via a repeatable chain:
+When trust cannot emerge as a derived effect (Chapter 17), group binding tends to replace unavailable trust conditions via a repeatable chain:
 
-* trust (as emergent coordination effect) is bypassed;
+* trust, as emergent coordination effect, is bypassed;
 * **consensus signals** become a surrogate for integration;
 * **responsibility diffuses** because costs are no longer localized to a bounded stabilization node;
 * fixation increases because the group provides a stable Φ/Α substrate even when Σ remains unavailable.
@@ -1887,39 +1948,49 @@ Group stabilization is structurally rational under at least three conditions:
 
 In these cases, the group is not an ethical mistake. It is a cost solution under constraint.
 
-Any application that uses this description to justify targeting, shaming, or coercing group members violates PMS entry conditions (Χ, reversibility, D) and is formally invalid as PMS.  
+Any application that uses this description to justify targeting, shaming, or coercing group members violates PMS entry conditions (Χ, reversibility, D) and is formally invalid as PMS.
 
-**Operators under load:** Α_group, Φ, Ψ, Ω.  
+**Operators under load:** Α_group, Φ, Ψ, Ω
+**Docking:** to narrative dominance and EDEN parasitics (how group-stabilized Φ/Α regimes become the primary legibility layer)
+**Firewall:** This chapter does not authorize de-legitimizing groups as such. “Group stabilization” is not a moral accusation and not an epistemic discrediting device.
 
-**Docking:** to narrative dominance and EDEN parasitics (how group-stabilized Φ/Α regimes become the primary legibility layer).  
+#### 18.5 Non-Reduction Clause
 
-**Firewall:** This chapter does not authorize de-legitimizing groups as such. “Group stabilization” is not a moral accusation and not an epistemic discrediting device. The model names a stabilization mechanism, not an illegitimate actor class.
+This chapter does not reduce groups to conflict machines, nor does it imply that group formation is secondary or inauthentic relative to dyadic trust. Its claim is narrower: under conditions of priced exit, audience coupling, and unavailable consolidation, groups can function as a cheaper stabilization substrate than individualized integration.
 
-### 18.5 Chapter Closure
+Whether that substitution is productive, distorting, or tragic depends on the wider cost topology and cannot be settled by group-formation alone.
 
-#### (1) Structural Result (Condensation)
+#### 18.6 Group Substitution Boundary
+
+Group stabilization should not be read as proof that group-based continuation is more mature, more truthful, or more legitimate than individualized coordination. Its structural force lies in cost reduction under exposure, uncertainty, and unavailable consolidation.
+
+This makes groups analytically important, not normatively privileged.
+
+#### 18.7 Chapter Closure
+
+##### (1) Structural Result (Condensation)
 
 From the described constellation, it follows structurally that group binding functions as a stabilization substitute when trust-as-derivative cannot be produced: Φ and Α_group provide coherence and predictability where Σ consolidation is non-viable, while Ψ load is shifted from self-binding to membership binding under Ω-shaped exposure gradients.
 
-#### (2) Cost Distribution (Cost Topology)
+##### (2) Cost Distribution (Cost Topology)
 
 Role positions close to endpoint and liability costs respond differently from role positions exposed to continuity and relational costs.
 
-Costs distribute by exposure, exit affordability, and the degree of trajectory coupling. Role positions close to endpoint and liability costs tend to use groups to reduce terminal exposure through diffusion and delegated judgment. Role positions exposed to continuity and relational costs tend to use groups to reduce continuous load by externalizing coherence production into narrative and alignment scaffolds. Role positions with lower exit costs can switch groups or frames with minimal penalty, while role positions with higher exit costs remain trajectory-coupled and absorb follow-on costs created by group-level stabilization (publicness, persistence, archival memory).
+Costs distribute by exposure, exit affordability, and the degree of trajectory coupling. Role positions close to endpoint and liability costs tend to use groups to reduce terminal exposure through diffusion and delegated judgment. Role positions exposed to continuity and relational costs tend to use groups to reduce continuous load by externalizing coherence production into narrative and alignment scaffolds. Role positions with lower exit costs can switch groups or frames with minimal penalty, while role positions with higher exit costs remain trajectory-coupled and absorb follow-on costs created by group-level stabilization, including publicness, persistence, and archival memory.
 
-#### (3) Rational Response Envelope (Structural Rationality)
+##### (3) Rational Response Envelope (Structural Rationality)
 
 Under asymmetric cost distribution, group stabilization is structurally rational where individual stabilization becomes irreversibly expensive and where withdrawal would generate higher downstream costs. In such regimes, diffusion, judgment delegation, and narrative safety appear as cost-minimizing consequences, while responsibility diffusion and fixation emerge as predictable follow-on effects of Α_group coupled with Φ substitution.
 
-#### (4) Reader-Guard (Misinterpretation Prevention)
+##### (4) Reader-Guard (Misinterpretation Prevention)
 
 This description makes no claims about character, guilt, or normative preference. It does not frame groups as enemies, pathologies, or moral defects, and it does not prescribe joining or avoiding groups. It describes structural stabilization patterns under asymmetric cost conditions and continuous availability, including how diffusion, delegated judgment, and narrative safety can replace Σ consolidation without implying moral evaluation or intent attribution.
 
 ---
 
-### Chapter 19 — Emotional Coercion as Structural Coupling (Ψ + Recognition ↔ Denial)
+### 19. Emotional Coercion as Structural Coupling (Ψ + Recognition ↔ Denial)
 
-This chapter formalizes “emotional coercion” as a coupling pattern inside conflict regimes, not as a diagnosis, trait attribution, or a theory of motives. The term is retained only as a reader-facing label for a structural object: a configuration in which binding and recognition become coupled to denial dynamics, producing constraint effects through non-response, withdrawal, and the delegitimization of distance.
+This chapter formalizes “emotional coercion” as a coupling pattern inside conflict regimes, not as a diagnosis, trait attribution, or a theory of motives. The term is retained only as a pragmatic, reader-facing label for a structural object: a configuration in which binding and recognition become coupled to denial dynamics, producing constraint effects through non-response, withdrawal, and the delegitimization of distance.
 
 #### 19.1 Definition (structural, non-psychological)
 
@@ -1927,13 +1998,13 @@ This chapter formalizes “emotional coercion” as a coupling pattern inside co
 
 Minimal form:
 
-* a recognition demand is made load-bearing (explicitly or implicitly);
-* the recognition demand is coupled to a denial constraint (what may not be named, framed, or counted);
+* a recognition demand is made load-bearing, explicitly or implicitly;
+* the recognition demand is coupled to a denial constraint, that is, to what may not be named, framed, or counted;
 * refusal does not merely disagree; it triggers structural penalties via exit-cost inflation or channel control.
 
 The object is not “emotion.” The object is **constraint coupling**.
 
-**Terminology firewall:** “Coercion” here names a constraint effect (control relevance of Λ under Ψ), not a character verdict. It must not be used as a label for persons or as a justification for retaliation, exposure, or enforcement.
+**Terminology firewall:** “Coercion” here names a constraint effect — the control relevance of Λ under Ψ — not a character verdict. It must not be used as a label for persons or as a justification for retaliation, exposure, or enforcement.
 
 #### 19.2 Recognition under denial: the coupling mechanism
 
@@ -1948,11 +2019,11 @@ In the coercive coupling configuration, recognition is treated as a gate conditi
 
 This produces a stable constraint: recognition is demanded, but the structural terms under which recognition would be legible are blocked.
 
-“Denial” is **used strictly** as a frame constraint (□): a restriction on what counts as admissible description in the scene, *not* a claim about anyone’s psychology.
+“Denial” is used strictly as a frame constraint (□): a restriction on what counts as admissible description in the scene, not a claim about anyone’s psychology.
 
 #### 19.3 Canonical signature: Ψ + Ω obscured + Χ delegitimized → Λ control
 
-A canonical recognition–denial coupling signature can be written as:
+A canonical recognition-denial coupling signature can be written as:
 
 **Ψ + (Ω obscured) + (Χ delegitimized) → Λ_control**
 
@@ -1967,13 +2038,13 @@ The signature is descriptive. It specifies how a non-event becomes load-bearing 
 
 #### 19.4 Why Λ control is effective under binding
 
-Λ (non-event) becomes coercive only when it is structurally consequential:
+Λ, non-event, becomes coercive only when it is structurally consequential:
 
 * the interaction channel is scarce or privileged (access is not freely replaceable);
 * exit is costly (social, reputational, institutional, or identity-bound);
 * temporality (Θ) amplifies delay into option collapse (deadlines, escalating downstream effects, accumulating uncertainty).
 
-In this regime, “non-response” is not a lack of action. It is an action-equivalent move that redistributes costs and forces trajectory coupling.
+In this regime, non-response is not a lack of action. It is an action-equivalent move that redistributes costs and forces trajectory coupling.
 
 #### 19.5 Depersonalization rule: coupling without character claims
 
@@ -1981,24 +2052,24 @@ This model does not require that any role position intends coercion, understands
 
 The analytic object is the **coupling of operators**, not the inner life of actors.
 
-**Operators under load:** Λ, Ψ, Ω, Χ.
-**Docking:** to institutionalized Χ (how distance becomes regulated, priced, or delegitimized by environment and role structure).
+**Operators under load:** Λ, Ψ, Ω, Χ
+**Docking:** to institutionalized Χ (how distance becomes regulated, priced, or delegitimized by environment and role structure)
 
 #### 19.6 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
-From the described constellation, it follows structurally that recognition demands can become coercive when they are coupled to denial of the relevant asymmetry and when reflective distance is delegitimized, making Λ (non-event) function as a control operator under binding rather than as incidental absence.
+From the described constellation, it follows structurally that recognition demands can become coercive when they are coupled to denial of the relevant asymmetry and when reflective distance is delegitimized, making Λ, non-event, function as a control operator under binding rather than as incidental absence.
 
 ##### (2) Cost Distribution (Cost Topology)
 
 Role positions close to endpoint and liability costs respond differently from role positions exposed to continuity and relational costs.
 
-Costs distribute by channel control, exit affordability, and Θ-amplified delay. Role positions controlling channel availability or timing can externalize costs into Λ by withholding response, shifting continuous load onto role positions exposed to uncertainty, continuity obligations, or downstream deadlines. Role positions with higher exit costs (identity load, institutional coupling, reputational exposure) absorb follow-on costs from delay and withdrawal, while role positions with lower exit costs can impose or tolerate Λ without comparable penalty. Irreversible costs concentrate where Θ-amplified delay collapses option space, while relational costs concentrate where recognition becomes a gate condition and denied framing prevents Σ consolidation.
+Costs distribute by channel control, exit affordability, and Θ-amplified delay. Role positions controlling channel availability or timing can externalize costs into Λ by withholding response, shifting continuous load onto role positions exposed to uncertainty, continuity obligations, or downstream deadlines. Role positions with higher exit costs, identity load, institutional coupling, or reputational exposure, absorb follow-on costs from delay and withdrawal, while role positions with lower exit costs can impose or tolerate Λ without comparable penalty. Irreversible costs concentrate where Θ-amplified delay collapses option space, while relational costs concentrate where recognition becomes a gate condition and denied framing prevents Σ consolidation.
 
 ##### (3) Rational Response Envelope (Structural Rationality)
 
-Under asymmetric cost distribution, Λ control is terminated where it becomes irreversibly expensive to maintain uncertainty and continued where withdrawal would generate higher downstream costs than compliance with the recognition–denial coupling. In such regimes, externalization, formalization, and withdrawal appear as structural consequences of priced or delegitimized Χ, not as defects, and Σ work is predictably displaced into Φ or attractor stabilization when denied framing blocks integrability.
+Under asymmetric cost distribution, Λ control is structurally terminated where it becomes irreversibly expensive to maintain uncertainty, and structurally continued where withdrawal would generate higher downstream costs than compliance with the recognition-denial coupling. In such regimes, externalization, formalization, and withdrawal appear as structural consequences of priced or delegitimized Χ, not as defects, and Σ-work is predictably displaced into Φ or attractor stabilization when denied framing blocks integrability.
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
@@ -2006,9 +2077,9 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 20 — Why “Keeping the Wheel” Is Insufficient: Institutionalized Χ
+### 20. Why “Keeping the Wheel” Is Insufficient: Institutionalized Χ
 
-This chapter isolates a recurrent category error: treating leadership as a purely personal stabilizer (“someone keeps the wheel”) while leaving distance (Χ) non-institutional, optional, or privately enforced. In PMS-CONFLICT terms, this is a stability failure. Leadership can temporarily guide asymmetry (Ω) and carry binding (Ψ), but without institutionalized distance, the configuration predictably collapses into substitution dynamics: group insurance, narrative coercion, and conflict attractor stabilization.
+This chapter isolates a recurrent category error: treating leadership as a purely personal stabilizer, “someone keeps the wheel,” while leaving distance (Χ) non-institutional, optional, or privately enforced. In PMS-CONFLICT terms, this is a stability failure. Leadership can temporarily guide asymmetry (Ω) and carry binding (Ψ), but without institutionalized distance, the configuration predictably collapses into substitution dynamics: group insurance, narrative coercion, and conflict attractor stabilization.
 
 “Institutionalized Χ” denotes a structural condition in which reflective distance is not merely an individual capacity but a **role-external constraint regime**: mandated boundaries, interruptibility rights, adjudication criteria, and feedback coupling. It is not a moral claim. It is a mechanical condition for preventing cost displacement under asymmetry and time pressure.
 
@@ -2048,7 +2119,7 @@ When Χ is not institutionalized, distance becomes a contested resource. The pre
 
 This is not a psychological story. It is a regime transition: the system substitutes personal steering for structural distance and then converts that steering into a contested liability node.
 
-Where institutionalization of Χ is pursued by humiliation, exposure, or coercive enforcement, the application violates dignity-in-practice (D) and is **formally invalid** as PMS.  
+Where institutionalization of Χ is pursued by humiliation, exposure, or coercive enforcement, the application violates dignity-in-practice (D) and is **formally invalid** as PMS.
 
 #### 20.4 The minimal formulas (recognition grammar)
 
@@ -2056,7 +2127,7 @@ The chapter uses two formulas as recognition grammar for stable vs unstable lead
 
 * **Ω guided + Χ institutional + Θ explicit → trust possible**
 
-  Meaning: asymmetry is acknowledged and guided (Ω), distance is enforced as a shared regime (Χ), and time/trajectory constraints are explicit (Θ). Under these conditions, trust can emerge as a derivative effect rather than as a premise.
+  Meaning: asymmetry is acknowledged and guided (Ω), distance is enforced as a shared regime (Χ), and time or trajectory constraints are explicit (Θ). Under these conditions, trust can emerge as a derivative effect rather than as a premise.
 
 * **Ω guided − Χ → groups/narratives/Α_conflict**
 
@@ -2066,8 +2137,8 @@ The chapter uses two formulas as recognition grammar for stable vs unstable lead
 
 Institutionalized Χ does not remove tragedy, does not guarantee integration, and does not prevent all conflict. It prevents a specific collapse: the conversion of distance into a contested moral token and the subsequent displacement of costs into non-events, narratives, and group insurance mechanisms.
 
-**Operators under load:** Χ, Ω, Θ, Ψ, Α_conflict (Φ as typical substitution carrier).  
-**Docking:** to Part VI (docking) and Part VII (governance overlay).  
+**Operators under load:** Χ, Ω, Θ, Ψ, Α_conflict, with Φ as typical substitution carrier
+**Docking:** to Part VI (docking) and Part VII (governance overlay)
 
 #### 20.6 Chapter Closure
 
@@ -2085,7 +2156,7 @@ Role positions close to endpoint and liability costs respond differently from ro
 
 ##### (3) Rational Response Envelope (Structural Rationality)
 
-Under asymmetric cost distribution, personal steering is terminated where it becomes irreversibly expensive to carry unpriced distance and criteria load, and it is continued where withdrawal would generate higher downstream costs than temporary carriage. Formalization of mandate, boundaries, criteria, and feedback coupling emerges as a structurally rational consequence when Χ must be made non-personal to prevent Φ and Α_conflict from replacing Σ consolidation under Ω/Θ pressure.
+Under asymmetric cost distribution, personal steering is structurally terminated where it becomes irreversibly expensive to carry unpriced distance and criteria load, and structurally continued where withdrawal would generate higher downstream costs than temporary carriage. Formalization of mandate, boundaries, criteria, and feedback coupling emerges as a structurally rational consequence when Χ must be made non-personal to prevent Φ and Α_conflict from replacing Σ consolidation under Ω/Θ pressure.
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
@@ -2093,29 +2164,29 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 21 — Docking Map: Transitions and Parasitics
+### 21. Docking Map: Transitions and Parasitics
 
 This chapter provides a paper-internal navigation map that mirrors the stack logic without turning the paper into a procedure. The docking map is a structural adjacency list: which regimes tend to precede CONFLICT, which regimes it tends to feed, and which parallel layers cross-couple or parasitize the same constraint field.
 
 The docking map is not a reading order and not a method. Its function is to prevent interpretive category errors: applying CONFLICT where CRITIQUE is still structurally viable, treating downstream governance as if it were domain analysis, or importing optional lenses (EDEN/SEX/LOGIC) as if they were required modules.
 
-#### 21.1 Canonical transitions (stack-faithful)
+#### 21.1 Canonical transitions within the stack logic of this paper
 
 **ANTICIPATION → CRITIQUE.**
-Anticipation stabilizes differentiation before events crystallize. The transition into critique occurs when openness becomes interruptible: the system can still absorb correction without converting correction into compounding loss. The relevant shift is not “people become reasonable,” but that Χ can still function as effective attenuation, and Σ remains a plausible consolidation horizon.
+Anticipation stabilizes differentiation before events crystallize. The transition into critique occurs when openness becomes interruptible: the system can still absorb correction without converting correction into compounding loss. The relevant shift is not that people become reasonable, but that Χ can still function as effective attenuation, and Σ remains a plausible consolidation horizon.
 
 **CRITIQUE → CONFLICT.**
-The transition into conflict occurs when integration collisions persist: Σ cannot consolidate into a shared spine, binding is non-trivial, and exit/interruption becomes costly or asymmetric. Critique can be intense while still being critique. Conflict begins when “repair” attempts compound costs and Φ substitutes for Σ.
+The transition into conflict occurs when integration collisions persist: Σ cannot consolidate into a shared spine, binding is non-trivial, and exit or interruption becomes costly or asymmetric. Critique can be intense while still being critique. Within this grammar, conflict begins when repair attempts compound costs and Φ substitutes for Σ.
 
 **CONFLICT → tragedy / downstream institutionalization.**
-Conflict does not automatically “resolve.” It either drifts toward tragedy handling (non-integrable persistence under mature constraints) or toward downstream institutionalization, where governance layers translate legibility into evaluation, containment, or formal handling. This transition is not a moral escalation. It is a change in stratum: from descriptive legibility to handling regimes.
+Conflict does not automatically resolve. Within this stack architecture, it may drift toward tragedy handling, non-integrable persistence under mature constraints, or toward downstream institutionalization, where governance layers translate legibility into evaluation, containment, or formal handling. This transition is not a moral escalation. It is a change in stratum: from descriptive legibility to handling regimes.
 
 #### 21.2 Parallel layers and cross-coupling
 
 **EDEN runs parallel and can parasitize CRITIQUE/CONFLICT in a purely functional load-routing sense (non-moral, non-enemy).**
 EDEN is not a dependency for CONFLICT validity. It is an optional lens that can increase legibility of drift patterns where binding, comparison, and asymmetry are re-routed into attractor-safe narratives. “Parasitic” denotes a structural relation: EDEN can ride on critique language and conflict exposure without carrying Σ-work, thereby increasing Φ substitution and stabilizing Α patterns.
 
-**SEX cross-couples into CONFLICT via binding desynchronization and exit realism.**
+**SEX can cross-anchor CONFLICT via binding desynchronization and exit realism.**
 SEX is not an essence claim and does not introduce operators. It acts as a cross-anchor because role distributions can correlate with distinct cost profiles (Ω) and binding loads (Ψ) under Θ pressure. This cross-coupling increases legibility where exit costs and carriage positions are persistently asymmetric.
 
 **LOGIC → MIP/IA via the limits of justification.**
@@ -2123,17 +2194,17 @@ LOGIC anchors the point where justification reaches structural limits and post-m
 
 #### 21.3 Cross-anchor clause (optional lenses)
 
-EDEN/SEX/LOGIC (and other domain layers) appear here as interpretive anchors only. They add no operators, prescribe no actions, and are not required modules for CONFLICT validity. Their sole function is to increase structural legibility of specific drift patterns, under the same validity gate and non-psychological interpretation protocol.
+EDEN, SEX, and LOGIC appear here as interpretive anchors only. They add no operators, prescribe no actions, and are not required modules for CONFLICT validity. Their function here is to increase structural legibility of specific drift patterns, under the same validity gate and non-psychological interpretation protocol.
 
-**Operators under load (map-level):** Χ, Σ, Φ, Θ, Ω, Ψ (Α as stabilization carrier).  
+**Operators under load (map-level):** Χ, Σ, Φ, Θ, Ω, Ψ (Α as stabilization carrier)
 
-### 21.4 Chapter Closure
+#### 21.4 Chapter Closure
 
-#### (1) Structural Result (Condensation)
+##### (1) Structural Result (Condensation)
 
-From the described constellation, it follows structurally that the stack must be read as a non-mixing transition graph: ANTICIPATION stabilizes differentiation into CRITIQUE via interruptibility; CRITIQUE transitions into CONFLICT when Σ consolidation fails under binding and costly/asymmetric exit; CONFLICT transitions into tragedy handling or downstream institutionalization when persistence becomes non-integrable. Cross-anchors (EDEN/SEX/LOGIC) are structurally parallel lenses that can increase legibility but cannot carry Σ and cannot be treated as operator-adding modules.
+From the described constellation, it follows structurally that the stack must be read as an analytically non-mixing transition graph within this paper: ANTICIPATION stabilizes differentiation into CRITIQUE via interruptibility; CRITIQUE transitions into CONFLICT when Σ consolidation fails under binding and costly or asymmetric exit; CONFLICT transitions into tragedy handling or downstream institutionalization when persistence becomes non-integrable. Cross-anchors (EDEN/SEX/LOGIC) are structurally parallel lenses that can increase legibility but cannot carry Σ and cannot be treated as operator-adding modules.
 
-#### (2) Cost Distribution (Cost Topology)
+##### (2) Cost Distribution (Cost Topology)
 
 * Upstream costs are primarily correction and revision costs while Σ remains viable; these are reversible and distributed by interruptibility regimes.
 * In CONFLICT, costs concentrate as follow-on load under Θ and Ω: exit becomes priced, Φ becomes a cheaper substitute than Σ, and drift becomes path-dependent.
@@ -2141,21 +2212,21 @@ From the described constellation, it follows structurally that the stack must be
 
 Role positions close to endpoint and liability costs respond differently from role positions exposed to continuity and relational costs.
 
-#### (3) Rational Response Envelope (Structural Rationality)
+##### (3) Rational Response Envelope (Structural Rationality)
 
-Under asymmetric cost distribution, transitions are structurally rational when each stratum is used for what it can carry: CRITIQUE is continued where interruption still reduces costs and terminated where “repair” compounding makes it irreversibly expensive; CONFLICT analysis is continued where it increases legibility of persistent incompatibility and terminated where it becomes a covert governance substitute; downstream institutionalization is entered where non-integrability requires formal handling and avoided where it would create higher downstream costs than continued domain-level legibility. Optional cross-anchors are structurally rational when they increase legibility without replacing Σ-work with Φ inflation.
+Under asymmetric cost distribution, transitions are structurally rational when each stratum is used for what it can carry: CRITIQUE is continued where interruption still reduces costs and is terminated where repair compounding makes it irreversibly expensive; CONFLICT analysis is continued where it increases legibility of persistent incompatibility and is terminated where it becomes a covert governance substitute; downstream institutionalization is entered where non-integrability requires formal handling and avoided where it would create higher downstream costs than continued domain-level legibility. Optional cross-anchors are structurally rational when they increase legibility without replacing Σ-work with Φ inflation.
 
-#### (4) Reader-Guard (Misinterpretation Prevention)
+##### (4) Reader-Guard (Misinterpretation Prevention)
 
-This description makes no claims about character, guilt, or normative preference. It does not prescribe a reading order or an intervention sequence. It does not claim that downstream institutionalization is “better,” or that cross-anchors are “bad.” It describes structural adjacency and misuse risks: non-mixing violations convert legibility into enforcement, treat lenses as modules, and displace costs into Φ substitution and attractor stabilization under asymmetric exit conditions.
+This description makes no claims about character, guilt, or normative preference. It does not prescribe a reading order or an intervention sequence. It does not claim that downstream institutionalization is better, or that cross-anchors are bad. It describes structural adjacency and misuse risks: non-mixing violations convert legibility into enforcement, treat lenses as modules, and displace costs into Φ substitution and attractor stabilization under asymmetric exit conditions.
 
 ---
 
-### Chapter 22 — EDEN / SEX / LOGIC: What CONFLICT Borrows, What It Does Not
+### 22. EDEN / SEX / LOGIC: What CONFLICT Borrows, What It Does Not
 
 This chapter fixes the relationship between CONFLICT and adjacent domain layers by making borrowing explicit and preventing a common failure mode: outsourcing conflict legibility into other papers and then importing their language back as if it were an operator extension.
 
-CONFLICT borrows **legibility leverage** from EDEN/SEX/LOGIC in the form of drift signatures that recur under binding, asymmetry, temporality, and costly exit. CONFLICT does not borrow operators, validity gates, or application regimes. The purpose is to sharpen recognition without collapsing strata or turning cross-anchors into hidden toolkits.
+CONFLICT borrows **legibility leverage** from EDEN, SEX, and LOGIC in the form of drift signatures that recur under binding, asymmetry, temporality, and costly exit. CONFLICT does not borrow operators, validity gates, or application regimes. The purpose is to sharpen recognition without collapsing strata or turning cross-anchors into hidden toolkits.
 
 #### 22.1 Borrowing from SEX: intimacy asymmetry as amplifier (Ω/Θ/Ψ/Χ)
 
@@ -2166,7 +2237,7 @@ SEX is referenced here as a cross-anchor for regimes in which intimacy is not ro
 * **Ψ (binding)** hardens because commitments and identity-adjacent constraints become expensive to revise.
 * **Χ (distance / exit)** becomes priced and often asymmetric, turning interruption into a cost-bearing act rather than a stabilizing resource.
 
-In this regime, CONFLICT becomes legible earlier because exit realism makes “just interrupt” structurally unavailable. SEX is used to read the *cost topology* of intimacy-conditioned binding, not to assign causes or traits.
+In this regime, CONFLICT becomes legible earlier because exit realism makes “just interrupt” structurally unavailable. SEX is used to read the cost topology of intimacy-conditioned binding, not to assign causes or traits.
 
 #### 22.2 Borrowing from EDEN: comparison, claim, pseudo-symmetry as drift overlay
 
@@ -2180,7 +2251,7 @@ EDEN increases legibility of a particular failure: when a system cannot carry th
 
 #### 22.3 Reciprocity loss as a cross-anchor event: from exchange legibility to cost topology
 
-Reciprocity loss is treated here as a marker that becomes especially legible under EDEN drift. The signal is not “unfairness.” The signal is that **reciprocal expectation and exchange legibility collapse**, and attempts to restore symmetry through comparison cease to function as integration.
+Reciprocity loss is treated here as a marker that becomes especially legible under EDEN drift. The signal is not unfairness. The signal is that **reciprocal expectation and exchange legibility collapse**, and attempts to restore symmetry through comparison cease to function as integration.
 
 Typical structural movement:
 
@@ -2188,7 +2259,7 @@ Typical structural movement:
 * Σ-consolidation attempts drift into **Φ substitution** (interpretation replaces carriage),
 * stabilization occurs via **Α-patterns** (conflict becomes predictable by repetition rather than resolved by integration).
 
-This is why reciprocity loss often accelerates conflict stabilization: it removes the shared accounting space in which “give/take” could still function as a bridge to Σ.
+This is why reciprocity loss often accelerates conflict stabilization: it removes the shared accounting space in which give/take could still function as a bridge to Σ.
 
 #### 22.4 Borrowing from LOGIC: justification limits and post-moral residue fields
 
@@ -2202,17 +2273,17 @@ LOGIC contributes a boundary: there are states where further justification effor
 
 #### 22.5 Non-prescriptive framing: what these references do not do
 
-EDEN/SEX/LOGIC are cited here as interpretive anchors only. They do not define procedures, do not supply interventions, and do not authorize governance moves. Their role is to increase legibility of drift signatures already inside CONFLICT’s operator grammar. CONFLICT remains bounded by PMS validity and non-mixing: cross-anchors can clarify, but they cannot carry Σ, cannot lower Χ-exit costs, and cannot reverse Θ path dependence by description alone.
+EDEN, SEX, and LOGIC are cited here as interpretive anchors only. They do not define procedures, do not supply interventions, and do not authorize governance moves. Their role is to increase legibility of drift signatures already inside CONFLICT’s operator grammar. CONFLICT remains bounded by PMS validity and non-mixing: cross-anchors can clarify, but they cannot carry Σ, cannot lower Χ-exit costs, and cannot reverse Θ path dependence by description alone.
 
-These operator signatures are **descriptive fingerprints** of drift visibility, *not* additional operator requirements for CONFLICT and not dependency claims.
+These operator signatures are **descriptive fingerprints** of drift visibility, not additional operator requirements for CONFLICT and not dependency claims.
 
-Any cross-anchor reference that collapses distance (Χ), violates reversibility, or is used for person-near evaluation is formally invalid as PMS application.  
+Any cross-anchor reference that collapses distance (Χ), violates reversibility, or is used for person-near evaluation is formally invalid as PMS application.
 
 #### 22.6 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
-From the described constellation, it follows structurally that EDEN/SEX/LOGIC function as cross-anchor lenses that increase drift legibility under CONFLICT conditions, while CONFLICT remains operator-closed and validity-bound to PMS. The frame shift is from “adjacent papers as alternative explanations” to “adjacent papers as non-operative overlays”: borrowing is permitted only as recognition grammar, and outsourcing is structurally invalid because it collapses strata and smuggles procedures into a domain layer. Σ cannot be restored by cross-anchor reference where Σ is already structurally absent, and Χ/Θ/Ω constraints remain load-bearing.
+From the described constellation, it follows structurally that EDEN, SEX, and LOGIC function as cross-anchor lenses that increase drift legibility under CONFLICT conditions, while CONFLICT remains operator-closed with respect to PMS operators and validity-bound to PMS. The frame shift is from adjacent papers as alternative explanations to adjacent papers as non-operative overlays: borrowing is permitted only as recognition grammar, and outsourcing is structurally invalid because it collapses strata and smuggles procedures into a domain layer. Σ cannot be restored by cross-anchor reference where Σ is already structurally absent, and Χ/Θ/Ω constraints remain load-bearing.
 
 ##### (2) Cost Distribution (Cost Topology)
 
@@ -2224,19 +2295,19 @@ Role positions close to endpoint and liability costs respond differently from ro
 
 ##### (3) Rational Response Envelope (Structural Rationality)
 
-Under asymmetric cost distribution, cross-anchor reference is structurally rational when it increases legibility without being treated as an operator extension or a toolset promise. It is structurally rational to terminate cross-anchor importing where it becomes Φ inflation (interpretation replacing carriage) and to continue it where it makes drift signatures falsifiable and prevents category errors (e.g., treating reciprocity collapse as a “communication problem”). Under binding and costly exit, stabilization via Α patterns and Φ substitution is structurally predictable; the rational envelope describes when these substitutions dominate because Σ is non-viable at acceptable cost, not because of defect.
+Under asymmetric cost distribution, cross-anchor reference is structurally rational when it increases legibility without being treated as an operator extension or a toolset promise. It is structurally rational to terminate cross-anchor importing where it becomes Φ inflation, interpretation replacing carriage, and to continue it where it makes drift signatures falsifiable and prevents category errors, for example treating reciprocity collapse as a communication problem. Under binding and costly exit, stabilization via Α patterns and Φ substitution is structurally predictable; the rational envelope describes when these substitutions dominate because Σ is non-viable at acceptable cost, not because of defect.
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
-This description makes no claims about character, guilt, or normative preference. It does not assert causal essences, group traits, or prescriptions about what should be done. It does not claim that EDEN/SEX/LOGIC are “true explanations” of particular conflicts. It describes structural borrowing limits: cross-anchors are optional legibility devices, not modules, not interventions, and not authorization for enforcement.
+This description makes no claims about character, guilt, or normative preference. It does not assert causal essences, group traits, or prescriptions about what should be done. It does not claim that EDEN, SEX, or LOGIC are true explanations of particular conflicts. It describes structural borrowing limits: cross-anchors are optional legibility devices, not modules, not interventions, and not authorization for enforcement.
 
 ---
 
-### Chapter 23 — MIPractice/IA as Downstream Governance Layer (Optional Lens)
+### 23. MIPractice/IA as Downstream Governance Layer (Optional Lens)
 
-This chapter introduces MIPractice/IA as a **downstream governance layer** that can receive CONFLICT outputs without contaminating CONFLICT’s operator grammar. The layer is optional: it is not required for CONFLICT validity, and it introduces no new operators. Its sole function is to provide a controlled transmission interface: how a conflict reading can be carried into evaluation contexts without collapsing into moralization, diagnosis, or enforcement theater.
+This chapter introduces MIPractice/IA as a **downstream governance layer** that can receive CONFLICT outputs without contaminating CONFLICT’s operator grammar. The layer is optional: it is not required for CONFLICT validity, and it introduces no new operators. Its function here is to provide a controlled transmission interface: how a conflict reading can be carried into evaluation contexts without collapsing into moralization, diagnosis, or enforcement theater.
 
-The strict constraint is: CONFLICT describes structural regimes; MIPractice/IA governs how such descriptions are handled under institutional pressure, publicness scaling, and exposure hardening. The output is not “what is true about persons.” The output is a disciplined way of stating what is structurally visible, what is uncertain, and what becomes risky under misuse.
+The strict constraint is: CONFLICT describes structural regimes; MIPractice/IA governs how such descriptions are handled under institutional pressure, publicness scaling, and exposure hardening. The output is not what is true about persons. The output is a disciplined way of stating what is structurally visible, what is uncertain, and what becomes risky under misuse.
 
 #### 23.1 A–C–R–P–D profiling: bands, not labels
 
@@ -2245,20 +2316,20 @@ MIPractice uses an A–C–R–P–D profile as a compact representation of stru
 * **A / M as bands:** A and M are treated as ranges (bands) rather than points. Bands prevent false precision under incomplete visibility and reduce narrative overreach.
 * **Trajectories > labels:** the profile must be read as a movement description across time (Θ), not as a fixed classification. The purpose is to capture drift and stabilization, not to assign identity.
 
-**Symbol collision guard (local):** *Latin* **A**/**M** here are MIPractice bands (A-band/M-band). They are not PMS operator glyphs, and they are not *Greek* **Α** (Attractor). Typography is binding: **A** (Latin) ≠ **Α** (Greek).
+**Symbol collision guard (local):** *Latin* **A** and **M** here are MIPractice bands (A-band/M-band). They are not PMS operator glyphs, and they are not *Greek* **Α** (Attractor). Typography is binding: **A** (Latin) ≠ **Α** (Greek).
 
-Operationally, this means profiles are always presented as: “under these conditions, the system occupies this band,” not as: “this actor is X.”
+Operationally, this means profiles are always presented as: under these conditions, the system occupies this band, not as: this actor is X.
 
 #### 23.2 IA-box: T / J / TB / R as an application boundary
 
 The IA-box defines a minimal governance boundary by separating **interpretation** from **application**. The structure is designed to prevent a predictable collapse: treating interpretive outputs as licensing instruments.
 
 * **T:** what is structurally testable within the current visibility constraints.
-* **J:** what is being treated as judgment pressure (often imported by publicness or audience logic).
-* **TB:** what must be treated as bounded/conditional due to incomplete Σ access or priced Χ.
+* **J:** what is being treated as judgment pressure, often imported by publicness or audience logic.
+* **TB:** what must be treated as bounded or conditional due to incomplete Σ access or priced Χ.
 * **R:** what remains unresolved and must not be overwritten by narrative substitution (Φ) or group stabilization (Α_group).
 
-The IA-box is the containment device that prevents “reading” from becoming “permission.”
+The IA-box is the containment device that prevents reading from becoming permission.
 
 #### 23.3 Application zones: green / yellow / red
 
@@ -2266,7 +2337,7 @@ Application zones formalize where use is structurally safe, structurally risky, 
 
 * **Green:** low publicness, bounded exposure, stable Χ availability, and high Σ viability; outputs can be used as coordination scaffolding without turning into enforcement.
 * **Yellow:** mixed conditions; partial Ψ binding and rising Ω exposure; outputs must be banded, conditionalized, and explicitly limited to avoid Φ inflation.
-* **Red:** high publicness, audience presence, exposure hardening, and priced/invalid Χ; any “application” becomes structurally prone to pillory logic, pseudo-symmetry theater, or diagnostic misuse.
+* **Red:** high publicness, audience presence, exposure hardening, and priced or invalid Χ; any application becomes structurally prone to pillory logic, pseudo-symmetry theater, or diagnostic misuse.
 
 Zones describe transmission risk; they do not confer authorization, legitimacy, or enforcement mandate. They do not tell anyone what to do; they describe when transmission becomes structurally unsafe.
 
@@ -2279,7 +2350,7 @@ The D-module is treated as a high-risk interpretive tool and is therefore constr
 * **No D0 rating:** zeroing is forbidden because it invites false innocence claims and escalates narrative warfare.
 * **Misuse counts as finding:** if D is used as enforcement, diagnosis, or public humiliation, that misuse is treated as a structural data point about the environment’s drift toward Φ/Α stabilization and exposure hardening.
 
-This makes “tool misuse” a measurable regime signal rather than a moral complaint.
+This makes tool misuse a measurable regime signal rather than a moral complaint.
 
 #### 23.5 Frame vs variability: system axiom under publicness scaling
 
@@ -2294,14 +2365,20 @@ Publicness increases the payoff for narrative coercion. As publicness rises, exp
 
 This is not a claim about motives. It is a structural consequence of audience presence and cost displacement.
 
-**Operators under load:** PMS outputs and derived axes only; no new operators introduced.
-**Docking:** CONFLICT → MIPractice/IA as a governance overlay for evaluation and exposure hardening.
+**Operators under load:** PMS outputs and derived axes only; no new operators introduced
+**Docking:** CONFLICT → MIPractice/IA as a governance overlay for evaluation and exposure hardening
 
-#### 23.6 Chapter Closure
+#### 23.6 Non-Necessity of Downstream Handling
+
+The introduction of MIPractice/IA in this paper should not be read as implying that every conflict description naturally culminates in governance handling. It appears here only where transmission risk, publicness, and institutional exposure make boundary management analytically relevant.
+
+PMS-CONFLICT remains complete as a domain-layer paper without downstream application. The governance overlay is therefore conditional, not constitutive.
+
+#### 23.7 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
-From the described constellation, it follows structurally that MIPractice/IA constitutes a strictly downstream interface that can carry CONFLICT readings into evaluation contexts without importing normativity into CONFLICT itself. The frame shift is from “conflict description as self-sufficient” to “conflict description under transmission risk”: once outputs enter publicness and institutional settings, Φ substitution, exposure hardening, and Α_group stabilization become dominant failure modes. Operators inside CONFLICT do not expand; what changes is the structural environment in which outputs are interpreted, priced, and weaponized. Χ availability becomes a gating constraint for safe application, and where Χ is delegitimized, governance becomes the only remaining containment mechanism.
+From the described constellation, it follows structurally that MIPractice/IA constitutes a strictly downstream interface that can carry CONFLICT readings into evaluation contexts without importing normativity into CONFLICT itself. The frame shift is from conflict description as self-sufficient to conflict description under transmission risk: once outputs enter publicness and institutional settings, Φ substitution, exposure hardening, and Α_group stabilization become dominant failure modes. Operators inside CONFLICT do not expand; what changes is the structural environment in which outputs are interpreted, priced, and weaponized. Χ availability becomes a gating constraint for safe application, and where Χ is delegitimized, governance may become the remaining containment mechanism under such exposure conditions.
 
 ##### (2) Cost Distribution (Cost Topology)
 
@@ -2313,7 +2390,7 @@ Role positions close to endpoint and liability costs respond differently from ro
 
 ##### (3) Rational Response Envelope (Structural Rationality)
 
-Under asymmetric cost distribution, it is structurally rational to treat profiling as banded and trajectory-based rather than label-based, and to route interpretation through an IA boundary that prevents “reading” from becoming licensing. It is structurally rational to terminate certain applications where publicness and hardened exposure make them non-integrable (red zone), and to continue limited application where Χ is available and bounded and where Σ remains viable (green/yellow). Under exposure hardening, formalization (zones, box boundaries, default-off modules) is structurally rational as a containment response, not as an assertion of moral authority.
+Under asymmetric cost distribution, it is structurally rational to treat profiling as banded and trajectory-based rather than label-based, and to route interpretation through an IA boundary that prevents reading from becoming licensing. It is structurally rational to terminate certain applications where publicness and hardened exposure make them non-integrable (red zone), and to continue limited application where Χ is available and bounded and where Σ remains viable (green/yellow). Under exposure hardening, formalization (zones, box boundaries, default-off modules) is structurally rational as a containment response, not as an assertion of moral authority.
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
@@ -2321,9 +2398,9 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 24 — A&H Precision Overlay (Optional Second-Order)
+### 24. A&H Precision Overlay (Optional Second-Order)
 
-This chapter introduces the A&H Precision overlay as a **second-order quality layer** for MIPractice/IA outputs. It is optional and strictly downstream: it does not change the first-order model (A–C–R–P–D, A/M bands, IA-box), it does not add inference operators, and it does not re-score persons. Its sole function is to keep an analysis **attackable, iterable, and non-immunized** when terms are contested, audiences are present, or transmission risk is high.
+This chapter introduces the A&H Precision overlay as a **second-order quality layer** for MIPractice/IA outputs. It is optional and strictly downstream: it does not change the first-order model (A–C–R–P–D, A/M bands, IA-box), it does not add inference operators, and it does not re-score persons. Its function here is to keep an analysis **attackable, iterable, and non-immunized** when terms are contested, audiences are present, or transmission risk is high.
 
 A&H is defined as:
 
@@ -2336,14 +2413,14 @@ The overlay prevents a common failure mode in public or institutional settings: 
 
 The overlay uses a compact **Precision Heuristic (PH)** band (low / mixed / high). PH is not a truth claim. It is a visibility claim: how well the analysis currently satisfies minimal precision requirements such that it can be **revised without humiliation**, challenged without moral escalation, and transmitted without silently becoming a weapon.
 
-PH is derived from a small set of dimensions (e.g., term definition, scope boundaries, conditions/thresholds, evidence vs inference separation, reversibility clause, language hygiene). The result is banded to avoid false precision.
+PH is derived from a small set of dimensions, for example term definition, scope boundaries, conditions/thresholds, evidence vs inference separation, reversibility clause, and language hygiene. The result is banded to avoid false precision.
 
 PH governs only the **expected confidence posture** of the report:
 
 * Low PH → increased uncertainty posture; higher misuse risk; stronger need for banding, scope tightening, and reversibility clauses.
 * High PH → more stable transmission; critique becomes productive rather than identity-threatening.
 
-PH does not “validate” an analysis. It makes its epistemic posture explicit.
+PH does not validate an analysis. It makes its epistemic posture explicit.
 
 #### 24.2 Attack points: making vulnerabilities explicit without turning critique into person-judgment
 
@@ -2359,7 +2436,7 @@ Typical attack point classes include:
 * **publicity collapse risk** (language likely to be weaponized under audience presence),
 * **dignity language risk** (phrasing invites shaming or D inflation).
 
-Attack points are written in dignity-preserving language and framed as *patchable weaknesses*, not as failure signals.
+Attack points are written in dignity-preserving language and framed as patchable weaknesses, not as failure signals.
 
 #### 24.3 Hardening backlog: minimal next iteration patches (no annotation spiral)
 
@@ -2377,7 +2454,7 @@ Hardening patches are deliberately minimal:
 
 The constraint is **bounded recursion**:
 
-* no “notes on notes,”
+* no notes on notes,
 * no infinite meta-commentary,
 * at most a small number of attack points and patches per iteration.
 
@@ -2387,13 +2464,13 @@ The goal is to keep the analysis **iterable** instead of immunized.
 
 In contested or public settings, analyses tend to drift into one of two failures:
 
-1. **immunization**: ambiguity is used to avoid correction while preserving rhetorical dominance (Φ inflation);
-2. **weaponization**: partial readings are treated as licensing instruments for enforcement, shame, or group stabilization.
+1. **immunization:** ambiguity is used to avoid correction while preserving rhetorical dominance (Φ inflation);
+2. **weaponization:** partial readings are treated as licensing instruments for enforcement, shame, or group stabilization.
 
-The A&H overlay blocks both by making (i) precision posture explicit and (ii) vulnerabilities visible and patchable. It therefore increases critique-readiness without converting critique into morality play.
+The A&H overlay blocks both by making precision posture explicit and vulnerabilities visible and patchable. It therefore increases critique-readiness without converting critique into morality play.
 
-**Operators under load:** meta-layer only (no new inference operators; consumes structured fields).
-**Docking:** protects domain layers by keeping governance artifacts critique-ready and non-immunized under publicness.
+**Operators under load:** meta-layer only (no new inference operators; consumes structured fields)
+**Docking:** protects domain layers by keeping governance artifacts critique-ready and non-immunized under publicness
 
 #### 24.5 Chapter Closure
 
@@ -2415,13 +2492,13 @@ Under asymmetric transmission risk, it is structurally rational to (i) band conf
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
-This description makes no claims about character, guilt, or normative preference. It does not evaluate persons and does not turn critique into a moral verdict. It does not re-score first-order A/M/IA/D results and does not authorize enforcement. It describes an optional quality overlay that makes analysis vulnerabilities explicit and preserves reversibility, dignity-preserving language, and critique readiness under transmission pressure.
+This description makes no claims about character, guilt, or normative preference. It does not evaluate persons and does not turn critique into a moral verdict. It does not re-score first-order A/M/IA/D results and does not authorize enforcement. It describes an optional quality overlay that makes analysis vulnerabilities explicit and preserves reversibility, dignity-preserving language, and critique-readiness under transmission pressure.
 
 ---
 
-### Chapter 25 — Application Boundary Note (Mandatory if Any Application Lens Is Used)
+### 25. Application Boundary Note (Mandatory if Any Application Lens Is Used)
 
-This chapter is a boundary device. It exists to prevent a predictable failure mode: treating a descriptive structural model as an operational toolset, and then backfilling legitimacy through the model’s vocabulary. If any application lens is activated (MIPractice, A&H, or downstream governance), the boundary becomes structurally load-bearing, because publicness and exposure can convert interpretive language into enforcement affordances.
+This chapter is a boundary device. It exists to prevent a predictable failure mode: treating a descriptive structural model as an operational toolset, and then backfilling legitimacy through the model’s vocabulary. If any application lens is activated, for example MIPractice, A&H, or downstream governance, the boundary becomes structurally load-bearing, because publicness and exposure can convert interpretive language into enforcement affordances.
 
 #### 25.1 What this paper does not do
 
@@ -2430,9 +2507,9 @@ This paper does not:
 * provide mediation procedures or intervention scripts,
 * provide diagnostic criteria for persons, groups, or relationships,
 * provide selection rules for who should lead, who should exit, or who should be trusted,
-* authorize public pillory, reputational enforcement, or “structural verdicts,”
+* authorize public pillory, reputational enforcement, or structural verdicts,
 * provide a child-assessment or family-evaluation framework,
-* convert conflict reading into entitlement to demand, punish, compel, or “correct.”
+* convert conflict reading into entitlement to demand, punish, compel, or correct.
 
 The object of the paper is structural legibility: how incompatibility stabilizes under binding, time, and cost, and how operators drift under load. It is not an instruction manual.
 
@@ -2441,9 +2518,9 @@ The object of the paper is structural legibility: how incompatibility stabilizes
 The following are red zones where transferring the framework into action becomes structurally high-risk:
 
 * **Coercion and compelled compliance:** using the vocabulary to force consent, silence, access, or participation.
-* **Moral ranking:** using structural terms to rank persons as superior/inferior, mature/immature, worthy/unworthy.
+* **Moral ranking:** using structural terms to rank persons as superior or inferior, mature or immature, worthy or unworthy.
 * **Person-labeling and identity capture:** treating drift signatures as trait claims, diagnoses, or stable identity assignments.
-* **Ψ→Other enforcement patterns:** converting binding language into obligations imposed on others (“you are bound, therefore you owe/submit”), especially under publicness.
+* **Ψ→Other enforcement patterns:** converting binding language into obligations imposed on others, especially under publicness.
 * **High publicness / high audience coupling:** contexts where groups, platforms, or institutions stabilize narratives and punish revision.
 * **Low reversibility environments:** where a claim, once made, becomes costly to retract (Θ and Ω harden).
 * **High misuse-gradient contexts:** where the language predictably becomes diagnosis theater, enforcement theater, or reputational weaponization.
@@ -2471,14 +2548,14 @@ This declaration block is not a disclaimer. It is a structural constraint that r
 
 Because excerpts travel, reuse is structurally safer when any excerpt containing operator language also carries, in compressed form:
 
-* the “does not do” block (25.1),
+* the does-not-do block (25.1),
 * the red-zone statement that publicness and low reversibility convert claims into enforcement affordances,
 * the mode/publicness/misuse declaration if any governance overlay is invoked.
 
-Without these, excerpts become structururally prone to pseudo-symmetry, moral substitution, person-labeling, and narrative immunization: readers treat the vocabulary as license rather than as constraint.
+Without these, excerpts become structurally prone to pseudo-symmetry, moral substitution, person-labeling, and narrative immunization: readers treat the vocabulary as license rather than as constraint.
 
-**Operators under load:** guardrails only (no inference operators).
-**Docking:** converts paper output into bounded reuse by forcing explicit mode, exposure, and misuse classification when application lenses are present.
+**Operators under load:** guardrails only (no inference operators)
+**Docking:** converts paper output into bounded reuse by forcing explicit mode, exposure, and misuse classification when application lenses are present
 
 #### 25.6 Chapter Closure
 
@@ -2490,7 +2567,7 @@ From the described constellation, it follows structurally that introducing any a
 
 Role positions close to endpoint and liability costs respond differently from role positions exposed to continuity and relational costs.
 
-In low-publicness contexts, costs are primarily reversible decision costs: misreads can be corrected without compounding exposure. In semi-public/public contexts, costs become continuous and relational: statements function as persistent records, revision becomes structurally expensive under Θ and Ω, and interpretive claims begin to behave like pressure. Role positions that bear continuity and relational costs carry the downstream load of misapplication, while role positions closer to endpoint and liability costs preferentially compress ambiguity into decisive-looking claims that raise misuse gradients.
+In low-publicness contexts, costs are primarily reversible decision costs: misreads can be corrected without compounding exposure. In semi-public or public contexts, costs become continuous and relational: statements function as persistent records, revision becomes structurally expensive under Θ and Ω, and interpretive claims begin to behave like pressure. Role positions that bear continuity and relational costs carry the downstream load of misapplication, while role positions closer to endpoint and liability costs preferentially compress ambiguity into decisive-looking claims that raise misuse gradients.
 
 ##### (3) Rational Response Envelope (Structural Rationality)
 
@@ -2502,9 +2579,9 @@ This description makes no claims about character, guilt, or normative preference
 
 ---
 
-### Chapter 26 — Terminal Claim (Structural Full Stop)
+### 26. Terminal Claim (Structural Full Stop)
 
-Within the PMS-domain stack used here, CONFLICT is the terminal domain layer: beyond maximal Δ–Ψ load under Θ/Ω/Χ, the model yields no further internal reintegration grammar—only downstream governance, institutionalization, decision, or evaluation.
+Within the PMS-domain stack developed here, CONFLICT functions as the terminal domain layer: beyond maximal Δ–Ψ load under Θ/Ω/Χ, the model yields no further internal reintegration grammar—only downstream governance, institutionalization, decision, or evaluation.
 
 This chapter marks the end of the PMS-domain stack for CONFLICT. The claim is not rhetorical and not motivational. It is a boundary definition: the operator grammar reaches a terminal regime where additional praxis grammar does not emerge from the model itself.
 
@@ -2515,16 +2592,22 @@ The terminal condition can be stated as a stack claim:
 * The attractor field stabilizes: Φ-substitution and Α_conflict become the default stabilizers when Σ is no longer carrying.
 * At that point, legibility can still increase, but integrability does not. The model continues to describe, but it stops producing internal reintegration affordances.
 
-This paper does not continue into solutions. It ends where praxis becomes tragically legible but no longer integrable.
+This paper does not continue into solutions. It ends where praxis becomes tragically legible but no longer integrable within this descriptive pathway.
 
-**Operators under load:** Σ, Θ, Ω, Ψ, Χ.
-**Docking:** stabilizes PMS as a finite system; strengthens the CONFLICT → MIP/IA transition by making the handoff explicit as a mode shift rather than a continuation.
+**Operators under load:** Σ, Θ, Ω, Ψ, Χ
+**Docking:** stabilizes PMS as a finite system; strengthens the CONFLICT → MIP/IA transition by making the handoff explicit as a mode shift rather than a continuation within this stack architecture
 
-#### 26.1 Chapter Closure
+#### 26.1 Terminality Without Finality
+
+Terminality in this chapter is stack-internal and grammar-internal. It does not claim that conflict as such admits no further analysis, only that this operator grammar does not generate an additional internal reintegration layer once Σ has failed under sustained Θ/Ω/Ψ with costly or asymmetric Χ.
+
+This is a claim about the limits of this descriptive architecture, not a claim of finality about conflict itself.
+
+#### 26.2 Chapter Closure
 
 ##### (1) Structural Result (Condensation)
 
-From the described constellation, it follows structurally that the operator stack reaches a terminal regime: Σ no longer carries, and no additional internal operator emerges that reconstitutes integrability under maximal Θ/Ω/Ψ with costly or asymmetric Χ. The frame shifts from “integration-possible under load” to “legibility without reintegration.” What becomes non-integrable is the attempt to read further procedure from the descriptive grammar itself; beyond the terminal condition, continuation inside the same grammar is non-integrable.
+From the described constellation, it follows structurally that the operator stack reaches a terminal regime within PMS-CONFLICT: Σ no longer carries, and no additional internal operator emerges that reconstitutes integrability under maximal Θ/Ω/Ψ with costly or asymmetric Χ. The frame shifts from integration-possible under load to legibility without reintegration. What becomes non-integrable is the attempt to read further procedure from the descriptive grammar itself; beyond the terminal condition, continuation inside the same grammar is non-integrable.
 
 ##### (2) Cost Distribution (Cost Topology)
 
@@ -2534,11 +2617,11 @@ Irreversible costs concentrate where Θ has already collapsed option space and w
 
 ##### (3) Rational Response Envelope (Structural Rationality)
 
-Under terminal asymmetric cost distribution, it is structurally rational for governance and evaluation layers to appear as externalizations: formalization, institutionalization, mandate-setting, or withdrawal become the rational response envelope when internal reintegration is structurally unviable. Under maximal load, mediation termination is rational where continued integration attempts become irreversibly expensive, and continued structured handling is rational where withdrawal would generate higher downstream costs through Ψ-coupling and Θ-amplified residues. The handoff to downstream layers is a consequence of terminal conditions, not a defect in description.
+Under terminal asymmetric cost distribution, it is structurally rational for governance and evaluation layers to appear as externalizations: formalization, institutionalization, mandate-setting, or withdrawal become the rational response envelope when internal reintegration is structurally unviable. Under maximal load, mediation termination is rational where continued integration attempts become irreversibly expensive, and continued structured handling is rational where withdrawal would generate higher downstream costs through Ψ-coupling and Θ-amplified residues. Within this stack architecture, the handoff to downstream layers is a consequence of terminal conditions, not a defect in description.
 
 ##### (4) Reader-Guard (Misinterpretation Prevention)
 
-This description makes no claims about character, guilt, or normative preference. It does not imply what should be done, what is fair, or who is responsible in a moral sense. It does not claim that “solutions are impossible” as a moral or motivational statement. It describes a structural boundary: when Σ fails under Θ/Ω/Ψ with costly or asymmetric Χ, the model ceases to generate internal integration grammar and any continuation becomes downstream governance or evaluation rather than further descriptive reintegration within PMS-CONFLICT.
+This description makes no claims about character, guilt, or normative preference. It does not imply what should be done, what is fair, or who is responsible in a moral sense. It does not claim that solutions are impossible as a moral or motivational statement. It describes a structural boundary: when Σ fails under Θ/Ω/Ψ with costly or asymmetric Χ, the model ceases to generate internal integration grammar and any continuation becomes downstream governance or evaluation rather than further descriptive reintegration within PMS-CONFLICT.
 
 ---
 
@@ -2592,7 +2675,7 @@ A comparative relation within a shared frame where losses remain substitutable a
 
 #### **Conflict**
 
-A **stabilized incompatibility of practice trajectories** under binding **Ψ (self-binding)**, temporality **Θ (trajectory hardening)**, asymmetry **Ω (cost gradients)**, and costly/asymmetric distance **Χ (priced interruption)**.
+A **stabilized incompatibility of practice trajectories** under binding **Ψ (self-binding)**, temporality **Θ (trajectory hardening)**, asymmetry **Ω (cost gradients)**, and costly or asymmetric distance **Χ (priced interruption)**.
 
 #### **Conflict Attractor**
 
@@ -2632,7 +2715,7 @@ A parallel domain layer that increases legibility of comparison drift, pseudo-sy
 
 #### **Emotional Coercion**
 
-A structural coupling where recognition demands are enforced via denial and **Λ (non-event)** control under binding. Not a character diagnosis.
+A paper-internal structural label for a coupling where recognition demands are enforced via denial and **Λ (non-event)** control under binding. Not a character diagnosis.
 
 #### **Exposure**
 
@@ -2680,7 +2763,7 @@ A role-external distance regime (mandates, boundaries, criteria) that prevents p
 
 #### **Leadership (Structural)**
 
-A fixpoint function that stabilizes output when shared **Σ (integration)** is impossible. Defined by function, not virtue or dominance.
+A paper-internal structural term for a fixpoint function that stabilizes output when shared **Σ (integration)** is impossible. Defined by function, not virtue or dominance.
 
 #### **Λ (Non-Event — structured absence)**
 
@@ -2736,7 +2819,7 @@ A **Θ-extended**, framed continuation stabilized by **Α (attractors)** and sha
 
 #### **Tragedy / Tragic Residual Conflict**
 
-Non-integrability that persists under mature constraint conditions without moral failure.
+A paper-internal structural description of non-integrability that persists under mature constraint conditions without moral failure. It denotes a limit-state within this grammar, not a final claim about conflict as such.
 
 #### **Validity Gate**
 
@@ -2748,7 +2831,7 @@ The condition **Χ (distance) + reversibility + D (dignity-in-practice)** requir
 
 This section consolidates the **canonical operator involvement** and **minimal formulas** used throughout **PMS-CONFLICT**.
 Formulas are **recognition grammar**, not proof chains or prescriptions.
-“Under load” denotes **active structural constraint**, not causality or intent.
+Under load denotes **active structural constraint**, not causality or intent.
 
 ## B.1 Canonical Operator Table (Δ–Ψ)
 
@@ -2758,7 +2841,7 @@ Formulas are **recognition grammar**, not proof chains or prescriptions.
 | **∇**    | Impulse (directional tension)        | Present but not decisive in terminal conflict             | Misread as motive or emotion          |
 | **□**    | Frame (relevance / role space)       | Defines what counts as coordination, repair, alignment    | Frame drift via Φ without notice      |
 | **Λ**    | Non-Event (structured absence)       | Carries load through silence, delay, missing repair       | Treated as neutrality or intent       |
-| **Α**    | Attractor (stabilized pattern)       | Stabilizes conflict, silence, moralization, group scripts | Naturalized as “how it is”            |
+| **Α**    | Attractor (stabilized pattern)       | Stabilizes conflict, silence, moralization, group scripts | Naturalized as how it is              |
 | **Ω**    | Asymmetry (cost / exposure gradient) | Differentiates who pays over time                         | Denied via pseudo-symmetry            |
 | **Θ**    | Temporality (trajectory hardening)   | Converts reversibility into irreversibility               | Temporal traps ignored                |
 | **Φ**    | Recontextualization (frame shift)    | Substitutes narrative for integration                     | Moral / repair substitution           |
@@ -2770,9 +2853,9 @@ Formulas are **recognition grammar**, not proof chains or prescriptions.
 
 **Canonical reduced signature:**
 
-```
+```text
 Σ ↓  +  Ψ ↑  +  Ω ↑  +  Θ ↑  +  Χ priced
-```
+````
 
 **Meaning (structural):**
 
@@ -2782,7 +2865,7 @@ Formulas are **recognition grammar**, not proof chains or prescriptions.
 * **Θ (temporality)** hardens prior commitments into sunk cost
 * **Χ (distance)** exists formally but is costly or delegitimized
 
-This signature marks the **terminal descriptive regime** of PMS-CONFLICT.
+This signature marks the **terminal descriptive regime within PMS-CONFLICT**.
 
 ## B.3 Minimal Conflict Formulas (Recognition-Only)
 
@@ -2791,7 +2874,7 @@ They are **threshold markers**, not derivations.
 
 ### B.3.1 Conflict Emergence (non-terminal)
 
-```
+```text
 Δ + □ + Ω + Θ
 ```
 
@@ -2799,7 +2882,7 @@ They are **threshold markers**, not derivations.
 
 ### B.3.2 Stabilized Conflict (Attractor Formation)
 
-```
+```text
 Α_conflict = Α(Ω × Θ × Ψ)
 ```
 
@@ -2807,15 +2890,15 @@ They are **threshold markers**, not derivations.
 
 ### B.3.3 Terminal Conflict (Canon)
 
-```
+```text
 CONFLICT_terminal = Σ ⊥  ∧  Ψ persists  ∧  Χ priced  under  Ω × Θ
 ```
 
-*No internal reintegration grammar remains.*
+*No internal reintegration grammar remains within this architecture.*
 
 ### B.3.4 Silence-Driven Conflict (Λ-Dominant)
 
-```
+```text
 Λ ↑  →  Α_silence  under  Ω × Θ  ⇒  Σ = 0
 ```
 
@@ -2823,7 +2906,7 @@ CONFLICT_terminal = Σ ⊥  ∧  Ψ persists  ∧  Χ priced  under  Ω × Θ
 
 ### B.3.5 Forced Repair / Integration Drift
 
-```
+```text
 Σ failed  →  Φ_repair  →  Ψ_forced  →  Α_coercive
 ```
 
@@ -2831,7 +2914,7 @@ CONFLICT_terminal = Σ ⊥  ∧  Ψ persists  ∧  Χ priced  under  Ω × Θ
 
 ### B.3.6 Moralization Drift
 
-```
+```text
 Ω_exposure  →  Φ_moral  →  Α_normative  →  Χ delegitimized
 ```
 
@@ -2839,7 +2922,7 @@ CONFLICT_terminal = Σ ⊥  ∧  Ψ persists  ∧  Χ priced  under  Ω × Θ
 
 ### B.3.7 Public Alignment Collapse
 
-```
+```text
 P ↑  →  Ω ↑  →  Χ ↓  →  Α_group  →  Σ impossible
 ```
 
@@ -2849,7 +2932,7 @@ P ↑  →  Ω ↑  →  Χ ↓  →  Α_group  →  Σ impossible
 
 ### B.4.1 CRITIQUE → CONFLICT Transition
 
-```
+```text
 Σ convergent  →  Σ divergent  under  Ω × Θ
 ```
 
@@ -2857,15 +2940,15 @@ P ↑  →  Ω ↑  →  Χ ↓  →  Α_group  →  Σ impossible
 
 ### B.4.2 CONFLICT → Downstream (Mode Shift)
 
-```
+```text
 Σ ⊥  ∧  Ψ persists  ⇒  governance / adjudication / exit
 ```
 
-*Not a solution claim; a grammar boundary.*
+*Not a solution claim; a grammar boundary within this stack architecture.*
 
 ## B.5 Validity Gate Formula (Application-Only)
 
-```
+```text
 PMS-CONFLICT usable  ⇔  Χ + reversibility + D
 ```
 
@@ -2886,4 +2969,4 @@ but **invalidates any application**.
 * **Not** moral rankings
 * **Not** conflict-resolution steps
 
-They are **legibility devices** for recognizing when conflict has become a **tragic structural form** rather than a solvable coordination problem.
+They are **legibility devices** for recognizing when conflict has become a tragic structural form rather than a solvable coordination problem within this paper.

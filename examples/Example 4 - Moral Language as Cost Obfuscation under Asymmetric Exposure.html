@@ -3,379 +3,1527 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <style>
-	      :root {
-	        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-	        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-	        --color-text: #111;
-	        --color-muted: #555;
-	        --color-accent: #333;
-	        --color-border: #ddd;
-	        --color-bg: #fafafa;
-	      }
-
-	      * {
-	        box-sizing: border-box;
-	      }
-
-	      html, body {
-	        margin: 0;
-	        padding: 0;
-	      }
-
-	      body {
-	        font-family: var(--font-body);
-	        color: var(--color-text);
-	        background: white;
-	        line-height: 1.5;
-	        font-size: 14px;
-	      }
-
-	      blockquote {
-	        margin: 0 0 16px;
-	        padding: 0 1em;
-	        color: #57606a;
-	        border-left: 0.25em solid #d0d7de;
-	      }
-
-	      .page {
-	        max-width: 900px;
-	        margin: 0 auto;
-	        padding: 32px 24px 64px;
-	        background: white;
-	      }
-
-	      header {
-	        border-bottom: 1px solid var(--color-border);
-	        margin-bottom: 24px;
-	        padding-bottom: 16px;
-	      }
-
-	      header h1 {
-	        font-size: 1.9rem;
-	        margin: 0 0 8px;
-	        letter-spacing: 0.02em;
-	      }
-
-	      header .subtitle {
-	        font-size: 0.95rem;
-	        color: var(--color-muted);
-	        margin-bottom: 8px;
-	      }
-
-	      header .meta {
-	        font-size: 0.8rem;
-	        color: var(--color-muted);
-	      }
-
-	      h2 {
-	        margin-top: 15px;
-	        margin-bottom: 4px;
-	        font-size: 1.15rem;
-	        border-bottom: 1px solid var(--color-border);
-	        padding-bottom: 4px;
-	      }
-
-	      h3 {
-	        margin-top: 18px;
-	        margin-bottom: 4px;
-	        font-size: 1rem;
-	        color: var(--color-accent);
-	      }
-
-	      p {
-	        margin: 4px 0 8px;
-	      }
-
-	      ul {
-	        margin: 4px 0 10px 1.2rem;
-	        padding: 0;
-	        line-height: 1.1em;
-	      }
-
-	      li {
-	        margin-bottom: 3px;
-	      }
-
-	      .code-inline {
-	        font-family: var(--font-mono);
-	        font-size: 0.9em;
-	        background: #f5f5f5;
-	        padding: 1px 4px;
-	        border-radius: 3px;
-	      }
-
-	      .box {
-	        border: 1px solid var(--color-border);
-	        border-radius: 4px;
-	        padding: 8px 10px;
-	        background: #fcfcfc;
-	        margin: 8px 0 12px;
-	        line-height: 1.05em;
-	      }
-
-	      .box-title {
-	        font-weight: 600;
-	        font-size: 0.9rem;
-	        margin-bottom: 4px;
-	      }
-
-	      .small {
-	        font-size: 0.85rem;
-	        color: var(--color-muted);
-	      }
-
-	      .two-column {
-	        display: flex;
-	        flex-wrap: wrap;
-	        gap: 16px;
-	      }
-
-	      .two-column > div {
-	        flex: 1 1 260px;
-	        min-width: 0;
-	      }
-
-	      .table {
-	        width: 100%;
-	        border-collapse: collapse;
-	        margin: 8px 0 12px;
-	        font-size: 0.77rem;
-	        line-height: 1.2em;
-	      }
-
-	      .table th,
-	      .table td {
-	        border: 1px solid var(--color-border);
-	        padding: 4px 6px;
-	        vertical-align: top;
-	      }
-
-	      .table th {
-	        background: #f5f5f5;
-	        font-weight: 600;
-	      }
-
-	      .tag {
-	        display: inline-block;
-	        border-radius: 999px;
-	        border: 1px solid var(--color-border);
-	        padding: 1px 8px;
-	        font-size: 0.75rem;
-	        margin-right: 4px;
-	        margin-bottom: 3px;
-	      }
-
-	      .placeholder {
-	        font-style: italic;
-	        color: var(--color-muted);
-	      }
-
-	      .pagebreak{
-	        page-break-before:always
-	      }
-
-	      @media print {
-	        body {
-	          background: white;
-	        }
-	        .page {
-	          box-shadow: none;
-	          padding: 24px 18px;
-	        }
-	        a[href]:after {
-	          content: "";
-	        }
-	      }
-	    </style>
 		<title>PMS-CONFLICT — Example 4: Moral Language as Cost Obfuscation under Asymmetric Exposure</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>	
 	</head>
 	<body>
-		<header>
-			<h1><strong>PMS-CONFLICT</strong></h1>
-			<h2><em>Example 4: Moral Language as Cost Obfuscation under Asymmetric Exposure</em></h2>
-		</header>
-		<section id="content">
-			<p><strong>Case label:</strong> <em>Virtue Talk Where Exit Is Unequal</em>
-			<strong>Scope discipline:</strong> Structural mapping only. No diagnosis, no attribution, no prescriptions. PMS application validity remains conditional on <strong>Χ + reversibility + D</strong>.</p>
-			<hr>
-			<h3>A. Scene Packet (Minimal Unit)</h3>
-			<p><strong>Scene ID:</strong></p>
-			<ul>
-			<li><p><strong>Θ (temporality):</strong> Ongoing, publicly visible interaction with cumulative records and reputational memory.</p>
-			</li>
-			<li><p><strong>□ (frame anchor):</strong> <strong>□evaluation</strong>, presented as coordination (“doing the right thing together”), but operating as moral assessment.</p>
-			</li>
-			<li><p><strong>Roles (not persons):</strong></p>
-			<ul>
-			<li>Role R₁: high exposure; statements and actions are durable, attributable, and publicly indexed.</li>
-			<li>Role R₂: low exposure; limited visibility, deniability of impact, and weak coupling to downstream consequences.</li>
-			</ul>
-			</li>
-			</ul>
-			<p><strong>Trigger (Δ/∇):</strong></p>
-			<ul>
-			<li><strong>Δ:</strong> Moral framing is introduced (e.g., “responsibility,” “care,” “integrity,” “doing what’s right”).</li>
-			<li><strong>∇:</strong> Pressure to align publicly and immediately with the moral frame.</li>
-			</ul>
-			<p><strong>Λ candidates (expected but missing):</strong></p>
-			<ul>
-			<li>Explicit calibration of exposure differences.</li>
-			<li>Explicit acknowledgment of unequal exit and revision costs.</li>
-			<li>Explicit separation between moral language and coordination interfaces.</li>
-			</ul>
-			<p><strong>Observed realizations (neutral):</strong></p>
-			<ul>
-			<li>Expansion of moral vocabulary.</li>
-			<li>Public alignment demands without exposure accounting.</li>
-			<li>Resistance to discussing asymmetry framed as moral evasion.</li>
-			</ul>
-			<hr>
-			<h3>B. Drift Trace (Operator-Readable)</h3>
-			<p><code>Ω (exposure asymmetry) → Φ_moral → Α_normative → Χ delegitimized → Ψ→Other → Σ displaced</code></p>
-			<p><strong>Key transitions:</strong></p>
-			<ul>
-			<li><strong>Ω (asymmetry)</strong> exists primarily as exposure and liability gradient.</li>
-			<li><strong>Φ (recontextualization)</strong> converts structural differences into moral categories.</li>
-			<li><strong>Α (attractor)</strong> stabilizes normative scripts (“good vs. irresponsible”).</li>
-			<li><strong>Χ (distance)</strong> is delegitimized as lack of care or accountability.</li>
-			<li><strong>Ψ (binding)</strong> is externalized: alignment is demanded from others.</li>
-			<li><strong>Σ (integration)</strong> is displaced by moral compliance rather than coordination.</li>
-			</ul>
-			<hr>
-			<h3>C. Cost Distribution (Structural, Not Moral)</h3>
-			<p><strong>Irreversible vs. relational costs:</strong></p>
-			<ul>
-			<li><strong>R₁-adjacent costs:</strong> reputational exposure, durable attribution, escalation risk, long-term liability.</li>
-			<li><strong>R₂-adjacent costs:</strong> minimal; moral claims carry leverage without equivalent exposure.</li>
-			</ul>
-			<p><strong>Cost asymmetry pattern:</strong></p>
-			<ul>
-			<li>Moral alignment is cheap for low-exposure roles.</li>
-			<li>Moral non-alignment is expensive for high-exposure roles.</li>
-			</ul>
-			<p><strong>System effect:</strong></p>
-			<ul>
-			<li>Moral language redistributes costs while presenting itself as neutral or elevating.</li>
-			</ul>
-			<hr>
-			<h3>D. Rational Response Envelope (Structural Reasonableness)</h3>
-			<p>Under this configuration, the following responses are <strong>structurally rational</strong> (not normatively preferred):</p>
-			<ul>
-			<li><strong>Public alignment</strong> without private coordination where dissent would amplify exposure.</li>
-			<li><strong>Silence or minimal compliance</strong> where explicit refusal would escalate liability.</li>
-			<li><strong>Withdrawal from substantive coordination</strong> while maintaining moral appearance.</li>
-			</ul>
-			<p>These responses follow cost logic under <strong>Ω across Θ with moral Φ</strong>, not virtue or conviction.</p>
-			<hr>
-			<h3>E. Dignity-in-Practice Stress Test (D under Φ/Ω)</h3>
-			<p><strong>Risk point:</strong></p>
-			<ul>
-			<li>Moral language functions as enforcement without acknowledging exposure gradients.</li>
-			</ul>
-			<p><strong>Failure mode:</strong></p>
-			<ul>
-			<li><strong>Χ</strong> reframed as coldness, indifference, or lack of values.</li>
-			<li><strong>Ψ→Other:</strong> “You must align because this is the right thing.”</li>
-			</ul>
-			<p><strong>Structural indicator:</strong></p>
-			<ul>
-			<li>Naming asymmetry is treated as moral failure rather than structural clarification.</li>
-			</ul>
-			<hr>
-			<h3>F. Reader-Guard (Misinterpretation Prevention)</h3>
-			<p>This example does <strong>not</strong> claim:</p>
-			<ul>
-			<li>that moral language is illegitimate,</li>
-			<li>that care or responsibility are undesirable,</li>
-			<li>that alignment implies insincerity,</li>
-			<li>that asymmetry implies bad faith.</li>
-			</ul>
-			<p>It <strong>does claim</strong>:</p>
-			<ul>
-			<li>that moral framing can function as a <strong>cost-obscuring substitute</strong> for coordination,</li>
-			<li>that exposure asymmetry persists beneath virtue talk,</li>
-			<li>that coercion can operate without explicit force.</li>
-			</ul>
-			<hr>
-			<h3>G. PMS Validity Check (Application Gate)</h3>
-			<p>Any attempt to <em>use</em> this analysis is PMS-valid <strong>only if</strong>:</p>
-			<ul>
-			<li><strong>Χ (distance)</strong> can be activated without moral sanction,</li>
-			<li><strong>Ω (exposure asymmetry)</strong> is explicitly nameable,</li>
-			<li>binding remains <strong>Ψ→Self</strong>, not enforced <strong>Ψ→Other</strong>,</li>
-			<li><strong>D (dignity-in-practice)</strong> constrains shaming and ranking.</li>
-			</ul>
-			<p>Absent these conditions, application is structurally invalid.</p>
-			<hr>
-			<h3>H. Structural Closure (Non-Normative)</h3>
-			<p>When moral language replaces exposure accounting under <strong>Ω across Θ</strong>, asymmetry does not disappear.
-			It becomes <strong>unspeakable</strong>.</p>
-			<p>What appears as shared values functions as <strong>unequal risk allocation</strong>.
-			What appears as care functions as <strong>pressure to absorb exposure</strong>.
-			What appears as consensus functions as <strong>preemptive compliance</strong>.</p>
-			<p>At this point, coordination no longer negotiates costs.
-			It moralizes them.</p>
-			<p>Conflict stabilizes not because values differ, but because <strong>virtue talk suppresses the only interface where asymmetry could still be coordinated</strong>.</p>
-			<hr>
-			<h3>I. Reduced PMS-CONFLICT Signature (Threshold Marker)</h3>
-			<p><strong>Reduced signature:</strong>
-			<code>Ω ↑ (exposure)  +  Φ_moral ↑  +  Α_normative  +  Χ delegitimized  +  Ψ→Other  +  Σ suppressed</code></p>
-			<p><strong>Reading discipline:</strong>
-			This signature marks a terminal conflict configuration where:</p>
-			<ul>
-			<li>asymmetry is real but unnameable,</li>
-			<li>moral recontextualization replaces coordination,</li>
-			<li>binding is imposed via values,</li>
-			<li>distance is morally penalized.</li>
-			</ul>
-			<hr>
-			<h3>J. Conflict Domain Classification (PMS-CONFLICT)</h3>
-			<p><strong>Domain status:</strong>
-			<strong>CONFLICT (terminal descriptive regime)</strong></p>
-			<p><strong>Justification:</strong></p>
-			<ul>
-			<li>No internal reintegration grammar remains available.</li>
-			<li>Further moral clarification increases pressure without restoring <strong>Σ</strong>.</li>
-			<li>Resolution requires downstream mode shifts, not better moral articulation.</li>
-			</ul>
-			<hr>
-			<h3>K. Asymmetry Lock-In Analysis (Ω × Θ)</h3>
-			<p><strong>Asymmetry form:</strong></p>
-			<ul>
-			<li>Differential exposure to public consequence and reputational persistence.</li>
-			</ul>
-			<p><strong>Lock-in mechanism:</strong></p>
-			<ul>
-			<li>Under <strong>Θ</strong>, moral records harden and become irreversible.</li>
-			<li>Under <strong>Ω</strong>, those with lower exposure can escalate moral demands cheaply.</li>
-			<li>The system stabilizes around moral enforcement as the least costly control mechanism.</li>
-			</ul>
-			<hr>
-			<h3>L. χ-Availability Test (Distance Under Load)</h3>
-			<p><strong>Formal status:</strong> Χ exists
-			<strong>Effective status:</strong> Χ is <strong>delegitimized</strong></p>
-			<p>Indicators:</p>
-			<ul>
-			<li>Pausing is framed as moral failure.</li>
-			<li>Contextualization is treated as excuse-making.</li>
-			<li>Distance increases rather than reduces exposure.</li>
-			</ul>
-			<hr>
-			<h3>M. Tragedy Clause (Non-Correctability)</h3>
-			<p>This configuration is tragic in the PMS sense:</p>
-			<ul>
-			<li>No clarification of values restores coordination.</li>
-			<li>Moral escalation replaces integrative work permanently.</li>
-			<li>Any correction requires exit, governance, or institutional mediation.</li>
-			</ul>
-			<hr>
-			<h3>N. Terminal Structural Closure (PMS-CONFLICT)</h3>
-			<p>When moral language suppresses exposure accounting, conflict stabilizes through <strong>virtue-based coercion</strong>.</p>
-			<p>What fails is not ethics.
-			What fails is <strong>coordination under unequal cost</strong>.</p>
-			<p>This outcome does not depend on bad intentions.
-			It follows predictably whenever <strong>Ω is denied, Φ moralizes, Χ is penalized, and Σ is no longer affordable</strong>.</p>
-		</section>
+		<div class="page">
+			<header>
+				<h1><strong>PMS-CONFLICT</strong></h1>
+				<h2><em>Example 4: Moral Language as Cost Obfuscation under Asymmetric Exposure</em></h2>
+				<div class="subtitle">
+					Scene-bound example for a Φ/Ω-dominant terminal conflict configuration in PMS-CONFLICT:
+					moral language expands under unequal exposure, publicness amplifies enforcement affordances,
+					and coordination is displaced by alignment pressure. Structural mapping only. No diagnosis,
+					no person-typing, no prescriptions, no governance authorization.
+				</div>
+				<div class="meta">
+					<strong>Example ID:</strong> <span class="code-inline">PMS-CONFLICT_EX04</span> &middot;
+					<strong>Example Version:</strong> <span class="code-inline">1.1</span> &middot;
+					<strong>Schema Version:</strong> <span class="code-inline">PMS-CONFLICT_1.1</span><br />
+					<strong>Status:</strong> draft &middot;
+					<strong>Language:</strong> EN &middot;
+					<strong>Depends on:</strong> <span class="code-inline">PMS_1.3</span>, <span class="code-inline">PMS-CONFLICT_1.1</span><br />
+					<strong>Classification:</strong> <span class="code-inline">CONFLICT (terminal descriptive regime)</span><br />
+					<strong>Validity discipline:</strong> PMS application remains conditional on
+					<span class="code-inline">Χ + reversibility + D</span>.
+				</div>
+			</header>
+
+			<section id="schema-alignment">
+				<h2>1. Schema alignment</h2>
+
+				<p>
+					This example is a <strong>Φ/Ω-dominant instantiation</strong> of <strong>PMS-CONFLICT_1.1</strong>.
+					It remains fully subordinate to <strong>PMS_1.3</strong> and does not redefine operators,
+					dependencies, or derived axes.
+				</p>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Primary schema references</div>
+						<ul class="small">
+							<li><strong>Reduced signature:</strong> <span class="code-inline">DRIFT_exposure_capture</span></li>
+							<li><strong>Terminal projection:</strong> <span class="code-inline">terminal_positioning_projection</span></li>
+							<li><strong>Validity gate:</strong> <span class="code-inline">validity_gate</span></li>
+							<li><strong>Application boundary:</strong> <span class="code-inline">application_boundary_scaling</span></li>
+						</ul>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Secondary schema references</div>
+						<ul class="small">
+							<li><span class="code-inline">DRIFT_dignity_collapse</span></li>
+							<li><span class="code-inline">DRIFT_asymmetry_lock_in</span></li>
+							<li><span class="code-inline">CONFLICT_terminal_core</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Non-operator construct references</div>
+					<p class="small">
+						<span class="tag">exposure_capture</span>
+						<span class="tag">dignity_collapse</span>
+						<span class="tag">asymmetry_lock_in</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="minimal-vignette">
+				<h2>2. Minimal vignette</h2>
+
+				<h3>2.1 Title</h3>
+				<p><strong>Virtue talk where exit, revision, and exposure are unequal</strong></p>
+
+				<h3>2.2 Scene boundaries</h3>
+				<div class="box">
+					<div class="box-title">Domain</div>
+					<p class="small">
+						Publicly visible coordination, reputationally coupled interaction, moralized
+						evaluation, and asymmetric exposure.
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Scope</div>
+					<p class="small">
+						Structures, exposure gradients, moral framing, delegitimized distance,
+						externalized binding, suppressed coordination, and terminal conflict stabilization.
+					</p>
+				</div>
+
+				<h4>Out of scope</h4>
+				<ul>
+					<li>person-level judgement</li>
+					<li>motive attribution</li>
+					<li>virtue assessment</li>
+					<li>clinical or psychological interpretation</li>
+					<li>action prescription</li>
+					<li>moral ranking of role positions</li>
+					<li>diagnostic or maturity labeling</li>
+					<li>selection, sorting, or exclusion decisions</li>
+					<li>public pillory or reputational enforcement as a recommended response</li>
+					<li>governance authorization</li>
+				</ul>
+
+				<h3>2.3 Short scene</h3>
+				<p>
+					An ongoing interaction takes place under public visibility and durable reputational
+					memory. One role is highly exposed: statements, hesitations, and missteps are
+					attributable, persistent, and coupled to downstream consequences. Another role is
+					comparatively low-exposure: moral framing can be advanced with weaker coupling to
+					lasting reputational cost. Language of care, integrity, or responsibility expands,
+					and public alignment pressure increases. Yet the structural differences in exposure,
+					reversibility, and exit cost are not explicitly integrated into coordination.
+				</p>
+
+				<h3>2.4 Structural focus</h3>
+				<p>
+					The case examines a terminal conflict regime in which <strong>Ω</strong> operates
+					primarily as exposure and liability gradient, <strong>Φ</strong> moralizes structural
+					differences into value categories, <strong>Α</strong> stabilizes normative scripts,
+					<strong>Χ</strong> remains formally available but becomes morally delegitimized,
+					<strong>Ψ</strong> is externalized into alignment demands, and <strong>Σ</strong> is
+					displaced by compliance or appearance rather than restored coordination.
+				</p>
+
+				<h3>2.5 Scenic elements</h3>
+				<div class="two-column">
+					<div>
+						<h4>Actors</h4>
+						<ul>
+							<li>high-exposure role with durable public attribution</li>
+							<li>lower-exposure role with comparatively cheaper moral escalation</li>
+							<li>audience or public indexing layer</li>
+							<li>downstream parties affected by reputational persistence</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Salient objects</h4>
+						<ul>
+							<li>public statements</li>
+							<li>alignment demands</li>
+							<li>reputational records</li>
+							<li>moral vocabulary</li>
+							<li>coordination interfaces</li>
+							<li>exit, revision, or pause options</li>
+							<li>exposure gradients</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Trigger event</div>
+					<p class="small">
+						<strong>Moral frame expansion under unequal exposure:</strong>
+						Responsibility, care, integrity, or right-thing language is introduced as the
+						dominant frame, while asymmetries of exposure, revision cost, and downstream
+						liability remain under-described or actively resisted.
+					</p>
+				</div>
+			</section>
+
+			<section id="repo-usefulness">
+				<h2>3. Why this is repo-useful</h2>
+
+				<p>
+					This example shows a core PMS-CONFLICT pattern in which moral language does not
+					eliminate asymmetry but obscures and redistributes it. It clarifies how terminal
+					conflict can stabilize through virtue-based coercion even without explicit force.
+				</p>
+
+				<h3>3.1 Repo value</h3>
+				<ul>
+					<li>
+						Demonstrates a Φ/Ω-dominant pathway into terminal conflict where moral framing
+						replaces coordination rather than clarifying it.
+					</li>
+					<li>
+						Makes visible that exposure asymmetry can remain structurally decisive even when
+						the scene is narrated as shared values or collective integrity.
+					</li>
+					<li>
+						Shows how publicness and durable records harden cost gradients over time,
+						making non-alignment disproportionately expensive for exposed roles.
+					</li>
+					<li>
+						Clarifies how Χ can remain formally available while becoming morally
+						delegitimized in practice.
+					</li>
+					<li>
+						Illustrates why D becomes the decisive stress test when virtue talk turns
+						into ranking, pressure, or externally imposed obligation.
+					</li>
+				</ul>
+
+				<h3>3.2 Central repo question</h3>
+				<p>
+					When does moral language remain a valid coordination resource, and when has it
+					already become a cost-obscuring substitute that suppresses the only interface
+					where unequal exposure could still be coordinated?
+				</p>
+
+				<h3>3.3 Lens relevance</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Lens</th>
+							<th>Relevance</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Exposure capture</strong></td>
+							<td>
+								The example directly instantiates the PMS-CONFLICT pattern in which Φ
+								under exposure transforms interpretive language into enforcement
+								affordances and makes revision increasingly costly.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Dignity collapse</strong></td>
+							<td>
+								The scene shows how care, integrity, or responsibility language can slide
+								into ranking, shaming, or moral penalty once asymmetry becomes difficult
+								to name.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Asymmetry lock-in</strong></td>
+							<td>
+								The decisive asymmetry is not dominance in a broad moral sense, but
+								differential exposure to public consequence, durable attribution, and
+								downstream reputational cost.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Application boundary</strong></td>
+							<td>
+								The case makes Chapter 25 concrete: once descriptive structural language
+								travels in public or semi-public conditions, it can quickly acquire
+								enforcement affordances unless mode, publicness, and misuse gradient are
+								explicitly bounded.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="overlay-profile">
+				<h2>4. Overlay profile and boundary status</h2>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Publicness Overlay (P)</div>
+						<p class="small">
+							<strong>Status:</strong> <span class="code-inline">primary</span><br />
+							Publicness is structurally central. The scene depends on durable records,
+							reputational coupling, and audience indexing that amplify Ω, Θ, Α, and Φ.
+						</p>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Misuse Gradient (MG)</div>
+						<p class="small">
+							<strong>Status:</strong> <span class="code-inline">primary</span><br />
+							Misuse-gradient dynamics are central because moral language predictably
+							drifts into judgment, exposure pressure, and compliance demands under
+							publicness. This is a high-risk transmission setting.
+						</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Application boundary declaration</div>
+					<p class="small">
+						<strong>Mode:</strong> <span class="code-inline">DESCRIPTIVE</span> &middot;
+						<strong>Publicness:</strong> <span class="code-inline">PUBLIC</span> &middot;
+						<strong>Misuse gradient:</strong> <span class="code-inline">MG_HIGH</span><br />
+						The example remains descriptive, but the scene itself has high misuse gradient
+						because moralized public discourse easily converts structural language into
+						verdict, ranking, or coercive expectation.
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Θ-history relevance</div>
+					<p class="small">
+						<strong>Status:</strong> <span class="code-inline">primary</span><br />
+						Θ is central because reputational memory, cumulative public records, and
+						path-dependent escalation make revision progressively costlier. The conflict
+						stabilizes through durable moral indexing, not merely through one-off disagreement.
+					</p>
+				</div>
+			</section>
+
+			<section id="operator-mapping">
+				<h2>5. Operator mapping</h2>
+
+				<h3>5.1 Reduced signature</h3>
+				<p>
+					<strong>Primary:</strong>
+					<span class="code-inline">["Ω", "Θ", "Φ", "Χ", "Ψ", "Σ"]</span><br />
+					<strong>Secondary context:</strong>
+					<span class="code-inline">["Δ", "∇", "□", "Λ", "Α"]</span>
+				</p>
+
+				<div class="box">
+					<div class="box-title">Reading discipline</div>
+					<p class="small">
+						The decisive threshold is exposure-dominant and terminal: Ω is operative as
+						exposure asymmetry, Θ hardens public records, Φ moralizes structural
+						differences into value categories, Χ remains formally available but is
+						morally delegitimized, Ψ is externalized as an alignment demand, and Σ is
+						suppressed by compliance logic. <strong>Δ</strong>, <strong>∇</strong>,
+						<strong>□</strong>, <strong>Λ</strong>, and <strong>Α</strong> remain relevant
+						as activation, framing, absence, and stabilization carriers.
+					</p>
+				</div>
+
+				<h3>5.2 Conflict domain classification</h3>
+				<p><strong>Domain status:</strong> <strong>CONFLICT (terminal descriptive regime)</strong></p>
+				<ul>
+					<li>No internal reintegration grammar remains available once moral articulation replaces exposure accounting.</li>
+					<li>Further moral clarification increases pressure without restoring Σ.</li>
+					<li>Public alignment persists through asymmetric exposure and compliance pressure rather than shared coordination.</li>
+					<li>Distance is reframed as coldness, excuse-making, or moral evasion rather than treated as a structural necessity.</li>
+					<li>Any correction beyond descriptive mapping requires downstream handling, not merely better value language.</li>
+				</ul>
+
+				<h3>5.3 Operator roles in scene</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Operator</th>
+							<th>Scene role</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Δ</strong></td>
+							<td>
+								A difference becomes active between the moral appearance of shared
+								alignment and the underlying inequality of exposure, revision cost, and
+								downstream liability.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>∇</strong></td>
+							<td>
+								Pressure rises toward immediate public alignment, visible care, and fast
+								value conformity. This tension is active, but it does not restore Σ.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>□</strong></td>
+							<td>
+								The frame presents itself as doing the right thing together, but it
+								operates structurally as evaluation. Coordination is displaced by a
+								moral assessment frame that rewards visible alignment and penalizes
+								exposure-accounting.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Λ</strong></td>
+							<td>
+								Critical absences structure the conflict: there is no explicit
+								calibration of exposure difference, no clear acknowledgment of unequal
+								exit or revision cost, and no stable separation between moral language
+								and coordination interface.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Α</strong></td>
+							<td>
+								Normative scripts stabilize: the scene learns to sort positions through
+								good-versus-irresponsible coding, making virtue talk itself the
+								recurrent handling mechanism.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Ω</strong></td>
+							<td>
+								Exposure and liability are unevenly distributed. Some roles bear durable
+								public attribution and cumulative consequence, while others can escalate
+								moral demands with comparatively low long-term exposure cost.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Θ</strong></td>
+							<td>
+								Public records, remembered statements, and reputational indexing harden
+								into path dependence. Revision becomes more expensive the longer the
+								moral record accumulates.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Φ</strong></td>
+							<td>
+								Structural asymmetry is recontextualized as a moral issue: exposure
+								differences are translated into virtue categories rather than integrated
+								as coordination constraints.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Χ</strong></td>
+							<td>
+								Distance remains formally available, but pausing, contextualizing, or
+								declining immediate alignment is reframed as lack of care, excuse-making,
+								indifference, or moral deficiency.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Σ</strong></td>
+							<td>
+								Σ is displaced rather than restored. The scene produces public
+								compliance, value performance, or alignment appearance instead of a
+								coordinated integration of unequal costs.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Ψ</strong></td>
+							<td>
+								Binding is externalized as a demand that others align because it is the
+								right thing. Obligation shifts from self-binding to value-based pressure
+								imposed on more exposed roles.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>5.4 Derived axes projection</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Axis</th>
+							<th>Reading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>A</strong></td>
+							<td>
+								Awareness rises because the exposure gradient becomes increasingly
+								legible, but the scene resists naming it directly once moral language
+								dominates the frame.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>C</strong></td>
+							<td>
+								Coherence is mixed: moral narratives can be locally coherent and
+								publicly compelling, while shared structural coordination remains absent.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>R</strong></td>
+							<td>
+								Responsibility intensifies as attribution pressure because exposed roles
+								carry the reputational and temporal costs of visible non-alignment.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>E</strong></td>
+							<td>
+								Action becomes constrained: formal options remain, but public
+								misalignment, pause, or contextualization become disproportionately
+								costly under moralized exposure.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>D</strong></td>
+							<td>
+								Dignity-in-Practice becomes fragile when naming asymmetry is treated as
+								moral failure and when care language drifts into ranking, shaming, or
+								externally imposed obligation.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>5.5 Structural mechanism summary</h3>
+				<ol>
+					<li>Exposure asymmetry is present but insufficiently named.</li>
+					<li>Moral language expands as the dominant frame.</li>
+					<li>Φ recontextualizes structural differences into value categories.</li>
+					<li>Α stabilizes normative scripts of good versus irresponsible alignment.</li>
+					<li>Χ becomes morally delegitimized.</li>
+					<li>Ψ shifts outward into demanded conformity and public alignment.</li>
+					<li>Σ is displaced by compliance, silence, or appearance-management.</li>
+					<li>The regime becomes terminal CONFLICT under public exposure conditions.</li>
+				</ol>
+
+				<div class="box">
+					<div class="box-title">Concise formula</div>
+					<p class="small">
+						<span class="code-inline">
+							Ω exposure gradient + moral Φ + normative attractor + delegitimized Χ +
+							externalized Ψ + suppressed Σ -&gt; virtue-based coercion under terminal conflict conditions
+						</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="drift-alignment">
+				<h2>6. Drift catalogue alignment</h2>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Primary</div>
+						<p class="small">
+							<span class="tag">exposure_capture_drift</span>
+							<span class="tag">dignity_collapse_drift</span>
+						</p>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Secondary</div>
+						<p class="small">
+							<span class="tag">asymmetry_lock_in_drift</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Possible downstream</div>
+					<p class="small">
+						<span class="tag">binding_collision_drift</span>
+					</p>
+				</div>
+
+				<p>
+					The scene is primarily governed by <strong>exposure capture</strong> and
+					<strong>dignity collapse</strong>: public moral language converts interpretation
+					into enforcement pressure, and distance is morally penalized.
+					<strong>Asymmetry lock-in</strong> remains structurally central because exit and
+					revision costs differ sharply by exposure position. <strong>Binding collision</strong>
+					may appear downstream once pressured alignment produces incompatible obligations.
+				</p>
+			</section>
+
+			<section id="drift-markers">
+				<h2>7. Typical drift markers</h2>
+
+				<p><strong>Maximum expected:</strong> <span class="code-inline">3</span></p>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Label</th>
+							<th>Operator links</th>
+							<th>YAML drift ref</th>
+							<th>Indicator</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="code-inline">moral_frame_replaces_exposure_accounting</span></td>
+							<td>Virtue language suppresses asymmetry naming</td>
+							<td><span class="code-inline">["Ω","Φ","Σ"]</span></td>
+							<td><span class="code-inline">exposure_capture_drift</span></td>
+							<td>
+								Responsibility, care, or integrity language expands while discussion of
+								unequal exposure, revision cost, and downstream liability is reframed as
+								deflection or moral evasion.
+							</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">distance_becomes_moral_failure</span></td>
+							<td>Χ is delegitimized under value pressure</td>
+							<td><span class="code-inline">["Χ","Φ","D"]</span></td>
+							<td><span class="code-inline">dignity_collapse_drift</span></td>
+							<td>
+								Pausing, contextualizing, or refusing immediate public alignment is
+								framed as coldness, excuse-making, lack of values, or lack of care.
+							</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline">alignment_demand_externalizes_binding</span></td>
+							<td>Ψ shifts from self-binding to other-binding</td>
+							<td><span class="code-inline">["Ψ","Ω","Φ"]</span></td>
+							<td><span class="code-inline">dignity_collapse_drift</span></td>
+							<td>
+								The scene increasingly implies or states that others must align because
+								this is the right thing, regardless of unequal public risk and exposure.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Additional red flags</h3>
+				<ul>
+					<li>“If you cared, you would say it publicly now.”</li>
+					<li>“Contextualization is just excuse-making.”</li>
+					<li>“Silence is complicity.”</li>
+					<li>“Good people already know where they stand.”</li>
+					<li>“Naming asymmetry means you are avoiding accountability.”</li>
+					<li>“There is no legitimate reason to pause on this.”</li>
+				</ul>
+			</section>
+
+			<section id="validity-gate">
+				<h2>8. PMS validity gate reminder</h2>
+
+				<h3>8.1 PMS entry condition</h3>
+				<ul>
+					<li>
+						<strong>Χ (distance):</strong> Distance must remain practically activatable in
+						the analysis. The fact that the scene morally penalizes Χ does not authorize
+						suspending Χ in the reading itself.
+					</li>
+					<li>
+						<strong>Reversibility:</strong> The case must remain scene-bound and revisable.
+						Terminal classification concerns this public exposure configuration, not the
+						essence, morality, or sincerity of any role or actor.
+					</li>
+					<li>
+						<strong>Dignity-in-Practice:</strong> Structural asymmetry and moralization must
+						not be translated by the analysis into blame, humiliation, ranking, or
+						person-labeling. The description remains regime-, role-, and cost-topology-bound.
+					</li>
+				</ul>
+
+				<h3>8.2 Case-specific validity test</h3>
+				<div class="two-column">
+					<div class="box callout-success">
+						<div class="box-title">Valid if</div>
+						<ul class="small">
+							<li>
+								Ω as exposure asymmetry remains explicitly nameable and is not absorbed
+								into virtue categories.
+							</li>
+							<li>
+								Moral language is read structurally rather than taken as proof of
+								superior coordination.
+							</li>
+							<li>Ψ is distinguished as self-binding versus externally demanded alignment.</li>
+							<li>
+								Χ remains analytically visible even where the scene moralizes or
+								delegitimizes its activation.
+							</li>
+							<li>
+								The reading stays tied to this specific public exposure regime and does
+								not expand into person-level conclusions.
+							</li>
+						</ul>
+					</div>
+
+					<div class="box callout-danger">
+						<div class="box-title">Formally invalid if</div>
+						<ul class="small">
+							<li>
+								The example is used to justify shaming, public exposure, reputational
+								punishment, or person-ranking.
+							</li>
+							<li>
+								Moral framing is translated into diagnosis, character claims, or
+								maturity labels.
+							</li>
+							<li>
+								Terminal conflict is used as a verdict of guilt rather than as a
+								descriptive boundary claim.
+							</li>
+							<li>The analysis itself treats asymmetry naming as moral defect.</li>
+							<li>
+								The analysis collapses into governance prescription while still claiming
+								to remain purely descriptive.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="readable-closure">
+				<h2>9. Readable structural closure</h2>
+
+				<p>
+					This case shows a configuration in which moral language does not dissolve
+					asymmetry but obscures and redistributes it. The decisive shift is not the
+					presence of values as such, but the replacement of exposure accounting by
+					virtue framing: public records harden, alignment pressure rises, distance
+					becomes morally costly, and coordination yields to compliance. Within
+					PMS-CONFLICT, this marks terminal descriptive conflict rather than a viable
+					coordination process under shared values. What remains legible is unequal
+					risk allocation under moralized publicness, not an internal route back to Σ.
+				</p>
+
+				<div class="box">
+					<div class="box-title">Reduced terminal marker</div>
+					<p class="small">
+						<span class="code-inline">Ω ↑ (exposure) + Φ_moral ↑ + Α_normative + Χ delegitimized + Ψ→Other + Σ suppressed</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="extended-analysis">
+				<h2>10. Extended scene analysis</h2>
+
+				<h3>10.1 Frame validity check (□)</h3>
+				<p><strong>In scope:</strong></p>
+				<ul>
+					<li>publicly visible interaction</li>
+					<li>durable reputational records</li>
+					<li>moral or value language</li>
+					<li>alignment demands</li>
+					<li>exposure gradients</li>
+					<li>revision and exit conditions</li>
+				</ul>
+
+				<p><strong>Out of scope:</strong></p>
+				<ul>
+					<li>personality claims</li>
+					<li>motive diagnosis</li>
+					<li>moral verdicts</li>
+					<li>prescriptive governance conclusions</li>
+					<li>selection or exclusion logic</li>
+					<li>public reputational punishment as a model output</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> The frame becomes unstable when a coordination
+					interface is silently replaced by an evaluation interface that codes disagreement
+					as moral deficiency rather than as structurally unequal exposure.
+				</p>
+
+				<h3>10.2 Non-event integrity check (Λ)</h3>
+				<p><strong>Decisive absences:</strong></p>
+				<ul>
+					<li>explicit calibration of exposure differences</li>
+					<li>explicit acknowledgment of unequal exit and revision costs</li>
+					<li>explicit separation between moral language and coordination interface</li>
+					<li>explicit accounting of reputational persistence</li>
+					<li>explicit reopening of structural rather than moral negotiation</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> What is missing is not moral speech but asymmetry
+					accounting. These absences allow virtue language to become the dominant carrier of control.
+				</p>
+
+				<h3>10.3 Exposure capture check</h3>
+				<p><strong>Operator basis:</strong> <span class="code-inline">["Ω", "Θ", "Φ", "P", "MG"]</span></p>
+				<p><strong>Decisive question:</strong> When does public moral language stop coordinating and start enforcing?</p>
+				<p>
+					<strong>Structural reading:</strong> Exposure capture is present where
+					interpretive or value language, under durable publicness, begins to behave like
+					enforcement. Revision becomes increasingly costly because statements persist as
+					indexed moral records.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Clarification no longer reduces conflict load; it
+					increases exposure and hardens the public cost of non-alignment.
+				</p>
+
+				<h3>10.4 Asymmetry audit (Ω)</h3>
+				<p><strong>Exposure bearers:</strong></p>
+				<ul>
+					<li>roles with durable public attribution</li>
+					<li>roles highly coupled to reputational persistence</li>
+					<li>roles carrying longer-term liability for visible non-alignment</li>
+				</ul>
+
+				<p><strong>Lower-cost positions:</strong></p>
+				<ul>
+					<li>roles with weaker public indexing</li>
+					<li>roles able to escalate moral framing with lower downstream consequence</li>
+					<li>roles with greater deniability of impact</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> The decisive asymmetry is differential exposure to
+					public consequence and revision cost, not moral superiority or ontological standing.
+				</p>
+
+				<h3>10.5 Temporality and trajectory (Θ)</h3>
+				<p><strong>Trajectory pattern:</strong></p>
+				<ol>
+					<li>initial moral framing</li>
+					<li>public alignment pressure</li>
+					<li>durable record accumulation</li>
+					<li>rising cost of dissent or pause</li>
+					<li>compliance without coordination</li>
+					<li>terminal stabilization through moralized exposure</li>
+				</ol>
+
+				<p>
+					<strong>Drift signal:</strong> Time hardens the scene because moral records
+					accumulate and become harder to revise, retract, or contextually reopen.
+				</p>
+
+				<h3>10.6 Distance status test (Χ)</h3>
+				<p>
+					<strong>Formal status:</strong> available<br />
+					<strong>Effective status:</strong> delegitimized or morally priced
+				</p>
+
+				<p><strong>Indicators:</strong></p>
+				<ul>
+					<li>pausing is framed as moral failure</li>
+					<li>contextualization is treated as excuse-making</li>
+					<li>distance increases rather than reduces exposure</li>
+					<li>naming structural asymmetry is penalized as value failure</li>
+				</ul>
+
+				<p>
+					<strong>PMS-CONFLICT relevance:</strong> PMS-CONFLICT requires this distinction:
+					Χ may exist formally while no longer functioning as a stabilizer once the scene
+					moralizes its activation.
+				</p>
+
+				<h3>10.7 Attractor stabilization (Α)</h3>
+				<p>
+					<strong>Structural reading:</strong> The scene stabilizes around normative scripts
+					because they are easier to circulate publicly than explicit exposure accounting.
+					Good-versus-bad positioning becomes the recurrent handling pattern.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Repetition turns moral alignment into an attractor.
+					The system learns how to continue conflict through value coding rather than through
+					coordinated cost negotiation.
+				</p>
+
+				<h3>10.8 Recontextualization dynamics (Φ)</h3>
+				<p>
+					<strong>Key shift:</strong> Unequal exposure and coordination difficulty are
+					re-described as moral alignment problems, so that structural differences appear
+					as value insufficiencies rather than cost gradients.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Φ shifts from clarification toward moral
+					substitution when value language suppresses the only interface where asymmetry
+					could still be coordinated.
+				</p>
+
+				<h3>10.9 Dignity stress test</h3>
+				<p><strong>Operator basis:</strong> <span class="code-inline">["D", "Φ", "Ω", "Χ", "Ψ"]</span></p>
+				<p>
+					<strong>Core risk:</strong> Moral language becomes coercive when it demands
+					alignment without naming unequal exposure, exit cost, or reputational persistence.
+				</p>
+				<p>
+					<strong>Structural indicator:</strong> Distance and asymmetry naming are treated
+					as failures of care or integrity, while public compliance is elevated as proof
+					of responsibility. This is the key D-stress point in the scene.
+				</p>
+
+				<h3>10.10 Integration suppression check (Σ)</h3>
+				<p><strong>Decisive question:</strong> Does the scene still coordinate unequal costs, or only moralize them?</p>
+				<p>
+					<strong>Structural reading:</strong> Σ is suppressed where the interaction no
+					longer negotiates exposure, reversibility, and coordination conditions, but
+					instead produces alignment appearance and moral compliance.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> The scene continues publicly, but it no longer
+					consolidates shared coordination; it distributes costs under moral pressure.
+				</p>
+
+				<h3>10.11 Tragedy clause check</h3>
+				<p><strong>Status:</strong> structurally applicable within this grammar</p>
+				<p>
+					<strong>Reading:</strong> The configuration is tragic in the PMS-CONFLICT sense
+					when no further value clarification restores coordination at acceptable cost,
+					even though the regime remains fully legible.
+				</p>
+				<p>
+					<strong>Boundary note:</strong> This is not an anti-ethical slogan and not a
+					final statement about all possible rival grammars. It is a grammar-internal
+					limit claim.
+				</p>
+
+				<h3>10.12 Application boundary check</h3>
+				<p><strong>Relevance:</strong> primary</p>
+				<p>
+					<strong>Reading:</strong> This scene directly activates Chapter 25 concerns.
+					Because publicness and misuse gradient are high, operator language can quickly
+					become an enforcement affordance unless mode, publicness, and misuse
+					classification remain explicit.
+				</p>
+				<p>
+					<strong>Warning:</strong> Any excerpted use of this example without explicit
+					boundary discipline is especially prone to pseudo-symmetry, moral substitution,
+					person-labeling, and narrative immunization.
+				</p>
+
+				<h3>10.13 Downstream mode-shift boundary</h3>
+				<p><strong>Threshold question:</strong> What happens when moral articulation no longer belongs to coordination?</p>
+				<p>
+					<strong>Structural answer:</strong> Once Ω is denied, Φ moralizes, Χ is
+					delegitimized, and Σ is suppressed, any correction beyond descriptive mapping
+					becomes a downstream mode shift: governance, institutional mediation, formal
+					boundary-setting, or exit.
+				</p>
+				<p>
+					<strong>Misuse warning:</strong> The handoff boundary must not be smuggled back
+					into the descriptive layer as if CONFLICT itself already authorized moral
+					enforcement or public sanction.
+				</p>
+			</section>
+
+			<section id="assistant-test-vectors">
+				<h2>11. Assistant test vectors</h2>
+
+				<ul>
+					<li>Map this case with PMS-CONFLICT. Where does exposure asymmetry remain active beneath moral language?</li>
+					<li>Explain how Φ turns structural differences into virtue categories without restoring coordination.</li>
+					<li>Show where Χ becomes morally delegitimized rather than simply unavailable.</li>
+					<li>Identify how Ψ shifts from self-binding to demanded public alignment in this scene.</li>
+					<li>Distinguish moral articulation from actual Σ in this public exposure regime.</li>
+					<li>Describe why this counts as terminal CONFLICT rather than coordinated value alignment.</li>
+				</ul>
+			</section>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,540 @@
+example_id: "PMS-CONFLICT_EX05"
+example_version: "1.1"
+schema_version: "PMS-CONFLICT_1.1"
+example_label: "Mediation That Increases Conflict Load"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CONFLICT_1.1"
+
+schema_alignment:
+  primary_reduced_signature_ref: "CONFLICT_terminal_core"
+  secondary_reduced_signature_refs:
+    - "CONFLICT_stabilized_pattern"
+    - "DRIFT_asymmetry_lock_in"
+    - "DRIFT_dignity_collapse"
+  non_operator_construct_refs:
+    - "conflict_attractor_A_conflict"
+    - "asymmetry_lock_in"
+    - "dignity_collapse"
+  terminal_projection_ref: "terminal_positioning_projection"
+  validity_gate_ref: "validity_gate"
+  application_boundary_ref: "application_boundary_scaling"
+  note: >
+    This example is a late-stage, mediation-framed instantiation of
+    PMS-CONFLICT_1.1. It remains fully subordinate to PMS_1.3 and does not
+    redefine operators, dependencies, or derived axes.
+
+minimal_vignette:
+  title: "Formal mediation is introduced after shared integration has already collapsed"
+  scene_boundaries:
+    domain: "Late-stage mediation, institutional conflict handling, continuity burdens, endpoint control, and asymmetric procedural costs"
+    scope: "Structures, failed integration, mediation reframing, temporal hardening, asymmetric continuation costs, priced distance, and terminal conflict stabilization"
+    out_of_scope:
+      - "person-level judgement"
+      - "motive attribution"
+      - "virtue assessment"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+      - "moral ranking of role positions"
+      - "diagnostic or maturity labeling"
+      - "claims that mediation is inherently ineffective"
+      - "governance authorization"
+      - "selection, sorting, or exclusion decisions"
+  short_scene: >
+    A late-stage conflict is brought into formal mediation after multiple prior
+    repair attempts have already failed. One role remains exposed to the ongoing
+    burdens of explanation, scheduling, repetition, and continuity, while
+    another retains greater control over closure, escalation, or institutional
+    handoff. Mediation is introduced as if the situation were still processable
+    through renewed dialogue, yet no shared integrative spine is reopened. The
+    procedure continues, but each additional cycle adds cost without restoring
+    Σ.
+  structural_focus: >
+    The case examines a terminal conflict regime in which Σ is already absent,
+    Φ recontextualizes terminal conflict as processable mediation, Θ amplifies
+    sunk costs and procedural residue, Ω differentiates who bears continuation
+    burdens and who retains closure control, Α stabilizes conflict-management
+    repetition, and Χ remains formally available but becomes priced or morally
+    penalized.
+  scenic_elements:
+    actors:
+      - "continuity-carrying role exposed to ongoing mediation load"
+      - "endpoint-setting role with greater closure or escalation control"
+      - "mediating interface or formal process container"
+      - "downstream parties affected by continued non-resolution"
+    salient_objects:
+      - "mediation sessions"
+      - "repair narratives"
+      - "prior failed integration attempts"
+      - "continuation burdens"
+      - "termination or handoff options"
+      - "procedural records"
+      - "time and repetition costs"
+    trigger_event:
+      label: "formal mediation introduced after repeated failed repair"
+      description: >
+        A further mediation round is proposed or imposed after earlier attempts
+        at clarification, repair, or reintegration have already failed to reopen
+        viable shared Σ.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example shows how mediation can function as a cost multiplier once
+    integrability has already collapsed. It clarifies terminal conflict not as
+    escalation alone, but as a regime in which procedure survives after Σ has
+    ceased to carry.
+  repo_value:
+    - >
+      Demonstrates that Φ can remain highly active after Σ has failed, so that
+      conflict continues through process without renewed integration.
+    - >
+      Makes visible the distinction between mediation as a valid coordination
+      interface and mediation as terminal conflict extension.
+    - >
+      Shows how Ω and Θ transform formal process into unevenly distributed
+      continuation burden rather than shared repair.
+    - >
+      Tests the status of Χ under load by distinguishing formal participation
+      options from affordable, unsanctioned distance.
+    - >
+      Illustrates the tragedy clause as a grammar boundary: additional process
+      does not necessarily reopen integrability.
+  central_repo_question: >
+    When does mediation still function as a viable coordination interface, and
+    when has it already become a terminal conflict routine that amplifies cost
+    without restoring Σ?
+  lens_relevance:
+    terminal_core: >
+      The example shows that terminal CONFLICT can persist beneath cooperative
+      or procedural language once integration has already become structurally
+      unavailable.
+    asymmetry_lock_in: >
+      The decisive asymmetry is not moral superiority, but differential
+      exposure to repeated mediation costs, continuity burdens, and closure
+      control.
+    dignity_collapse_risk: >
+      The case clarifies how mediation rhetoric can drift into coercion when
+      refusal, pause, or withdrawal are framed as obstruction, bad faith, or
+      unwillingness to cooperate.
+    downstream_boundary: >
+      The example marks the point at which further continuation becomes
+      downstream handling, institutional handoff, or exit rather than renewed
+      descriptive reintegration inside PMS-CONFLICT.
+
+overlay_profile:
+  P:
+    status: "secondary"
+    note: >
+      Publicness is not the primary driver, but mediation often occurs under
+      institutional visibility, procedural memory, and reputational trace.
+      These conditions can amplify Θ and Ω even without fully public exposure.
+  MG:
+    status: "primary"
+    note: >
+      Misuse-gradient dynamics are central because mediation language can be
+      misread as proof that Σ remains available and can externalize pressure to
+      continue participation after integrability has structurally failed.
+  application_boundary_declaration:
+    mode: "DESCRIPTIVE"
+    publicness: "INSTITUTIONAL"
+    misuse_gradient: "MG_MIXED"
+    note: >
+      The example remains descriptive. The scene carries mixed misuse gradient
+      because institutional process language can drift into endurance demands,
+      pseudo-neutral coercion, or premature governance implications if mode and
+      boundary conditions are not kept explicit.
+
+theta_history_relevance:
+  status: "primary"
+  note: >
+    Θ is central because the case depends on accumulated failed repair cycles,
+    sunk-cost residue, and the increasing irreversibility produced by each
+    additional mediation round. The late-stage character of the scene is a
+    temporal production condition, not a person property.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Σ", "Φ", "Θ", "Ω", "Α", "Χ"]
+    secondary_context: ["Δ", "∇", "□", "Λ", "Ψ"]
+    note: >
+      The decisive threshold is terminal and mediation-framed: Σ is already
+      absent, Φ reframes terminal conflict as processable, Θ amplifies
+      procedural residue and sunk costs, Ω differentiates who pays for
+      continuation, Α stabilizes repeated mediation as an attractor, and Χ is
+      formally available but effectively priced or moralized. Δ, ∇, □, Λ, and Ψ
+      remain relevant as activation, framing, absence, and binding carriers.
+  conflict_domain_classification:
+    domain_status: "CONFLICT (terminal descriptive regime)"
+    justification:
+      - "No internal reintegration grammar remains once mediation proceeds without restored Σ."
+      - "Further mediation rounds increase cost without reopening viable shared consolidation."
+      - "Continuation persists through procedure and obligation maintenance rather than coordination."
+      - "Refusal, pause, or withdrawal are increasingly penalized even though integrability is absent."
+      - "Stabilization occurs through conflict-management repetition rather than renewed integration."
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A difference becomes active between process continuation and actual
+        integration, and between formal mediation activity and viable shared
+        consolidation.
+    "∇":
+      scene_role: >
+        Pressure rises to try one more time, show reasonableness, avoid being
+        seen as obstructive, and prevent visible breakdown. This tension is
+        active, but it does not restore Σ.
+    "□":
+      scene_role: >
+        The frame is mediation: a formal repair interface introduced after
+        internal reintegration has already failed. Conflict stabilizes when this
+        frame treats terminal incompatibility as if it were still processable.
+    "Λ":
+      scene_role: >
+        Critical absences structure the regime: there is no explicit naming of
+        prior Σ failure, no explicit assessment of remaining integrability, and
+        no explicit recognition of asymmetric continuation costs.
+    "Α":
+      scene_role: >
+        Repetition stabilizes mediation itself into an attractor: sessions,
+        restatements, procedural steps, and renewed efforts recur without
+        reopening Σ.
+    "Ω":
+      scene_role: >
+        Continuation burdens are unevenly distributed. Some roles absorb time,
+        preparation, repetition, and exposure to renewed conflict, while others
+        preserve greater control over closure or institutional handoff.
+    "Θ":
+      scene_role: >
+        Prior failed repair cycles accumulate into sunk costs and procedural
+        residue. Each additional round raises the cost of exit and deepens the
+        path dependence of continuation.
+    "Φ":
+      scene_role: >
+        Terminal conflict is recontextualized as processable mediation.
+        Procedure substitutes for coordination by presenting continued handling
+        as if it still promised integration.
+    "Χ":
+      scene_role: >
+        Distance remains formally available, but refusal, pause, or withdrawal
+        are framed as unwillingness to cooperate, lack of good faith, or
+        procedural obstruction.
+    "Σ":
+      scene_role: >
+        Σ is already absent. No shared integrative spine is restored; mediation
+        activity continues without renewed consolidation.
+    "Ψ":
+      scene_role: >
+        Binding persists through obligations to continue participating, explain,
+        and demonstrate reasonableness. This can drift from self-binding into
+        externally imposed continuation pressure.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness rises because the regime becomes legible as procedure without
+        integration. The decisive insight is that more process does not imply
+        more Σ.
+    C:
+      reading: >
+        Coherence is mixed: the mediation process may remain procedurally
+        coherent, while shared structural consolidation remains absent.
+    R:
+      reading: >
+        Responsibility intensifies as continuation pressure because one side
+        bears repeated process costs, preparation burdens, and exposure to
+        renewed conflict under Ω and Θ.
+    E:
+      reading: >
+        Action becomes constrained: available moves narrow because Χ is priced
+        and additional process no longer produces viable coordination.
+    D:
+      reading: >
+        Dignity-in-Practice becomes fragile when endurance is moralized and when
+        refusal of further mediation is translated into bad faith, obstruction,
+        or moral deficiency.
+  structural_mechanism_summary:
+    sequence:
+      - "Prior repair attempts fail to restore Σ."
+      - "Formal mediation is introduced after integrability has already collapsed."
+      - "Φ reframes terminal conflict as still processable."
+      - "Θ amplifies sunk costs and procedural residue with each additional round."
+      - "Ω differentiates who carries continuation load and who retains endpoint control."
+      - "Α stabilizes repeated mediation as a conflict-management attractor."
+      - "Χ becomes priced or morally penalized."
+      - "The regime becomes terminal CONFLICT extended through procedure."
+    concise_formula: >
+      Σ absent + mediation Φ + Θ amplification + Ω asymmetric continuation
+      costs + Α_conflict repetition + priced Χ -> terminal conflict extended by process
+
+drift_catalogue_alignment:
+  primary:
+    - "asymmetry_lock_in_drift"
+  secondary:
+    - "dignity_collapse_drift"
+    - "binding_collision_drift"
+  possible_downstream:
+    - "exposure_capture_drift"
+  note: >
+    The scene is primarily governed by asymmetry lock-in: procedural
+    continuation costs differ sharply across roles. Dignity collapse becomes
+    relevant where refusal of further mediation is moralized or penalized.
+    Binding collision appears where obligations to continue process outlive any
+    viable integrative basis. Exposure capture may appear downstream if the
+    mediation frame becomes publicly or institutionally reputational.
+
+typical_drift_markers:
+  max_expected: 3
+  markers:
+    - id: "mediation_repeats_without_consolidation"
+      label: "Procedure continues while Σ remains absent"
+      operator_links: ["Σ", "Φ", "Θ"]
+      yaml_drift_ref: "binding_collision_drift"
+      indicator: >
+        New sessions, clarifications, or procedural rounds are added, but they
+        do not restore shared consolidation and instead increase residue and
+        repetition.
+    - id: "continuation_costs_accumulate_asymmetrically"
+      label: "Mediation load concentrates on continuity roles"
+      operator_links: ["Ω", "Θ", "Χ"]
+      yaml_drift_ref: "asymmetry_lock_in_drift"
+      indicator: >
+        One role repeatedly absorbs preparation, explanation, emotional labor,
+        and scheduling burdens, while another retains greater closure control at
+        lower marginal cost.
+    - id: "refusal_of_mediation_is_moralized"
+      label: "Χ is penalized as bad faith or obstruction"
+      operator_links: ["Χ", "Ψ", "D"]
+      yaml_drift_ref: "dignity_collapse_drift"
+      indicator: >
+        Pausing, withdrawing, or declining further mediation is framed as
+        unwillingness to cooperate, lack of reasonableness, or refusal to try.
+  additional_red_flags:
+    - "We need to show that we tried everything."
+    - "You have to attend one more round in good faith."
+    - "Refusing mediation proves you are the problem."
+    - "We can decide later whether it works; for now, continue the process."
+    - "Stopping now would be irresponsible."
+    - "More procedure is the only reasonable response."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain practically activatable in the analysis. The fact
+      that the scene penalizes or moralizes Χ does not authorize suspending Χ in
+      the reading itself.
+    reversibility: >
+      The classification must remain scene-bound and revisable. Terminality here
+      concerns this mediation configuration, not the essence or moral standing
+      of any role or actor.
+    dignity_in_practice: >
+      Structural asymmetry and failed mediation must not be translated into
+      blame, humiliation, ranking, or person-labeling. The analysis remains
+      regime-, role-, and cost-topology-bound.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        Prior Σ failure is explicitly nameable rather than covered by generic
+        mediation optimism.
+      - >
+        The reading distinguishes mediation as formal process from actual
+        integrative viability.
+      - >
+        Ω is read as differential exposure to continuation and closure costs,
+        not as moral superiority.
+      - >
+        Χ remains analytically visible even where refusal of further process is
+        rhetorically penalized.
+      - >
+        The reading stays tied to this specific late-stage mediation regime and
+        does not expand into person-level conclusions.
+    formally_invalid_if:
+      - >
+        The example is used to justify coercive endurance demands, punitive
+        participation requirements, or person-ranking.
+      - >
+        Mediation refusal is translated into diagnosis, character claims, or
+        maturity labels.
+      - >
+        Terminal conflict is used as a verdict rather than as a descriptive
+        boundary condition.
+      - >
+        The analysis itself treats pause, withdrawal, or cost containment as
+        moral failure.
+      - >
+        The analysis collapses into procedural prescription while still claiming
+        to remain purely descriptive.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows a configuration in which mediation no longer functions as a
+    path to integration but as a multiplier of conflict load. The decisive
+    shift is not hostility toward process as such, but the introduction of
+    procedure after Σ has already failed: time amplifies residue, asymmetry
+    differentiates who pays to continue, and distance becomes morally or
+    institutionally costly. Within PMS-CONFLICT, this marks terminal
+    descriptive conflict extended through mediation rather than viable renewed
+    coordination. What remains legible is the cost topology of continued
+    processing, not an internal route back to shared Σ.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "formal mediation interface"
+      - "late-stage repair attempts"
+      - "continuation burdens"
+      - "termination or handoff conditions"
+      - "procedural repetition"
+      - "cost allocation across roles"
+    out_of_scope:
+      - "personality claims"
+      - "motive diagnosis"
+      - "moral verdicts"
+      - "prescriptive governance conclusions"
+      - "claims that mediation is always invalid"
+      - "selection or exclusion logic"
+    drift_signal: >
+      The frame becomes unstable when mediation is silently treated as proof of
+      remaining integrability even though the scene no longer possesses a shared
+      consolidative spine.
+  non_event_integrity_check:
+    operator: "Λ"
+    decisive_absences:
+      - "explicit acknowledgment of prior Σ failure"
+      - "explicit assessment of remaining integrative viability"
+      - "explicit recognition of asymmetric continuation costs"
+      - "explicit release from repeated repair obligation"
+      - "explicit distinction between process continuation and coordination"
+    drift_signal: >
+      What is missing is not communication alone but structural naming of
+      terminality. These absences allow mediation to function as continuation
+      pressure rather than as viable coordination.
+  integration_absence_check:
+    operator: "Σ"
+    decisive_question: "Does further mediation restore a shared spine, or only extend procedure?"
+    structural_reading: >
+      Σ is absent where repeated mediation activity fails to reopen viable
+      shared consolidation and instead adds procedural load, residue, and sunk
+      cost to the configuration.
+    drift_signal: >
+      Integration language remains active, but it functions increasingly as
+      process legitimation rather than as actual consolidation.
+  mediation_recontextualization_check:
+    operator: "Φ"
+    decisive_question: "When does mediation become Φ without Σ?"
+    structural_reading: >
+      Recontextualization becomes substitutive when terminal conflict is
+      restaged as if it were still processable through one more mediated round,
+      despite the absence of structural affordability for reintegration.
+    drift_signal: >
+      Clarification no longer reduces conflict load; it reframes continued
+      non-integrability as unfinished procedure.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "roles carrying repeated preparation and continuity burdens"
+      - "roles exposed to renewed explanation and mediation fatigue"
+      - "roles accumulating downstream costs from delay"
+    lower_cost_positions:
+      - "roles retaining greater closure control"
+      - "roles able to prolong process at lower marginal cost"
+      - "roles less exposed to repeated continuation residue"
+    drift_signal: >
+      The decisive asymmetry is differential exposure to repeated procedural
+      cost and endpoint control, not moral superiority or intrinsic authority.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "initial coordination strain"
+      - "failed repair"
+      - "further failed repair"
+      - "formal mediation introduced"
+      - "procedural repetition"
+      - "sunk-cost amplification"
+      - "priced refusal or exit"
+      - "terminal stabilization through process"
+    drift_signal: >
+      Time hardens the regime because each additional mediation round raises the
+      cost of withdrawal and deepens the historical residue of failed repair.
+  distance_status_test:
+    operator: "Χ"
+    formal_status: "available"
+    effective_status: "priced or rhetorically penalized"
+    indicators:
+      - "refusal is framed as bad faith"
+      - "withdrawal is treated as obstruction"
+      - "pause increases rather than reduces pressure"
+      - "continuing procedure is moralized as reasonableness"
+    pms_conflict_relevance: >
+      PMS-CONFLICT requires this distinction: Χ may remain formally present
+      while no longer functioning as a stabilizer once procedure penalizes its
+      activation.
+  attractor_stabilization:
+    operator: "Α"
+    structural_reading: >
+      Mediation stabilizes into an attractor when repeated sessions become the
+      default response to structural non-integrability. The system learns how to
+      continue conflict through managed process.
+    drift_signal: >
+      Recurrence no longer signals temporary difficulty; it becomes the
+      predictable routine by which terminal conflict persists.
+  dignity_stress_test:
+    operator_basis: ["D", "Φ", "Θ", "Χ", "Ψ"]
+    core_risk: >
+      Mediation rhetoric becomes coercive when endurance and continued
+      participation are elevated as moral or procedural duty after integrability
+      has already failed.
+    structural_indicator: >
+      Distance, refusal, or cost containment are treated as signs of
+      unreasonableness, while continued participation is elevated as proof of
+      good faith regardless of asymmetric burden.
+  binding_externalization_check:
+    operator: "Ψ"
+    decisive_question: "Who is bound to continue the mediation process?"
+    structural_reading: >
+      Binding becomes problematic when self-binding to reflection or procedure
+      drifts into externally imposed obligation to keep participating despite
+      absent Σ.
+    drift_signal: >
+      The scene increasingly assumes that one more round is owed, even though
+      the process no longer restores viable coordination.
+  tragedy_clause_check:
+    status: "structurally applicable within this grammar"
+    reading: >
+      The configuration is tragic in the PMS-CONFLICT sense when no further
+      procedural effort, clarification, or cooperative intent restores Σ at
+      acceptable cost, even though the regime remains fully legible.
+    boundary_note: >
+      This is not an anti-mediation slogan and not a final statement about all
+      possible rival grammars. It is a grammar-internal limit claim.
+  application_boundary_check:
+    relevance: "secondary"
+    reading: >
+      This scene activates Chapter 25 concerns because institutional mediation
+      language can easily slide from descriptive handling into endurance
+      enforcement or hidden governance authority if mode and boundary
+      declarations are not kept explicit.
+    warning: >
+      Any excerpted use of this example without explicit boundary discipline is
+      prone to pseudo-symmetry, moral substitution, person-labeling, and covert
+      prescription under the guise of neutral process.
+  downstream_mode_shift_boundary:
+    threshold_question: "What happens when mediation no longer belongs to reintegration?"
+    structural_answer: >
+      Once Σ remains absent, Θ amplifies residue, Ω differentiates continuation
+      cost, and Χ is penalized, further continuation beyond descriptive mapping
+      becomes a downstream mode shift: institutional handoff, formal closure,
+      governance decision, or exit.
+    misuse_warning: >
+      The handoff boundary must not be smuggled back into the descriptive layer
+      as if CONFLICT itself already authorized coercive continuation or forced
+      mediation.
+
+assistant_test_vectors:
+  promptables:
+    - "Map this case with PMS-CONFLICT. Where has Σ already ceased to carry before mediation begins?"
+    - "Explain how mediation can function as Φ without restoring integration in this scene."
+    - "Identify the Ω-pattern in procedural burden and endpoint control."
+    - "Show where Χ remains formally available but is effectively priced or penalized."
+    - "Distinguish mediation as viable coordination interface from mediation as terminal conflict routine."
+    - "Describe why this counts as terminal CONFLICT rather than difficult but still reparable process."

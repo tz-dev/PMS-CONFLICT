@@ -3,321 +3,1566 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <style>
-	      :root {
-	        --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-	        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-	        --color-text: #111;
-	        --color-muted: #555;
-	        --color-accent: #333;
-	        --color-border: #ddd;
-	        --color-bg: #fafafa;
-	      }
-
-	      * {
-	        box-sizing: border-box;
-	      }
-
-	      html, body {
-	        margin: 0;
-	        padding: 0;
-	      }
-
-	      body {
-	        font-family: var(--font-body);
-	        color: var(--color-text);
-	        background: white;
-	        line-height: 1.5;
-	        font-size: 14px;
-	      }
-
-	      blockquote {
-	        margin: 0 0 16px;
-	        padding: 0 1em;
-	        color: #57606a;
-	        border-left: 0.25em solid #d0d7de;
-	      }
-
-	      .page {
-	        max-width: 900px;
-	        margin: 0 auto;
-	        padding: 32px 24px 64px;
-	        background: white;
-	      }
-
-	      header {
-	        border-bottom: 1px solid var(--color-border);
-	        margin-bottom: 24px;
-	        padding-bottom: 16px;
-	      }
-
-	      header h1 {
-	        font-size: 1.9rem;
-	        margin: 0 0 8px;
-	        letter-spacing: 0.02em;
-	      }
-
-	      header .subtitle {
-	        font-size: 0.95rem;
-	        color: var(--color-muted);
-	        margin-bottom: 8px;
-	      }
-
-	      header .meta {
-	        font-size: 0.8rem;
-	        color: var(--color-muted);
-	      }
-
-	      h2 {
-	        margin-top: 15px;
-	        margin-bottom: 4px;
-	        font-size: 1.15rem;
-	        border-bottom: 1px solid var(--color-border);
-	        padding-bottom: 4px;
-	      }
-
-	      h3 {
-	        margin-top: 18px;
-	        margin-bottom: 4px;
-	        font-size: 1rem;
-	        color: var(--color-accent);
-	      }
-
-	      p {
-	        margin: 4px 0 8px;
-	      }
-
-	      ul {
-	        margin: 4px 0 10px 1.2rem;
-	        padding: 0;
-	        line-height: 1.1em;
-	      }
-
-	      li {
-	        margin-bottom: 3px;
-	      }
-
-	      .code-inline {
-	        font-family: var(--font-mono);
-	        font-size: 0.9em;
-	        background: #f5f5f5;
-	        padding: 1px 4px;
-	        border-radius: 3px;
-	      }
-
-	      .box {
-	        border: 1px solid var(--color-border);
-	        border-radius: 4px;
-	        padding: 8px 10px;
-	        background: #fcfcfc;
-	        margin: 8px 0 12px;
-	        line-height: 1.05em;
-	      }
-
-	      .box-title {
-	        font-weight: 600;
-	        font-size: 0.9rem;
-	        margin-bottom: 4px;
-	      }
-
-	      .small {
-	        font-size: 0.85rem;
-	        color: var(--color-muted);
-	      }
-
-	      .two-column {
-	        display: flex;
-	        flex-wrap: wrap;
-	        gap: 16px;
-	      }
-
-	      .two-column > div {
-	        flex: 1 1 260px;
-	        min-width: 0;
-	      }
-
-	      .table {
-	        width: 100%;
-	        border-collapse: collapse;
-	        margin: 8px 0 12px;
-	        font-size: 0.77rem;
-	        line-height: 1.2em;
-	      }
-
-	      .table th,
-	      .table td {
-	        border: 1px solid var(--color-border);
-	        padding: 4px 6px;
-	        vertical-align: top;
-	      }
-
-	      .table th {
-	        background: #f5f5f5;
-	        font-weight: 600;
-	      }
-
-	      .tag {
-	        display: inline-block;
-	        border-radius: 999px;
-	        border: 1px solid var(--color-border);
-	        padding: 1px 8px;
-	        font-size: 0.75rem;
-	        margin-right: 4px;
-	        margin-bottom: 3px;
-	      }
-
-	      .placeholder {
-	        font-style: italic;
-	        color: var(--color-muted);
-	      }
-
-	      .pagebreak{
-	        page-break-before:always
-	      }
-
-	      @media print {
-	        body {
-	          background: white;
-	        }
-	        .page {
-	          box-shadow: none;
-	          padding: 24px 18px;
-	        }
-	        a[href]:after {
-	          content: "";
-	        }
-	      }
-	    </style>
 		<title>PMS-CONFLICT — Example 6: Public Alignment That Destroys Private Distance</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1><strong>PMS-CONFLICT</strong></h1>
-			<h2><em>Example 6: Public Alignment That Destroys Private Distance</em></h2>
-		</header>
-		<section id="content">
-			<p><strong>Case label:</strong> <em>Consensus Performance under Audience Load</em>
-			<strong>Scope discipline:</strong> Structural mapping only. No diagnosis, no attribution, no prescriptions. PMS application validity remains conditional on <strong>Χ + reversibility + D</strong>.</p>
-			<hr>
-			<h3>A. Scene Packet (Minimal Unit)</h3>
-			<p><strong>Scene ID:</strong></p>
-			<ul>
-			<li><p><strong>Θ (temporality):</strong> Rapid escalation with durable public records.</p>
-			</li>
-			<li><p><strong>□ (frame anchor):</strong> <strong>□public alignment</strong> (unity, consensus, solidarity).</p>
-			</li>
-			<li><p><strong>Roles (not persons):</strong></p>
-			<ul>
-			<li>Role R₁: visibility carrier; statements are indexed, persistent, and attributable.</li>
-			<li>Role R₂: narrative beneficiary; gains from public unity without equivalent exposure.</li>
-			</ul>
-			</li>
-			</ul>
-			<p><strong>Trigger (Δ/∇):</strong></p>
-			<ul>
-			<li><strong>Δ:</strong> Call for immediate public alignment appears.</li>
-			<li><strong>∇:</strong> Pressure to demonstrate unity under audience scrutiny.</li>
-			</ul>
-			<p><strong>Λ candidates (expected but missing):</strong></p>
-			<ul>
-			<li>Private negotiation space.</li>
-			<li>Delayed response windows.</li>
-			<li>Explicit separation between public signaling and private coordination.</li>
-			</ul>
-			<p><strong>Observed realizations (neutral):</strong></p>
-			<ul>
-			<li>Public statements of unity.</li>
-			<li>Suppression of internal disagreement.</li>
-			<li>Acceleration of symbolic consensus.</li>
-			</ul>
-			<hr>
-			<h3>B. Drift Trace (Operator-Readable)</h3>
-			<p><code>P → Ω amplification → Χ collapse → Α_group → Σ impossible → Ψ performative</code></p>
-			<p><strong>Key transitions:</strong></p>
-			<ul>
-			<li><strong>P (publicness overlay)</strong> amplifies exposure and irreversibility.</li>
-			<li><strong>Ω (asymmetry)</strong> intensifies as visibility and liability diverge.</li>
-			<li><strong>Χ (distance)</strong> collapses; pause or revision becomes reputationally costly.</li>
-			<li><strong>Α (attractor)</strong> stabilizes group-alignment scripts.</li>
-			<li><strong>Σ (integration)</strong> becomes impossible without private distance.</li>
-			<li><strong>Ψ (binding)</strong> shifts to performative loyalty rather than coordinated obligation.</li>
-			</ul>
-			<hr>
-			<h3>C. Cost Distribution (Structural, Not Moral)</h3>
-			<p><strong>Exposure vs. coordination costs:</strong></p>
-			<ul>
-			<li><strong>R₁-adjacent costs:</strong> reputational risk, irreversible attribution, escalation liability.</li>
-			<li><strong>R₂-adjacent costs:</strong> narrative gain with limited downside.</li>
-			</ul>
-			<p><strong>System effect:</strong></p>
-			<ul>
-			<li>Public alignment reallocates costs while eliminating negotiation space.</li>
-			</ul>
-			<hr>
-			<h3>D. Rational Response Envelope (Structural Reasonableness)</h3>
-			<p>Structurally rational responses include:</p>
-			<ul>
-			<li><strong>Performative agreement</strong> where dissent would escalate exposure.</li>
-			<li><strong>Silence</strong> to avoid irreversible commitment.</li>
-			<li><strong>Exit</strong> once alignment demands exceed affordable distance.</li>
-			</ul>
-			<p>These responses follow cost logic under <strong>P-amplified Ω across Θ</strong>, not conviction strength.</p>
-			<hr>
-			<h3>E. Dignity-in-Practice Stress Test (D under P)</h3>
-			<p><strong>Risk point:</strong></p>
-			<ul>
-			<li>Public unity rhetoric penalizes restraint and reflection.</li>
-			</ul>
-			<p><strong>Failure mode:</strong></p>
-			<ul>
-			<li><strong>Χ</strong> framed as betrayal or disloyalty.</li>
-			<li><strong>Ψ→Other:</strong> alignment demanded as proof of belonging.</li>
-			</ul>
-			<p><strong>Structural indicator:</strong></p>
-			<ul>
-			<li>Distance increases exposure instead of reducing it.</li>
-			</ul>
-			<hr>
-			<h3>F. Reader-Guard (Misinterpretation Prevention)</h3>
-			<p>This example does <strong>not</strong> claim:</p>
-			<ul>
-			<li>that consensus is undesirable,</li>
-			<li>that unity implies insincerity,</li>
-			<li>that public coordination is illegitimate,</li>
-			<li>that disagreement implies bad faith.</li>
-			</ul>
-			<p>It <strong>does claim</strong>:</p>
-			<ul>
-			<li>that publicness can destroy the conditions for integration,</li>
-			<li>that alignment can substitute for coordination,</li>
-			<li>that exposure economics reshape viability.</li>
-			</ul>
-			<hr>
-			<h3>G. PMS Validity Check (Application Gate)</h3>
-			<p>Application is PMS-valid <strong>only if</strong>:</p>
-			<ul>
-			<li>private <strong>Χ (distance)</strong> remains protected,</li>
-			<li>public alignment does not enforce binding,</li>
-			<li>reversibility is preserved,</li>
-			<li><strong>D (dignity-in-practice)</strong> constrains shaming and exclusion.</li>
-			</ul>
-			<hr>
-			<h3>H. Structural Closure (Non-Normative)</h3>
-			<p>Public alignment fails here not because disagreement exists,
-			but because <strong>distance cannot survive under audience economics</strong>.</p>
-			<p>Under <strong>P</strong>, <strong>Ω</strong> and <strong>Θ</strong> amplify faster than integration can occur.
-			Consensus becomes performance.
-			Binding becomes spectacle.
-			Coordination disappears.</p>
-			<p>Conflict stabilizes not through opposition,
-			but through <strong>the loss of any private space where integration could still occur</strong>.</p>
-			<hr>
-			<h3>I. Reduced PMS-CONFLICT Signature</h3>
-			<p><code>P ↑  +  Ω ↑  +  Χ collapse  +  Α_group  +  Σ impossible</code></p>
-			<hr>
-			<h3>J. Conflict Domain Classification</h3>
-			<p><strong>Domain status:</strong> <strong>CONFLICT (terminal descriptive regime)</strong>
-			<strong>Justification:</strong> Publicness eliminates distance; no internal reintegration grammar remains available.</p>
-		</section>
+		<div class="page">
+			<header>
+				<h1><strong>PMS-CONFLICT</strong></h1>
+				<h2><em>Example 6: Public Alignment That Destroys Private Distance</em></h2>
+				<div class="subtitle">
+					Scene-bound example for a publicness-amplified terminal conflict configuration in PMS-CONFLICT:
+					public alignment demands eliminate the private distance required for integration, exposure gradients harden
+					under audience load, and symbolic consensus replaces protected coordination. Structural mapping only.
+					No diagnosis, no person-typing, no prescriptions, no governance authorization.
+				</div>
+				<div class="meta">
+					<strong>Example ID:</strong> <span class="code-inline">PMS-CONFLICT_EX06</span> &middot;
+					<strong>Example Version:</strong> <span class="code-inline">1.1</span> &middot;
+					<strong>Schema Version:</strong> <span class="code-inline">PMS-CONFLICT_1.1</span><br />
+					<strong>Status:</strong> draft &middot;
+					<strong>Language:</strong> EN &middot;
+					<strong>Depends on:</strong> <span class="code-inline">PMS_1.3</span>, <span class="code-inline">PMS-CONFLICT_1.1</span><br />
+					<strong>Classification:</strong> <span class="code-inline">CONFLICT (terminal descriptive regime)</span><br />
+					<strong>Validity discipline:</strong> PMS application remains conditional on
+					<span class="code-inline">Χ + reversibility + D</span>.
+				</div>
+			</header>
+
+			<section id="schema-alignment">
+				<h2>1. Schema alignment</h2>
+
+				<p>
+					This example is a <strong>publicness-amplified instantiation</strong> of
+					<strong>PMS-CONFLICT_1.1</strong>. It remains fully subordinate to
+					<strong>PMS_1.3</strong> and does not redefine operators, dependencies,
+					or derived axes.
+				</p>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Primary schema references</div>
+						<ul class="small">
+							<li><strong>Reduced signature:</strong> <span class="code-inline">DRIFT_exposure_capture</span></li>
+							<li><strong>Terminal projection:</strong> <span class="code-inline">terminal_positioning_projection</span></li>
+							<li><strong>Validity gate:</strong> <span class="code-inline">validity_gate</span></li>
+							<li><strong>Application boundary:</strong> <span class="code-inline">application_boundary_scaling</span></li>
+						</ul>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Secondary schema references</div>
+						<ul class="small">
+							<li><span class="code-inline">CONFLICT_terminal_core</span></li>
+							<li><span class="code-inline">DRIFT_dignity_collapse</span></li>
+							<li><span class="code-inline">DRIFT_asymmetry_lock_in</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Non-operator construct references</div>
+					<p class="small">
+						<span class="tag">exposure_capture</span>
+						<span class="tag">dignity_collapse</span>
+						<span class="tag">conflict_attractor_A_conflict</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="minimal-vignette">
+				<h2>2. Minimal vignette</h2>
+
+				<h3>2.1 Title</h3>
+				<p><strong>Public alignment demands eliminate the private distance required for integration</strong></p>
+
+				<h3>2.2 Scene boundaries</h3>
+				<div class="box">
+					<div class="box-title">Domain</div>
+					<p class="small">
+						Public signaling, institutional or reputational alignment,
+						audience-coupled coordination, and exposure asymmetry.
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Scope</div>
+					<p class="small">
+						Structures, publicness amplification, visibility gradients, loss of private
+						distance, symbolic consensus, and terminal conflict stabilization.
+					</p>
+				</div>
+
+				<h4>Out of scope</h4>
+				<ul>
+					<li>person-level judgement</li>
+					<li>motive attribution</li>
+					<li>virtue assessment</li>
+					<li>clinical or psychological interpretation</li>
+					<li>action prescription</li>
+					<li>moral ranking of role positions</li>
+					<li>diagnostic or maturity labeling</li>
+					<li>claims that consensus is inherently illegitimate</li>
+					<li>claims that disagreement proves bad faith</li>
+					<li>governance authorization</li>
+					<li>selection, sorting, or exclusion decisions</li>
+				</ul>
+
+				<h3>2.3 Short scene</h3>
+				<p>
+					A public call for unity, solidarity, or immediate alignment appears under
+					audience scrutiny. One role carries visibility and durable attribution,
+					while another benefits narratively from public consensus without equivalent
+					downstream exposure. Internal disagreement is not openly processed; instead,
+					symbolic consensus accelerates because public records, timing pressure, and
+					reputational coupling make delay or nuance costly. The system continues as
+					alignment performance, but no protected private space remains in which Σ
+					could still be reopened.
+				</p>
+
+				<h3>2.4 Structural focus</h3>
+				<p>
+					The case examines a terminal conflict regime in which the
+					<strong>Publicness Overlay (P)</strong> amplifies <strong>Ω</strong> and
+					<strong>Θ</strong>, destroys the practical viability of <strong>Χ</strong>,
+					stabilizes alignment scripts as an attractor, and converts
+					<strong>Ψ</strong> into performative belonging while <strong>Σ</strong>
+					becomes structurally impossible without private distance.
+				</p>
+
+				<h3>2.5 Scenic elements</h3>
+				<div class="two-column">
+					<div>
+						<h4>Actors</h4>
+						<ul>
+							<li>visibility-carrying role with durable public attribution</li>
+							<li>narrative-benefiting role with lower exposure</li>
+							<li>audience or public witness field</li>
+							<li>internal participants whose disagreement becomes reputationally costly</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Salient objects</h4>
+						<ul>
+							<li>public statements of unity</li>
+							<li>alignment demands</li>
+							<li>persistent records</li>
+							<li>private negotiation windows</li>
+							<li>reputational liabilities</li>
+							<li>symbolic consensus signals</li>
+							<li>delayed or suppressed disagreement</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Trigger event</div>
+					<p class="small">
+						<strong>Public alignment demand under audience load:</strong>
+						A call for immediate public unity appears in a setting where statements
+						are indexed, attributable, persistent, and audience-coupled, making
+						non-alignment or delay visibly consequential.
+					</p>
+				</div>
+			</section>
+
+			<section id="repo-usefulness">
+				<h2>3. Why this is repo-useful</h2>
+
+				<p>
+					This example shows how conflict can stabilize through consensus performance
+					rather than open dispute. It clarifies that publicness can destroy the very
+					distance conditions needed for integration, even while outward unity
+					appears to increase.
+				</p>
+
+				<h3>3.1 Repo value</h3>
+				<ul>
+					<li>
+						Demonstrates how the Publicness Overlay (<strong>P</strong>) amplifies
+						<strong>Ω</strong> and <strong>Θ</strong> without introducing any new
+						operator, making reversibility collapse under audience-coupled exposure.
+					</li>
+					<li>
+						Makes visible the distinction between public alignment and actual
+						coordination: symbolic consensus can expand precisely where Σ has become
+						unavailable.
+					</li>
+					<li>
+						Shows how exposure gradients redistribute risk unevenly beneath unity rhetoric.
+					</li>
+					<li>
+						Tests the status of Χ under audience load by distinguishing formal
+						permission to pause from practically affordable private distance.
+					</li>
+					<li>
+						Illustrates why application-bound reuse of conflict language under public
+						conditions requires explicit boundary declarations and tighter misuse discipline.
+					</li>
+				</ul>
+
+				<h3>3.2 Central repo question</h3>
+				<p>
+					When does public alignment still function as a viable coordination
+					interface, and when has it already become a terminal conflict routine that
+					destroys the private distance required for integration?
+				</p>
+
+				<h3>3.3 Lens relevance</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Lens</th>
+							<th>Relevance</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Exposure capture</strong></td>
+							<td>
+								The example directly instantiates how publicness and audience coupling can
+								turn descriptive or coordinating language into pressure, verdict-risk, and
+								irreversible exposure.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Publicness amplification</strong></td>
+							<td>
+								The decisive mechanism is not disagreement alone, but the way publicness
+								amplifies Ω and Θ faster than private distance can be preserved.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Dignity collapse risk</strong></td>
+							<td>
+								The case shows how restraint, delay, or nuance can be reframed as
+								betrayal, disloyalty, or lack of care once alignment becomes public proof
+								of belonging.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Downstream boundary</strong></td>
+							<td>
+								The example marks the point at which any continuation ceases to be private
+								coordination and becomes a downstream matter of public management,
+								institutional communication, governance, or exclusion risk.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="overlay-profile">
+				<h2>4. Overlay profile and boundary status</h2>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Publicness Overlay (P)</div>
+						<p class="small">
+							<strong>Status:</strong> <span class="code-inline">primary</span><br />
+							Publicness is the central amplifier in this scene. Audience coupling,
+							durable records, and reputational indexing intensify Ω and Θ and sharply
+							reduce practical reversibility.
+						</p>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Misuse Gradient (MG)</div>
+						<p class="small">
+							<strong>Status:</strong> <span class="code-inline">primary</span><br />
+							Misuse gradient is high because public alignment language is especially
+							prone to drift into verdict production, coercive belonging, reputational
+							enforcement, and suppression of revisability.
+						</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Application boundary declaration</div>
+					<p class="small">
+						<strong>Mode:</strong> <span class="code-inline">DESCRIPTIVE</span> &middot;
+						<strong>Publicness:</strong> <span class="code-inline">PUBLIC</span> &middot;
+						<strong>Misuse gradient:</strong> <span class="code-inline">MG_HIGH</span><br />
+						The example remains descriptive, but it sits close to a red-zone boundary:
+						publicness and high misuse gradient together make excerpted or
+						application-facing reuse especially vulnerable to enforcement drift.
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Θ-history relevance</div>
+					<p class="small">
+						<strong>Status:</strong> <span class="code-inline">primary</span><br />
+						Θ is central because escalation occurs rapidly under persistent public
+						records. Once alignment is publicly performed, revision windows narrow
+						quickly and reputational memory hardens the configuration.
+					</p>
+				</div>
+			</section>
+
+			<section id="operator-mapping">
+				<h2>5. Operator mapping</h2>
+
+				<h3>5.1 Reduced signature</h3>
+				<p>
+					<strong>Primary:</strong>
+					<span class="code-inline">["Ω", "Θ", "Χ", "Α", "Σ", "Ψ"]</span><br />
+					<strong>Secondary context:</strong>
+					<span class="code-inline">["Δ", "∇", "□", "Λ", "Φ"]</span><br />
+					<strong>Overlay amplifiers:</strong>
+					<span class="code-inline">primary: ["P"]</span>,
+					<span class="code-inline">secondary: ["MG"]</span>
+				</p>
+
+				<div class="box">
+					<div class="box-title">Reading discipline</div>
+					<p class="small">
+						The decisive threshold is publicness-amplified and terminal:
+						<strong>P</strong> intensifies exposure and irreversibility,
+						<strong>Ω</strong> differentiates who bears visibility and liability costs,
+						<strong>Θ</strong> hardens the public record, <strong>Χ</strong> collapses
+						as a practicable distance resource, <strong>Α</strong> stabilizes alignment
+						scripts, <strong>Σ</strong> becomes impossible without protected private
+						space, and <strong>Ψ</strong> shifts toward performative loyalty.
+						<strong>Δ</strong>, <strong>∇</strong>, <strong>□</strong>,
+						<strong>Λ</strong>, and <strong>Φ</strong> remain relevant as activation,
+						framing, absence, and recontextualization carriers.
+					</p>
+				</div>
+
+				<h3>5.2 Conflict domain classification</h3>
+				<p><strong>Domain status:</strong> <strong>CONFLICT (terminal descriptive regime)</strong></p>
+				<ul>
+					<li>Publicness eliminates the private distance required for internal reintegration.</li>
+					<li>No internal reintegration grammar remains once symbolic alignment replaces protected coordination.</li>
+					<li>Further public clarification increases exposure without restoring viable Σ.</li>
+					<li>Continuation persists through performative unity and belonging pressure rather than shared consolidation.</li>
+					<li>Stabilization occurs through audience-coupled alignment scripts rather than reopened integration.</li>
+				</ul>
+
+				<h3>5.3 Operator roles in scene</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Operator</th>
+							<th>Scene role</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Δ</strong></td>
+							<td>
+								A difference becomes active between public unity and actual coordination,
+								and between visible alignment performance and viable private integration.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>∇</strong></td>
+							<td>
+								Pressure rises to align immediately, avoid visible disunity, and prevent
+								reputational damage under audience scrutiny. This tension accelerates
+								the configuration, but does not restore Σ.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>□</strong></td>
+							<td>
+								The frame is public alignment: unity, consensus, solidarity, or
+								belonging performed before an audience. Conflict stabilizes when this
+								frame suppresses the private negotiation space integration would require.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Λ</strong></td>
+							<td>
+								Critical absences structure the regime: there is no protected private
+								negotiation space, no delayed response window, and no explicit
+								separation between public signaling and private coordination.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Α</strong></td>
+							<td>
+								Repetition stabilizes group-alignment scripts: symbolic consensus,
+								unity statements, and suppression of internal disagreement become the
+								default handling pattern.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Ω</strong></td>
+							<td>
+								Exposure is unevenly distributed. Some roles carry visibility,
+								attribution, and reputational liability, while others benefit from the
+								narrative gains of public unity at lower downstream cost.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Θ</strong></td>
+							<td>
+								Public records harden quickly. Statements persist, revision becomes
+								expensive, and the temporal window for reflective pause narrows under
+								audience load.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Φ</strong></td>
+							<td>
+								Coordination is recontextualized as public moral-symbolic alignment.
+								Unity rhetoric substitutes for the protected conditions under which
+								actual integration might have occurred.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Χ</strong></td>
+							<td>
+								Distance remains formally nameable, but pausing, withholding alignment,
+								or revising public position becomes reputationally costly and is often
+								reframed as betrayal, disloyalty, or lack of care.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Σ</strong></td>
+							<td>
+								Σ becomes impossible because the private space and reversibility
+								required for consolidation are no longer available once public
+								alignment scripts dominate the field.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Ψ</strong></td>
+							<td>
+								Binding shifts toward performative loyalty, belonging display, and
+								externally legible commitment rather than coordinated self-binding to a
+								shared integrative spine.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>5.4 Derived axes projection</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Axis</th>
+							<th>Reading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>A</strong></td>
+							<td>
+								Awareness rises because the exposure regime becomes unmistakably
+								legible. The decisive insight is that public agreement does not imply
+								actual integration.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>C</strong></td>
+							<td>
+								Coherence is mixed: outward symbolic unity may look coherent, while
+								shared consolidation is absent because internal disagreement can no
+								longer be processed privately.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>R</strong></td>
+							<td>
+								Responsibility intensifies as exposure pressure because public records,
+								visibility gradients, and audience scrutiny make attribution and
+								liability unevenly distributed under Ω and Θ.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>E</strong></td>
+							<td>
+								Action becomes constrained: available moves narrow because Χ collapses
+								under publicness amplification and because visible non-alignment carries
+								immediate reputational cost.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>D</strong></td>
+							<td>
+								Dignity-in-Practice becomes fragile when restraint, delay, nuance, or
+								non-alignment are translated into shame, exclusion, or moral
+								inferiority under public belonging pressure.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>5.5 Structural mechanism summary</h3>
+				<ol>
+					<li>A call for public unity appears under audience scrutiny.</li>
+					<li>P amplifies Ω and Θ through visibility, persistence, and reputational coupling.</li>
+					<li>Private negotiation space and delayed response windows disappear.</li>
+					<li>Χ collapses as a practicable resource because pause or revision becomes costly.</li>
+					<li>Α stabilizes consensus-performance and group-alignment scripts.</li>
+					<li>Ψ shifts toward performative loyalty and externally visible belonging.</li>
+					<li>Σ becomes impossible because integration no longer has protected private conditions.</li>
+					<li>The regime becomes terminal CONFLICT under audience load.</li>
+				</ol>
+
+				<div class="box">
+					<div class="box-title">Concise formula</div>
+					<p class="small">
+						<span class="code-inline">
+							P amplification + Ω exposure gradient + Θ record hardening + Χ collapse +
+							alignment-attractor stabilization + performative Ψ -&gt; Σ impossible under
+							terminal public conflict conditions
+						</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="drift-alignment">
+				<h2>6. Drift catalogue alignment</h2>
+
+				<div class="two-column">
+					<div class="box">
+						<div class="box-title">Primary</div>
+						<p class="small">
+							<span class="tag">exposure_capture_drift</span>
+						</p>
+					</div>
+
+					<div class="box">
+						<div class="box-title">Secondary</div>
+						<p class="small">
+							<span class="tag">dignity_collapse_drift</span>
+							<span class="tag">asymmetry_lock_in_drift</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="box-title">Possible downstream</div>
+					<p class="small">
+						<span class="tag">binding_collision_drift</span>
+					</p>
+				</div>
+
+				<p>
+					The scene is primarily governed by <strong>exposure capture</strong>:
+					publicness and audience-coupled recontextualization turn coordination
+					language into pressure and verdict risk. <strong>Dignity collapse</strong>
+					becomes relevant where distance is reframed as betrayal or moral failure.
+					<strong>Asymmetry lock-in</strong> appears because exposure and revision
+					costs diverge sharply across roles. <strong>Binding collision</strong> can
+					appear downstream when performative loyalty outlives any viable shared
+					integrative basis.
+				</p>
+			</section>
+
+			<section id="drift-markers">
+				<h2>7. Typical drift markers</h2>
+
+				<p><strong>Maximum expected:</strong> <span class="code-inline">3</span></p>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Label</th>
+							<th>Operator links</th>
+							<th>YAML drift ref</th>
+							<th>Indicator</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="code-inline" style="font-size: 0.75em !important;">public_alignment_substitutes_for_coordination</span></td>
+							<td>Symbolic consensus replaces private integrative work</td>
+							<td><span class="code-inline">["P","Φ","Σ"]</span></td>
+							<td><span class="code-inline" style="font-size: 0.75em !important;">exposure_capture_drift</span></td>
+							<td>
+								Public unity statements accelerate while actual protected disagreement,
+								clarification, or negotiation space disappears.
+							</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline" style="font-size: 0.75em !important;">distance_is_reframed_as_disloyalty</span></td>
+							<td>Χ becomes reputationally penalized</td>
+							<td><span class="code-inline">["Χ","P","D"]</span></td>
+							<td><span class="code-inline" style="font-size: 0.75em !important;">dignity_collapse_drift</span></td>
+							<td>
+								Pausing, withholding immediate alignment, or asking for private process
+								is treated as betrayal, lack of care, or refusal to belong.
+							</td>
+						</tr>
+						<tr>
+							<td><span class="code-inline" style="font-size: 0.75em !important;">visibility_costs_diverge_under_audience_load</span></td>
+							<td>Ω intensifies through unequal exposure and record persistence</td>
+							<td><span class="code-inline">["Ω","Θ","P"]</span></td>
+							<td><span class="code-inline" style="font-size: 0.75em !important;">asymmetry_lock_in_drift</span></td>
+							<td>
+								One role bears durable attribution and reputational risk, while another
+								gains from unity performance without equivalent downstream liability.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Additional red flags</h3>
+				<ul>
+					<li>“Now is not the time for nuance.”</li>
+					<li>“We need to show unity immediately.”</li>
+					<li>“Private disagreement can wait.”</li>
+					<li>“If you hesitate, you are not really with us.”</li>
+					<li>“Public alignment is the responsible thing.”</li>
+					<li>“We can discuss details later, but first we must stand together.”</li>
+				</ul>
+			</section>
+
+			<section id="validity-gate">
+				<h2>8. PMS validity gate reminder</h2>
+
+				<h3>8.1 PMS entry condition</h3>
+				<ul>
+					<li>
+						<strong>Χ (distance):</strong> Distance must remain analytically and
+						practically visible. The fact that the public scene penalizes Χ does not
+						authorize suspending Χ in the analysis itself.
+					</li>
+					<li>
+						<strong>Reversibility:</strong> The classification must remain scene-bound
+						and revisable. Terminality here concerns this audience-coupled alignment
+						regime, not the essence or moral standing of any actor or role.
+					</li>
+					<li>
+						<strong>Dignity-in-Practice:</strong> Structural asymmetry and public
+						conflict must not be translated into blame, humiliation, ranking, or
+						person-labeling. The analysis remains regime-, role-, and
+						cost-topology-bound.
+					</li>
+				</ul>
+
+				<h3>8.2 Case-specific validity test</h3>
+				<div class="two-column">
+					<div class="box callout-success">
+						<div class="box-title">Valid if</div>
+						<ul class="small">
+							<li>
+								Private distance remains explicitly nameable as a structural condition
+								for integration rather than as a sign of disloyalty.
+							</li>
+							<li>
+								The reading distinguishes public signaling from actual coordination.
+							</li>
+							<li>
+								Ω is read as differential exposure and liability, not as moral
+								superiority.
+							</li>
+							<li>
+								Reversibility and revision costs are explicitly tracked under P and Θ.
+							</li>
+							<li>
+								The reading stays tied to this specific audience-loaded alignment regime
+								and does not expand into person-level conclusions.
+							</li>
+						</ul>
+					</div>
+
+					<div class="box callout-danger">
+						<div class="box-title">Formally invalid if</div>
+						<ul class="small">
+							<li>
+								The example is used to justify public shaming, exclusion, forced
+								alignment, or punitive belonging tests.
+							</li>
+							<li>
+								Non-alignment or delayed alignment is translated into diagnosis,
+								character claims, or maturity labels.
+							</li>
+							<li>
+								Publicness is treated as self-justifying evidence that unity is real or
+								that dissent is morally defective.
+							</li>
+							<li>
+								The analysis collapses into governance prescription or reputational
+								enforcement while still claiming to remain purely descriptive.
+							</li>
+							<li>
+								The example is excerpted into application contexts without explicit
+								mode, publicness, and misuse-gradient boundary discipline.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="readable-closure">
+				<h2>9. Readable structural closure</h2>
+
+				<p>
+					This case shows a configuration in which public alignment no longer
+					supports coordination but destroys the private distance integration would
+					require. The decisive shift is not disagreement alone, but audience-loaded
+					escalation: publicness amplifies exposure and irreversibility, asymmetry
+					differentiates who pays for visible alignment, and distance becomes too
+					costly to function as a stabilizer. Within PMS-CONFLICT, this marks
+					terminal descriptive conflict under consensus performance rather than viable
+					shared coordination. What remains legible is the exposure economics of
+					unity, not an internal path back to shared Σ.
+				</p>
+
+				<div class="box">
+					<div class="box-title">Reduced terminal marker</div>
+					<p class="small">
+						<span class="code-inline">P ↑ + Ω ↑ + Χ collapse + Α_group + Σ impossible</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="extended-analysis">
+				<h2>10. Extended scene analysis</h2>
+
+				<h3>10.1 Frame validity check (□)</h3>
+				<p><strong>In scope:</strong></p>
+				<ul>
+					<li>public alignment interface</li>
+					<li>audience-coupled visibility</li>
+					<li>private negotiation windows</li>
+					<li>durable records</li>
+					<li>symbolic consensus performance</li>
+					<li>cost allocation across roles</li>
+				</ul>
+
+				<p><strong>Out of scope:</strong></p>
+				<ul>
+					<li>personality claims</li>
+					<li>motive diagnosis</li>
+					<li>moral verdicts</li>
+					<li>prescriptive governance conclusions</li>
+					<li>claims that consensus is always invalid</li>
+					<li>selection or exclusion logic</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> The frame becomes unstable when public
+					alignment is silently treated as proof of actual coordination even though the
+					protected distance required for integration has already disappeared.
+				</p>
+
+				<h3>10.2 Non-event integrity check (Λ)</h3>
+				<p><strong>Decisive absences:</strong></p>
+				<ul>
+					<li>private negotiation space</li>
+					<li>delayed response windows</li>
+					<li>explicit separation between public signaling and private coordination</li>
+					<li>protected room for revisability</li>
+					<li>explicit acknowledgment of unequal exposure costs</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> What is missing is not communication alone but
+					the structural conditions under which disagreement could still be processed
+					without reputational penalty.
+				</p>
+
+				<h3>10.3 Publicness amplification check</h3>
+				<p><strong>Operator basis:</strong> <span class="code-inline">["P", "Ω", "Θ", "Φ"]</span></p>
+				<p><strong>Decisive question:</strong> How does publicness change the viability of coordination?</p>
+				<p>
+					<strong>Structural reading:</strong> Publicness amplifies exposure,
+					persistence, and recontextualization pressure. Once statements become
+					indexed and audience-coupled, revision becomes costlier and coordination is
+					increasingly replaced by visible alignment.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> The scene shifts from coordination to
+					performance when public signaling is no longer separable from belonging,
+					liability, and reputational memory.
+				</p>
+
+				<h3>10.4 Exposure asymmetry audit (Ω)</h3>
+				<p><strong>Exposure bearers:</strong></p>
+				<ul>
+					<li>roles with durable public attribution</li>
+					<li>roles whose statements are indexed and persistent</li>
+					<li>roles facing reputational escalation for visible hesitation</li>
+				</ul>
+
+				<p><strong>Lower-cost positions:</strong></p>
+				<ul>
+					<li>roles benefiting from unity narratives at lower visibility cost</li>
+					<li>roles less exposed to durable attribution</li>
+					<li>roles able to demand alignment without equivalent downstream liability</li>
+				</ul>
+
+				<p>
+					<strong>Drift signal:</strong> The decisive asymmetry is differential
+					exposure to public consequence and reputational persistence, not moral
+					superiority or deeper commitment.
+				</p>
+
+				<h3>10.5 Temporality and record persistence (Θ)</h3>
+				<p><strong>Trajectory pattern:</strong></p>
+				<ol>
+					<li>public trigger event</li>
+					<li>call for immediate unity</li>
+					<li>accelerated alignment demand</li>
+					<li>suppression of internal disagreement</li>
+					<li>durable public record</li>
+					<li>narrowed revision window</li>
+					<li>priced or penalized distance</li>
+					<li>terminal stabilization through consensus performance</li>
+				</ol>
+
+				<p>
+					<strong>Drift signal:</strong> Time hardens quickly because public statements
+					persist, later revision is expensive, and early audience-coupled moves
+					constrain all subsequent coordination possibilities.
+				</p>
+
+				<h3>10.6 Distance status test (Χ)</h3>
+				<p>
+					<strong>Formal status:</strong> nominally available<br />
+					<strong>Effective status:</strong> collapsed or reputationally penalized
+				</p>
+
+				<p><strong>Indicators:</strong></p>
+				<ul>
+					<li>pause is framed as betrayal or disloyalty</li>
+					<li>private clarification is treated as delay or weakness</li>
+					<li>revision increases exposure rather than reducing load</li>
+					<li>distance is no longer protected from audience judgment</li>
+				</ul>
+
+				<p>
+					<strong>PMS-CONFLICT relevance:</strong> PMS-CONFLICT requires this distinction:
+					Χ may remain formally possible while publicness destroys its practical
+					stabilizing function.
+				</p>
+
+				<h3>10.7 Alignment attractor stabilization (Α)</h3>
+				<p>
+					<strong>Structural reading:</strong> Public alignment becomes an attractor
+					when unity statements, consensus performance, and belonging scripts recur as
+					default responses to audience pressure.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Repetition no longer signals temporary
+					coordination; it becomes the predictable script by which exposure is managed
+					without reopening Σ.
+				</p>
+
+				<h3>10.8 Recontextualization dynamics (Φ)</h3>
+				<p>
+					<strong>Key shift:</strong> Coordination is re-described as public virtue,
+					solidarity, or consensus display, even though the private conditions for
+					integration are absent.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> Φ shifts from adaptive reframing toward
+					substitution when symbolic unity replaces actual consolidative work.
+				</p>
+
+				<h3>10.9 Integration impossibility check (Σ)</h3>
+				<p><strong>Decisive question:</strong> Can shared consolidation occur without protected private distance?</p>
+				<p>
+					<strong>Structural reading:</strong> Σ becomes impossible where publicness
+					removes the reversible space needed for disagreement, revision, and
+					non-performative negotiation.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> More public clarity does not increase
+					integration once all viable consolidation work has been displaced by
+					audience-facing alignment.
+				</p>
+
+				<h3>10.10 Performative binding check (Ψ)</h3>
+				<p><strong>Decisive question:</strong> What kind of binding remains under public alignment pressure?</p>
+				<p>
+					<strong>Structural reading:</strong> Binding becomes performative when public
+					belonging and visible loyalty are demanded as proof of commitment without
+					corresponding integrative coordination.
+				</p>
+				<p>
+					<strong>Drift signal:</strong> The scene increasingly assumes that alignment
+					must be displayed publicly, even though shared coordination is absent.
+				</p>
+
+				<h3>10.11 Dignity stress test</h3>
+				<p><strong>Operator basis:</strong> <span class="code-inline">["D", "P", "Ω", "Χ", "Ψ"]</span></p>
+				<p>
+					<strong>Core risk:</strong> Public unity rhetoric becomes coercive when
+					restraint, nuance, delayed response, or private processing are penalized as
+					moral or group failure.
+				</p>
+				<p>
+					<strong>Structural indicator:</strong> Distance, context, or non-alignment are
+					treated as signs of disloyalty, while visible consensus is elevated as proof
+					of virtue regardless of exposure asymmetry.
+				</p>
+
+				<h3>10.12 Tragedy clause check</h3>
+				<p><strong>Status:</strong> structurally applicable within this grammar</p>
+				<p>
+					<strong>Reading:</strong> The configuration is tragic in the PMS-CONFLICT
+					sense when no additional public clarification, solidarity language, or
+					symbolic alignment restores Σ at acceptable cost because the private space
+					required for integration has already been destroyed.
+				</p>
+				<p>
+					<strong>Boundary note:</strong> This is not an anti-consensus slogan and not a
+					final statement about all possible rival grammars. It is a grammar-internal
+					limit claim.
+				</p>
+
+				<h3>10.13 Application boundary check</h3>
+				<p><strong>Relevance:</strong> primary</p>
+				<p>
+					<strong>Reading:</strong> This scene activates Chapter 25 concerns directly
+					because publicness and high misuse gradient make conflict language especially
+					vulnerable to enforcement drift, reputational weaponization, and collapse of
+					reversibility.
+				</p>
+				<p>
+					<strong>Warning:</strong> Any excerpted use of this example without explicit
+					boundary declarations is prone to pseudo-symmetry, moral substitution,
+					person-labeling, and hidden governance authority under the guise of public
+					responsibility.
+				</p>
+
+				<h3>10.14 Downstream mode-shift boundary</h3>
+				<p><strong>Threshold question:</strong> What happens when public alignment no longer belongs to coordination?</p>
+				<p>
+					<strong>Structural answer:</strong> Once P amplifies Ω and Θ, Χ collapses,
+					and Σ becomes impossible, further continuation beyond descriptive mapping
+					becomes a downstream matter of public management, institutional governance,
+					communications control, or exit.
+				</p>
+				<p>
+					<strong>Misuse warning:</strong> The handoff boundary must not be smuggled
+					back into the descriptive layer as if CONFLICT itself already authorized
+					forced alignment, public sanction, or exclusion.
+				</p>
+			</section>
+
+			<section id="assistant-test-vectors">
+				<h2>11. Assistant test vectors</h2>
+
+				<ul>
+					<li>Map this case with PMS-CONFLICT. Where does publicness destroy the private distance required for Σ?</li>
+					<li>Explain how P amplifies Ω and Θ in this audience-loaded alignment scene.</li>
+					<li>Identify the exposure gradient. Who bears durable attribution and who benefits narratively?</li>
+					<li>Show where Χ remains formally possible but is practically collapsed under public alignment pressure.</li>
+					<li>Distinguish symbolic consensus from actual coordination in this case.</li>
+					<li>Describe why this counts as terminal CONFLICT rather than successful public unity.</li>
+				</ul>
+			</section>
+		</div>
 	</body>
 </html>

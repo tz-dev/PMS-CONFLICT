@@ -1,0 +1,501 @@
+example_id: "PMS-CONFLICT_EX02"
+example_version: "1.1"
+schema_version: "PMS-CONFLICT_1.1"
+example_label: "Silent Coordination Collapse under Non-Event Load"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CONFLICT_1.1"
+
+schema_alignment:
+  primary_reduced_signature_ref: "CONFLICT_terminal_core"
+  secondary_reduced_signature_refs:
+    - "DRIFT_asymmetry_lock_in"
+    - "CONFLICT_stabilized_pattern"
+  non_operator_construct_refs:
+    - "asymmetry_lock_in"
+    - "conflict_attractor_A_conflict"
+  terminal_projection_ref: "terminal_positioning_projection"
+  validity_gate_ref: "validity_gate"
+  note: >
+    This example is a Λ-dominant instantiation of PMS-CONFLICT_1.1. It remains
+    fully subordinate to PMS_1.3 and does not redefine operators,
+    dependencies, or derived axes.
+
+minimal_vignette:
+  title: "When nothing happens becomes the dominant act"
+  scene_boundaries:
+    domain: "Long-running coordination processes, response timing asymmetry, continuity obligations, and silent cost migration"
+    scope: "Structures, non-events, timing asymmetry, trajectory hardening, priced distance, and terminal conflict stabilization"
+    out_of_scope:
+      - "person-level judgement"
+      - "motive attribution"
+      - "virtue assessment"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+      - "moral ranking of role positions"
+      - "diagnostic or maturity labeling"
+      - "selection, sorting, or exclusion decisions"
+      - "public pillory or reputational enforcement"
+      - "governance authorization"
+  short_scene: >
+    A long-running coordination process depends on timely acknowledgment and
+    response, but expected replies do not arrive within the operative window.
+    One role continues to follow up because downstream continuity depends on
+    feedback, while another role controls response timing and acknowledgment
+    thresholds. Formal closure never occurs: there is no refusal, no release,
+    and no explicit reprioritization. The process does not break openly; it
+    degrades through accumulated silence.
+  structural_focus: >
+    The case examines a terminal conflict regime in which persistent Λ carries
+    the configuration, Ω differentiates timing control and cost exposure, Θ
+    converts delay into irreversible planning loss, Σ becomes structurally
+    unavailable because no event arrives to consolidate, Ψ persists
+    asymmetrically through unilateral continuity maintenance, and Χ remains
+    formally available but practically priced.
+  scenic_elements:
+    actors:
+      - "role that initiates coordination and depends on acknowledgment"
+      - "role that controls timing, channel access, and acknowledgment thresholds"
+      - "downstream dependents affected by unresolved coordination"
+      - "procedural or organizational context that absorbs delay effects"
+    salient_objects:
+      - "response windows"
+      - "acknowledgment thresholds"
+      - "deadlines that slide rather than break"
+      - "follow-up attempts"
+      - "silent delay accumulation"
+      - "continuity costs under uncertainty"
+    trigger_event:
+      label: "persistent non-response inside an active coordination frame"
+      description: >
+        Expected responses, reprioritizations, refusals, or closures do not
+        occur within the coordination window. The absence itself becomes the
+        dominant structural event.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example shows how PMS-CONFLICT handles Λ-dominant terminal conflict:
+    not argument escalation, but incompatibility stabilized through meaningful
+    absence, timing asymmetry, and quiet cost migration.
+  repo_value:
+    - >
+      Demonstrates that terminal conflict can stabilize without overt dispute,
+      simply through persistent non-events under Θ and Ω.
+    - >
+      Makes visible how Λ can function as a structural actuator rather than as
+      neutral inaction.
+    - >
+      Shows how Ω may operate through timing and acknowledgment control rather
+      than through explicit authority or domination claims.
+    - >
+      Tests the status of Χ under load by distinguishing formal pause or
+      escalation options from effectively affordable distance.
+    - >
+      Illustrates why Σ can become unavailable not because no one speaks, but
+      because no event arrives that integration could actually consolidate.
+  central_repo_question: >
+    How does coordination collapse into terminal CONFLICT when nothing explicit
+    happens, and when does persistent silence become a stabilized incompatibility
+    rather than a temporary delay or communication gap?
+  lens_relevance:
+    lambda_dominance: >
+      The example shows that persistent Λ can become the main carrier of the
+      regime, converting absence into the cheapest stabilizer.
+    asymmetry_lock_in: >
+      The decisive asymmetry lies in differential control over timing,
+      acknowledgment, and the cost of waiting.
+    terminal_core: >
+      The case demonstrates terminal CONFLICT once Σ no longer carries, Ψ
+      persists asymmetrically, Θ hardens losses, and Χ is priced.
+    downstream_boundary: >
+      The example clarifies the point at which continued informal querying no
+      longer belongs to descriptive reintegration and any continuation becomes a
+      mode shift into procedure, escalation, or exit.
+
+overlay_profile:
+  P:
+    status: "not_primary"
+    note: >
+      Publicness amplification is not structurally central inside the scene
+      itself. The conflict can stabilize fully in low-publicness settings.
+  MG:
+    status: "secondary"
+    note: >
+      Misuse-gradient dynamics are secondary in-scene but become relevant if the
+      case is transmitted as a judgment about persons rather than a structural
+      reading of silence under load.
+
+theta_history_relevance:
+  status: "secondary"
+  note: >
+    Θ matters strongly as path dependence and cost accumulation, but this is not
+    primarily a young Α-field or modern-churn example. The central mechanism is
+    the hardening of silent non-resolution over time.
+
+application_boundary_status:
+  mode: "DESCRIPTIVE"
+  governance_overlay_invoked: false
+  publicness: "PRIVATE"
+  misuse_gradient: "MG_LOW"
+  note: >
+    This example remains within descriptive circulation. It does not authorize
+    diagnosis, escalation, sanction, or governance verdicts.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Λ", "Ω", "Θ", "Σ", "Ψ", "Χ"]
+    secondary_context: ["Δ", "∇", "□", "Α", "Φ"]
+    note: >
+      The decisive threshold is Λ-dominant and conflict-specific: non-events
+      carry the system, timing asymmetry differentiates costs, temporality
+      hardens delay into irreversible loss, Σ is unavailable because no event
+      arrives to integrate, Ψ persists asymmetrically through unilateral
+      continuity maintenance, and Χ remains nominally available but effectively
+      priced. Δ, ∇, □, Α, and Φ remain relevant as activation, framing, and
+      stabilization carriers.
+  conflict_domain_classification:
+    domain_status: "CONFLICT (terminal descriptive regime)"
+    justification:
+      - "There is no remaining internal reintegration grammar."
+      - "Further attempts to elicit response increase cost without enabling Σ."
+      - "Continuation persists only through unilateral maintenance."
+      - "Silence stabilizes as a cheapest attractor under Ω and Θ."
+      - "Distance, pause, or escalation remain formally possible but become costly to activate."
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A difference becomes active between expected response and missing
+        response, between viable coordination and unresolved delay, and between
+        acknowledgment and non-acknowledgment.
+    "∇":
+      scene_role: >
+        Pressure rises on the role that must proceed responsibly under missing
+        confirmation. Urgency and exposure accumulate, though intensity alone is
+        not what classifies the regime as terminal conflict.
+    "□":
+      scene_role: >
+        The frame is coordination under implicit expectations of timely reply,
+        acknowledgment, and confirmable next steps. Conflict stabilizes when the
+        frame remains active but no longer carries reciprocal closure conditions.
+    "Λ":
+      scene_role: >
+        Persistent non-response, missing refusal, missing reprioritization, and
+        missing closure become the decisive structural events. Absence becomes
+        load-bearing rather than neutral.
+    "Α":
+      scene_role: >
+        Silence stabilizes as a repeatable handling script. The system learns to
+        continue through non-event rather than through explicit response.
+    "Ω":
+      scene_role: >
+        Timing control and acknowledgment thresholds are asymmetrically
+        distributed. One role can remain silent at lower cost while another role
+        absorbs the burden of waiting, following up, and carrying downstream risk.
+    "Θ":
+      scene_role: >
+        Delay slides rather than breaks. Deadlines drift, planning losses
+        accumulate, and reversibility decreases without a punctuated decision.
+    "Φ":
+      scene_role: >
+        Silence may be recontextualized as neutrality, politeness,
+        non-escalation, or mere busyness, even while it functions as leverage.
+        Under terminal conditions, such reframing often substitutes for closure.
+    "Χ":
+      scene_role: >
+        Pause, escalation, or withdrawal remain formally available, but become
+        costly through reputational risk, downstream loss, or reframing as
+        impatience or overreaction.
+    "Σ":
+      scene_role: >
+        Σ cannot consolidate because no sufficient event arrives to integrate.
+        Attempts at clarification, patience, or renewed querying increase load
+        without producing shared continuation.
+    "Ψ":
+      scene_role: >
+        Binding persists asymmetrically: one role remains bound to continuity,
+        follow-up, and consequence management, while the other remains less
+        reciprocally bound to response.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness rises because the non-event pattern becomes unmistakably
+        legible: nothing happening is itself revealed as the dominant act.
+    C:
+      reading: >
+        Coherence is low at the shared level. Local narratives may remain
+        coherent, but no event arrives that would consolidate the scene jointly.
+    R:
+      reading: >
+        Responsibility intensifies unevenly because continuity costs migrate
+        toward the role that must keep acting under uncertainty.
+    E:
+      reading: >
+        Action becomes constrained: proceeding blind, waiting longer, or
+        escalating all become costly because Χ is priced and Σ remains unavailable.
+    D:
+      reading: >
+        Dignity-in-Practice becomes fragile when silence is framed as neutral
+        while interruption, naming the load, or activating distance are treated
+        as improper pressure.
+  structural_mechanism_summary:
+    sequence:
+      - "Expected response does not arrive within the operative coordination window."
+      - "Λ accumulates as meaningful absence rather than neutral non-action."
+      - "Ω emerges through asymmetric control of timing and acknowledgment."
+      - "Θ converts delay into planning loss, exposure, and irreversibility."
+      - "Α stabilizes silence as the default handling script."
+      - "Σ becomes unavailable because no event arrives to consolidate."
+      - "Ψ remains asymmetrically active through unilateral continuity maintenance."
+      - "Χ remains nominally available but becomes priced or delegitimized."
+      - "The regime becomes terminal CONFLICT rather than a temporary coordination lapse."
+    concise_formula: >
+      persistent Λ + timing Ω + Θ hardening + Σ unavailability + asymmetric Ψ +
+      priced Χ -> Α_silence stabilization under terminal conflict conditions
+
+drift_catalogue_alignment:
+  primary:
+    - "asymmetry_lock_in_drift"
+  secondary:
+    - "sigma_incompatibility_clash"
+  possible_downstream:
+    - "dignity_collapse_drift"
+    - "exposure_capture_drift"
+  note: >
+    The scene is primarily governed by asymmetry lock-in under a Λ-dominant
+    regime. Σ-incompatibility is present because integration cannot occur.
+    Dignity collapse and exposure capture may emerge later if the load is
+    moralized or publicly weaponized, but they are not primary in-scene.
+
+typical_drift_markers:
+  max_expected: 3
+  markers:
+    - id: "persistent_lambda_carries_system"
+      label: "Silence becomes the dominant coordination act"
+      operator_links: ["Λ", "Α", "Θ"]
+      yaml_drift_ref: "sigma_incompatibility_clash"
+      indicator: >
+        Expected refusals, confirmations, or reprioritizations do not occur, and
+        the missing events themselves begin to structure the entire process.
+    - id: "timing_asymmetry_creates_lock_in"
+      label: "Acknowledgment control redistributes costs"
+      operator_links: ["Ω", "Θ", "Χ"]
+      yaml_drift_ref: "asymmetry_lock_in_drift"
+      indicator: >
+        One role can delay, remain silent, or minimally acknowledge at low cost,
+        while the other accumulates deadline exposure, compensatory work, and
+        reputational risk.
+    - id: "distance_formal_but_punished"
+      label: "Χ exists in principle but becomes costly to activate"
+      operator_links: ["Χ", "Ω", "Θ"]
+      yaml_drift_ref: "asymmetry_lock_in_drift"
+      indicator: >
+        Pausing, escalating, or withdrawing is available in principle, but doing
+        so triggers exposure, blame, or downstream losses that silence had
+        deferred onto the waiting role.
+  additional_red_flags:
+    - "We should just wait a little longer."
+    - "No response yet does not mean anything."
+    - "Escalating this would be excessive."
+    - "You are creating pressure by naming the delay."
+    - "It is safer to keep waiting than to interrupt."
+    - "There is no explicit refusal, so the process is still alive."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain practically nameable and activatable in the analysis.
+      The fact that Χ is priced does not authorize suspension of reflective
+      distance within the reading itself.
+    reversibility: >
+      The case must remain scene-bound and revisable. Persistent silence is read
+      as a structural carrier under load, not as proof of any actor’s essence
+      or motivation.
+    dignity_in_practice: >
+      The example must not translate timing asymmetry or terminality into blame,
+      humiliation, ranking, or person-labeling. Language remains structural,
+      role-bound, and exposure-sensitive.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        Persistent Λ is nameable as load rather than treated as neutrality by default.
+      - >
+        Χ remains analytically visible as a constraint even when effectively priced.
+      - >
+        Binding remains described as asymmetric structural persistence rather
+        than as moral virtue or fault.
+      - >
+        The reading remains tied to a specific coordination frame and not to
+        person-level conclusions.
+      - >
+        Continued use of the example remains descriptive unless an explicit mode
+        shift is declared.
+    formally_invalid_if:
+      - >
+        Silence is translated into a diagnosis, character claim, or motive verdict.
+      - >
+        The example is used to justify coercive exposure, punitive escalation, or public naming.
+      - >
+        Timing asymmetry is moralized into superiority or inferiority claims.
+      - >
+        The analysis collapses into action prescription while still claiming to
+        remain purely descriptive.
+      - >
+        The case is transmitted without preserving reversibility and
+        dignity-in-practice.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows how coordination can collapse without any explicit break.
+    The decisive shift is that non-events become the main carrier of the
+    system: silence redistributes costs, time hardens losses, and distance
+    becomes too expensive to function as a stabilizer. Within PMS-CONFLICT,
+    this marks terminal descriptive conflict rather than a temporary delay or a
+    mere communication issue. What becomes legible is quiet cost migration
+    under Λ, Ω, and Θ, not a shared route back to Σ.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "coordination expectations"
+      - "response windows"
+      - "acknowledgment thresholds"
+      - "deadline drift"
+      - "continuity burdens under uncertainty"
+    out_of_scope:
+      - "personality claims"
+      - "motive diagnosis"
+      - "moral verdicts"
+      - "prescriptive governance conclusions"
+      - "selection or exclusion logic"
+      - "public reputational enforcement"
+    drift_signal: >
+      The frame remains active as coordination, but its closure conditions no
+      longer function reciprocally. The process continues without a shared event
+      that could confirm or terminate it.
+  non_event_integrity_check:
+    operator: "Λ"
+    decisive_absences:
+      - "explicit refusal"
+      - "explicit reprioritization"
+      - "explicit termination"
+      - "explicit deferral with accountable timeline"
+      - "explicit acknowledgment sufficient for next-step integration"
+    drift_signal: >
+      Λ becomes structurally dominant when missing events stop being treated as
+      incidental and begin to carry planning, exposure, and consequence
+      distribution across the scene.
+  integration_failure_check:
+    operator: "Σ"
+    decisive_question: "Can further querying or clarification reopen a shared spine?"
+    valid_terminal_reading: >
+      Terminal conflict is present where further attempts to elicit response no
+      longer enable shared consolidation and instead increase waiting costs,
+      uncertainty burdens, and asymmetrical exposure.
+    drift_signal: >
+      Integration is unavailable not because articulation is absent, but because
+      no event arrives that Σ could actually consolidate.
+  self_binding_asymmetry_check:
+    operator: "Ψ"
+    decisive_question: "Who remains bound to continuity when response fails?"
+    structural_reading: >
+      One role remains bound to following up, managing deadlines, and absorbing
+      downstream effects, while reciprocal response-binding is weak, absent, or
+      cheaper to evade.
+    drift_signal: >
+      Continuity is maintained unilaterally. Binding persists, but not as a
+      shared commitment structure.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "role that must proceed responsibly under uncertainty"
+      - "role carrying delay-related fallout"
+      - "downstream dependents exposed to unresolved coordination"
+    lower_cost_positions:
+      - "role that can delay acknowledgment"
+      - "role that controls response timing"
+      - "role that preserves optionality by not committing"
+    drift_signal: >
+      The decisive asymmetry lies in timing and acknowledgment control, not in
+      explicit dominance rhetoric.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "initial expectation of response"
+      - "first missed coordination window"
+      - "follow-up without closure"
+      - "sliding deadline"
+      - "accumulated planning loss"
+      - "continued silence with asymmetric burden"
+      - "terminal stabilization through non-event"
+    drift_signal: >
+      Delay does not remain neutral over time. It hardens into loss,
+      irreversibility, and continuity debt even without a punctuated decision.
+  distance_status_test:
+    operator: "Χ"
+    formal_status: "available"
+    effective_status: "priced or delegitimized"
+    indicators:
+      - "naming the delay is reframed as impatience or pressure"
+      - "pausing creates downstream losses for the waiting role"
+      - "escalation increases reputational exposure"
+      - "silence remains protected while interruption is penalized"
+    pms_conflict_relevance: >
+      PMS-CONFLICT requires the distinction between formal and effective
+      distance. Χ may exist nominally while no longer functioning as a shared
+      stabilizer.
+  attractor_stabilization:
+    operator: "Α"
+    structural_reading: >
+      Silence becomes the default handling script because it is cheaper than
+      explicit refusal, response, or termination for the lower-cost position.
+    drift_signal: >
+      Repetition turns non-response into an attractor. The system learns how to
+      continue incompatibly without ever deciding.
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      Non-response is re-described as neutrality, politeness, strategic
+      patience, or non-escalation even while it redistributes costs and blocks closure.
+    drift_signal: >
+      Φ shifts from adaptive framing toward substitution when silence is used to
+      preserve deniability while the burden of continuity remains active elsewhere.
+  dignity_stress_test:
+    operator_basis: ["D", "Χ", "Ψ", "Ω", "Θ"]
+    core_risk: >
+      Silence is socially legible as harmless while functioning as control. The
+      role that names the load risks being reframed as impatient, pressuring, or
+      overreactive.
+    structural_indicator: >
+      Distance is delegitimized while non-response remains comparatively
+      unaccountable. This is the key D-stress point in the scene.
+  tragedy_clause_check:
+    status: "structurally applicable within this grammar"
+    reading: >
+      The configuration is tragic in the PMS-CONFLICT sense when no additional
+      patience, clarification, or reframing restores Σ at acceptable cost, even
+      though the regime remains fully legible.
+    boundary_note: >
+      This is not a pessimistic slogan and not a final statement about all
+      possible rival grammars. It is a grammar-internal limit claim.
+  downstream_mode_shift_boundary:
+    threshold_question: "What happens when continued querying no longer belongs to reintegration?"
+    structural_answer: >
+      Once persistent Λ stabilizes as the cheapest carrier under Ω across Θ with
+      priced Χ, any continuation beyond descriptive mapping becomes a downstream
+      mode shift: formal procedure, institutional escalation, governance
+      handling, adjudication, or exit.
+    misuse_warning: >
+      The handoff boundary must not be smuggled back into the descriptive layer
+      as if CONFLICT itself already authorized coercive action.
+
+assistant_test_vectors:
+  promptables:
+    - "Map this case with PMS-CONFLICT. Where does Λ become load-bearing rather than neutral?"
+    - "Explain how timing asymmetry creates Ω without reducing the case to motive or personality."
+    - "Show why Σ becomes unavailable even though no explicit dispute takes place."
+    - "Distinguish formal Χ availability from effectively priced Χ in this scene."
+    - "Identify where silence stabilizes as Α rather than remaining a temporary lapse."
+    - "Describe why this counts as terminal CONFLICT rather than a simple communication delay."

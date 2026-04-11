@@ -1,0 +1,530 @@
+example_id: "PMS-CONFLICT_EX04"
+example_version: "1.1"
+schema_version: "PMS-CONFLICT_1.1"
+example_label: "Moral Language as Cost Obfuscation under Asymmetric Exposure"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CONFLICT_1.1"
+
+schema_alignment:
+  primary_reduced_signature_ref: "DRIFT_exposure_capture"
+  secondary_reduced_signature_refs:
+    - "DRIFT_dignity_collapse"
+    - "DRIFT_asymmetry_lock_in"
+    - "CONFLICT_terminal_core"
+  non_operator_construct_refs:
+    - "exposure_capture"
+    - "dignity_collapse"
+    - "asymmetry_lock_in"
+  terminal_projection_ref: "terminal_positioning_projection"
+  validity_gate_ref: "validity_gate"
+  application_boundary_ref: "application_boundary_scaling"
+  note: >
+    This example is a Φ/Ω-dominant instantiation of PMS-CONFLICT_1.1. It
+    remains fully subordinate to PMS_1.3 and does not redefine operators,
+    dependencies, or derived axes.
+
+minimal_vignette:
+  title: "Virtue talk where exit, revision, and exposure are unequal"
+  scene_boundaries:
+    domain: "Publicly visible coordination, reputationally coupled interaction, moralized evaluation, and asymmetric exposure"
+    scope: "Structures, exposure gradients, moral framing, delegitimized distance, externalized binding, suppressed coordination, and terminal conflict stabilization"
+    out_of_scope:
+      - "person-level judgement"
+      - "motive attribution"
+      - "virtue assessment"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+      - "moral ranking of role positions"
+      - "diagnostic or maturity labeling"
+      - "selection, sorting, or exclusion decisions"
+      - "public pillory or reputational enforcement as a recommended response"
+      - "governance authorization"
+  short_scene: >
+    An ongoing interaction takes place under public visibility and durable
+    reputational memory. One role is highly exposed: statements, hesitations,
+    and missteps are attributable, persistent, and coupled to downstream
+    consequences. Another role is comparatively low-exposure: moral framing can
+    be advanced with weaker coupling to lasting reputational cost. Language of
+    care, integrity, or responsibility expands, and public alignment pressure
+    increases. Yet the structural differences in exposure, reversibility, and
+    exit cost are not explicitly integrated into coordination.
+  structural_focus: >
+    The case examines a terminal conflict regime in which Ω operates primarily
+    as exposure and liability gradient, Φ moralizes structural differences into
+    value categories, Α stabilizes normative scripts, Χ remains formally
+    available but becomes morally delegitimized, Ψ is externalized into
+    alignment demands, and Σ is displaced by compliance or appearance rather
+    than restored coordination.
+  scenic_elements:
+    actors:
+      - "high-exposure role with durable public attribution"
+      - "lower-exposure role with comparatively cheaper moral escalation"
+      - "audience or public indexing layer"
+      - "downstream parties affected by reputational persistence"
+    salient_objects:
+      - "public statements"
+      - "alignment demands"
+      - "reputational records"
+      - "moral vocabulary"
+      - "coordination interfaces"
+      - "exit, revision, or pause options"
+      - "exposure gradients"
+    trigger_event:
+      label: "moral frame expansion under unequal exposure"
+      description: >
+        Responsibility, care, integrity, or right-thing language is introduced
+        as the dominant frame, while asymmetries of exposure, revision cost, and
+        downstream liability remain under-described or actively resisted.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example shows a core PMS-CONFLICT pattern in which moral language does
+    not eliminate asymmetry but obscures and redistributes it. It clarifies how
+    terminal conflict can stabilize through virtue-based coercion even without
+    explicit force.
+  repo_value:
+    - >
+      Demonstrates a Φ/Ω-dominant pathway into terminal conflict where moral
+      framing replaces coordination rather than clarifying it.
+    - >
+      Makes visible that exposure asymmetry can remain structurally decisive
+      even when the scene is narrated as shared values or collective integrity.
+    - >
+      Shows how publicness and durable records harden cost gradients over time,
+      making non-alignment disproportionately expensive for exposed roles.
+    - >
+      Clarifies how Χ can remain formally available while becoming morally
+      delegitimized in practice.
+    - >
+      Illustrates why D becomes the decisive stress test when virtue talk turns
+      into ranking, pressure, or externally imposed obligation.
+  central_repo_question: >
+    When does moral language remain a valid coordination resource, and when has
+    it already become a cost-obscuring substitute that suppresses the only
+    interface where unequal exposure could still be coordinated?
+  lens_relevance:
+    exposure_capture: >
+      The example directly instantiates the PMS-CONFLICT pattern in which Φ
+      under exposure transforms interpretive language into enforcement
+      affordances and makes revision increasingly costly.
+    dignity_collapse: >
+      The scene shows how care, integrity, or responsibility language can slide
+      into ranking, shaming, or moral penalty once asymmetry becomes difficult
+      to name.
+    asymmetry_lock_in: >
+      The decisive asymmetry is not dominance in a broad moral sense, but
+      differential exposure to public consequence, durable attribution, and
+      downstream reputational cost.
+    application_boundary: >
+      The case makes Chapter 25 concrete: once descriptive structural language
+      travels in public or semi-public conditions, it can quickly acquire
+      enforcement affordances unless mode, publicness, and misuse gradient are
+      explicitly bounded.
+
+overlay_profile:
+  P:
+    status: "primary"
+    note: >
+      Publicness is structurally central. The scene depends on durable records,
+      reputational coupling, and audience indexing that amplify Ω, Θ, Α, and Φ.
+  MG:
+    status: "primary"
+    note: >
+      Misuse-gradient dynamics are central because moral language predictably
+      drifts into judgment, exposure pressure, and compliance demands under
+      publicness. This is a high-risk transmission setting.
+  application_boundary_declaration:
+    mode: "DESCRIPTIVE"
+    publicness: "PUBLIC"
+    misuse_gradient: "MG_HIGH"
+    note: >
+      The example remains descriptive, but the scene itself has high misuse
+      gradient because moralized public discourse easily converts structural
+      language into verdict, ranking, or coercive expectation.
+
+theta_history_relevance:
+  status: "primary"
+  note: >
+    Θ is central because reputational memory, cumulative public records, and
+    path-dependent escalation make revision progressively costlier. The conflict
+    stabilizes through durable moral indexing, not merely through one-off
+    disagreement.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Ω", "Θ", "Φ", "Χ", "Ψ", "Σ"]
+    secondary_context: ["Δ", "∇", "□", "Λ", "Α"]
+    note: >
+      The decisive threshold is exposure-dominant and terminal: Ω is operative
+      as exposure asymmetry, Θ hardens public records, Φ moralizes structural
+      differences into value categories, Χ remains formally available but is
+      morally delegitimized, Ψ is externalized as an alignment demand, and Σ is
+      suppressed by compliance logic. Δ, ∇, □, Λ, and Α remain relevant as
+      activation, framing, absence, and stabilization carriers.
+  conflict_domain_classification:
+    domain_status: "CONFLICT (terminal descriptive regime)"
+    justification:
+      - "No internal reintegration grammar remains available once moral articulation replaces exposure accounting."
+      - "Further moral clarification increases pressure without restoring Σ."
+      - "Public alignment persists through asymmetric exposure and compliance pressure rather than shared coordination."
+      - "Distance is reframed as coldness, excuse-making, or moral evasion rather than treated as a structural necessity."
+      - "Any correction beyond descriptive mapping requires downstream handling, not merely better value language."
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A difference becomes active between the moral appearance of shared
+        alignment and the underlying inequality of exposure, revision cost, and
+        downstream liability.
+    "∇":
+      scene_role: >
+        Pressure rises toward immediate public alignment, visible care, and fast
+        value conformity. This tension is active, but it does not restore Σ.
+    "□":
+      scene_role: >
+        The frame presents itself as doing the right thing together, but it
+        operates structurally as evaluation. Coordination is displaced by a
+        moral assessment frame that rewards visible alignment and penalizes
+        exposure-accounting.
+    "Λ":
+      scene_role: >
+        Critical absences structure the conflict: there is no explicit
+        calibration of exposure difference, no clear acknowledgment of unequal
+        exit or revision cost, and no stable separation between moral language
+        and coordination interface.
+    "Α":
+      scene_role: >
+        Normative scripts stabilize: the scene learns to sort positions through
+        good-versus-irresponsible coding, making virtue talk itself the
+        recurrent handling mechanism.
+    "Ω":
+      scene_role: >
+        Exposure and liability are unevenly distributed. Some roles bear durable
+        public attribution and cumulative consequence, while others can escalate
+        moral demands with comparatively low long-term exposure cost.
+    "Θ":
+      scene_role: >
+        Public records, remembered statements, and reputational indexing harden
+        into path dependence. Revision becomes more expensive the longer the
+        moral record accumulates.
+    "Φ":
+      scene_role: >
+        Structural asymmetry is recontextualized as a moral issue: exposure
+        differences are translated into virtue categories rather than integrated
+        as coordination constraints.
+    "Χ":
+      scene_role: >
+        Distance remains formally available, but pausing, contextualizing, or
+        declining immediate alignment is reframed as lack of care, excuse-making,
+        indifference, or moral deficiency.
+    "Σ":
+      scene_role: >
+        Σ is displaced rather than restored. The scene produces public
+        compliance, value performance, or alignment appearance instead of a
+        coordinated integration of unequal costs.
+    "Ψ":
+      scene_role: >
+        Binding is externalized as a demand that others align because it is the
+        right thing. Obligation shifts from self-binding to value-based pressure
+        imposed on more exposed roles.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness rises because the exposure gradient becomes increasingly
+        legible, but the scene resists naming it directly once moral language
+        dominates the frame.
+    C:
+      reading: >
+        Coherence is mixed: moral narratives can be locally coherent and
+        publicly compelling, while shared structural coordination remains absent.
+    R:
+      reading: >
+        Responsibility intensifies as attribution pressure because exposed roles
+        carry the reputational and temporal costs of visible non-alignment.
+    E:
+      reading: >
+        Action becomes constrained: formal options remain, but public
+        misalignment, pause, or contextualization become disproportionately
+        costly under moralized exposure.
+    D:
+      reading: >
+        Dignity-in-Practice becomes fragile when naming asymmetry is treated as
+        moral failure and when care language drifts into ranking, shaming, or
+        externally imposed obligation.
+  structural_mechanism_summary:
+    sequence:
+      - "Exposure asymmetry is present but insufficiently named."
+      - "Moral language expands as the dominant frame."
+      - "Φ recontextualizes structural differences into value categories."
+      - "Α stabilizes normative scripts of good versus irresponsible alignment."
+      - "Χ becomes morally delegitimized."
+      - "Ψ shifts outward into demanded conformity and public alignment."
+      - "Σ is displaced by compliance, silence, or appearance-management."
+      - "The regime becomes terminal CONFLICT under public exposure conditions."
+    concise_formula: >
+      Ω exposure gradient + moral Φ + normative attractor + delegitimized Χ +
+      externalized Ψ + suppressed Σ -> virtue-based coercion under terminal conflict conditions
+
+drift_catalogue_alignment:
+  primary:
+    - "exposure_capture_drift"
+    - "dignity_collapse_drift"
+  secondary:
+    - "asymmetry_lock_in_drift"
+  possible_downstream:
+    - "binding_collision_drift"
+  note: >
+    The scene is primarily governed by exposure capture and dignity collapse:
+    public moral language converts interpretation into enforcement pressure, and
+    distance is morally penalized. Asymmetry lock-in remains structurally
+    central because exit and revision costs differ sharply by exposure position.
+    Binding collision may appear downstream once pressured alignment produces
+    incompatible obligations.
+
+typical_drift_markers:
+  max_expected: 3
+  markers:
+    - id: "moral_frame_replaces_exposure_accounting"
+      label: "Virtue language suppresses asymmetry naming"
+      operator_links: ["Ω", "Φ", "Σ"]
+      yaml_drift_ref: "exposure_capture_drift"
+      indicator: >
+        Responsibility, care, or integrity language expands while discussion of
+        unequal exposure, revision cost, and downstream liability is reframed as
+        deflection or moral evasion.
+    - id: "distance_becomes_moral_failure"
+      label: "Χ is delegitimized under value pressure"
+      operator_links: ["Χ", "Φ", "D"]
+      yaml_drift_ref: "dignity_collapse_drift"
+      indicator: >
+        Pausing, contextualizing, or refusing immediate public alignment is
+        framed as coldness, excuse-making, lack of values, or lack of care.
+    - id: "alignment_demand_externalizes_binding"
+      label: "Ψ shifts from self-binding to other-binding"
+      operator_links: ["Ψ", "Ω", "Φ"]
+      yaml_drift_ref: "dignity_collapse_drift"
+      indicator: >
+        The scene increasingly implies or states that others must align because
+        this is the right thing, regardless of unequal public risk and exposure.
+  additional_red_flags:
+    - "If you cared, you would say it publicly now."
+    - "Contextualization is just excuse-making."
+    - "Silence is complicity."
+    - "Good people already know where they stand."
+    - "Naming asymmetry means you are avoiding accountability."
+    - "There is no legitimate reason to pause on this."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain practically activatable in the analysis. The fact
+      that the scene morally penalizes Χ does not authorize suspending Χ in the
+      reading itself.
+    reversibility: >
+      The case must remain scene-bound and revisable. Terminal classification
+      concerns this public exposure configuration, not the essence, morality, or
+      sincerity of any role or actor.
+    dignity_in_practice: >
+      Structural asymmetry and moralization must not be translated by the
+      analysis into blame, humiliation, ranking, or person-labeling. The
+      description remains regime-, role-, and cost-topology-bound.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        Ω as exposure asymmetry remains explicitly nameable and is not absorbed
+        into virtue categories.
+      - >
+        Moral language is read structurally rather than taken as proof of
+        superior coordination.
+      - >
+        Ψ is distinguished as self-binding versus externally demanded alignment.
+      - >
+        Χ remains analytically visible even where the scene moralizes or
+        delegitimizes its activation.
+      - >
+        The reading stays tied to this specific public exposure regime and does
+        not expand into person-level conclusions.
+    formally_invalid_if:
+      - >
+        The example is used to justify shaming, public exposure, reputational
+        punishment, or person-ranking.
+      - >
+        Moral framing is translated into diagnosis, character claims, or
+        maturity labels.
+      - >
+        Terminal conflict is used as a verdict of guilt rather than as a
+        descriptive boundary claim.
+      - >
+        The analysis itself treats asymmetry naming as moral defect.
+      - >
+        The analysis collapses into governance prescription while still claiming
+        to remain purely descriptive.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows a configuration in which moral language does not dissolve
+    asymmetry but obscures and redistributes it. The decisive shift is not the
+    presence of values as such, but the replacement of exposure accounting by
+    virtue framing: public records harden, alignment pressure rises, distance
+    becomes morally costly, and coordination yields to compliance. Within
+    PMS-CONFLICT, this marks terminal descriptive conflict rather than a viable
+    coordination process under shared values. What remains legible is unequal
+    risk allocation under moralized publicness, not an internal route back to Σ.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "publicly visible interaction"
+      - "durable reputational records"
+      - "moral or value language"
+      - "alignment demands"
+      - "exposure gradients"
+      - "revision and exit conditions"
+    out_of_scope:
+      - "personality claims"
+      - "motive diagnosis"
+      - "moral verdicts"
+      - "prescriptive governance conclusions"
+      - "selection or exclusion logic"
+      - "public reputational punishment as a model output"
+    drift_signal: >
+      The frame becomes unstable when a coordination interface is silently
+      replaced by an evaluation interface that codes disagreement as moral
+      deficiency rather than as structurally unequal exposure.
+  non_event_integrity_check:
+    operator: "Λ"
+    decisive_absences:
+      - "explicit calibration of exposure differences"
+      - "explicit acknowledgment of unequal exit and revision costs"
+      - "explicit separation between moral language and coordination interface"
+      - "explicit accounting of reputational persistence"
+      - "explicit reopening of structural rather than moral negotiation"
+    drift_signal: >
+      What is missing is not moral speech but asymmetry accounting. These
+      absences allow virtue language to become the dominant carrier of control.
+  exposure_capture_check:
+    operator_basis: ["Ω", "Θ", "Φ", "P", "MG"]
+    decisive_question: "When does public moral language stop coordinating and start enforcing?"
+    structural_reading: >
+      Exposure capture is present where interpretive or value language, under
+      durable publicness, begins to behave like enforcement. Revision becomes
+      increasingly costly because statements persist as indexed moral records.
+    drift_signal: >
+      Clarification no longer reduces conflict load; it increases exposure and
+      hardens the public cost of non-alignment.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "roles with durable public attribution"
+      - "roles highly coupled to reputational persistence"
+      - "roles carrying longer-term liability for visible non-alignment"
+    lower_cost_positions:
+      - "roles with weaker public indexing"
+      - "roles able to escalate moral framing with lower downstream consequence"
+      - "roles with greater deniability of impact"
+    drift_signal: >
+      The decisive asymmetry is differential exposure to public consequence and
+      revision cost, not moral superiority or ontological standing.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "initial moral framing"
+      - "public alignment pressure"
+      - "durable record accumulation"
+      - "rising cost of dissent or pause"
+      - "compliance without coordination"
+      - "terminal stabilization through moralized exposure"
+    drift_signal: >
+      Time hardens the scene because moral records accumulate and become harder
+      to revise, retract, or contextually reopen.
+  distance_status_test:
+    operator: "Χ"
+    formal_status: "available"
+    effective_status: "delegitimized or morally priced"
+    indicators:
+      - "pausing is framed as moral failure"
+      - "contextualization is treated as excuse-making"
+      - "distance increases rather than reduces exposure"
+      - "naming structural asymmetry is penalized as value failure"
+    pms_conflict_relevance: >
+      PMS-CONFLICT requires this distinction: Χ may exist formally while no
+      longer functioning as a stabilizer once the scene moralizes its activation.
+  attractor_stabilization:
+    operator: "Α"
+    structural_reading: >
+      The scene stabilizes around normative scripts because they are easier to
+      circulate publicly than explicit exposure accounting. Good-versus-bad
+      positioning becomes the recurrent handling pattern.
+    drift_signal: >
+      Repetition turns moral alignment into an attractor. The system learns how
+      to continue conflict through value coding rather than through coordinated
+      cost negotiation.
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      Unequal exposure and coordination difficulty are re-described as moral
+      alignment problems, so that structural differences appear as value
+      insufficiencies rather than cost gradients.
+    drift_signal: >
+      Φ shifts from clarification toward moral substitution when value language
+      suppresses the only interface where asymmetry could still be coordinated.
+  dignity_stress_test:
+    operator_basis: ["D", "Φ", "Ω", "Χ", "Ψ"]
+    core_risk: >
+      Moral language becomes coercive when it demands alignment without naming
+      unequal exposure, exit cost, or reputational persistence.
+    structural_indicator: >
+      Distance and asymmetry naming are treated as failures of care or
+      integrity, while public compliance is elevated as proof of responsibility.
+      This is the key D-stress point in the scene.
+  integration_suppression_check:
+    operator: "Σ"
+    decisive_question: "Does the scene still coordinate unequal costs, or only moralize them?"
+    structural_reading: >
+      Σ is suppressed where the interaction no longer negotiates exposure,
+      reversibility, and coordination conditions, but instead produces alignment
+      appearance and moral compliance.
+    drift_signal: >
+      The scene continues publicly, but it no longer consolidates shared
+      coordination; it distributes costs under moral pressure.
+  tragedy_clause_check:
+    status: "structurally applicable within this grammar"
+    reading: >
+      The configuration is tragic in the PMS-CONFLICT sense when no further
+      value clarification restores coordination at acceptable cost, even though
+      the regime remains fully legible.
+    boundary_note: >
+      This is not an anti-ethical slogan and not a final statement about all
+      possible rival grammars. It is a grammar-internal limit claim.
+  application_boundary_check:
+    relevance: "primary"
+    reading: >
+      This scene directly activates Chapter 25 concerns. Because publicness and
+      misuse gradient are high, operator language can quickly become an
+      enforcement affordance unless mode, publicness, and misuse classification
+      remain explicit.
+    warning: >
+      Any excerpted use of this example without explicit boundary discipline is
+      especially prone to pseudo-symmetry, moral substitution, person-labeling,
+      and narrative immunization.
+  downstream_mode_shift_boundary:
+    threshold_question: "What happens when moral articulation no longer belongs to coordination?"
+    structural_answer: >
+      Once Ω is denied, Φ moralizes, Χ is delegitimized, and Σ is suppressed,
+      any correction beyond descriptive mapping becomes a downstream mode shift:
+      governance, institutional mediation, formal boundary-setting, or exit.
+    misuse_warning: >
+      The handoff boundary must not be smuggled back into the descriptive layer
+      as if CONFLICT itself already authorized moral enforcement or public sanction.
+
+assistant_test_vectors:
+  promptables:
+    - "Map this case with PMS-CONFLICT. Where does exposure asymmetry remain active beneath moral language?"
+    - "Explain how Φ turns structural differences into virtue categories without restoring coordination."
+    - "Show where Χ becomes morally delegitimized rather than simply unavailable."
+    - "Identify how Ψ shifts from self-binding to demanded public alignment in this scene."
+    - "Distinguish moral articulation from actual Σ in this public exposure regime."
+    - "Describe why this counts as terminal CONFLICT rather than coordinated value alignment."
